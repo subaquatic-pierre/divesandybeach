@@ -1,0 +1,250 @@
+{% extends 'core/base.html' %}
+
+{% block extra_head %}
+<style>
+    .course-hero-image {
+        background-image: url({{ course.image.mobile_image.url }});
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+
+    @media (min-width: 400px) {
+        .course-hero-image {
+            background-image: url({{ course.image.hero_image.url }});
+
+        }
+    }
+</style>
+
+{% endblock extra_head %}
+
+{% block content %}
+
+<section id="course-detail-heading">
+
+    <div class="course-hero-overlay ">
+        <div class="text-center container">
+            <h1 class="header title-text">{{ course.title }}</h1>
+            <hr class="my-5 bg-light w-50 shadow-lg ml-auto mr-auto">
+            <a href="{% url 'diving:course-booking-request' %}" class="btn btn-success btn-lg">Request a Booking!</a>
+        </div>
+    </div>
+    <div class="course-hero-image">
+    </div>
+
+</section>
+
+
+<!--  -->
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-sm-10">
+
+            <!-- Course price row -->
+
+            <!-- E-learning Card -->
+            <div class="row justify-content-center mt-5">
+                {% if course.e_learning_price %}
+                <div class="col-md-4">
+                    <div class="price-card card text-center mb-5">
+                        <div class="popular-ribbon">Popular</div>
+                        <div class=" card-header text-center bg-dark pt-5">
+
+                            <h4 class="card-title-text">E-Learning</h4>
+                            <div class="heading-underline"></div>
+                        </div>
+                        <div class="card-body pt-5">
+                            <h1><b> {{ course.e_learning_price }} </b><small class="text-muted">AED</small></h1>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i class="fas fa-check text-success mx-2"></i> Training Dives
+                            </li>
+                            <li class="list-group-item"><i class="fas fa-check text-success mx-2"></i> Equipment Rental
+                            </li>
+                            <li class="list-group-item"><i class="fas fa-times text-danger mx-2"></i> Excl E-Learning
+                                Materials
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                {% endif %}
+
+                <!-- End e-learning Card -->
+
+                <!-- Book learning card -->
+                {% if course.book_learning_price %}
+                <div class="offset-md-1 col-md-4">
+
+                    <div class="price-card card text-center mb-5">
+                        <div class="card-header text-center bg-dark pt-5 ">
+                            <h4 class="card-title-text">Book Learning</h4>
+                            <div class="heading-underline"></div>
+                        </div>
+                        <div class="card-body pt-5">
+                            <h1><b>{{ course.book_learning_price }} </b><small class="text-muted">AED</small></h1>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i class="fas fa-check text-success mx-2"></i> Training Dives
+                            </li>
+                            <li class="list-group-item"><i class="fas fa-check text-success mx-2"></i> Equipment Rental
+                            </li>
+                            <li class="list-group-item"><i class="fas fa-check text-success mx-2"></i> Incl Learning
+                                Materials
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                {% endif %}
+
+            </div>
+
+            <!-- End course price card row -->
+            <div id="course-info-rows">
+
+                <!-- Course Overview row -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="text-center pb-4">Course Overview</h3>
+                        <div class="heading-underline"></div>
+                        <ul class="list-group list-group-flush bg-transparent">
+                            <li class="list-group-item"><b>Minimum Age: </b> {{ course.min_age }}</li>
+                            <li class="list-group-item"><b>Duration: </b> {{ course.duration }}</li>
+                            {% if course.ocean_dives == True %}
+                            <li class="list-group-item"><b>Number of Ocean Dives: </b>{{ course.num_ocean_dives }}
+                            </li>
+                            {% endif %}
+                            {% if course.pool_dives == True %}
+                            <li class="list-group-item"><b>Number of Pool Dives: </b>{{ course.num_pool_dives }}
+                            </li>
+                            {% endif %}
+                            <li class="list-group-item"><b>Qualified To: </b>{{ course.qualified_to }} min</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 text-center order-md-1">
+                        <div class="course-info-img"
+                            style="background-image: url({{ course.e_learning_info.image.url }});">
+                        </div>
+                    </div>
+                </div>
+                <!-- End Course Overview row -->
+
+                <!-- Course Info row -->
+                <div class="row ">
+                    <div class="col-md-6 order-md-2">
+                        <h3 class="text-center pb-4">Course Info</h3>
+                        <div class="heading-underline"></div>
+                        <p>{{ course.description | linebreaks }}</p>
+                    </div>
+                    <div class="col-md-6 text-center order-md-1">
+                        <div class="course-info-img"
+                            style="background-image: url({{ course.e_learning_info.image.url }});">
+                        </div>
+                    </div>
+                </div>
+                <!-- End Course Info row -->
+
+                <!-- E-Learning info row -->
+                {% if course.e_learning_info %}
+                <div class="row ">
+                    <div class="col-md-6 text-center order-md-2">
+                        <h3 class="text-center pb-4">{{ course.e_learning_info.heading }}</h3>
+                        <div class="heading-underline"></div>
+                        <p>{{ course.e_learning_info.text }}</p>
+                        <div>
+
+                            <a target="blank" href="{{ course.e_learning_link }}" class="btn btn-info">Sign up for your
+                                E-Learning</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center order-md-1">
+                        <div class="course-info-img"
+                            style="background-image: url({{ course.e_learning_info.image.url }});">
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                <!-- End E-Learning info row -->
+
+                <!-- Book Learning info row -->
+                {% if course.book_learning_info %}
+                <div class="row ">
+                    <div class="col-md-6 text-center order-md-1">
+                        <h3 class="text-center pb-4">{{ course.book_learning_info.heading }}</h3>
+                        <div class="heading-underline"></div>
+                        <p>{{ course.book_learning_info.text }}</p>
+                    </div>
+                    <div class="col-md-6 text-center order-md-2">
+                        <div class="course-info-img"
+                            style="background-image: url({{ course.book_learning_info.image.url }});">
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                <!-- End Book Learning info row -->
+
+                <!-- Pool Dives info row -->
+                {% if course.pool_info %}
+                <div class="row ">
+                    <div class="col-md-6 text-center order-md-2">
+                        <h3 class="text-center pb-4">{{ course.pool_info.heading }}</h3>
+                        <div class="heading-underline"></div>
+                        <p>{{ course.pool_info.text }}</p>
+                    </div>
+                    <div class="col-md-6 text-center order-md-1">
+                        <div class="course-info-img" style="background-image: url({{ course.pool_info.image.url }});">
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                <!-- End Pool Dives info row -->
+
+                <!-- Ocean Dives info row -->
+                {% if course.ocean_info %}
+                <div class="row ">
+                    <div class="col-md-6 text-center">
+                        <h3 class="text-center pb-4">{{ course.ocean_info.heading }}</h3>
+                        <div class="heading-underline"></div>
+                        <p>{{ course.ocean_info.text }}</p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <div class="course-info-img" style="background-image: url({{ course.ocean_info.image.url }});">
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                <!-- End Ocean Dives info row -->
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Pool Dives info row -->
+    <div class="row my-5">
+        <div class="col-md-6">
+            <!--  -->
+        </div>
+    </div>
+    <!-- End Pool Dives info row -->
+
+    <!-- Ocean Dives info row -->
+    <div class="row my-5">
+        <div class="col-md-6">
+            <!--  -->
+        </div>
+    </div>
+    <!-- End Ocean Dives info row -->
+
+</div>
+
+
+{% endblock content %}

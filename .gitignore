@@ -1,0 +1,9 @@
+config.json
+venv
+node_modules
+*.csv
+__pycache__
+website_images
+old_files
+.vscode
+.pyc

@@ -1,0 +1,75 @@
+{% extends 'core/base.html' %}
+
+
+{% load static %}
+
+{% block content %}
+<section id="sites-heading">
+
+    <div class="hero-bg">
+        <div class="container title-text">
+            <h1 class=" header">{{ title }}</h1>
+            <hr class="my-5 bg-light w-50 shadow-lg">
+            <p class="title-text">All of our diving prices</p>
+        </div>
+    </div>
+
+</section>
+
+<div class="container">
+    {% for category in categories %}
+
+    <div class="row my-5">
+        <div class="col-md-12">
+            <div class="text-center">
+                <h3>{{ category.title }}</h3>
+                <div class="heading-underline"></div>
+            </div>
+            <table class="table table-dark form-card">
+                {% if category.title == 'Fun Diving' %}
+                <thead>
+                    <tr>
+                        <th scope="col">Item</th>
+                        <th scope="col">Equipment Type</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                {% for item in category.items.all %}
+                <tbody>
+                    <tr>
+                        {% if item.dive_trip_equipment %}
+                        <td>{{ item.title }}</td>
+                        <td>{{ item.dive_trip_equipment }}</td>
+                        <td>{{ item.price }} AED</td>
+                        {% else %}
+                        <td colspan="2">{{ item.title }}</td>
+                        <td>{{ item.price }} AED</td>
+                        {% endif %}
+                    </tr>
+                </tbody>
+                {% endfor %}
+
+                {% else %}
+                <thead>
+                    <tr>
+                        <th scope="col">Item</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                {% for item in category.items.all %}
+                <tbody>
+                    <tr>
+                        <td>{{ item.title }}</td>
+                        <td>{{ item.price }} AED</td>
+                    </tr>
+                </tbody>
+                {% endfor %}
+                {% endif %}
+            </table>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+{% endblock content %}

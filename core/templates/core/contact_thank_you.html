@@ -1,0 +1,65 @@
+{% extends 'core/base.html' %}
+
+
+{% block content %}
+<section id="sites-heading">
+
+    <div class="hero-bg">
+        <div class="container title-text">
+            <h1 class=" header">Thank you for Contacting us</h1>
+            <hr class="my-5 bg-light w-50 shadow-lg">
+        </div>
+    </div>
+
+</section>
+
+
+
+<div class="container content-section my-3 h-100">
+    <div class="row pt-3">
+        <div class="col-md-6">
+            <div>
+                <h3 class="text-center pb-2">Site Info</h3>
+                <ul class="site-info list-group list-group-flush">
+                    <li class="list-group-item"><b>Minimum Level: </b>{{ site.min_diver_level }}</li>
+                    <li class="list-group-item"><b>Depth: </b>{{ site.depth }}m</li>
+                    <li class="list-group-item"><b>Dive Site Type: </b>{{ site.site_type }}</li>
+                    <li class="list-group-item"><b>Dive Time: </b>{{ site.dive_time }} Min</li>
+                    <li class="list-group-item"><b>Distance to Site: </b> {{ site.distance }} Min</li>
+                    <li class="list-group-item"><b>What can we see?: </b>
+                        {% for marine_life in site.marine_life.all %}
+                        {{ marine_life }},
+                        {% endfor %}
+                    </li>
+                </ul>
+            </div>
+
+            <div class="text-center mb-5">
+                <h3 class="pt-5 pb-4">Request a Booking!</h3>
+                <a href="#" class="btn btn-success btn-lg">Send your Request</a>
+            </div>
+
+        </div>
+        <div class="col-md-6">
+            <h3 class="text-center">Site Description</h3>
+            <hr>
+            <p>{{ site.info | linebreaks }}</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row my-5">
+        <div class="col-md-12 text-center">
+            <h3 class="mb-3">Dive Site Map</h3>
+            <div class="heading-underline"></div>
+            <div class="divesite-map">
+                <img src="{{ site.image.url }}" id="img" class="divesite-map-image__img" alt="...">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock content %}

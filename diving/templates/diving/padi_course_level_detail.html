@@ -1,0 +1,60 @@
+{% extends 'core/base.html' %}
+
+
+{% load static %}
+
+{% block content %}
+<!-- <section id="sites-heading">
+    <div class="jumbrotron-fluid">
+        <div class="container">
+            <h1 class="display-3 mt-4">Pro Level Courses</h1>
+            <hr>
+            <a href="{% url 'diving:course-level-list' %}">course levels</a>
+            <a href="">></a>
+            <a href="{% url 'diving:course-level-detail' course_level.slug %}">{{ course_level.title }}</a>
+            <p class="lead">Check out all our pro level courses</p>
+        </div>
+
+    </div>
+</section> -->
+
+<section id="sites-heading">
+
+    <div class="hero-bg">
+        <div class="container title-text">
+            <h1 class=" header">{{ course_level.title }}</h1>
+            <hr class="my-5 bg-light w-50 shadow-lg">
+            <p class="lead">{{ course_level.intro }}</p>
+        </div>
+    </div>
+
+</section>
+
+<div class="container">
+    <div class="row">
+        {% for course in courses %}
+        <div class="col-md-4">
+            <div class="card mb-5">
+                <a href="{{ course.get_absolute_url }}"><img src="{{ course.original_image.url }}"
+                        class="card-img-top cd" alt="..."></a>
+                <div class="card-body">
+                    <a href="{{ course.get_absolute_url }}">
+                        <h5 class="card-title text-center">{{ course.title }}</h5>
+                    </a>
+                    <ul class="list-group list-group-flush my-4">
+                        <li class="list-group-item">Title: {{ course.title }}</li>
+                        <li class="list-group-item">Level: {{ course.level }}</li>
+                        <li class="list-group-item">E-learning Price: {{ course.price_e_learning }}</li>
+                        <li class="list-group-item">Book Price: {{ course.price_book }}</li>
+                        <li class="list-group-item">Pool Dives: {{ course.num_pool_dives }}</li>
+                    </ul>
+                    <a href="{{ course.get_absolute_url }}" class="btn btn-primary btn-block">More
+                        Info</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>
+        {% if title %}
+        {{ title }} - Sandy Beach Dive Centre
+        {% else %}
+        Sandy Beach Dive Centre
+        {% endif %}
+    </title>
+
+    {% include 'core/style_links.html' %}
+
+    {% block extra_head %}
+    {% endblock extra_head %}
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    {% include 'core/navbar.html' %}
+
+    <header class="site-header"></header>
+
+    <!-- Messages div -->
+    <section id="message-container" class="message container my-auto">
+        {% if messages %}
+        {% for message in messages %}
+        <div class="message-div alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        {% endfor %}
+        {% endif %}
+    </section>
+
+    <main role="main">
+
+        {% block content %}
+        {% endblock content %}
+    </main>
+
+    <!-- Footer -->
+    {% include 'core/footer.html' %}
+
+    <!-- Include Scripts -->
+    {% include 'core/scripts.html' %}
+
+    {% block extra_scripts %}
+    {% endblock extra_scripts %}
+
+</body>
+
+</html>

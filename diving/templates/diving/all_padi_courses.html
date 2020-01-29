@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+    <section id="courses-heading">
+        <div class="jumbrotron-fluid">
+            <div class="container">
+                <h1 class="display-3 mt-4">PADI Courses</h1>
+                <hr>
+                <p class="lead">Check out all our PADI Courses</p>
+            </div>
+            
+        </div>
+    </section>
+    <div class="container">
+        <div class="row">
+            {% for course in courses %}            
+                    <div class="col-md-4">
+                        <div class="card mb-5">
+                            <a href="{{ url_for('courses.padi_course', slug=course.slug) }}"><img src="{{ url_for('static', filename='uploads/courses/') + course.image }}" class="card-img-top cd" alt="..."></a>
+                            <div class="card-body">
+                                <a href="{{ url_for('courses.padi_course', slug=course.slug) }}"><h5 class="card-title text-center">{{ course.course_name }}</h5></a>
+                                <ul class="list-group list-group-flush my-4">
+                                    <li class="list-group-item">Level: {{ course.level }}</li>
+                                    <li class="list-group-item">Minimum Age: {{ course.age }}</li>
+                                    <li class="list-group-item">Duration: {{ course.duration }}</li>
+                                    <li class="list-group-item">E-Learning Price: {{ course.e_learning__price }}</li>
+                                    <li class="list-group-item">Book Learning Price: {{ course.book_learning_price }}</li>
+                                    <li class="list-group-item">Number of Pool Dives: {{ course.pool_dives }}</li>
+                                    <li class="list-group-item">Number of Ocean Dives: {{ course.ocean_dives }} min</li>
+                                    <li class="list-group-item">Minimum Number of Required Dives: {{ course.min_dives }} min</li>
+                                    <li class="list-group-item">Qualified To: {{ course.qualified_to }} min</li>
+                                </ul>
+                                <a href="{{ url_for('courses.padi_course', slug=course.slug) }}" class="btn btn-primary btn-block">More Info</a>
+                            </div>
+                        </div>
+                    </div>                
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}

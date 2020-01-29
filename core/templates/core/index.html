@@ -1,0 +1,339 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<!-- Start of Landing Page Main Picture -->
+
+
+<section id="home">
+
+    <div class="landing-fh-image">
+        <div class="container d-flex h-100 justify-content-center">
+            <div class="row align-content-center">
+                <div class="col text-center title-text">
+                    <div class="os-animation" data-animation="fadeInUp" data-delay="0.2s">
+                        <h1 class="mb-4">Scuba Diving in Fujairah</h1> <!-- PHP WP FUNCTION PAGE TITLE -->
+                    </div>
+                    <div class="os-animation" data-animation="fadeInUp" data-delay="0.4s">
+                        <p class="mb-5">Sign up for your next dive trip</p> <!-- PHP WP FUNCTION ACF -->
+                    </div>
+                    <div class="os-animation" data-animation="fadeInUp" data-delay="0.6s">
+                        <a href="{% url 'diving:booking-request' %}"
+                            class="btn btn-lg btn-outline-light py-2 px-5 mt-2 shadow-sm">Request a Booking</a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End Container -->
+        <div class="landing-dark-overlay"></div>
+    </div>
+
+</section>
+
+
+
+<!-- End of landing page main picture -->
+<!-- Start What we Specialize in Section -->
+
+<section id="specialize">
+
+    <div class="jumbotron">
+        <div class="container-fluid text-center min-vh-100">
+            <div class="os-animation" data-animation="fadeInUp" data-delay="0.1s">
+                <h1 class="header mb-4 text-dark">We Specialize In</h1>
+                <div class="heading-underline"></div>
+            </div>
+            <div class="row justify-content-center align-content-center mb-4">
+
+                <div class="col-12 col-md-6 col-xl-3 text-center mb-2">
+                    <div class="os-animation" data-animation="fadeInLeft" data-delay="0.5s">
+                        <div class="card">
+                            <img class="card-img-top" src="{% static 'core/img/Pierre DSD Snoopy.jpg' %}"
+                                alt="Shore Diving">
+                            <div class="card-body">
+                                <h2 class="card-title">Boat Diving</h2>
+                                <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nostrum
+                                    nihil non autem fugit officia ullam ab quaerat voluptatum sapiente.</p>
+                                <a class="btn btn-success btn-lg my-3">Save my space</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-3 text-center mb-2">
+                    <div class="os-animation" data-animation="fadeInUp" data-delay="0.5s">
+                        <div class="card">
+                            <img class="card-img-top" src="{% static 'core/img/sqr- Co.jpg' %}" alt="Shore Diving">
+                            <div class="card-body">
+                                <h2 class="card-title">Shore Diving</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+                                    nostrum nihil non autem fugit officia ullam ab quaerat voluptatum sapiente.</p>
+                                <a class="btn btn-success btn-lg my-3">Save my space</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-3 text-center ">
+                    <div class="os-animation" data-animation="fadeInRight" data-delay="0.5s">
+                        <div class="card">
+                            <img class="card-img-top" src="{% static 'core/img/Lady in The Sand.jpg' %}"
+                                alt="Shore Diving">
+                            <div class="card-body">
+                                <h2 class="card-title">PADI Courses</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+                                    nostrum nihil non autem fugit officia ullam ab quaerat voluptatum sapiente.</p>
+                                <a class="btn btn-success btn-lg my-3">Save my space</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- End of Row -->
+        </div> <!-- End of Container -->
+    </div> <!-- End of JumboTron -->
+
+</section>
+
+<!-- End of What We Specialize in Section -->
+
+<!-- Start of Dive Sites Call to Action -->
+
+<section id="divesitecta">
+
+    <div class="full-width-image">
+        <div class="dark-overlay">
+            <div class="container d-flex h-100">
+                <div class="row align-content-center">
+                    <div class="col title-text mt-3 mb-4">
+                        <div class="os-animation" data-animation="fadeInLeft" data-delay="0.1s">
+                            <h1>Dive Sites</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sapiente voluptas atque id
+                                beatae repellendus ipsam iste rerum laborum excepturi in nobis esse corrupti veniam
+                                repellat, ab fugiat! Ullam, repellendus.</p>
+                            <a class="btn btn-lg btn-success">Check It Out</a>
+                        </div>
+                    </div>
+                </div> <!-- End of Row -->
+            </div> <!-- End of Container -->
+        </div>
+    </div> <!-- End of full Width image -->
+
+</section>
+
+<!-- End of Dive Sites call to action -->
+
+<!-- Our characterists Section -->
+
+<section id="charateristics">
+    <div class="container">
+        <div class="row min-vh-100 align-content-center justify-content-center my-5">
+
+            <div class="col-md-6 col-lg-4 text-center px-4">
+                <div class="os-animation" data-animation="fadeIn" data-delay="0.1s">
+                    <i class="fas fa-home fa-4x mb-4"></i>
+                    <h5>Located On The Beach</h5>
+                    <hr style="width: 50%">
+                    <p>Located directly inforront of snoopy sialnd awards us the best shore diving in the UAE. We are
+                        based in Sandy Beach hotel and resort on the east coast of the UAE, the fujairah coastline
+                        offers the best diving in the UAE with temperate to warm waters all year around. </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 text-center px-4">
+                <div class="os-animation" data-animation="fadeIn" data-delay="0.2s">
+                    <i class="fas fa-fish fa-4x mb-4"></i>
+                    <h4>Marine Life</h4>
+                    <hr style="width: 50%">
+                    <p>Fujairah has the most abundent and diverse marine life in the UAE. Our dive sites are not futher
+                        than 30min by boat, ranging from 12m - 30m there are hard corals and soft corals and a variety
+                        of indain ocean reef fishes, whalesharks frequent our shores</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 text-center px-4">
+                <div class="os-animation" data-animation="fadeIn" data-delay="0.3s">
+                    <i class="fas fa-ship fa-4x mb-4"></i>
+                    <h4>Boat Diving</h4>
+                    <hr style="width: 50%">
+                    <p>We run two boat trips pper day, our boat is dedicated for diving with all safety equipment and
+                        kit racks. Our boats caters for no more than 12 divers, each dive trip has a dedicated
+                        divemaster on board who will guide you through our favourite dive sites.</p>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 col-lg-4 text-center mt-4 px-4">
+                <div class="os-animation" data-animation="fadeIn" data-delay="0.1s">
+                    <i class="fas fa-users fa-4x mb-4"></i>
+                    <h4>Family Environment</h4>
+                    <hr style="width: 50%">
+                    <p>Being based in sandy beach hotel and resort provides our divers with the perfect family
+                        environment. Divers can head out for a day of diving on the boat or from shore and their
+                        families can enjoy the swiming pool or beach facilities.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 text-center mt-4 px-4">
+                <div class="os-animation" data-animation="fadeIn" data-delay="0.2s">
+                    <i class="fas fa-star fa-4x mb-4"></i>
+                    <h4>Service Excellence</h4>
+                    <hr style="width: 50%">
+                    <p>Beign a 5-star PADI IDC centre means we adhere to the latest training standards and teaching
+                        techniques. All our Diveguids and Instructors are PADI profesionals who care for individual
+                        diver needs.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 text-center mt-4 px-4">
+                <div class="os-animation" data-animation="fadeIn" data-delay="0.3s">
+                    <i class="fas fa-cogs fa-4x mb-4"></i>
+                    <h4>Serviced Equimpment</h4>
+                    <hr style="width: 50%">
+                    <p>We offer a full range of scuba diving equipment for rental, we have tech diving facilities with
+                        nitrox and oxygen. All of our equipment is regulary serviced and mainted to the highest quality
+                        to ensure diver comfort and safety.</p>
+                </div>
+            </div>
+
+        </div> <!-- End of Row -->
+    </div> <!-- End of container fluid -->
+</section>
+
+<!-- End Our characterists Section -->
+
+<!-- Start Blog Section -->
+
+<section id="fp-blog">
+    <!-- PHP Custom Query Blog -->
+
+    <div class="fixed-background-blog min-vh-100">
+        <div class="white-overlay min-vh-100 pb-5">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+
+
+                    <div class="col-md-6">
+                        <div class="blog-header">
+                            <h1 class="mb-4 mt-5 text-center">Latest News</h1>
+                            <div class="heading-underline"></div>
+                            <div class="card mb-5">
+                                <div class="row no-gutters">
+                                    <div class="col-lg-5 col-md-12">
+                                        <img src="{% static 'core/img/Deep Diving 6.jpg' %}" class="card-img" alt="">
+                                        <!-- PHP Post Thumbnail -->
+                                    </div>
+                                    <div class="col-lg-7 col-md-12 my-auto">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Best Blog Report</h3> <!-- PHP Post Title -->
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                elit. Reiciendis ipsam rem quod nobis minima iure modi placeat,
+                                                distinctio impedit culpa?</p> <!-- PHP Post Excerpt -->
+                                            <a href="#" class="card-link">Read more...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- End card -->
+
+                            <div class="card mb-5">
+                                <div class="row no-gutters">
+                                    <div class="col-md-5 col-sm-6">
+                                        <img src="{% static 'core/img/Deep Diving 6.jpg' %}" class="card-img" alt="">
+                                    </div>
+                                    <div class="col-md-7 col-sm-6 my-auto">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Best Blog Report</h3>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                elit. Reiciendis ipsam rem quod nobis minima iure modi placeat,
+                                                distinctio impedit culpa?</p>
+                                            <a href="#" class="card-link">Read more...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- End card -->
+
+                            <div class="card mb-5">
+                                <div class="row no-gutters">
+                                    <div class="col-md-5 col-sm-6">
+                                        <img src="{% static 'core/img/Deep Diving 6.jpg' %}" class="card-img" alt="">
+                                    </div>
+                                    <div class="col-md-7 col-sm-6 my-auto">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Best Blog Report</h3>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                elit. Reiciendis ipsam rem quod nobis minima iure modi placeat,
+                                                distinctio impedit culpa?</p>
+                                            <a href="#" class="card-link">Read more...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- End card -->
+                        </div>
+                    </div>
+
+
+                </div> <!-- End Row -->
+            </div> <!-- End Container -->
+
+        </div>
+    </div>
+
+</section>
+
+<!-- End blog Section -->
+
+<!-- Start Partners section -->
+
+<section id="partners">
+    <div class="jumbotron">
+        <div class="container-fluid text-center">
+
+            <div class="os-animation" data-animation="fadeInUp" data-delay="0.1s">
+                <h1 class="header mb-4 text-dark">Our Partners</h1>
+                <div class="heading-underline"></div>
+            </div>
+
+            <div class="row">
+                <div
+                    class="col-sm-6 col-md-3 col-lg-2 partner-logo d-flex align-items-center mb-5 justify-content-center">
+                    <a href="#"><img src="{% static 'core/img/logo/Partner-Logo_0005_PADI.png' %}" alt="PADI Logo"></a>
+                </div>
+
+                <div
+                    class="col-sm-6 col-md-3 col-lg-2 partner-logo  d-flex align-items-center mb-5 justify-content-center">
+                    <a href="#"><img src="{% static 'core/img/logo/Partner-Logo_0002_PADI-Tec-Rec.png' %}"
+                            alt="PADI Logo"></a>
+                </div>
+
+                <div
+                    class="col-sm-6 col-md-3 col-lg-2 partner-logo  d-flex align-items-center mb-5 justify-content-center">
+                    <a href="#"><img src="{% static 'core/img/logo/Partner-Logo_0000_ScubaPro.png' %}"
+                            alt="PADI Logo"></a>
+                </div>
+
+                <div
+                    class="col-sm-6 col-md-3 col-lg-2 partner-logo  d-flex align-items-center mb-5 justify-content-center">
+                    <a href="#"><img src="{% static 'core/img/logo/Partner-Logo_0004_Project-AWARE.png' %}"
+                            alt="PADI Logo"></a>
+                </div>
+
+                <div
+                    class="col-sm-6 col-md-3 col-lg-2 partner-logo  d-flex align-items-center mb-5 justify-content-center">
+                    <a href="#"><img src="{% static 'core/img/logo/Partner-Logo_0006_EDA.png' %}" alt="PADI Logo"></a>
+                </div>
+
+                <div
+                    class="col-sm-6 col-md-3 col-lg-2 partner-logo  d-flex align-items-center mb-5 justify-content-center">
+                    <a href="#"><img src="{% static 'core/img/logo/Partner-Logo_0001_Mares.png' %}" alt="PADI Logo"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- End partners section -->
+
+
+
+{% endblock content %}

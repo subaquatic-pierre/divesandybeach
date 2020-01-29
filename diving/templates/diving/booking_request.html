@@ -1,0 +1,193 @@
+{% extends 'core/base.html' %}
+
+{% load crispy_forms_tags %}
+{% block content %}
+<section id="sites-heading">
+
+    <div class="hero-bg">
+        <div class="container title-text">
+            <h1 class=" header">Dive Booking Request</h1>
+            <hr class="my-5 bg-light w-50 shadow-lg">
+        </div>
+    </div>
+</section>
+
+
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-12 text-center">
+            <h3 class="">Send us a request for your next scuba dive in Fujairah</h3>
+            <div class="heading-underline"></div>
+        </div>
+        <div class="form-card col-md-10 bg-dark text-light mb-5 p-md-5 pt-5">
+            <form action="" method="POST" id="booking-form">
+                {% csrf_token %}
+                {{ diver_form.management_form }}
+
+
+                {% for form in diver_form %}
+                {{ form.non_field_errors }}
+                <div class="form-group">
+                    <label for="{{ form.full_name.id_for_label }}">Diver name</label>
+                    {{ form.full_name }}
+                    {{ form.full_name.errors }}
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="{{ form.cert_level.id_for_label }}">Certification level</label>
+                            {{ form.cert_level }}
+                            {{ form.cert_level.errors }}
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="{{ form.kit_required.id_for_label }}">Required kit</label>
+                            {{ form.kit_required }}
+                            {{ form.kit_required.errors }}
+                        </div>
+                    </div>
+                </div>
+
+                {% endfor %}
+
+                <div id="extra-divers" class="form-group">
+                </div>
+
+                <div class="form-group">
+                    <a id="add-a-diver" class="btn btn-block btn-md-inline btn-primary btn-sm"><small>Add a diver
+                            <i class="fas fa-plus text-white"></i></small> </a>
+                </div>
+
+                {{ booking_form.non_field_errors }}
+                <div class="form-group">
+                    <label for="{{ booking_form.email.id_for_label }}">Email</label>
+                    {{ booking_form.email }}
+                    {{ booking_form.email.errors }}
+                </div>
+                <div class="form-row mt-5">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="text-text text-white">Select preferred Trip Time</label>
+                            <br>
+                            {% for radio in booking_form.time %}
+                            <div class="custom-control custom-radio custom-control-inline">
+                                {{ radio.tag }}
+                                <label class="custom-control-label"
+                                    for="{{ radio.id_for_label }}">{{ radio.choice_label }}</label>
+                            </div>
+                            {% endfor %}
+                            {{ booking_form.time.errors }}
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="{{  form.date.id_for_label }}">Select a preferred date</label>
+                            {{ booking_form.date }}
+                            {{ booking_form.date.errors }}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group mt-4">
+                    <label for="{{  form.message.id_for_label }}">Enter a message</label>
+                    {{ booking_form.message }}
+                    {{ booking_form.message.errors }}
+                </div>
+
+                <div class="form-group text-center my-5">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+{% block extra_scripts %}
+<script type="text/javascript">
+    form_count = 1
+    $('#add-a-diver').on('click', e => {
+        e.preventDefault;
+        addDiverInput()
+    })
+
+    $('#booking-form').submit(e => {
+        // e.preventDefault();
+        // alert('Helloooo!');
+        $('#id_form-TOTAL_FORMS').val(form_count)
+        // e.submit();
+    })
+
+    function addDiverInput() {
+        // create input group div
+        extraDiverDiv = document.createElement('div')
+        extraDiverDiv.innerHTML =
+            `   
+            <div class="form-row extra-diver-row"> 
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="id_form-${form_count}-full_name">Diver Name</label>
+                        <input type="text" name="form-${form_count}-full_name" class="form-control" placeholder="Enter diver full name" required id="id_form-${form_count}-full_name">
+                    </div>  
+                </div>
+                <div class="col-12">
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="id_form-${form_count}-cert_level">Certification Level</label>
+                                <select name="form-${form_count}-cert_level" class="form-control" required placeholder="Enter your email address" id="id_form-${form_count}-cert_level">
+                                    <option disabled selected hidden>Select your certification level</option>
+                                    <option value="Junior Scuba Diver">Junior Scuba Diver</option>
+                                    <option value="Open Water">Open Water</option>
+                                    <option value="Advanced Open Water">Advanced Open Water</option>
+                                    <option value="Rescue Diver">Rescue Diver</option>
+                                    <option value="Deep Specialty">Deep Specialty</option>
+                                </select>                            
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="id_form-${form_count}-kit_required">Required Kit</label>
+                                <select name="form-${form_count}-kit_required" class="form-control" required placeholder="Enter your email address" id="id_form-${form_count}-kit_required">
+                                    <option disabled selected hidden >Select your equipment</option>
+                                    <option value="FK">Full Kit</option>
+                                    <option value="TW">Tanks and Weights</option>
+                                    <option value="EXCL">Excluding Equipment</option>
+                                </select>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-row">
+                        <a class="btn btn-sm btn-danger ml-auto remove-diver-btn">Remove Diver</a>
+                    </div>
+                </div>
+            </div>
+                
+        `
+        form_count++
+        button = extraDiverDiv.children[0].children[2].children[0].children[0]
+        input = extraDiverDiv.children[0].children[0].children[0].children[1]
+        // input.setAttribute('required', true)
+        button.onclick = removeDiverInput
+        $('#extra-divers').append(extraDiverDiv)
+        input.focus()
+        console.log(form_count)
+
+
+    }
+
+    function removeDiverInput(e) {
+        form_count--
+        e.target.parentElement.parentElement.parentElement.parentElement.remove()
+        console.log(form_count)
+
+    }
+
+</script>
+{% endblock extra_scripts %}

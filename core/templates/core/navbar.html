@@ -1,0 +1,108 @@
+{% load static %}
+
+<!-- <div class="top-scroll">
+    <a href="#"><i class="fas fa-arrow-up fa-1.5x"></i></a>
+</div> -->
+
+<div class="mobile-div">
+    <div class="mobile-next-to"></div>
+    <div class="mobile-menu bg-primary">
+        <ul class="text-light">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'diving:shore-diving' %}"><i
+                        class="fas text-info fa-swimmer mr-3"></i>Shore Diving</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'diving:boat-diving' %}"><i class="fas text-info fa-ship mr-3"></i>Boat
+                    Diving</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'diving:padi-course-list' %}"><i
+                        class="fas text-info fa-burn mr-3"></i>PADI Courses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'diving:dive-site-list' %}"><i
+                        class="fas text-info fa-map-marked mr-3"></i>Dive Sites</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'diving:prices' %}"><i
+                        class="fas text-info fa-money-bill-wave mr-3"></i>Prices</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'core:about-us' %}"><i
+                        class="fas text-info fa-calendar-check mr-3"></i>About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'core:contact-us' %}"><i
+                        class="fas text-info fa-address-card mr-3"></i>Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-xl ">
+    <div class="container-fluid">
+        <a class="navbar-brand align-content-start" href="{% url 'core:home' %}"><img
+                src="{% static 'core/img/logo.png' %}" alt="Sandy Beach Dive Centre Logo"></a>
+        <button class="navbar-toggler" type="button" id="mobile-menu-btn"><span class="custom-toggler-icon  ml-auto"><i
+                    class="fas text-white fa-bars"></i></span></button>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto text-light">
+                <li class="nav-item dropdown">
+                    <a data-toggle="dropdown" id="target-dropdown" class="nav-link dropdown-toggle" href="#">Dive With
+                        Us</a>
+                    <div class="dropdown-menu bg-primary" aria-labelledby="target-dropdown">
+                        <a class="nav-link dropdown-item" href="{% url 'diving:boat-diving' %}">Boat Diving</a>
+                        <a class="nav-link dropdown-item" href="{% url 'diving:shore-diving' %}">Shore Diving</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a data-toggle="dropdown" id="target-dropdown-padi" class="nav-link dropdown-toggle" href="">PADI
+                        Courses</a>
+                    <div class="dropdown-menu bg-primary" aria-labelledby="target-dropdown-padi">
+                        {% for course_level in nav_course_levels %}
+                        <a class="nav-link dropdown-item"
+                            href="{{ course_level.get_nav_url }}">{{ course_level.title }}</a>
+                        {% endfor %}
+                        <!-- <a class="nav-link dropdown-item"
+                            href="{% url 'diving:course-level-detail' 'padi-advanced-level' %}">Advanced Level</a>
+                        <a class="nav-link dropdown-item"
+                            href="{% url 'diving:course-level-detail' 'padi-pro-level' %}">Pro
+                            Level</a>
+                        <a class="nav-link dropdown-item"
+                            href="{% url 'diving:course-level-detail' 'padi-specialty-level' %}">Specialties</a>
+                        <a class="nav-link dropdown-item"
+                            href="{% url 'diving:course-level-detail' 'padi-tech-level' %}">Technical</a> -->
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'diving:dive-site-list' %}">Dive Sites</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'diving:prices' %}">Prices</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'core:about-us' %}">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'core:contact-us' %}">Contact Us</a>
+                </li>
+                <!-- {% if current_user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="#">Account</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="#">Logout</a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="#">Login</a>
+                </li>
+                {% endif %} -->
+            </ul>
+
+        </div>
+
+
+
+</nav>

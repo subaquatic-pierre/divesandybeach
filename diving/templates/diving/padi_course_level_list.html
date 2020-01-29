@@ -1,0 +1,40 @@
+{% extends 'core/base.html' %}
+
+
+{% load static %}
+
+
+{% block content %}
+<section id="sites-heading">
+    <div class="jumbrotron-fluid">
+        <div class="container">
+            <h1 class="display-3 mt-4">PADI Course Levels</h1>
+            <hr>
+            <a href="{% url 'diving:course-level-list' %}">course levels</a>
+            <p class="lead">Check out all our PADI course levels</p>
+        </div>
+    </div>
+</section>
+<div class="container">
+    <div class="row">
+        {% for course_level in course_levels %}
+        <div class="col-md-4">
+            <div class="card mb-5">
+                <a href="{{ course_level.get_absolute_url }}"><img src="" class="card-img-top cd" alt="..."></a>
+                <div class="card-body">
+                    <a href="{{ course_level.get_absolute_url }}">
+                        <h5 class="card-title text-center">{{ course_level.title }}</h5>
+                    </a>
+                    <ul class="list-group list-group-flush my-4">
+                        <li class="list-group-item">Title: {{ course_level.title }}</li>
+                        <li class="list-group-item">Slug: {{ course_level.slug }}</li>
+                    </ul>
+                    <a href="{{ course_level.get_absolute_url }}" class="btn btn-primary btn-block">More Info</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock content %}

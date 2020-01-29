@@ -1,0 +1,17 @@
+{
+  "name": "divesandybeach",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "browser-sync": "browser-sync start --files \"**/*.css, **/*.js, **/*.py, **/*.html\" --proxy 127.0.0.1:8000 --reload-delay=300 --reload-debounce=500",
+    "start": "concurrently --kill-others \"python manage.py runserver\" \"npm run browser-sync\" "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "concurrently": "^5.0.2",
+    "node-sass": "^4.13.0"
+  }
+}

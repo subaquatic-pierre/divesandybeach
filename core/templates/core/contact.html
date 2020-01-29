@@ -1,0 +1,95 @@
+{% extends 'core/base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<section id="google-map">
+
+    <div style="height: 65vh">
+        <div class="title-text d-flex h-100 justify-content-center align-items-center">
+            <h1>Google Map</h1>
+        </div>
+    </div>
+
+</section>
+
+<!-- End of Map -->
+
+<!-- Start of Location cards -->
+<div class="container">
+
+</div>
+
+<section id="location-cards">
+
+    <div class="row justify-content-center">
+        <div class="col-11">
+            <div class="row row-cards justify-content-center text-center text-dark">
+
+                <div class="col-sm-12 col-lg-6 col-xl-3">
+                    <div class="os-animation" data-animation="fadeInUp" data-delay="0.2s">
+                        <div class="bg-light call shadow mx-4">
+                            <i class="fas fa-phone fa-4x mt-4"></i>
+                            <hr style="width: 50%">
+                            <p>+971 50 206 2040</p>
+                            <p>+971 244 5050</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-6 col-xl-3">
+                    <div class="os-animation" data-animation="fadeInUp" data-delay="0.4s">
+                        <div class="bg-light email shadow mx-4">
+                            <i class="fas fa-envelope fa-4x mt-4"></i>
+                            <hr style="width: 50%">
+                            <p>info@divesandybeach.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-6 col-xl-3">
+                    <div class="os-animation" data-animation="fadeInUp" data-delay="0.6s">
+                        <div class="bg-light location shadow mx-4">
+                            <i class="fas fa-street-view fa-4x mt-4"></i>
+                            <hr style="width: 50%">
+                            <p>Sandy Beach Hotel and Resort,<br>Al Aqah, Fujairah,<br>United Arab Emirates</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- End of Location Cards -->
+
+<!-- Start Form -->
+
+<section id="contact-form py-5">
+    <div class="container py-5">
+        <div class="row justify-content-center bg-dark">
+            <div class="contact-heading mt-5">
+                <h1>Send us a Message</h1>
+                <div class="heading-underline"></div>
+            </div>
+            <div class="col-10">
+                <div class="form-group text-light">
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                        {{ form | crispy }}
+                        <input type="submit" class="form-control btn btn-success btn-lg " value="Submit"
+                            name="contactSubmit" id="contactSubmit"></input>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- End Form -->
+
+{% endblock content %}

@@ -1,0 +1,61 @@
+{% extends 'core/base.html' %}
+
+
+{% load static %}
+
+{% block content %}
+<section id="sites-heading">
+
+    <div class="hero-bg">
+        <div class="container title-text">
+            <h1 class=" header">Fujairah Dive Sites</h1>
+            <hr class="my-5 bg-light w-50 shadow-lg">
+            <p class="title-text">Check out all our dive sites in Fujairah</p>
+        </div>
+    </div>
+
+</section>
+
+<div class="container">
+    <div class="row my-5">
+        {% for site in dive_sites %}
+        <div class="col-md-4">
+            <!-- Card Wider -->
+            <div class="card mb-5">
+
+                <!-- Card image -->
+                <div class="view overlay">
+                    <img class="card-img-top" src="{{ site.map_image.url }}" alt="Card image cap">
+                    <a href="{{ site.get_absolute_url }}">
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
+
+                <!-- Card content -->
+                <div class="card-body text-center">
+
+                    <!-- Title -->
+                    <a href="{{ site.get_absolute_url }}">
+                        <h4 class="card-title"><strong>{{ site.title }}</strong></h4>
+                    </a>
+                    <!-- Subtitle -->
+                    <!-- Text -->
+                    <div class="heading-underline"></div>
+                    <li class=" mb-2 "><b>Depth: </b>{{ site.depth }} m </li>
+                    <p class="card-text">{{ site.info | truncatewords:20 }}</p>
+                    <a href="{{ site.get_absolute_url }}" class="d-flex justify-content-end">
+                        <h6>Read more <i class="fas fa-angle-double-right"></i></h6>
+                    </a>
+                    <!-- <a href="{{ site.get_absolute_url }}" class="btn btn-primary btn-block">More
+                        Info</a> -->
+
+                </div>
+
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+{% endblock content %}
