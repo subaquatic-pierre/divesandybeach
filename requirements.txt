@@ -10,6 +10,7 @@ django-countries==5.5
 django-crispy-forms==1.8.1
 django-extensions==2.2.5
 django-tempus-dominus==5.1.2.13
+gunicorn==20.0.4
 idna==2.8
 oauthlib==3.1.0
 Pillow==7.0.0
