@@ -82,7 +82,7 @@ TEMPLATES = [
 
 # If debug is true then in development enviornment otherwise in production environment
 if DEBUG == True:
-    ALLOWED_HOSTS = ['www.myriosdesign.com','myriosdesign.com','52.14.102.164']
+    ALLOWED_HOSTS = []
 
     # TODO: Need to change to console once secure, remove host and user
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -102,8 +102,8 @@ if DEBUG == True:
     STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 # Production Environment
 else:
-    ALLOWED_HOSTS = ['divesandybeach','myriosdesign.com',
-	'52.14.102.164','www.divesandybeach.com', 'divesandybeach.com']
+    ALLOWED_HOSTS = ['divesandybeach', 'myriosdesign.com',
+                     '52.14.102.164', 'www.divesandybeach.com', 'divesandybeach.com']
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_HOST = config.EMAIL_HOST
     EMAIL_HOST_USER = config.EMAIL_HOST_USER
