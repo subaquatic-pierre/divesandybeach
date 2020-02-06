@@ -171,7 +171,7 @@ class CourseBookingRequestView(View):
 
              """
             send_mail('Course Bookiing Request', email_message, 'subquatic.pierre@gmail.com', [
-                      'pierre@divesandybeach.com', 'subquatic.pierre@gmail.com'])
+                      email, 'subquatic.pierre@gmail.com'])
             # print(f'\n\nDiver Name: {diver_name}')
             # print(f'Email: {email}')
             # print(f'Course: {course}')

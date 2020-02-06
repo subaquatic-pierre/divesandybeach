@@ -12,23 +12,21 @@
     </div>
 </section>
 
-
-
 <div class="container my-5">
     <div class="row justify-content-center">
         <div class="col-md-12 text-center">
             <h3 class="">Send us a request for your next scuba dive in Fujairah</h3>
             <div class="heading-underline"></div>
         </div>
-        <div class="form-card col-md-10 bg-dark text-light mb-5 p-md-5 pt-5">
-            <form action="" method="POST" id="booking-form">
+        <div class="col-md-10 form-card bg-dark text-light mb-5 p-md-5">
+            <form action="" method="POST">
                 {% csrf_token %}
                 {{ diver_form.management_form }}
 
 
                 {% for form in diver_form %}
                 {{ form.non_field_errors }}
-                <div class="form-group">
+                <div class="form-group mt-5 mt-md-0">
                     <label for="{{ form.full_name.id_for_label }}">Diver name</label>
                     {{ form.full_name }}
                     {{ form.full_name.errors }}
@@ -69,15 +67,19 @@
                 <div class="form-row mt-5">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label class="text-text text-white">Select preferred Trip Time</label>
-                            <br>
-                            {% for radio in booking_form.time %}
-                            <div class="custom-control custom-radio custom-control-inline">
-                                {{ radio.tag }}
-                                <label class="custom-control-label"
-                                    for="{{ radio.id_for_label }}">{{ radio.choice_label }}</label>
+                            <!-- <h5>Radio Buttons</h5> -->
+                            <label>Select a preferred time</label>
+
+                            <div class="btn-group-toggle" data-toggle="buttons">
+                                {% for radio in booking_form.time %}
+                                <label class="btn btn-outline-primary mb-2">
+                                    <input type="radio" name="time" id="{{ radio.id_for_label }}" autocomplete="off"
+                                        value="{{ radio.choice_label }}" required>
+                                    {{ radio.choice_label }}
+                                </label>
+                                {% endfor %}
                             </div>
-                            {% endfor %}
+
                             {{ booking_form.time.errors }}
                         </div>
                     </div>
@@ -104,6 +106,7 @@
         </div>
     </div>
 </div>
+
 
 {% endblock content %}
 

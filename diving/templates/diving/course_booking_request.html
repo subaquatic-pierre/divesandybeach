@@ -25,7 +25,7 @@
                 {% csrf_token %}
                 {{ form.non_field_errors }}
 
-                <div class="form-group mt-5">
+                <div class="form-group mt-5 mt-md-0">
                     <label for="{{ form.full_name.id_for_label }}">Diver Name</label>
                     {{ form.full_name }}
                     {{ form.full_name.errors }}

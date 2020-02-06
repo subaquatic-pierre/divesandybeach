@@ -13,5 +13,8 @@
     "browser-sync": "^2.26.7",
     "concurrently": "^5.0.2",
     "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1"
   }
 }

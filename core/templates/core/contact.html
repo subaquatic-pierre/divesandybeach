@@ -17,9 +17,6 @@
 <!-- End of Map -->
 
 <!-- Start of Location cards -->
-<div class="container">
-
-</div>
 
 <section id="location-cards">
 
@@ -66,30 +63,41 @@
 
 <!-- End of Location Cards -->
 
-<!-- Start Form -->
+<div class="container my-5">
+    <div class="row justify-content-center">
 
-<section id="contact-form py-5">
-    <div class="container py-5">
-        <div class="row justify-content-center bg-dark">
+        <div class="col-md-10 form-card bg-dark text-light mb-5 p-md-5">
             <div class="contact-heading mt-5">
                 <h1>Send us a Message</h1>
                 <div class="heading-underline"></div>
             </div>
-            <div class="col-10">
-                <div class="form-group text-light">
-                    <form action="" method="POST">
-                        {% csrf_token %}
-                        {{ form | crispy }}
-                        <input type="submit" class="form-control btn btn-success btn-lg " value="Submit"
-                            name="contactSubmit" id="contactSubmit"></input>
-                    </form>
-
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{ form.non_field_errors }}
+                <div class="form-group">
+                    <label for="{{ form.full_name.id_for_label }}">Diver name</label>
+                    {{ form.full_name }}
+                    {{ form.full_name.errors }}
                 </div>
-            </div>
+                <div class="form-group">
+                    <label for="{{ form.full_name.id_for_label }}">Diver name</label>
+                    {{ form.email }}
+                    {{ form.email.errors }}
+                </div>
+
+                <div class="form-group mt-4">
+                    <label for="{{  form.message.id_for_label }}">Enter a message</label>
+                    {{ form.message }}
+                    {{ form.message.errors }}
+                </div>
+
+                <div class="form-group text-center my-5">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+
+            </form>
         </div>
     </div>
-</section>
-
-<!-- End Form -->
+</div>
 
 {% endblock content %}
