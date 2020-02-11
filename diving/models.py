@@ -197,6 +197,10 @@ class Course(models.Model):
     title = models.CharField(max_length=255)
     image = models.ForeignKey(
         'Images', blank=True, null=True, on_delete=models.SET_NULL)
+    overview_image = models.ForeignKey(
+        'Images', blank=True, null=True, on_delete=models.SET_NULL, related_name='overview_image')
+    info_image = models.ForeignKey(
+        'Images', blank=True, null=True, on_delete=models.SET_NULL, related_name='info_image')
     description = models.TextField(blank=True, null=True)
     e_learning_link = models.CharField(max_length=255, null=True, blank=True)
     level = models.ForeignKey(
@@ -220,14 +224,13 @@ class Course(models.Model):
 
     @property
     def e_learning_price(self):
-        item = ItemPrice.objects.get(
-            course=self, learning_type='e-learning')
+        item = ItemPrice.objects.get(course=self, learning_type='E-Learning')
         return item.price
 
     @property
     def book_learning_price(self):
         item = ItemPrice.objects.get(
-            course=self, learning_type='book-learning')
+            course=self, learning_type='Book-Learning')
         return item.price
 
     # Information regarding the course, most courses have same info which is why seperate model
@@ -275,9 +278,9 @@ class CourseInfo(models.Model):
     info_type = models.CharField(
         max_length=255, null=True, blank=True, choices=COURSE_INFO_TYPE_CHOICES)
 
-    def save(self, *args, **kwargs):
-        self.image = create_medium_image(self)
-        super().save(*args, **kwargs)
+    # def save(self, *args, **kwargs):
+    #     self.image = create_medium_image(self)
+    #     super().save(*args, **kwargs)
 
     def __str__(self):
         return self.title

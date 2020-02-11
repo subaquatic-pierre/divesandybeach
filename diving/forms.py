@@ -23,8 +23,8 @@ class CourseBookingRequestForm(forms.Form):
         widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter divers full name'}))
     email = forms.EmailField(
         widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter your email address'}))
-    course = forms.ChoiceField(choices=[(course.title, course.title) for course in list(COURSES)], widget=forms.Select(
-                               attrs={'class': 'form-control', 'placeholder': 'Enter your email address'}))
+    # course = forms.ChoiceField(choices=[(course.title, course.title) for course in list(COURSES)], widget=forms.Select(
+    #                            attrs={'class': 'form-control', 'placeholder': 'Enter your email address'}))
     date = forms.DateField(
         widget=DatePicker(
             options={

@@ -102,7 +102,7 @@ if DEBUG == True:
     STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 # Production Environment
 else:
-    ALLOWED_HOSTS = ['scubadivedubai.com','www.scubadivedubai.com']
+    ALLOWED_HOSTS = ['scubadivedubai.com', 'www.scubadivedubai.com']
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_HOST = config.EMAIL_HOST
     EMAIL_HOST_USER = config.EMAIL_HOST_USER

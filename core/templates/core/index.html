@@ -20,8 +20,8 @@
                         <p class="mb-5">Sign up for your next dive trip</p> <!-- PHP WP FUNCTION ACF -->
                     </div>
                     <div class="os-animation" data-animation="fadeInUp" data-delay="0.6s">
-                        <a class="btn btn-outline btn-light text-1 font-weight-semibold text-uppercase px-5 btn-py-2 mb-3"
-                            href="{% url 'diving:booking-request' %}">Request a booking</a>
+                        <a class="btn btn-primary btn-lg" href="{% url 'diving:booking-request' %}">Request a
+                            booking</a>
                     </div>
                 </div>
             </div>
@@ -35,7 +35,7 @@
 
     <section id="specialize" class="py-5">
 
-        <div class="container-fluid text-center min-vh-100">
+        <div class="container-fluid text-center">
             <div class="os-animation" data-animation="fadeInUp" data-delay="0.1s">
                 <h1 class="header mb-4 text-dark text-shadow">We Specialize In</h1>
                 <div class="heading-underline"></div>
@@ -46,8 +46,8 @@
 
 
                         <div class="card mb-5">
-                            <img class="card-img-top" src="{% static 'core/img/Pierre DSD Snoopy.jpg' %}"
-                                alt="Shore Diving">
+                            <a href="{% url 'diving:boat-diving' %}"><img class="card-img-top"
+                                    src="{% static 'core/img/Pierre DSD Snoopy.jpg' %}" alt="Boat Diving"></a>
                             <div class="card-body">
                                 <h2 class="card-title">Boat Diving</h2>
                                 <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
@@ -58,7 +58,8 @@
                         </div>
 
                         <div class="card mb-5">
-                            <img class="card-img-top" src="{% static 'core/img/sqr- Co.jpg' %}" alt="Shore Diving">
+                            <a href="{% url 'diving:shore-diving' %}"><img class="card-img-top"
+                                    src="{% static 'core/img/sqr- Co.jpg' %}" alt="Shore Diving"></a>
                             <div class="card-body">
                                 <h2 class="card-title">Shore Diving</h2>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -68,9 +69,9 @@
                             </div>
                         </div>
 
-                        <div class="card os-animation" data-animation="fadeInRight" data-delay="0.5s">
-                            <img class="card-img-top" src="{% static 'core/img/Lady in The Sand.jpg' %}"
-                                alt="Shore Diving">
+                        <div class="card mb-5">
+                            <a href="{% url 'diving:padi-course-list' %}"><img class="card-img-top"
+                                    src="{% static 'core/img/Lady in The Sand.jpg' %}" alt="PADI Courses"></a>
                             <div class="card-body">
                                 <h2 class="card-title">PADI Courses</h2>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -113,13 +114,13 @@
 
     <section id="charateristics">
         <div class="container">
-            <div class="row min-vh-100 align-content-center justify-content-center my-5">
+            <div class="row  align-content-center justify-content-center my-5">
 
-                <div class="col-md-6 col-lg-4 text-center px-4">
-                    <div class="os-animation" data-animation="fadeIn" data-delay="0.1s">
+                <div class="col-md-6 col-lg-4 text-center my-md-5 px-4">
+                    <div class="animated fadeIn">
                         <i class="fas fa-home fa-4x mb-4"></i>
                         <h5>Located On The Beach</h5>
-                        <hr style="width: 50%">
+                        <hr class="w-50 mx-auto">
                         <p>Located directly inforront of snoopy sialnd awards us the best shore diving in the UAE. We
                             are
                             based in Sandy Beach hotel and resort on the east coast of the UAE, the fujairah coastline
@@ -127,11 +128,11 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4 text-center px-4">
-                    <div class="os-animation" data-animation="fadeIn" data-delay="0.2s">
+                <div class="col-md-6 col-lg-4 text-center my-md-5 px-4">
+                    <div class="animated fadeIn">
                         <i class="fas fa-fish fa-4x mb-4"></i>
                         <h4>Marine Life</h4>
-                        <hr style="width: 50%">
+                        <hr class="w-50 mx-auto">
                         <p>Fujairah has the most abundent and diverse marine life in the UAE. Our dive sites are not
                             futher
                             than 30min by boat, ranging from 12m - 30m there are hard corals and soft corals and a
@@ -140,11 +141,11 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4 text-center px-4">
-                    <div class="os-animation" data-animation="fadeIn" data-delay="0.3s">
+                <div class="col-md-6 col-lg-4 text-center my-md-5 px-4">
+                    <div class="animated fadeIn">
                         <i class="fas fa-ship fa-4x mb-4"></i>
                         <h4>Boat Diving</h4>
-                        <hr style="width: 50%">
+                        <hr class="w-50 mx-auto">
                         <p>We run two boat trips pper day, our boat is dedicated for diving with all safety equipment
                             and
                             kit racks. Our boats caters for no more than 12 divers, each dive trip has a dedicated
@@ -153,30 +154,30 @@
                 </div>
 
 
-                <div class="col-md-6 col-lg-4 text-center mt-4 px-4">
-                    <div class="os-animation" data-animation="fadeIn" data-delay="0.1s">
+                <div class="col-md-6 col-lg-4 text-center my-md-5 px-4">
+                    <div class="animated fadeIn">
                         <i class="fas fa-users fa-4x mb-4"></i>
                         <h4>Family Environment</h4>
-                        <hr style="width: 50%">
+                        <hr class="w-50 mx-auto">
                         <p>Being based in sandy beach hotel and resort provides our divers with the perfect family
                             environment. Divers can head out for a day of diving on the boat or from shore and their
                             families can enjoy the swiming pool or beach facilities.</p>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4 text-center mt-4 px-4">
-                    <div class="os-animation" data-animation="fadeIn" data-delay="0.2s">
+                <div class="col-md-6 col-lg-4 text-center my-md-5 px-4">
+                    <div class="animated fadeIn">
                         <i class="fas fa-star fa-4x mb-4"></i>
                         <h4>Service Excellence</h4>
-                        <hr style="width: 50%">
+                        <hr class="w-50 mx-auto">
                         <p>Beign a 5-star PADI IDC centre means we adhere to the latest training standards and teaching
                             techniques. All our Diveguids and Instructors are PADI profesionals who care for individual
                             diver needs.</p>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4 text-center my-5 px-4">
-                    <div class="os-animation" data-animation="fadeIn" data-delay="0.3s">
+                <div class="col-md-6 col-lg-4 animated fadeInDown text-center my-3 my-md-5 px-4">
+                    <div class="animated fadeInDown">
                         <i class="fas fa-cogs fa-4x mb-4"></i>
                         <h4>Serviced Equimpment</h4>
                         <hr class="w-50 mx-auto">
@@ -193,9 +194,6 @@
     </section>
 
     <!-- End Our characterists Section -->
-
-
-
 
     <!-- Start Partners section -->
 

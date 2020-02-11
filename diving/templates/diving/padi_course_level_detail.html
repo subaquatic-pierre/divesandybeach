@@ -33,20 +33,22 @@
 <div class="container">
     <div class="row">
         {% for course in courses %}
+
         <div class="col-md-4">
-            <div class="card mb-5">
-                <a href="{{ course.get_absolute_url }}"><img src="{{ course.original_image.url }}"
+            <div class="card my-5">
+                <a href="{{ course.get_absolute_url }}"><img src="{{ course.image.medium_image.url }}"
                         class="card-img-top cd" alt="..."></a>
                 <div class="card-body">
                     <a href="{{ course.get_absolute_url }}">
-                        <h5 class="card-title text-center">{{ course.title }}</h5>
+                        <h4 class="card-title text-center">{{ course.title }}</h4>
+                        <div class="heading-underline"></div>
                     </a>
                     <ul class="list-group list-group-flush my-4">
-                        <li class="list-group-item">Title: {{ course.title }}</li>
-                        <li class="list-group-item">Level: {{ course.level }}</li>
-                        <li class="list-group-item">E-learning Price: {{ course.price_e_learning }}</li>
-                        <li class="list-group-item">Book Price: {{ course.price_book }}</li>
-                        <li class="list-group-item">Pool Dives: {{ course.num_pool_dives }}</li>
+                        <li class="list-group-item"><b>Title: </b>{{ course.title }}</li>
+                        {%if course.price_e_learning %}
+                        <li class="list-group-item"><b>E-learning Price: </b>{{ course.price_e_learning }}</li>
+                        {% endif %}
+                        <li class="list-group-item"><b>Book Price: </b>{{ course.price_book }}</li>
                     </ul>
                     <a href="{{ course.get_absolute_url }}" class="btn btn-primary btn-block">More
                         Info</a>

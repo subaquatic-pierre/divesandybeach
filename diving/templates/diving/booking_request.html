@@ -72,7 +72,7 @@
 
                             <div class="btn-group-toggle" data-toggle="buttons">
                                 {% for radio in booking_form.time %}
-                                <label class="btn btn-outline-primary mb-2">
+                                <label class="btn btn-primary mb-2">
                                     <input type="radio" name="time" id="{{ radio.id_for_label }}" autocomplete="off"
                                         value="{{ radio.choice_label }}" required>
                                     {{ radio.choice_label }}
@@ -99,7 +99,7 @@
                 </div>
 
                 <div class="form-group text-center my-5">
-                    <button type="submit" class="btn btn-success">Submit</button>
+                    <button type="submit" class="btn btn-success btn-lg">Submit</button>
                 </div>
 
             </form>

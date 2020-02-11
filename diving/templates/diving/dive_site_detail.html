@@ -6,11 +6,11 @@
 
     <div class="hero-bg">
         <div class="container title-text">
-            <h1 class=" header">{{ site.title}}</h1>
+            <h1 class="header">{{ site.title}}</h1>
             <hr class="my-5 bg-light w-50 shadow-lg">
-            <div class="os-animation" data-animation="fadeInUp" data-delay="0.6s">
-                <a class="btn btn-outline btn-light text-1 font-weight-semibold text-uppercase px-5 btn-py-2 mb-3"
-                    href="demo-digital-agency-services.html">Request a booking</a>
+            <div class="os-animation text-center" data-animation="fadeInUp" data-delay="0.6s">
+                <a class="btn btn-success text-1 font-weight-semibold text-uppercase px-5 btn-py-2 mb-3"
+                    href="{% url 'diving:booking-request' %}">Request a booking</a>
             </div>
         </div>
     </div>
@@ -20,49 +20,63 @@
 
 
 <div class="container content-section my-3 h-100">
-    <div class="row pt-3">
-        <div class="col-md-6">
-            <div>
-                <h3 class="text-center pb-2">Site Info</h3>
-                <ul class="site-info list-group list-group-flush">
-                    <li class="list-group-item"><b>Minimum Level: </b>{{ site.min_diver_level }}</li>
-                    <li class="list-group-item"><b>Depth: </b>{{ site.depth }}m</li>
-                    <li class="list-group-item"><b>Dive Site Type: </b>{{ site.site_type }}</li>
-                    <li class="list-group-item"><b>Dive Time: </b>{{ site.dive_time }} Min</li>
-                    <li class="list-group-item"><b>Distance to Site: </b> {{ site.distance }} Min</li>
-                    <li class="list-group-item"><b>What can we see?: </b>
-                        {% for marine_life in site.marine_life.all %}
-                        {{ marine_life }},
-                        {% endfor %}
-                    </li>
-                </ul>
-            </div>
-
-            <div class="text-center mb-5">
-                <h3 class="pt-5 pb-4">Request a Booking!</h3>
-                <a href="#" class="btn btn-success btn-lg">Send your Request</a>
-            </div>
-
-        </div>
-        <div class="col-md-6">
+    <div class="row pt-3 ">
+        <div class="col-12 col-md-8 order-2 order-md-1">
             <h3 class="text-center">Site Description</h3>
-            <hr>
+            <div class="heading-underline"></div>
             <p>{{ site.info | linebreaks }}</p>
         </div>
+
+        <div class="col-12 mb-5 col-md-4 order-md-2">
+            <div>
+                <div class="card">
+                    <h3 class="text-center pb-2">Site Info</h3>
+                    <div class="heading-underline"></div>
+                    <ul class="site-info list-group list-group-flush">
+                        <li class="list-group-item"><b>Minimum Diver Level: </b>{{ site.min_diver_level }}</li>
+                        <li class="list-group-item"><b>Depth: </b>{{ site.depth }}m</li>
+                        <li class="list-group-item"><b>Dive Site Type: </b>{{ site.site_type }}</li>
+                        <li class="list-group-item"><b>Dive Time: </b>{{ site.dive_time }} Min</li>
+                        <li class="list-group-item"><b>Distance to Site: </b> {{ site.distance }} Min</li>
+                        <li class="list-group-item"><b>What can we see?: </b>
+                            {% for marine_life in site.marine_life.all %}
+                            {{ marine_life }},
+                            {% endfor %}
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 </div>
 
 <div class="container">
-    <div class="row my-5">
-        <div class="col-md-12 text-center">
+    <div class="row my-5 justify-content-center">
+        <div class="col-12 text-center">
             <h3 class="mb-3">Dive Site Map</h3>
             <div class="heading-underline"></div>
             <div class="divesite-map">
                 <img src="{{ site.map_image.url }}" id="img" class="divesite-map-image__img" alt="...">
             </div>
         </div>
+        <div class="col-12 col-md-6">
+            <div class="card text-center my-5 shadow-lg">
+                <div class="card-body">
+                    <h3 class="">Request a Booking!</h3>
+                    <div class="justify-start heading-underline"></div>
+                    <a href="{% url 'diving:booking-request' %}" class="btn btn-success btn-lg mb-5">Send your
+                        Request</a>
+                </div>
+
+            </div>
+        </div>
 
     </div>
+
+
+
 </div>
 
 

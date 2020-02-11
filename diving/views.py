@@ -23,7 +23,11 @@ class DiveSiteDetailView(DetailView):
     model = DiveSite
     context_object_name = 'site'
     template_name = 'diving/dive_site_detail.html'
-    # TODO: link to divetrip booking form page
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['title'] = context['object'].title
+        return context
 
 
 class PADICourseLevelListView(ListView):
@@ -41,6 +45,7 @@ class PADICourseLevelDetailView(DetailView):
         courses = Course.objects.filter(level__title=kwargs['object'])
         context = super().get_context_data(**kwargs)
         context['courses'] = courses
+        context['title'] = context['object'].title
         return context
 
 
@@ -55,6 +60,11 @@ class PADICourseDetailView(DetailView):
     template_name = 'diving/padi_course_detail.html'
     context_object_name = 'course'
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['title'] = context['object'].title
+        return context
+
 
 class BoatDiveDetailView(TemplateView):
     template_name = 'diving/boat_diving.html'
@@ -62,6 +72,8 @@ class BoatDiveDetailView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['dive'] = DiveTrip.objects.get(title='Boat Diving')
+        context['title'] = 'Fujairah Boat Diving'
+
         return context
 
 
@@ -71,6 +83,8 @@ class ShoreDiveDetailView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['dive'] = DiveTrip.objects.get(title='Shore Diving')
+        context['title'] = 'Fujairah Shore Diving'
+
         return context
 
 
@@ -82,6 +96,7 @@ class PricesDetailView(TemplateView):
         context['object'] = ItemPrice.objects.all()
         context['title'] = 'Prices'
         context['categories'] = Category.objects.all()
+        context['title'] = 'Price List'
         return context
 
 
@@ -89,7 +104,10 @@ class BookingRequestView(View):
     def get(self, request, *args, **kwargs):
         booking_form = DiveBookingRequestForm()
         diver_form = formset_factory(DiveBookingRequestDiverForm)
-        return render(request, 'diving/booking_request.html', context={'booking_form': booking_form, 'diver_form': diver_form})
+        context = {'booking_form': booking_form,
+                   'diver_form': diver_form,
+                   'title': 'Dive Booking Request'}
+        return render(request, 'diving/booking_request.html', context=context)
 
     def post(self, request, *args, **kwargs):
         booking_form = DiveBookingRequestForm(request.POST)
@@ -133,7 +151,9 @@ class CourseBookingRequestView(View):
         print(last)
         form = CourseBookingRequestForm(
             initial={'course': last})
-        return render(request, 'diving/course_booking_request.html', context={'form': form})
+        context = {'form': form,
+                   'title': 'PADI Course Booking Request'}
+        return render(request, 'diving/course_booking_request.html', context=context)
 
     def post(self, request, *args, **kwargs):
         form = CourseBookingRequestForm(request.POST)
@@ -275,8 +295,8 @@ class UploadDiveSites(View):
 TODO:
 
 - Design email templates for booking request
-- Configure production settings
-- Download new theme
-- Upload to github
+- Add breadcrumbs to course detail and dive site detail page
+- design boat diving page
+- design shore diving page
 
 """

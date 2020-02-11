@@ -14,11 +14,20 @@ class Home(TemplateView):
 class AboutUs(TemplateView):
     template_name = 'core/about.html'
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['title'] = 'About Us'
+        return context
+
 
 class ContactPageView(View):
+
     def get(self, request, *args, **kwargs):
         form = ContactForm()
-        return render(request, 'core/contact.html', context={'form': form})
+        context = {'title': 'Contact Us',
+                   'form': form}
+
+        return render(request, 'core/contact.html', context=context)
 
     def post(self, request, *args, **kwargs):
         info = ContactForm(request.POST)

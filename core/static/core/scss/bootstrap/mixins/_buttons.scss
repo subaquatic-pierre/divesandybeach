@@ -9,11 +9,11 @@
   border-color: $border;
   @include box-shadow($btn-box-shadow);
 
-  @include hover() {
-    color: color-yiq($hover-background);
-    @include gradient-bg($hover-background);
-    border-color: $hover-border;
-  }
+  // @include hover() {
+  //   color: color-yiq($hover-background);
+  //   @include gradient-bg($hover-background);
+  //   border-color: $hover-border;
+  // }
 
   &:focus,
   &.focus {
@@ -64,6 +64,7 @@
 @mixin button-outline-variant($color, $color-hover: color-yiq($color), $active-background: $color, $active-border: $color) {
   color: $color;
   border-color: $color;
+  border-width: 3px!important;
 
   @include hover() {
     color: $color-hover;
