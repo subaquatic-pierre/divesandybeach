@@ -312,11 +312,11 @@ def dive_booking_email(request):
     staff_email = 'subaqautic.pierre@gmail.com'
     diver_name = 'Eric Poper'
     extra_divers = ['Garry Benson', 'Henri mcitosh']
-    context = Context({'diver_name': diver_name,
-                       'extra_divers': extra_divers})
-    msg_plain = render_to_string(
-        'diving/dive_booking_confirmation.html', context)
+    context = {'diver_name': diver_name,
+               'extra_divers': extra_divers}
     msg_html = render_to_string(
+        'diving/dive_booking_confirmation.html', context)
+    msg_plain = render_to_string(
         'diving/dive_booking_confirmation.txt', context)
     # Send email
     send_mail(subject, msg_plain, from_email, [

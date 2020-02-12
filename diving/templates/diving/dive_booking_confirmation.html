@@ -32,15 +32,21 @@
                 <table class="table">
                     <tbody>
                         <tr>
-                            <td style="border-top: 0;">Diver Name: {{ divername }}</td>
-                            {% if extra_divers %}
-                            {% for diver in extra_divers %}
-                            <td style="border-top: 0;">Diver Name: {{ divername }}</td>
-                            {% endfor %}
-                            {% endif %}
+                            <td style="border-top: 0;">Diver Name: {{ diver_name }}</td>
                             <td style="border-top: 0;" class="text-right">Advanced Open Water</td>
                             <td style="border-top: 0;" class="ml-5 text-right">Full Equipment</td>
                         </tr>
+                        {% if extra_divers %}
+                        {% for diver in extra_divers %}
+                        <tr>
+
+                            <td style="border-top: 0;">Diver Name: {{ diver }}</td>
+
+                            <td style="border-top: 0;" class="text-right">Advanced Open Water</td>
+                            <td style="border-top: 0;" class="ml-5 text-right">Full Equipment</td>
+                        </tr>
+                        {% endfor %}
+                        {% endif %}
                         <tr>
                             <td></td>
                             <td>Boat Dive</td>
