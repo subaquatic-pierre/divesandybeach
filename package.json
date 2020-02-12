@@ -4,17 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "browser-sync": "browser-sync start --files \"**/*.css, **/*.js, **/*.py, **/*.html\" --proxy 127.0.0.1:8000 --reload-delay=300 --reload-debounce=500",
-    "start": "concurrently --kill-others \"python manage.py runserver\" \"npm run browser-sync\" "
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "browser-sync": "browser-sync start --files \"myapp/static/css/*.css, myapp/static/js/*.js, myapp/**/*.py, myapp/templates/*.html\" --proxy 127.0.0.1:8000 --reload-delay=300 --reload-debounce=500",
+    "start": "concurrently --kill-others \"python3 manage.py runserver\" \"npm run browser-sync\" "
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.7",
-    "concurrently": "^5.0.2",
-    "node-sass": "^4.13.0"
-  },
-  "dependencies": {
-    "bootstrap": "^4.4.1"
+    "concurrently": "^5.1.0"
   }
 }

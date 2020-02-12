@@ -1,0 +1,13 @@
+            This is the email dive booking confirmation message:
+            -------------------------
+            Diver Name: {{diver_name}}
+            -------------------------
+            Diver Emaiil: DIVER CERT HERE
+            -------------------------
+            Course: DIVE TYPE HERE
+            -------------------------
+            Date Requested: DATE HERE
+            -------------------------
+            Message: Thi is the best booking message
+            -------------------------
+            Extra Divers: {{extra_divers}}

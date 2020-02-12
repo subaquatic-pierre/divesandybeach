@@ -11,6 +11,8 @@ from .forms import UploadCSVForm, CourseBookingRequestForm, DiveBookingRequestFo
 from .upload_csv import UploadDiveSitesCSV, UploadItemPrice, UploadCoursesCSV
 from django.core.mail import send_mail
 from django.contrib import messages
+from django.template.loader import render_to_string
+from django.template import Context
 
 
 class DiveSiteListView(ListView):
@@ -49,10 +51,21 @@ class PADICourseLevelDetailView(DetailView):
         return context
 
 
-class PADICourseListView(ListView):
-    model = Course
-    template_name = 'diving/padi_course_level_list.html'
-    context_object_name = 'course'
+class PADICourseListView(View):
+    def get(self, request, *args, **kwargs):
+
+        entry_level = Course.objects.filter(level__title='Entry Level')
+        advanced_level = Course.objects.filter(level__title='Advanced Level')
+        specialties = Course.objects.filter(level__title='Specialty Courses')
+        pro_level = Course.objects.filter(level__title='Professional Level')
+        tecrec_level = Course.objects.filter(level__title='TecRec Level')
+        context = {'entry_level': entry_level,
+                   'advanced_level': advanced_level,
+                   'specialties': specialties,
+                   'pro_level': pro_level,
+                   'tecrec_level': tecrec_level}
+
+        return render(request, 'diving/all_padi_courses.html', context=context)
 
 
 class PADICourseDetailView(DetailView):
@@ -289,6 +302,27 @@ class UploadDiveSites(View):
         else:
             messages.info(request, 'Invalid file format')
             return redirect('admin:diving_divesite_changelist')
+
+
+def dive_booking_email(request):
+    # Get email details
+    subject = 'Dive Booking Confirmation'
+    to_email = 'subaqautic.pierre@gmail.com'
+    from_email = 'subaqautic.pierre@gmail.com'
+    staff_email = 'subaqautic.pierre@gmail.com'
+    diver_name = 'Eric Poper'
+    extra_divers = ['Garry Benson', 'Henri mcitosh']
+    context = Context({'diver_name': diver_name,
+                       'extra_divers': extra_divers})
+    msg_plain = render_to_string(
+        'diving/dive_booking_confirmation.html', context)
+    msg_html = render_to_string(
+        'diving/dive_booking_confirmation.txt', context)
+    # Send email
+    send_mail(subject, msg_plain, from_email, [
+              to_email, staff_email], html_message=msg_html)
+
+    return render(request, 'diving/dive_booking_confirmation.html', context=context)
 
 
 """

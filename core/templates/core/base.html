@@ -31,24 +31,28 @@
         {% include 'core/navbar.html' %}
 
         <!-- Messages div -->
-        <section id="message-container" class="message container my-auto">
-            {% if messages %}
-            {% for message in messages %}
-            <div class="message-div alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+        {% if messages %}
+        {% for message in messages %}
+        <!-- <div class="alert-message container"> -->
+        <div class="message-container">
+            <div class="alert alert-{{ message.tags }} message my-auto" role="alert">
                 {{ message }}
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            {% endfor %}
-            {% endif %}
-        </section>
+        </div>
+        <!-- End message div -->
+        {% endfor %}
+        {% endif %}
 
         <main role="main">
-
             {% block content %}
             {% endblock content %}
         </main>
+
+
+
 
         <!-- Footer -->
         {% include 'core/footer.html' %}

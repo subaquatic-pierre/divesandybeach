@@ -33,4 +33,6 @@ urlpatterns = [
          name='upload-courses'),
     path('upload-dive-sites/', views.UploadDiveSites.as_view(),
          name='upload-dive-sites'),
+    path('divebooking/', views.dive_booking_email,
+         name='dive-booking-confirmation-email'),
 ]

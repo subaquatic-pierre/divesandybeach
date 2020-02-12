@@ -1,41 +1,209 @@
-{% extends 'layout.html' %}
+{% extends 'core/base.html' %}
 
-{% block main %}
-    <section id="courses-heading">
-        <div class="jumbrotron-fluid">
-            <div class="container">
-                <h1 class="display-3 mt-4">PADI Courses</h1>
-                <hr>
-                <p class="lead">Check out all our PADI Courses</p>
-            </div>
-            
-        </div>
-    </section>
-    <div class="container">
-        <div class="row">
-            {% for course in courses %}            
-                    <div class="col-md-4">
-                        <div class="card mb-5">
-                            <a href="{{ url_for('courses.padi_course', slug=course.slug) }}"><img src="{{ url_for('static', filename='uploads/courses/') + course.image }}" class="card-img-top cd" alt="..."></a>
-                            <div class="card-body">
-                                <a href="{{ url_for('courses.padi_course', slug=course.slug) }}"><h5 class="card-title text-center">{{ course.course_name }}</h5></a>
-                                <ul class="list-group list-group-flush my-4">
-                                    <li class="list-group-item">Level: {{ course.level }}</li>
-                                    <li class="list-group-item">Minimum Age: {{ course.age }}</li>
-                                    <li class="list-group-item">Duration: {{ course.duration }}</li>
-                                    <li class="list-group-item">E-Learning Price: {{ course.e_learning__price }}</li>
-                                    <li class="list-group-item">Book Learning Price: {{ course.book_learning_price }}</li>
-                                    <li class="list-group-item">Number of Pool Dives: {{ course.pool_dives }}</li>
-                                    <li class="list-group-item">Number of Ocean Dives: {{ course.ocean_dives }} min</li>
-                                    <li class="list-group-item">Minimum Number of Required Dives: {{ course.min_dives }} min</li>
-                                    <li class="list-group-item">Qualified To: {{ course.qualified_to }} min</li>
-                                </ul>
-                                <a href="{{ url_for('courses.padi_course', slug=course.slug) }}" class="btn btn-primary btn-block">More Info</a>
-                            </div>
-                        </div>
-                    </div>                
-            {% endfor %}
+{% load static %}
+
+{% block content %}
+<section id="sites-heading">
+
+    <div class="hero-bg">
+        <div class="container title-text">
+            <h1 class=" header">PADI Courses</h1>
+            <hr class="my-5 bg-light w-50 shadow-lg">
+            <p class="lead">Check out all our PADI scuba diving courses</p>
         </div>
     </div>
 
-{% endblock %}
+</section>
+<div class="container">
+    <div class="row">
+        <div class="col-12 my-5 course-catalog">
+            <ul class="nav nav-pills nav-fill mb-4" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-entry-level-tab" data-toggle="pill" href="#pills-entry-level"
+                        role="tab" aria-controls="pills-home" aria-selected="true">Entry Level</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-advanced-level-tab" data-toggle="pill" href="#pills-advanced-level"
+                        role="tab" aria-controls="pills-profile" aria-selected="false">Advanced Level</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-specialties-tab" data-toggle="pill" href="#pills-specialties"
+                        role="tab" aria-controls="pills-contact" aria-selected="false">Specialties</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-tecrec-tab" data-toggle="pill" href="#pills-tecrec" role="tab"
+                        aria-controls="pills-contact" aria-selected="false">TecRec Level</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-professional-tab" data-toggle="pill" href="#pills-professional"
+                        role="tab" aria-controls="pills-contact" aria-selected="false">Professional Level</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-entry-level" role="tabpanel"
+                    aria-labelledby="pills-entry-level-tab">
+                    <div class="row">
+                        {% for course in entry_level %}
+
+                        <div class="col-md-4">
+                            <div class="card my-3 my-md-5">
+                                <a href="{{ course.get_absolute_url }}"><img src="{{ course.image.medium_image.url }}"
+                                        class="card-img-top cd" alt="..."></a>
+                                <div class="card-body">
+                                    <a href="{{ course.get_absolute_url }}">
+                                        <h4 class="card-title text-center">{{ course.title }}</h4>
+                                        <div class="heading-underline"></div>
+                                    </a>
+                                    <ul class="list-group list-group-flush my-4">
+                                        <li class="list-group-item"><b>Title: </b>{{ course.title }}</li>
+                                        {%if course.price_e_learning %}
+                                        <li class="list-group-item"><b>E-learning Price:
+                                            </b>{{ course.price_e_learning }}
+                                        </li>
+                                        {% endif %}
+                                        <li class="list-group-item"><b>Book Price: </b>{{ course.price_book }}</li>
+                                    </ul>
+                                    <a href="{{ course.get_absolute_url }}" class="btn btn-primary btn-block">More
+                                        Info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-advanced-level" role="tabpanel"
+                    aria-labelledby="pills-advanced-level-tab">
+                    <div class="row">
+                        {% for course in advanced_level %}
+
+                        <div class="col-md-4">
+                            <div class="card my-3 my-md-5">
+                                <a href="{{ course.get_absolute_url }}"><img src="{{ course.image.medium_image.url }}"
+                                        class="card-img-top cd" alt="..."></a>
+                                <div class="card-body">
+                                    <a href="{{ course.get_absolute_url }}">
+                                        <h4 class="card-title text-center">{{ course.title }}</h4>
+                                        <div class="heading-underline"></div>
+                                    </a>
+                                    <ul class="list-group list-group-flush my-4">
+                                        <li class="list-group-item"><b>Title: </b>{{ course.title }}</li>
+                                        {%if course.price_e_learning %}
+                                        <li class="list-group-item"><b>E-learning Price:
+                                            </b>{{ course.price_e_learning }}
+                                        </li>
+                                        {% endif %}
+                                        <li class="list-group-item"><b>Book Price: </b>{{ course.price_book }}</li>
+                                    </ul>
+                                    <a href="{{ course.get_absolute_url }}" class="btn btn-primary btn-block">More
+                                        Info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-specialties" role="tabpanel"
+                    aria-labelledby="pills-specialties-tab">
+                    <div class="row">
+                        {% for course in specialties %}
+
+                        <div class="col-md-4">
+                            <div class="card my-3 my-md-5">
+                                <a href="{{ course.get_absolute_url }}"><img src="{{ course.image.medium_image.url }}"
+                                        class="card-img-top cd" alt="..."></a>
+                                <div class="card-body">
+                                    <a href="{{ course.get_absolute_url }}">
+                                        <h4 class="card-title text-center">{{ course.title }}</h4>
+                                        <div class="heading-underline"></div>
+                                    </a>
+                                    <ul class="list-group list-group-flush my-4">
+                                        <li class="list-group-item"><b>Title: </b>{{ course.title }}</li>
+                                        {%if course.price_e_learning %}
+                                        <li class="list-group-item"><b>E-learning Price:
+                                            </b>{{ course.price_e_learning }}
+                                        </li>
+                                        {% endif %}
+                                        <li class="list-group-item"><b>Book Price: </b>{{ course.price_book }}</li>
+                                    </ul>
+                                    <a href="{{ course.get_absolute_url }}" class="btn btn-primary btn-block">More
+                                        Info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-tecrec" role="tabpanel" aria-labelledby="pills-tecrec-tab">
+                    <div class="row">
+                        {% for course in tecrec_level %}
+
+                        <div class="col-md-4">
+                            <div class="card my-3 my-md-5">
+                                <a href="{{ course.get_absolute_url }}"><img src="{{ course.image.medium_image.url }}"
+                                        class="card-img-top cd" alt="..."></a>
+                                <div class="card-body">
+                                    <a href="{{ course.get_absolute_url }}">
+                                        <h4 class="card-title text-center">{{ course.title }}</h4>
+                                        <div class="heading-underline"></div>
+                                    </a>
+                                    <ul class="list-group list-group-flush my-4">
+                                        <li class="list-group-item"><b>Title: </b>{{ course.title }}</li>
+                                        {%if course.price_e_learning %}
+                                        <li class="list-group-item"><b>E-learning Price:
+                                            </b>{{ course.price_e_learning }}
+                                        </li>
+                                        {% endif %}
+                                        <li class="list-group-item"><b>Book Price: </b>{{ course.price_book }}</li>
+                                    </ul>
+                                    <a href="{{ course.get_absolute_url }}" class="btn btn-primary btn-block">More
+                                        Info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-professional" role="tabpanel"
+                    aria-labelledby="pills-professional-tab">
+                    <div class="row">
+                        {% for course in pro_level %}
+
+                        <div class="col-md-4">
+                            <div class="card my-3 my-md-5">
+                                <a href="{{ course.get_absolute_url }}"><img src="{{ course.image.medium_image.url }}"
+                                        class="card-img-top cd" alt="..."></a>
+                                <div class="card-body">
+                                    <a href="{{ course.get_absolute_url }}">
+                                        <h4 class="card-title text-center">{{ course.title }}</h4>
+                                        <div class="heading-underline"></div>
+                                    </a>
+                                    <ul class="list-group list-group-flush my-4">
+                                        <li class="list-group-item"><b>Title: </b>{{ course.title }}</li>
+                                        {%if course.price_e_learning %}
+                                        <li class="list-group-item"><b>E-learning Price:
+                                            </b>{{ course.price_e_learning }}
+                                        </li>
+                                        {% endif %}
+                                        <li class="list-group-item"><b>Book Price: </b>{{ course.price_book }}</li>
+                                    </ul>
+                                    <a href="{{ course.get_absolute_url }}" class="btn btn-primary btn-block">More
+                                        Info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock content %}

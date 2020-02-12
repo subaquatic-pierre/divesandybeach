@@ -103,16 +103,8 @@ a:hover {
   text-decoration: none;
 }
 
-#message-container {
-  position: relative;
-  width: 100%;
-}
 
-.message-div {
-  position: absolute;
-  width: 100%;
-  top: 100px;
-}
+
 
 
 /*====================== FULL HEIGHT LANDING HEADER =============== */
@@ -246,16 +238,8 @@ a:hover {
 
 @media (max-width:800px){
   .email{
-      font-size: .7rem; 
+      font-size: 1rem; 
   }
-}
-
-
-
-#location-cards p {
-  
-
-  
 }
 
 .contact-heading h1 {
@@ -490,6 +474,43 @@ a:hover {
 //     }   
 //   }
 // }
+
+
+
+
+.message-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.message {
+  position: absolute;
+  top: 100px;
+  width: 60%;
+}
+
+@media (max-width: 800px){
+  .message {
+    width: 90%;
+  }
+}
+
+/*===================== COURSE CATALOG ====================*/
+
+.course-catalog {
+  li {
+    a {
+      color: $dark;
+      text-shadow: none;
+
+      &:hover {
+        color: $gray-600;
+      }
+    }
+  }
+}
 
 
 /*====================== FOOTER SECTION =============== */
