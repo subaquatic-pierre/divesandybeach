@@ -15,7 +15,7 @@ urlpatterns = [
          views.PADICourseLevelDetailView.as_view(), name='course-level-detail'),
     path('padi-courses/',
          views.PADICourseListView.as_view(), name='padi-course-list'),
-    path('padi-level/<level_slug>/<slug>/',
+    path('padi-courses/<slug>/',
          views.PADICourseDetailView.as_view(), name='padi-course-detail'),
     path('boat-diving/',
          views.BoatDiveDetailView.as_view(), name='boat-diving'),

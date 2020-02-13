@@ -84,8 +84,11 @@ class BoatDiveDetailView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['dive'] = DiveTrip.objects.get(title='Boat Diving')
+        dive_object = DiveTrip.objects.get(title='Boat Dive')
+        context['dive'] = dive_object
         context['title'] = 'Fujairah Boat Diving'
+        context['prices'] = ItemPrice.objects.filter(
+            dive_trip=dive_object.id)
 
         return context
 

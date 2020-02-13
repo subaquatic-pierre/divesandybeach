@@ -429,8 +429,14 @@ a:hover {
 }
 
 .price-card {
-  position: relative;
+  // position: relative;
   overflow: hidden;
+}
+
+.dive-trip-price-card-section {
+  h4 {
+    text-transform: none;
+  }
 }
 
 .popular-ribbon {

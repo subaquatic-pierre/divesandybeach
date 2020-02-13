@@ -361,6 +361,8 @@ class ItemPrice(models.Model):
         'Category', null=True, blank=True, on_delete=models.SET_NULL, related_name='items')
     course = models.ForeignKey(
         'Course', null=True, blank=True, on_delete=models.SET_NULL)
+    dive_trip = models.ForeignKey(
+        'DiveTrip', null=True, blank=True, on_delete=models.SET_NULL)
     dive_trip_equipment = models.CharField(
         max_length=255, null=True, blank=True, choices=EQUIPMENT_CHOICES)
     trip_type = models.CharField(

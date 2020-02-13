@@ -7962,8 +7962,10 @@ a:hover {
   text-transform: uppercase; }
 
 .price-card {
-  position: relative;
   overflow: hidden; }
+
+.dive-trip-price-card-section h4 {
+  text-transform: none; }
 
 .popular-ribbon {
   font-size: 10px;

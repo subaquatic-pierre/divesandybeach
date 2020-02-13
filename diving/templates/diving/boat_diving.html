@@ -37,6 +37,55 @@
 
 </section>
 
+<!-- Pricing card -->
+<section class="dive-trip-price-card-section bg-white py-5">
+    <div class="container-lg">
+        <h2 class="text-center pb-4 text-shadow">Pricing</h2>
+        <div class="heading-underline"></div>
+
+        <!-- Price row -->
+
+        <!-- Tanks and Weights Card -->
+        <div class="row mt-5">
+
+            {% for price in prices %}
+
+            <div class="col-md-4">
+                <div class="price-card card bg-light shadow-lg text-center mb-5">
+                    {% if price.dive_trip_equipment == 'Full Kit' %}
+                    <div class="popular-ribbon">Popular</div>
+
+                    {% endif %}
+                    <div class="card-header text-center bg-dark pt-5 ">
+                        <h4 class="card-title-text">{{ price.dive_trip_equipment }}</h4>
+                        <div class="heading-underline"></div>
+                    </div>
+                    <div class="card-body  py-5">
+                        <h1><b>{{ price.price }} </b><small class="text-muted">AED</small></h1>
+                    </div>
+                    <ul class="list-group list-group-flush bg-light">
+                        <li class="list-group-item bg-light"><i class="fas fa-check text-success mx-2"></i>
+                            Tanks and Weights
+                        </li>
+                        <li class="list-group-item bg-light"><i class="fas fa-check text-success mx-2"></i>
+                            Boat Trip
+                        </li>
+                        <li class="list-group-item bg-light"><i class="fas fa-check text-success mx-2"></i> Incl
+                            Awesome Dives
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            {% endfor %}
+
+            <!-- End Tanks and weights Card -->
+
+        </div>
+    </div>
+    <!-- End course price card row -->
+</section>
 
 
 <!--  -->
@@ -44,67 +93,6 @@
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-sm-10">
-
-            <!-- Course price row -->
-
-            <!-- E-learning Card -->
-            <div class="row justify-content-center mt-5">
-                {% if course.e_learning_price %}
-                <div class="col-md-4">
-                    <div class="price-card card text-center mb-5">
-                        <div class="popular-ribbon">Popular</div>
-                        <div class=" card-header text-center bg-dark pt-5">
-
-                            <h4 class="card-title-text">E-Learning</h4>
-                            <div class="heading-underline"></div>
-                        </div>
-                        <div class="card-body pt-5">
-                            <h1><b> {{ course.e_learning_price }} </b><small class="text-muted">AED</small></h1>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><i class="fas fa-check text-success mx-2"></i> Training Dives
-                            </li>
-                            <li class="list-group-item"><i class="fas fa-check text-success mx-2"></i> Equipment Rental
-                            </li>
-                            <li class="list-group-item"><i class="fas fa-times text-danger mx-2"></i> Excl E-Learning
-                                Materials
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                {% endif %}
-
-                <!-- End e-learning Card -->
-
-                <!-- Book learning card -->
-                {% if course.book_learning_price %}
-                <div class="offset-md-1 col-md-4">
-
-                    <div class="price-card card text-center mb-5">
-                        <div class="card-header text-center bg-dark pt-5 ">
-                            <h4 class="card-title-text">Book Learning</h4>
-                            <div class="heading-underline"></div>
-                        </div>
-                        <div class="card-body pt-5">
-                            <h1><b>{{ course.book_learning_price }} </b><small class="text-muted">AED</small></h1>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><i class="fas fa-check text-success mx-2"></i> Training Dives
-                            </li>
-                            <li class="list-group-item"><i class="fas fa-check text-success mx-2"></i> Equipment Rental
-                            </li>
-                            <li class="list-group-item"><i class="fas fa-check text-success mx-2"></i> Incl Learning
-                                Materials
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                {% endif %}
-
-            </div>
-
-            <!-- End course price card row -->
             <div id="course-info-rows">
 
                 <!-- Course Overview row -->
