@@ -109,45 +109,19 @@ class DiveTrip(models.Model):
         max_length=255, choices=DIVE_TRIP_CHOICES, blank=True, null=True)
     image = models.ForeignKey(
         'Images', blank=True, null=True, on_delete=models.SET_NULL)
+    schedule_image = models.ForeignKey(
+        'Images', blank=True, null=True, related_name='schedule_image', on_delete=models.SET_NULL)
+    description_image = models.ForeignKey(
+        'Images', blank=True, null=True, related_name='description_image', on_delete=models.SET_NULL)
     schedule = models.TextField(blank=True, null=True)
+    slug = models.SlugField()
 
-    @property
-    def fk_price(self):
-        try:
-            item = ItemPrice.objects.get(
-                dive_trip_type=self.trip_type, dive_trip_equipment='FK')
-            return item.price
-        except ObjectDoesNotExist:
-            return None
-
-    @property
-    def tw_price(self):
-        try:
-            item = ItemPrice.objects.get(
-                dive_trip_type=self.trip_type, dive_trip_equipment='TW')
-            return item.price
-        except ObjectDoesNotExist:
-            return None
-
-    @property
-    def no_price(self):
-        try:
-            item = ItemPrice.objects.get(
-                dive_trip_type=self.trip_type, dive_trip_equipment='NO')
-            return item.price
-        except ObjectDoesNotExist:
-            return None
-
-    @property
-    def trip_info(self):
-        try:
-            info = DiveTripInfo.objects.all()
-            return info
-        except ObjectDoesNotExist:
-            return None
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.title, allow_unicode=True)
+        super().save(*args, **kwargs)
 
     def __str__(self):
-        return f'{self.title}'
+        return self.title
 
     class Meta:
         verbose_name_plural = 'Dive Trips'

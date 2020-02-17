@@ -1,0 +1,71 @@
+{% load static %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" media="all" href="{% static 'core/css/email-google-fix.css' %}" />
+    <link rel="stylesheet" media="all" href="{% static 'core/css/email-bootstrap.css' %}" />
+    <link rel="stylesheet" media="all" href="{% static 'core/css/bootstrap.min.css' %}" />
+
+    <style>
+
+    </style>
+</head>
+
+<body style="padding:0.5rem; background-color:light-grey">
+
+    {% block content %}
+    {% endblock content %}
+    <hr style="margin-top:20px;">
+
+    <h4>Happy Bubbles</h4>
+    <h4>Sandy Beach Dive Centre Team</h4>
+
+    <table>
+        <tr>
+            <td>
+                <img width="100" height="100" class="mx-auto"
+                    src="http://www.scubadivedubai.com/static/core/img/logo.png">
+            </td>
+            <td>
+                <p class=""><b>Email: </b>info@divesandybeach.com</p>
+                <p class=""><b>Cell: </b>+971 50 206 2440</p>
+                <p class=""><b>Phone: </b>+971 9 244 5050</p>
+            </td>
+        </tr>
+    </table>
+
+    <h5>Check us out on social media</h5>
+    <div>
+        <img width="20" height="20"
+            src="https://s3.amazonaws.com/lyft.zimride.com/images/emails/social/v2/facebook@2x.png" />
+        <img class="" style="padding-left:10px;" width="20" height="20"
+            src="https://s3.amazonaws.com/lyft.zimride.com/images/emails/social/v2/instagram@2x.png" />
+    </div>
+
+    <div class="card w-100 mb-4">
+        <div class="card-body">
+
+        </div>
+    </div>
+
+
+    <table style="margin-top:10px;" class="table-unstyled text-muted mb-4">
+        <tbody>
+            <tr>
+                <td>&copy; Sandy Beach Dive Centre</td>
+            </tr>
+            <tr>
+                <td>Sandy Beach Hotel and Resort</td>
+            </tr>
+            <tr>
+                <td>Fujairah, UAE</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

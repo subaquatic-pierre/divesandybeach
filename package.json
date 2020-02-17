@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "browser-sync": "browser-sync start --files \"core/static/core/*.css, core/static/core/*.js, core/templates/core/*.html, diving/**/*.py, core/**/*.py, divesandybeach/**/*.py, diving/templates/diving/*.html\" --proxy 127.0.0.1:8000 --reload-delay=300 --reload-debounce=500",
+    "browser-sync": "browser-sync start --files \"core/static/core/css/*.css, core/static/core/*.js, core/templates/core/*.html, diving/**/*.py, core/**/*.py, divesandybeach/**/*.py, diving/templates/diving/*.html\" --proxy 127.0.0.1:8000 --reload-delay=300 --reload-debounce=500",
     "start": "concurrently --kill-others \"python3 manage.py runserver\" \"npm run browser-sync\" "
   },
   "author": "",

@@ -2,55 +2,118 @@
 
 {% load static %}
 
+{% block extra_head %}
+<style>
+    .course-hero-image {
+        background-image: url({% static 'core/img/Untitled-2_0011_SandyBeachStaff.jpg' %});
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+
+    @media (min-width: 400px) {
+        .course-hero-image {
+            background-image: url({% static 'core/img/Untitled-2_0011_SandyBeachStaff.jpg' %});
+        }
+    }
+</style>
+
+{% endblock extra_head %}
+
 {% block content %}
 
 <!-- Start of Landing Page Main Picture -->
 
-<section id="about-us">
+<section id="course-detail-heading">
 
-    <div class="landing-fh-image">
-        <div class="about-dark-overlay">
-            <div class="container d-flex justify-content-center">
-                <div class="row align-content-center">
-                    <div class="text-center ">
-                        <div class=" title-text os-animation" data-animation="fadeInUp" data-delay="0.2s">
-                            <h1 class="mb-4">About Us</h1> <!-- PHP WP FUNCTION PAGE TITLE -->
-                        </div>
-                        <div class="heading-underline"></div>
-                        <div class="os-animation" data-animation="fadeInUp" data-delay="0.4s">
-                            <p class="my-5">We’re a PADI 5* IDC Resort, located within the Marine National Park directly
-                                in front of Snoopy Island. Sandy Beach Dive Centre prides itself on excellent customer
-                                service & training standards with a family environment where all divers feel welcome.
-                                There are daily diving trips & courses, to Dive Snoopy Island and other sites. We offer
-                                a full range of scuba diving services including Nitrox & Technical diving facilities.
-                                Snoopy Island is the only shore dive along the coast Fujairah coastline, it boasts
-                                abundant
-                                marine life including Blacktip Reef sharks and Resident Green Turtles . We’re based in
-                                the Sandy Beach Hotel & Resort, which is the longest operating resort in the area. Our
-                                instructors follow the latest training standards & the most cutting-edge teaching
-                                techniques and all of our equipment & dive boats are regularly serviced to ensure a safe
-                                and enjoyable diving experience.</p>
-                            <!-- PHP WP FUNCTION ACF -->
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- End Container -->
-        </div> <!-- End Dark overlay -->
+    <div class="course-hero-overlay">
+        <div class="text-center title-text container">
+            <h1 class="animated fadeInUp header">About Us</h1>
+            <hr class="animated fadeIn my-5 bg-light w-50 shadow-lg ml-auto mr-auto">
+        </div>
+    </div>
+    <div class="course-hero-image">
     </div>
 
 </section>
 
+<!-- end hero image section -->
+
+<!-- info section -->
+<section>
+    <div class="justify-content-center container course-info-section">
+
+        <div class="text-center my-5">
+            <h2 class="text-center pb-4 ">Learn more about Sandy Beach Dive Centre</h2>
+            <div class="heading-underline"></div>
+        </div>
+        <!-- E-Learning Info row -->
+        <div class="row course-info-row">
+            <div class="col-md-6 d-flex align-items-center mb-4">
+                <div class="course-info-text wow fadeInLeft ">
+                    <h3 class="text-center pb-4 ">We're on the beach</h3>
+                    <div class="heading-underline"></div>
+                    <p>We’re based in
+                        the Sandy Beach Hotel & Resort, which is the longest operating resort in the area. Our
+                        instructors follow the latest training standards and the most cutting-edge teaching
+                        techniques and all of our equipment and dive boats are regularly serviced to ensure a safe
+                        and enjoyable diving experience.</p>
+
+                </div>
+
+            </div>
 
 
-<!-- End of landing page main picture -->
+            <div class="col-md-6 text-center mb-4">
+                <div class="course-info-img">
+                    <img src="{% static 'core/img/Untitled-2_0006_IMG_5579-2.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- End E-Learning Info row -->
+
+        <!-- Course Info row -->
+        <div class="row course-info-row">
+            <div class="col-md-6 d-flex align-items-center order-md-2 mb-3">
+                <div class="course-info-text wow fadeInRight ">
+                    <h3 class="text-center pb-4 ">5 Star PADI IDC</h3>
+                    <div class="heading-underline"></div>
+                    <p>We’re a PADI 5* IDC Resort, located within the Marine National Park directly
+                        in front of Snoopy Island. Sandy Beach Dive Centre prides itself on excellent customer
+                        service and training standards with a family environment where all divers feel welcome.
+                        There are daily diving trips & courses, to Dive Snoopy Island and other sites. We offer
+                        a full range of scuba diving services including Nitrox and Technical diving facilities.
+                        Snoopy Island is the only shore dive along the coast Fujairah coastline, it boasts
+                        abundant
+                        marine life including Blacktip Reef sharks and Resident Green Turtles.</p>
+                </div>
+
+            </div>
+            <div class="col-md-6 text-center mb-3">
+                <div class="course-info-img">
+                    <img src="{% static 'core/img/Untitled-2_0006_IMG_5579-2.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- End Course Info row -->
+
+
+
+
+    </div>
+</section>
+
+<!-- end info sections -->
 
 
 <!-- Meet the Team -->
 
 <section id="team">
 
-    <div class="jumbotron">
-        <div class="container text-center min-vh-100">
+    <div class="pb-5">
+        <div class="container text-center wow fadeIn">
             <h2 class="header my-5 text-dark">Our Amazing Team</h2>
             <div class="heading-underline"></div>
             <div class="row justify-content-center align-content-center">
@@ -63,8 +126,10 @@
                             <div class="card-body">
                                 <h2 class="card-title">Pierre du Toit</h2>
                                 <p class="lead">PADI Master Instructor<br>PADI Tec Deep Instructor<br>Owner/Manager</p>
-                                <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nostrum
-                                    nihil non autem fugit officia ullam ab quaerat voluptatum sapiente.</p>
+                                <p class="px-2">Having grown up around the ocean, it is one of my greatest passions. I
+                                    feel privileged to be able to share the underwater world. It is important that we
+                                    all become more connected with our oceans as their future will have a direct impact
+                                    on ours.</p>
                             </div>
                         </div>
                     </div>
@@ -77,7 +142,7 @@
                                 alt="Shore Diving">
                             <div class="card-body">
                                 <h2 class="card-title">Milan Smole</h2>
-                                <p class="lead">PADI MSDT<br>Tec 40 Diver<br>Expert Teacher</p>
+                                <p class="lead">PADI MSDT<br>Tec 50 Diver<br>Expert Teacher</p>
                                 <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nostrum
                                     nihil non autem fugit officia ullam ab quaerat voluptatum sapiente.</p>
                             </div>
@@ -92,7 +157,7 @@
                                 alt="Shore Diving">
                             <div class="card-body">
                                 <h2 class="card-title">Lux Rivas</h2>
-                                <p class="lead">PADI Open Water<br>Front Office<br>Keen Learner</p>
+                                <p class="lead">Advanced Open Water<br>Front Office<br>Keen Learner</p>
                                 <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nostrum
                                     nihil non autem fugit officia ullam ab quaerat voluptatum sapiente.</p>
                             </div>
@@ -108,8 +173,9 @@
                             <div class="card-body">
                                 <h2 class="card-title">Tuhen Ahmed</h2>
                                 <p class="lead">PADI Rescue Diver<br>Boat Captain<br>Expert Seaman</p>
-                                <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nostrum
-                                    nihil non autem fugit officia ullam ab quaerat voluptatum sapiente.</p>
+                                <p class="px-2">We have been in the UAE for the last 11 years. I really enjoy diving. I
+                                    am working towards my Divemaster course. I have noticed a lot of changes in the
+                                    environment. I like to encourage safe and responsible diving practices.</p>
                             </div>
                         </div>
                     </div>
@@ -123,8 +189,10 @@
                             <div class="card-body">
                                 <h2 class="card-title">Ravi Mahesh</h2>
                                 <p class="lead">PADI Dive Master<br>Boat Captain<br>Expert Guide</p>
-                                <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nostrum
-                                    nihil non autem fugit officia ullam ab quaerat voluptatum sapiente.</p>
+                                <p class="px-2">I enjoy guiding people underwater and showing them the best underwater
+                                    creatures. I like driving the boat and ensuring the safety of all the divers. I
+                                    really like to see something special under the water like, whalesharks and
+                                    seahorses.</p>
                             </div>
                         </div>
                     </div>
@@ -138,80 +206,90 @@
 
 <!-- End Meet the Team Section -->
 
-<!-- Start of Promo Video and Text -->
-
-<section id="promo-video">
-
-
-
-</section>
-
-<!-- End promo video and text -->
 
 <!-- Start Testimonial Section -->
 
-<section id="testimonials">
+<section id="testimonials " class="bg-white">
+    <div class="container py-5 mmt-5">
+        <div class="row align-content">
+            <div class="os-animation fadeInUp" data-animation="" data-delay="0.1s">
+                <h1 class="header mb-4 text-center text-dark">What Our Divers Say</h1>
+                <div class="heading-underline"></div>
 
-    <div class="container-fluid text-center py-5">
+                <div class="offset-md-3 col-md-6">
 
-        <div class="os-animation" data-animation="fadeInUp" data-delay="0.1s">
-            <h1 class="header mb-4 text-dark">What Our Divers Say</h1>
-            <div class="heading-underline"></div>
-        </div>
+                    <div id="testimonialCarousel" class="carousel slide " data-ride="carousel">
+                        <div class="carousel-inner ">
+                            <div class="carousel-item  active">
+                                <!-- for testimonial in testimonials -->
 
-        <div class="row">
+                                <div class="card client-quote my-md-5 ">
+                                    <i class="fa fa-quote-left text-primary fa-3x"></i>
+                                    <blockquote class="card-text d-inline"> Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing
+                                        elit. Labore nisi facere repellendus numquam, tempore nemo atque cum dolor
+                                        dolores
+                                        impedit. Sed odit aut sint, expedita nesciunt cum asperiores unde! Autem!
+                                    </blockquote>
+                                    <p class="lead pt-3">James Jones</p>
 
+                                </div>
 
-            <div class="col-lg-6 card client-quote my-md-5 ">
-                <div class="os-animation" data-animation="fadeIn" data-delay="0.2s">
-                    <div class="row align-items-center ">
-                        <div class="col-lg-5">
-                            <img src="{% static 'core/img/testimonial/Boxer Shrimp.jpg' %}" alt=""
-                                class="rounded card-img">
+                                <!-- endfor -->
+                            </div>
+                            <div class="carousel-item">
+                                <!-- for testimonial in testimonials -->
+
+                                <div class="card client-quote my-md-5 ">
+                                    <i class="fa fa-quote-left text-primary fa-3x"></i>
+                                    <blockquote class="card-text d-inline"> Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing
+                                        elit. Labore nisi facere repellendus numquam, tempore nemo atque cum dolor
+                                        dolores
+                                        impedit. Sed odit aut sint, expedita nesciunt cum asperiores unde! Autem!
+                                    </blockquote>
+                                    <p class="lead pt-3">James Jones</p>
+
+                                </div>
+
+                                <!-- endfor -->
+                            </div>
+                            <div class="carousel-item">
+                                <!-- for testimonial in testimonials -->
+
+                                <div class="card client-quote my-md-5 ">
+                                    <i class="fa fa-quote-left text-primary fa-3x"></i>
+                                    <blockquote class="card-text d-inline"> Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing
+                                        elit. Labore nisi facere repellendus numquam, tempore nemo atque cum dolor
+                                        dolores
+                                        impedit. Sed odit aut sint, expedita nesciunt cum asperiores unde! Autem!
+                                    </blockquote>
+                                    <p class="lead pt-3">James Jones</p>
+
+                                </div>
+
+                                <!-- endfor -->
+                            </div>
                         </div>
-                        <div class="col-lg-7">
-                            <i class="fa fa-quote-left fa-3x"></i>
-                            <blockquote class="card-text d-inline"> Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Labore nisi facere repellendus numquam, tempore nemo atque cum dolor dolores
-                                impedit. Sed odit aut sint, expedita nesciunt cum asperiores unde! Autem!</blockquote>
-                            <p class="lead pt-3">James Jones</p>
-                        </div>
+                        <a class="carousel-control-prev " href="#testimonialCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                </div>
-            </div>
 
 
-            <div class="col-lg-6 card client-quote mt-3 my-md-5">
-                <div class="os-animation" data-animation="fadeIn" data-delay="0.4s">
-                    <div class="row align-items-center ">
-                        <div class="col-lg-5">
-                            <img src="{% static 'core/img/testimonial/sqr- 5.jpg' %}" alt="" class="rounded card-img">
-                        </div>
-                        <div class="col-lg-7">
-                            <i class="fa fa-quote-left fa-3x"></i>
-                            <blockquote class="card-text d-inline"> Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Labore nisi facere repellendus numquam, tempore nemo atque cum dolor dolores
-                                impedit. Sed odit aut sint, expedita nesciunt cum asperiores unde! Autem!</blockquote>
-                            <p class="lead pt-3">Sarah Peters</p>
-                        </div>
-                    </div>
+
                 </div>
             </div>
 
         </div>
     </div>
-
 </section>
-
-<!-- End of Testimonilas -->
-
-<!-- Social Media -->
-
-<section id="social-media">
-
-</section>
-
-<!-- End Social Media -->
 
 
 

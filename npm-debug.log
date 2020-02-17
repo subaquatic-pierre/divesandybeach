@@ -7,7 +7,7 @@
 6 silly lifecycle divesandybeach@1.0.0~prestart: no script for prestart, continuing
 7 info lifecycle divesandybeach@1.0.0~start: divesandybeach@1.0.0
 8 verbose lifecycle divesandybeach@1.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle divesandybeach@1.0.0~start: PATH: /usr/share/npm/bin/node-gyp-bin:/home/pierre/Projects/divesandybeach/node_modules/.bin:/home/pierre/Projects/divesandybeach/venv/bin:/home/pierre/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+9 verbose lifecycle divesandybeach@1.0.0~start: PATH: /usr/share/npm/bin/node-gyp-bin:/home/pierre/Projects/divesandybeach/node_modules/.bin:/home/pierre/Projects/divesandybeach/venv/bin:/home/pierre/.local/bin:/home/pierre/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 10 verbose lifecycle divesandybeach@1.0.0~start: CWD: /home/pierre/Projects/divesandybeach
 11 silly lifecycle divesandybeach@1.0.0~start: Args: [ '-c',
 11 silly lifecycle   'concurrently --kill-others "python3 manage.py runserver" "npm run browser-sync" ' ]

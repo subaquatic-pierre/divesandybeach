@@ -52,19 +52,31 @@
                                 <div class="card-body">
                                     <a href="{{ course.get_absolute_url }}">
                                         <h4 class="card-title text-center">{{ course.title }}</h4>
-                                        <div class="heading-underline"></div>
                                     </a>
-                                    <ul class="list-group list-group-flush my-4">
-                                        <li class="list-group-item"><b>Title: </b>{{ course.title }}</li>
-                                        {%if course.price_e_learning %}
-                                        <li class="list-group-item"><b>E-learning Price:
-                                            </b>{{ course.price_e_learning }}
-                                        </li>
+                                    <div class="heading-underline"></div>
+                                    <p class="course-card-text">{{ course.description | truncatewords:15 }}</p>
+                                    <a href="{{ course.get_absolute_url }}"
+                                        class="d-flex mb-4 justify-content-end text-primary text-shadow">
+                                        <h5>Learn More <i class="fas fa-angle-double-right"></i></h5>
+                                    </a>
+
+                                    <div class="card-footer bg-white border-top-0">
+
+                                        {% if course.e_learning_price %}
+
+                                        <a href="{{ course.get_absolute_url }}" <div class="card-price">
+                                            <h6 class="card-price-text">500 {{ course.e_learning_price }} <small>
+                                                    AED</small></h6>
+                                        </a>
+                                        {% else %}
+
+                                        <a href="{{ course.get_absolute_url }}" <div class="card-price">
+                                            <h6 class="card-price-text">500 {{ course.book_learning_price }} <small>
+                                                    AED</small></h6>
+                                        </a>
+
                                         {% endif %}
-                                        <li class="list-group-item"><b>Book Price: </b>{{ course.price_book }}</li>
-                                    </ul>
-                                    <a href="{{ course.get_absolute_url }}" class="btn btn-primary btn-block">More
-                                        Info</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -85,19 +97,31 @@
                                 <div class="card-body">
                                     <a href="{{ course.get_absolute_url }}">
                                         <h4 class="card-title text-center">{{ course.title }}</h4>
-                                        <div class="heading-underline"></div>
                                     </a>
-                                    <ul class="list-group list-group-flush my-4">
-                                        <li class="list-group-item"><b>Title: </b>{{ course.title }}</li>
-                                        {%if course.price_e_learning %}
-                                        <li class="list-group-item"><b>E-learning Price:
-                                            </b>{{ course.price_e_learning }}
-                                        </li>
+                                    <div class="heading-underline"></div>
+                                    <p class="course-card-text">{{ course.description | truncatewords:15 }}</p>
+                                    <a href="{{ course.get_absolute_url }}"
+                                        class="d-flex mb-4 justify-content-end text-primary text-shadow">
+                                        <h5>Learn More <i class="fas fa-angle-double-right"></i></h5>
+                                    </a>
+
+                                    <div class="card-footer bg-white border-top-0">
+
+                                        {% if course.e_learning_price %}
+
+                                        <a href="{{ course.get_absolute_url }}" <div class="card-price">
+                                            <h6 class="card-price-text">500 {{ course.e_learning_price }} <small>
+                                                    AED</small></h6>
+                                        </a>
+                                        {% else %}
+
+                                        <a href="{{ course.get_absolute_url }}" <div class="card-price">
+                                            <h6 class="card-price-text">500 {{ course.book_learning_price }} <small>
+                                                    AED</small></h6>
+                                        </a>
+
                                         {% endif %}
-                                        <li class="list-group-item"><b>Book Price: </b>{{ course.price_book }}</li>
-                                    </ul>
-                                    <a href="{{ course.get_absolute_url }}" class="btn btn-primary btn-block">More
-                                        Info</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -117,19 +141,31 @@
                                 <div class="card-body">
                                     <a href="{{ course.get_absolute_url }}">
                                         <h4 class="card-title text-center">{{ course.title }}</h4>
-                                        <div class="heading-underline"></div>
                                     </a>
-                                    <ul class="list-group list-group-flush my-4">
-                                        <li class="list-group-item"><b>Title: </b>{{ course.title }}</li>
-                                        {%if course.price_e_learning %}
-                                        <li class="list-group-item"><b>E-learning Price:
-                                            </b>{{ course.price_e_learning }}
-                                        </li>
+                                    <div class="heading-underline"></div>
+                                    <p class="course-card-text">{{ course.description | truncatewords:15 }}</p>
+                                    <a href="{{ course.get_absolute_url }}"
+                                        class="d-flex mb-4 justify-content-end text-primary text-shadow">
+                                        <h5>Learn More <i class="fas fa-angle-double-right"></i></h5>
+                                    </a>
+
+                                    <div class="card-footer bg-white border-top-0">
+
+                                        {% if course.e_learning_price %}
+
+                                        <a href="{{ course.get_absolute_url }}" <div class="card-price">
+                                            <h6 class="card-price-text">500 {{ course.e_learning_price }} <small>
+                                                    AED</small></h6>
+                                        </a>
+                                        {% else %}
+
+                                        <a href="{{ course.get_absolute_url }}" <div class="card-price">
+                                            <h6 class="card-price-text">500 {{ course.book_learning_price }} <small>
+                                                    AED</small></h6>
+                                        </a>
+
                                         {% endif %}
-                                        <li class="list-group-item"><b>Book Price: </b>{{ course.price_book }}</li>
-                                    </ul>
-                                    <a href="{{ course.get_absolute_url }}" class="btn btn-primary btn-block">More
-                                        Info</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -148,19 +184,31 @@
                                 <div class="card-body">
                                     <a href="{{ course.get_absolute_url }}">
                                         <h4 class="card-title text-center">{{ course.title }}</h4>
-                                        <div class="heading-underline"></div>
                                     </a>
-                                    <ul class="list-group list-group-flush my-4">
-                                        <li class="list-group-item"><b>Title: </b>{{ course.title }}</li>
-                                        {%if course.price_e_learning %}
-                                        <li class="list-group-item"><b>E-learning Price:
-                                            </b>{{ course.price_e_learning }}
-                                        </li>
+                                    <div class="heading-underline"></div>
+                                    <p class="course-card-text">{{ course.description | truncatewords:15 }}</p>
+                                    <a href="{{ course.get_absolute_url }}"
+                                        class="d-flex mb-4 justify-content-end text-primary text-shadow">
+                                        <h5>Learn More <i class="fas fa-angle-double-right"></i></h5>
+                                    </a>
+
+                                    <div class="card-footer bg-white border-top-0">
+
+                                        {% if course.e_learning_price %}
+
+                                        <a href="{{ course.get_absolute_url }}" <div class="card-price">
+                                            <h6 class="card-price-text">500 {{ course.e_learning_price }} <small>
+                                                    AED</small></h6>
+                                        </a>
+                                        {% else %}
+
+                                        <a href="{{ course.get_absolute_url }}" <div class="card-price">
+                                            <h6 class="card-price-text">500 {{ course.book_learning_price }} <small>
+                                                    AED</small></h6>
+                                        </a>
+
                                         {% endif %}
-                                        <li class="list-group-item"><b>Book Price: </b>{{ course.price_book }}</li>
-                                    </ul>
-                                    <a href="{{ course.get_absolute_url }}" class="btn btn-primary btn-block">More
-                                        Info</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -180,19 +228,31 @@
                                 <div class="card-body">
                                     <a href="{{ course.get_absolute_url }}">
                                         <h4 class="card-title text-center">{{ course.title }}</h4>
-                                        <div class="heading-underline"></div>
                                     </a>
-                                    <ul class="list-group list-group-flush my-4">
-                                        <li class="list-group-item"><b>Title: </b>{{ course.title }}</li>
-                                        {%if course.price_e_learning %}
-                                        <li class="list-group-item"><b>E-learning Price:
-                                            </b>{{ course.price_e_learning }}
-                                        </li>
+                                    <div class="heading-underline"></div>
+                                    <p class="course-card-text">{{ course.description | truncatewords:15 }}</p>
+                                    <a href="{{ course.get_absolute_url }}"
+                                        class="d-flex mb-4 justify-content-end text-primary text-shadow">
+                                        <h5>Learn More <i class="fas fa-angle-double-right"></i></h5>
+                                    </a>
+
+                                    <div class="card-footer bg-white border-top-0">
+
+                                        {% if course.e_learning_price %}
+
+                                        <a href="{{ course.get_absolute_url }}" <div class="card-price">
+                                            <h6 class="card-price-text">500 {{ course.e_learning_price }} <small>
+                                                    AED</small></h6>
+                                        </a>
+                                        {% else %}
+
+                                        <a href="{{ course.get_absolute_url }}" <div class="card-price">
+                                            <h6 class="card-price-text">500 {{ course.book_learning_price }} <small>
+                                                    AED</small></h6>
+                                        </a>
+
                                         {% endif %}
-                                        <li class="list-group-item"><b>Book Price: </b>{{ course.price_book }}</li>
-                                    </ul>
-                                    <a href="{{ course.get_absolute_url }}" class="btn btn-primary btn-block">More
-                                        Info</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

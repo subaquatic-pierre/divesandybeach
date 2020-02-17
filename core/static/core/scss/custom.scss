@@ -22,6 +22,11 @@ table.table tbody td {
   font-size: 2.5rem;
 }
 
+.errorlist {
+  margin-top: 5px;
+  color: $danger;
+}
+
 .bg-transparent > li {
   background-color: transparent;
 }
@@ -101,6 +106,13 @@ a {
 
 a:hover {
   text-decoration: none;
+}
+
+.carousel-control-prev {
+  background-image: none;
+}
+.carousel-control-next {
+  background-image: none;
 }
 
 
@@ -339,11 +351,11 @@ a:hover {
 
 .course-info-row {
   .course-info-text {
-    margin: 2rem 0;
     background: white;
     border-radius: 5px;
     padding: 1rem;
-    box-shadow: $box-shadow-lg;
+    box-shadow: $box-shadow-lg; 
+
   }
 
   .course-info-img {
@@ -419,7 +431,22 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+
+  &__heading {
+  justify-self: center;
+
+  }
+}
+@media (min-width:8000px){
+  .arrow-down {
+    top: 250px;
+  }
+}
+.arrow-down {
+  color:white;
+  position: relative;
+  align-self: center;
+  top: 7rem;
 }
 
 .card-title-text {
@@ -440,18 +467,41 @@ a:hover {
 }
 
 .popular-ribbon {
-  font-size: 10px;
+  font-size: 14px;
   top: 35px;
   right: -40px;
   position: absolute;
   color: white;
-  background-color: rgb(143, 19, 19);
-  padding: 2px 50px;
+  background-color: rgb(223, 56, 56);
+  padding: 3px 50px;
   text-transform: uppercase;
   font-weight: 600;
   transform:rotate(45deg);
   box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.6), 1px 3px 3px rgba(2,0,36,0.3);
 }
+
+.card-price {
+  display: flex;
+  justify-content: center;
+
+  .card-price-text {
+    background-color: $info;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: .8rem 0;
+    width: 80%;
+    border-radius: 3px;
+    box-shadow: $box-shadow;
+  }  
+}
+
+.course-card-text {
+  height: 5rem;
+}
+
+
 
 // @media (max-width:800px) {
 //   .course-info-section {

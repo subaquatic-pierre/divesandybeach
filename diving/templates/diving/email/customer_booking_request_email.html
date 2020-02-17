@@ -1,0 +1,61 @@
+{% extends 'diving/email/email_base.html' %}
+
+{% block content %}
+<div class="container">
+    <!-- <img class="mx-auto mt-4 mb-3 text-center" width="42" height="30"
+        src="http://www.scubadivedubai.com/static/core/img/logo.png" /> -->
+    <div class="card mb-4" style="border-top: 5px solid #0A9CBF;">
+        <div class="card-body">
+
+            <h4 class="text-center">We have recieved your booking request!</h4>
+
+            <hr />
+
+            <h4>Hi {{ diver_name }}</h4>
+            <p>Thank you for your request to dive with us. Our team will contact you shortly to confirm your booking. In
+                the meantime if you need any assistance with anything please dont hesitate to give us a call.</p>
+            <!-- <h6>Extra Divers:</h6>
+            <ul>
+                {% for diver in extra_divers %}
+                <li>{{ diver }}</li>
+                {% endfor %}
+            </ul> -->
+
+
+
+
+            <!-- <h5 class="text-center"><strong>Booking Details</strong></h5>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td style="border-top: 0;">Diver Name: {{ diver_name }}</td>
+                        <td style="border-top: 0;" class="text-right">Advanced Open Water</td>
+                        <td style="border-top: 0;" class="ml-5 text-right">Full Equipment</td>
+                    </tr>
+                    {% if extra_divers %}
+                    {% for diver in extra_divers %}
+                    <tr>
+
+                        <td style="border-top: 0;">Diver Name: {{ diver }}</td>
+
+                        <td style="border-top: 0;" class="text-right">Advanced Open Water</td>
+                        <td style="border-top: 0;" class="ml-5 text-right">Full Equipment</td>
+                    </tr>
+                    {% endfor %}
+                    {% endif %}
+                    <tr>
+                        <td></td>
+                        <td>Boat Dive</td>
+                        <td>
+                            <h4 class="text-right"><strong>1:30pm</strong></h4>
+                        </td>
+                    </tr>
+                </tbody>
+            </table> -->
+
+        </div>
+    </div>
+
+
+
+    {% endblock content %}

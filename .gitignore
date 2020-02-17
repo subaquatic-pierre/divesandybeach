@@ -8,3 +8,4 @@ old_files
 .vscode
 .pyc
 sass-watch.sh
+.sass-cache

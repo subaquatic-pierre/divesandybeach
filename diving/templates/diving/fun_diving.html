@@ -27,12 +27,12 @@
 
     <div class="course-hero-overlay ">
         <div class="text-center title-text container">
-            <h1 class="header">{{ dive.title }}</h1>
-            <hr class="my-5 bg-light w-50 shadow-lg ml-auto mr-auto">
-            <a href="{% url 'diving:booking-request' %}" class="btn btn-success btn-lg">Request a Booking!</a>
+            <h1 class="header wow fadeInUp">{{ dive.title }}</h1>
+            <hr class="my-5 bg-light w-50 shadow-lg wow fadeIn ml-auto mr-auto">
+            <a href="{% url 'diving:booking-request' %}" class="btn wow fadeIn btn-success btn-lg">Request a
+                Booking!</a>
         </div>
-        <a class="arrow-down" href="#pricing"><i class=" fa fa-chevron-down fa-3x wow bounceInDown"
-                aria-hidden="true">&nbsp;</i></a>
+        <a class="arrow-down" href="#pricing"><i class=" fa fa-chevron-down fa-3x " aria-hidden="true">&nbsp;</i></a>
     </div>
     <div class="course-hero-image">
     </div>
@@ -40,7 +40,7 @@
 </section>
 
 <!-- Pricing card -->
-<section class="dive-trip-price-card-section bg-white py-5">
+<section id="pricing" class="dive-trip-price-card-section bg-white py-5">
     <div class="container-lg">
         <h2 class="text-center pb-4 text-shadow">Pricing</h2>
         <div class="heading-underline"></div>
@@ -83,12 +83,22 @@
                             No Tanks or Equipment
                         </li>
                         {% endif %}
+                        {% if dive.title == 'Boat Dive' %}
                         <li class="list-group-item bg-light"><i class="fas fa-check text-success mx-2"></i>
                             Boat Trip
                         </li>
                         <li class="list-group-item bg-light"><i class="fas fa-check text-success mx-2"></i>
                             Two Awesome Dive Sites
                         </li>
+
+                        {% elif dive.title == 'Shore Dive' %}
+                        <li class="list-group-item bg-light"><i class="fas fa-check text-success mx-2"></i>
+                            Full Day Hotel Access
+                        </li>
+                        <!-- <li class="list-group-item bg-light"><i class="fas fa-check text-success mx-2"></i>
+                            Two Awesome Dive Sites
+                        </li> -->
+                        {% endif %}
                     </ul>
 
                 </div>
@@ -111,10 +121,13 @@
         <!-- Course Overview row -->
         <div class="row course-info-row">
             <div class="col-md-6 d-flex align-items-center">
-                <div class="course-info-text">
+                <div class="course-info-text wow fadeInLeft">
                     <h3 class="text-center pb-4 ">Schedule</h3>
                     <div class="heading-underline"></div>
+
                     <p>{{ dive.schedule | linebreaks }}</p>
+
+                    {% if dive.title == 'Boat Dive' %}
                     <div class="row">
                         <div class="col-md-6">
                             <div class="card bg-light">
@@ -132,7 +145,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-6 animated slideInRight delay-2s">
                             <div class="card bg-light">
                                 <div class="card-header bg-dark">
                                     <h5 class="text-light">Afternoon Trip</h5>
@@ -148,6 +161,20 @@
                             </div>
                         </div>
                     </div>
+                    {% endif %}
+
+                    {% if dive.title == 'Shore Dive' %}
+
+                    <h6 class="">Need a dive guide or an extra cylinder for a second or third dive?</h6>
+                    <ul>
+                        <li><i class="fa fa-plus  text-primary mr-2" aria-hidden="true"></i>50 AED - Divemaster
+                        </li>
+                        <li><i class="fa fa-plus  text-primary mr-2" aria-hidden="true"></i>50 AED - Extra cylinder
+                        </li>
+                    </ul>
+
+                    {% endif %}
+
                 </div>
 
             </div>
@@ -162,7 +189,7 @@
         <!-- Dive description row -->
         <div class="row course-info-row">
             <div class="col-md-6 d-flex align-items-center order-md-2">
-                <div class="course-info-text">
+                <div class="course-info-text wow wow fadeInRight">
                     <h3 class="text-center pb-4 ">Dive description</h3>
                     <div class="heading-underline"></div>
                     <p>{{ dive.description | linebreaks }}</p>
@@ -171,7 +198,7 @@
 
             </div>
             <div class="col-md-6 text-center ">
-                <div class="course-info-img">
+                <div class="course-info-img ">
                     <img src="{{ dive.description_image.medium_image.url }}" alt="">
                 </div>
             </div>
@@ -185,10 +212,11 @@
 <!-- booking button -->
 <section class="bg-white py-5">
     <div class="container text-center">
-        <h3 class="text-shadow pb-4">Request a Booking!</h3>
-        <div class="heading-underline"></div>
+        <h3 class="text-shadow pb- wow fadeInUp">Request a Booking!</h3>
+        <div class="heading-underline wow fadeIn"></div>
         <p class=" pb-4">Send us a message to check availability for our next boat diving trip</p>
-        <a href="{% url 'diving:course-booking-request' %}" class="btn btn-success btn-lg">Send your Request</a>
+        <a href="{% url 'diving:booking-request' %}" class="btn btn-success btn-lg wow fadeIn">Send your
+            Request</a>
     </div>
 </section>
 

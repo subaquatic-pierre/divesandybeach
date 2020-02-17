@@ -1,0 +1,29 @@
+Booking Request
+
+---------------
+
+Dive Type: {{ dive_type }}
+Date: {{ date }}
+Time: {{ time }}
+Main Diver: {{ main_diver }}
+Diver Email: {{ diver_email }}
+Booking ID: {{ booking_id }}
+Confirm Booking Url: http://localhost:8000/confirm-booking/{{ booking_id }}
+Message: {{ message }}
+
+---------------
+
+Diver Details:
+{% for diver in divers %}
+Name: {{ diver.full_name }}
+Certification: {{ diver.cert_level }}
+Equipment: {{ diver.kit_required }}
+---
+{% endfor %}
+
+Happy Bubbles,
+Sandy Beach Dive Centre Team
+
+Email: info@divesandybeach.com
+Cell: +971 50 206 2440
+Phone: +971 9 244 5050

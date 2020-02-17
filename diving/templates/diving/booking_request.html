@@ -6,7 +6,7 @@
 
     <div class="hero-bg">
         <div class="container title-text">
-            <h1 class=" header">Dive Booking Request</h1>
+            <h1 class=" header">{{ heading }} Booking Request</h1>
             <hr class="my-5 bg-light w-50 shadow-lg">
         </div>
     </div>
@@ -19,13 +19,14 @@
             <div class="heading-underline"></div>
         </div>
         <div class="col-md-10 form-card bg-dark text-light mb-5 p-md-5">
-            <form action="" method="POST">
+            <form action="" method="POST" novalidate>
                 {% csrf_token %}
                 {{ diver_form.management_form }}
+                {{ booking_form.shore }}
 
+                {% for form in diver_form.forms %}
+                {{  diver_form.non_field_errors }}
 
-                {% for form in diver_form %}
-                {{ form.non_field_errors }}
                 <div class="form-group mt-5 mt-md-0">
                     <label for="{{ form.full_name.id_for_label }}">Diver name</label>
                     {{ form.full_name }}
@@ -119,10 +120,7 @@
     })
 
     $('#booking-form').submit(e => {
-        // e.preventDefault();
-        // alert('Helloooo!');
         $('#id_form-TOTAL_FORMS').val(form_count)
-        // e.submit();
     })
 
     function addDiverInput() {
@@ -157,9 +155,9 @@
                                 <label for="id_form-${form_count}-kit_required">Required Kit</label>
                                 <select name="form-${form_count}-kit_required" class="form-control" required placeholder="Enter your email address" id="id_form-${form_count}-kit_required">
                                     <option disabled selected hidden >Select your equipment</option>
-                                    <option value="FK">Full Kit</option>
-                                    <option value="TW">Tanks and Weights</option>
-                                    <option value="EXCL">Excluding Equipment</option>
+                                    <option value="Full Kit">Full Kit</option>
+                                    <option value="Tanks and Weights">Tanks and Weights</option>
+                                    <option value="Excluding Equipment">Excluding Equipment</option>
                                 </select>                            
                             </div>
                         </div>
@@ -176,11 +174,10 @@
         form_count++
         button = extraDiverDiv.children[0].children[2].children[0].children[0]
         input = extraDiverDiv.children[0].children[0].children[0].children[1]
-        // input.setAttribute('required', true)
         button.onclick = removeDiverInput
         $('#extra-divers').append(extraDiverDiv)
         input.focus()
-        console.log(form_count)
+        $("[name='form-TOTAL_FORMS']").val(form_count)
 
 
     }
@@ -188,7 +185,7 @@
     function removeDiverInput(e) {
         form_count--
         e.target.parentElement.parentElement.parentElement.parentElement.remove()
-        console.log(form_count)
+        $("[name='form-TOTAL_FORMS']").val(form_count)
 
     }
 

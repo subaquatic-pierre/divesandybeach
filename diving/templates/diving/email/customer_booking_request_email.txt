@@ -1,0 +1,13 @@
+We have recieved your booking request!
+
+Hi {{ diver_name }}
+
+Thank you for your request to dive with us. Our team will contact you shortly to confirm your booking. In
+the meantime if you need any assistance with anything please dont hesitate to give us a call.
+
+Happy Bubbles,
+Sandy Beach Dive Centre Team
+
+Email: info@divesandybeach.com
+Cell: +971 50 206 2440
+Phone: +971 9 244 5050

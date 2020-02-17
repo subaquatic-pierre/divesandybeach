@@ -1,5 +1,6 @@
 from django.urls import path
 from . import views
+from . import upload_utils
 
 app_name = 'diving'
 
@@ -17,22 +18,18 @@ urlpatterns = [
          views.PADICourseListView.as_view(), name='padi-course-list'),
     path('padi-courses/<slug>/',
          views.PADICourseDetailView.as_view(), name='padi-course-detail'),
-    path('boat-diving/',
-         views.BoatDiveDetailView.as_view(), name='boat-diving'),
-    path('shore-diving/',
-         views.ShoreDiveDetailView.as_view(), name='shore-diving'),
+    path('fun-diving/<slug>/',
+         views.DiveDetailView.as_view(), name='fun-diving'),
     path('prices/',
          views.PricesDetailView.as_view(), name='prices'),
     path('course-booking-request/',
          views.CourseBookingRequestView.as_view(), name='course-booking-request'),
     path('booking-request/',
          views.BookingRequestView.as_view(), name='booking-request'),
-    path('upload-item-price/', views.UploadItemPrices.as_view(),
+    path('upload-item-price/', upload_utils.UploadItemPrices.as_view(),
          name='upload-item-price'),
-    path('upload-courses/', views.UploadCourses.as_view(),
+    path('upload-courses/', upload_utils.UploadCourses.as_view(),
          name='upload-courses'),
-    path('upload-dive-sites/', views.UploadDiveSites.as_view(),
+    path('upload-dive-sites/', upload_utils.UploadDiveSites.as_view(),
          name='upload-dive-sites'),
-    path('divebooking/', views.dive_booking_email,
-         name='dive-booking-confirmation-email'),
 ]

@@ -13,6 +13,9 @@ html {
   -webkit-font-smoothing: antialiased;
   letter-spacing: .02rem; }
 
+body {
+  overflow-x: hidden; }
+
 /*====================== NAVBAR =============== */
 .my-navbar {
   width: 100%;
@@ -7673,6 +7676,10 @@ table.table tbody td {
 .header {
   font-size: 2.5rem; }
 
+.errorlist {
+  margin-top: 5px;
+  color: #dc3545; }
+
 .bg-transparent > li {
   background-color: transparent; }
 
@@ -7735,6 +7742,12 @@ a {
 
 a:hover {
   text-decoration: none; }
+
+.carousel-control-prev {
+  background-image: none; }
+
+.carousel-control-next {
+  background-image: none; }
 
 /*====================== FULL HEIGHT LANDING HEADER =============== */
 .landing-fh-image {
@@ -7900,7 +7913,6 @@ a:hover {
   padding-bottom: 1rem; }
 
 .course-info-row .course-info-text {
-  margin: 2rem 0;
   background: white;
   border-radius: 5px;
   padding: 1rem;
@@ -7953,8 +7965,18 @@ a:hover {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  justify-content: center; }
+  .course-hero-overlay__heading {
+    justify-self: center; }
+
+@media (min-width: 8000px) {
+  .arrow-down {
+    top: 250px; } }
+.arrow-down {
+  color: white;
+  position: relative;
+  align-self: center;
+  top: 7rem; }
 
 .card-title-text {
   color: white;
@@ -7968,17 +7990,34 @@ a:hover {
   text-transform: none; }
 
 .popular-ribbon {
-  font-size: 10px;
+  font-size: 14px;
   top: 35px;
   right: -40px;
   position: absolute;
   color: white;
-  background-color: #8f1313;
-  padding: 2px 50px;
+  background-color: #df3838;
+  padding: 3px 50px;
   text-transform: uppercase;
   font-weight: 600;
   transform: rotate(45deg);
   box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.6), 1px 3px 3px rgba(2, 0, 36, 0.3); }
+
+.card-price {
+  display: flex;
+  justify-content: center; }
+  .card-price .card-price-text {
+    background-color: #386FB7;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: .8rem 0;
+    width: 80%;
+    border-radius: 3px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0.125rem 0.25rem 0.5rem rgba(0, 0, 0, 0.075), 0.25rem 0.5rem 0.75rem rgba(0, 0, 0, 0.05); }
+
+.course-card-text {
+  height: 5rem; }
 
 .message-container {
   position: relative;

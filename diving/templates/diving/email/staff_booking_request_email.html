@@ -1,0 +1,95 @@
+{% extends 'diving/email/email_base.html' %}
+
+{% block content %}
+<div class="container">
+    <!-- <img class="mx-auto mt-4 mb-3 text-center" width="42" height="30"
+        src="http://www.scubadivedubai.com/static/core/img/logo.png" /> -->
+    <div class="card mb-4" style="padding:1rem">
+        <div class="card-body">
+            {% if dive_type == 'course' %}
+            <h3 class="text-center">{{ course }} Booking</h3>
+            {% else %}
+            <h3 class="text-center">{{ dive_type }} Booking</h3>
+            {% endif %}
+
+            <h4 class="text-center">Booking Details</h4>
+            <table class="table" style="width: 600px;">
+                <tbody>
+                    <tr>
+                        <td style="border-top: 0;"><b>Date:</b></td>
+                        <td style="border-top: 0;">{{ date }}</td>
+                    </tr>
+                    {% if time != None %}
+                    <tr>
+                        <td style="border-top: 0;"><b>Time:</b></td>
+                        <td style="border-top: 0;">{{ time }}</td>
+                    </tr>
+                    {% endif %}
+                    <tr>
+                        <td style="border-top: 0;"><b>Main Diver:</b></td>
+                        <td style="border-top: 0;">{{ main_diver }}</td>
+                    </tr>
+                    <tr>
+                        <td style="border-top: 0;"><b>Diver Email:</b></td>
+                        <td style="border-top: 0;">{{ diver_email }}</td>
+                    </tr>
+                    <tr>
+                        <td style="border-top: 0;"><b>Booking ID:</b></td>
+                        <td style="border-top: 0;">{{ booking_id }}</td>
+                    </tr>
+                    <tr>
+                        <td><b>Message</b></td>
+                        <td>{{ message }}</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><a href="http://localhost:8000/confirm-booking/{{ booking_id }}">Confirm Booking -->></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4 class="text-center"><strong>Diver Details</strong></h4>
+            {% if dive_type == 'course' %}
+            <table class="table" style="width: 600px;">
+                <thead>
+                    <tr>
+                        <td><b>Name</b></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tr>
+                    {% for diver in divers %}
+                    <tr>
+                        <td>{{ diver.full_name }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+            <table class="table" style="width: 600px;">
+                <thead>
+                    <tr>
+                        <td><b>Name</b></td>
+                        <td><b>Certification</b></td>
+                        <td><b>Equipment</b></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tr>
+                    {% for diver in divers %}
+                    <tr>
+                        <td>{{ diver.full_name }}</td>
+                        <td>{{ diver.cert_level }}</td>
+                        <td>{{ diver.kit_required }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% endif %}
+        </div>
+    </div>
+
+
+
+    {% endblock content %}

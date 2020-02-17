@@ -24,12 +24,15 @@
 
 <section id="course-detail-heading">
 
-    <div class="course-hero-overlay ">
-        <div class="text-center title-text container">
-            <h1 class="header">{{ course.title }}</h1>
-            <hr class="my-5 bg-light w-50 shadow-lg ml-auto mr-auto">
-            <a href="{% url 'diving:course-booking-request' %}" class="btn btn-success btn-lg">Request a Booking!</a>
+    <div class="course-hero-overlay">
+        <div class="text-center course-hero-overlay__heading title-text container">
+            <h1 class="header wow fadeInUp">{{ course.title }}</h1>
+            <hr class="my-5 bg-light w-50 wow fadeIn shadow-lg ml-auto mr-auto">
+            <a href="{% url 'diving:course-booking-request' %}" class="wow fadeIn btn btn-success btn-lg">Request a
+                Booking!</a>
         </div>
+
+        <a class="arrow-down" href="#pricing"><i class=" fa fa-chevron-down fa-3x " aria-hidden="true">&nbsp;</i></a>
     </div>
     <div class="course-hero-image">
     </div>
@@ -37,7 +40,7 @@
 </section>
 
 <!-- Pricing card -->
-<section class="course-price-card-section bg-white py-5">
+<section id="pricing" class="course-price-card-section bg-white py-5">
     <div class="container-fluid">
         <div class="row  justify-content-center">
             <div class="col-12 col-md-10">
@@ -81,7 +84,7 @@
 
                     <!-- Book learning card -->
                     {% if course.book_learning_price %}
-                    <div class="offset-md-1 col-md-4">
+                    <div class="col-md-4">
 
                         <div class="price-card card bg-light shadow-lg text-center mb-5">
                             <div class="card-header text-center bg-dark pt-5 ">
@@ -116,17 +119,18 @@
     <!-- End course price card row -->
 </section>
 
+<!-- info section -->
 <section>
     <div class="container course-info-section">
 
         <!-- Course Overview row -->
         <div class="row course-info-row">
             <div class="col-md-6 d-flex align-items-center">
-                <div class="course-info-text">
+                <div class="course-info-text mb-4 wow fadeInLeft">
                     <h3 class="text-center pb-4 ">Course Overview</h3>
                     <div class="heading-underline"></div>
                     <ul class="list-group list-group-flush bg-transparent">
-                        <li class="list-group-item"><b>Minimum Age: </b> {{ course.min_age }}</li>
+                        <li class="list-group-item"><b>Minimum Age: </b> {{ course.min_age }} years old</li>
                         <li class="list-group-item"><b>Duration: </b> {{ course.duration }}</li>
                         {% if course.ocean_dives == True %}
                         <li class="list-group-item"><b>Number of Ocean Dives: </b>{{ course.num_ocean_dives }}
@@ -136,12 +140,12 @@
                         <li class="list-group-item"><b>Number of Pool Dives: </b>{{ course.num_pool_dives }}
                         </li>
                         {% endif %}
-                        <li class="list-group-item"><b>Qualified To: </b>{{ course.qualified_to }} min</li>
+                        <li class="list-group-item"><b>Qualified To: </b>{{ course.qualified_to }}</li>
                     </ul>
                 </div>
 
             </div>
-            <div class="col-md-6 text-center order-md-1">
+            <div class="col-md-6 text-center order-md-1 mb-3">
                 <div class="course-info-img">
                     <img src="{{ course.overview_image.medium_image.url }}" alt="">
                 </div>
@@ -152,7 +156,7 @@
         <!-- Course Info row -->
         <div class="row course-info-row">
             <div class="col-md-6 d-flex align-items-center order-md-2">
-                <div class="course-info-text">
+                <div class="course-info-text wow fadeInRight">
                     <h3 class="text-center pb-4 ">Course Info</h3>
                     <div class="heading-underline"></div>
                     <p>{{ course.description | linebreaks }}</p>
@@ -172,7 +176,7 @@
         {% if course.e_learning_info %}
         <div class="row course-info-row">
             <div class="col-md-6 d-flex align-items-center">
-                <div class="course-info-text">
+                <div class="course-info-text wow fadeIn">
                     <h3 class="text-center pb-4 ">{{ course.e_learning_info.heading }}</h3>
                     <div class="heading-underline"></div>
                     <p>{{ course.e_learning_info.text | linebreaks }}</p>
@@ -198,8 +202,8 @@
         <!-- Book Learning Info row -->
         {% if course.book_learning_info %}
         <div class="row course-info-row">
-            <div class="col-md-6 d-flex align-items-center order-md-2">
-                <div class="course-info-text">
+            <div class="col-md-6 d-flex align-items-center {% if course.e_learning_info %} order-md-2 {% endif %}">
+                <div class="course-info-text wow fadeIn">
                     <h3 class="text-center pb-4 ">{{ course.book_learning_info.heading }}</h3>
                     <div class="heading-underline"></div>
                     <p>{{ course.book_learning_info.text | linebreaks }}</p>
@@ -217,14 +221,14 @@
         <!-- Pool Dives Info row -->
         {% if course.pool_info %}
         <div class="row course-info-row">
-            <div class="col-md-6 d-flex align-items-center">
-                <div class="course-info-text order-md-2">
+            <div class="col-md-6 d-flex align-items-center {% if not course.e_learning_info %} order-md-2 {% endif %}">
+                <div class="course-info-text wow fadeIn">
                     <h3 class="text-center pb-4 ">{{ course.pool_info.heading }}</h3>
                     <div class="heading-underline"></div>
                     <p>{{ course.pool_info.text | linebreaks }}</p>
                 </div>
             </div>
-            <div class="col-md-6 text-center oder-md-2">
+            <div class="col-md-6 text-center ">
                 <div class="course-info-img">
                     <img src="{{ course.pool_info.image.medium_image.url }}" alt="">
                 </div>
@@ -236,8 +240,9 @@
         <!-- ocean Dives Info row -->
         {% if course.ocean_info %}
         <div class="row course-info-row">
-            <div class="col-md-6 d-flex align-items-center">
-                <div class="course-info-text">
+            <div
+                class="col-md-6 d-flex align-items-center {% if course.pool_info and not course.e_learning_info %}  {% elif course.pool_info %} order-md-2 {% endif %}">
+                <div class="course-info-text wow fadeIn">
                     <h3 class="text-center pb-4 ">{{ course.ocean_info.heading }}</h3>
                     <div class="heading-underline"></div>
                     <p>{{ course.ocean_info.text | linebreaks }}</p>
@@ -254,13 +259,21 @@
 
     </div>
 </section>
-<div class="container mt-5">
-    <div class="text-center mb-5">
-        <h3 class=" pb-4">Request a Booking!</h3>
+<!-- end info sections -->
+
+
+<!-- booking button -->
+<section class="bg-white py-5">
+    <div class="container text-center">
+        <h3 class="text-shadow pb- wow fadeInUp">Request a Booking!</h3>
+        <div class="heading-underline wow fadeIn"></div>
         <p class=" pb-4">Send us a message to check availability for the next PADI course</p>
-        <a href="{% url 'diving:course-booking-request' %}" class="btn btn-success btn-lg">Send your Request</a>
+        <a href="{% url 'diving:course-booking-request' %}" class="btn btn-success btn-lg wow fadeIn">Send your
+            Request</a>
     </div>
-</div>
+</section>
+<!-- end booking button -->
+
 </div>
 
 

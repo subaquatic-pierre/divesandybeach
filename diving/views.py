@@ -7,12 +7,11 @@ from django.views.generic import FormView
 from django.views import View
 from django.forms import formset_factory
 from .models import DiveSite, Category, Course, DiveTrip, ItemPrice
-from .forms import UploadCSVForm, CourseBookingRequestForm, DiveBookingRequestForm, DiveBookingRequestDiverForm
-from .upload_csv import UploadDiveSitesCSV, UploadItemPrice, UploadCoursesCSV
-from django.core.mail import send_mail
+from .forms import CourseBookingDivers, UploadCSVForm, CourseBookingRequestForm, DiveBookingRequestForm, DiveBookingRequestDiverForm, BoatDiveBookingRequestForm, ShoreDiveBookingRequestForm
 from django.contrib import messages
 from django.template.loader import render_to_string
 from django.template import Context
+from .email import StaffEmail, CustomerEmail, CourseStaffEmail
 
 
 class DiveSiteListView(ListView):
@@ -79,27 +78,16 @@ class PADICourseDetailView(DetailView):
         return context
 
 
-class BoatDiveDetailView(TemplateView):
-    template_name = 'diving/boat_diving.html'
+class DiveDetailView(DetailView):
+    model = DiveTrip
+    template_name = 'diving/fun_diving.html'
+    context_object_name = 'dive'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        dive_object = DiveTrip.objects.get(title='Boat Dive')
-        context['dive'] = dive_object
-        context['title'] = 'Fujairah Boat Diving'
+        context['title'] = context['object'].title
         context['prices'] = ItemPrice.objects.filter(
-            dive_trip=dive_object.id)
-
-        return context
-
-
-class ShoreDiveDetailView(TemplateView):
-    template_name = 'diving/shore_diving.html'
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['dive'] = DiveTrip.objects.get(title='Shore Diving')
-        context['title'] = 'Fujairah Shore Diving'
+            dive_trip=context['object'].id)
 
         return context
 
@@ -118,44 +106,62 @@ class PricesDetailView(TemplateView):
 
 class BookingRequestView(View):
     def get(self, request, *args, **kwargs):
-        booking_form = DiveBookingRequestForm()
-        diver_form = formset_factory(DiveBookingRequestDiverForm)
+        referer = request.META.get('HTTP_REFERER')
+        try:
+            if referer.endswith('shore-dive/'):
+                booking_form = ShoreDiveBookingRequestForm()
+            else:
+                booking_form = BoatDiveBookingRequestForm()
+        except AttributeError:
+            # Referer is none type, default to boat diving form
+            booking_form = BoatDiveBookingRequestForm()
+
+        diver_form = formset_factory(
+            DiveBookingRequestDiverForm)
+
         context = {'booking_form': booking_form,
                    'diver_form': diver_form,
-                   'title': 'Dive Booking Request'}
+                   'title': 'Dive Booking Request',
+                   'heading': booking_form.__name__}
+
         return render(request, 'diving/booking_request.html', context=context)
 
     def post(self, request, *args, **kwargs):
-        booking_form = DiveBookingRequestForm(request.POST)
-        DiverFormSet = formset_factory(DiveBookingRequestDiverForm)
-        divers = DiverFormSet(request.POST)
-        print(request.POST)
-
-        if divers.is_valid():
-            print('\n\nDivers Data:')
-            print(divers.cleaned_data)
+        shore = request.POST.get('shore', None)
+        if shore:
+            booking_form = ShoreDiveBookingRequestForm(request.POST)
         else:
-            print('\n\nDivers form is not valid')
-            print(request.POST)
-            print('\n\n')
-            messages.warning(request, 'Form is not valid, please try again')
-            return render(request, 'diving/booking_request.html', context={'booking_form': booking_form, 'diver_form': divers})
+            booking_form = BoatDiveBookingRequestForm(request.POST)
 
-        if booking_form.is_valid():
-            print('\n\Booking Form Data:')
-            print(booking_form.cleaned_data)
-            print('\n\n')
-            # return render(request, 'diving/booking_success.html')
+        DiverFormSet = formset_factory(
+            DiveBookingRequestDiverForm, validate_min=True, min_num=1)
+        divers_formset = DiverFormSet(request.POST)
+
+        context = {'booking_form': booking_form,
+                   'diver_form': divers_formset,
+                   'title': 'Dive Booking Request'}
+
+        if not divers_formset.is_valid() or not booking_form.is_valid():
+            messages.info(
+                request, 'Sorry, your input was not valid, please try again')
+            return render(request, 'diving/booking_request.html', context=context)
+
         else:
-            print('\n\nBooking Form Data is not valid')
-            print(request.POST)
-            print('\n\n')
-            return render(request, 'diving/booking_request.html', context={'booking_form': booking_form, 'diver_form': divers})
 
-        # else:
-            # messages.warning(request, 'Form is not valid, please try again')
-            # return redirect('diving:booking-request')
-        return redirect('diving:booking-request')
+            # Both forms are valid, construct and send email
+            divers = divers_formset.cleaned_data
+            booking_info = booking_form.cleaned_data
+            booking_info['subject'] = 'Dive booking request'
+            booking_info['dive_type'] = booking_form.__name__
+
+            staff_email = StaffEmail(divers, booking_info)
+            customer_email = CustomerEmail(divers, booking_info)
+
+            staff_email.send()
+            customer_email.send()
+
+            messages.success(request, 'Booking request success!')
+            return render(request, 'diving/booking_success.html')
 
 
 class CourseBookingRequestView(View):
@@ -164,176 +170,52 @@ class CourseBookingRequestView(View):
         url = request.META.get('HTTP_REFERER')
         last = url.split('/')[len(url.split('/'))-2].split('-')
         last = ' '.join(last).title()
-        print(last)
         form = CourseBookingRequestForm(
             initial={'course': last})
+
+        diver_form = formset_factory(CourseBookingDivers)
         context = {'form': form,
+                   'diver_form': diver_form,
                    'title': 'PADI Course Booking Request'}
+
         return render(request, 'diving/course_booking_request.html', context=context)
 
     def post(self, request, *args, **kwargs):
         form = CourseBookingRequestForm(request.POST)
-        # Get form data
-        if form.is_valid():
-            diver_name = form.cleaned_data['full_name']
-            date = form.cleaned_data['date']
-            course = form.cleaned_data['course']
-            message = form.cleaned_data['message']
-            email = form.cleaned_data['email']
-            extra_divers = []
-            # Get extra divers if there are
-            for k, v in form.cleaned_data.items():
-                if k.startswith('extra_diver'):
-                    extra_divers.append(v)
+        DiverFormSet = formset_factory(
+            CourseBookingDivers, validate_min=True, min_num=1)
+        divers_formset = DiverFormSet(request.POST)
 
-            # Send email
-            # TODO: Email customer and staff
-            # Create back link to to send confirmation email from staff email
-            email_message = f""" 
+        context = {'booking_form': form,
+                   'diver_form': divers_formset,
+                   'title': 'PADI Course Booking Request'}
 
-            This is the email message:
-            -------------------------
-            Diver Name: {diver_name}
-            -------------------------
-            Diver Emaiil: {email}
-            -------------------------
-            Course: {course}
-            -------------------------
-            Date Requested: {date}
-            -------------------------
-            Message: {message}
-            -------------------------
-            Extra Divers: {extra_divers}
+        if not divers_formset.is_valid() or not form.is_valid():
+            messages.info(
+                request, 'Sorry, your input was not valid, please try again')
+            return render(request, 'diving/course_booking_request.html', context=context)
 
-             """
-            send_mail('Course Bookiing Request', email_message, 'subquatic.pierre@gmail.com', [
-                      email, 'subquatic.pierre@gmail.com'])
-            # print(f'\n\nDiver Name: {diver_name}')
-            # print(f'Email: {email}')
-            # print(f'Course: {course}')
-            # print(f'Date: {date}')
-            # print(f'Message: {message}')
-            # print(f'Extra divers include:')
-            # for diver in extra_divers:
-            #     print(diver)
-            # print('\n\n')
+        else:
+            # Both forms are valid, construct and send email
+            booking_info = form.cleaned_data
+            divers = divers_formset.cleaned_data
+            booking_info['subject'] = 'Course booking request'
+            booking_info['dive_type'] = 'course'
+            booking_info['course'] = booking_info['course']
+
+            staff_email = CourseStaffEmail(divers, booking_info)
+            customer_email = CustomerEmail(divers, booking_info)
+
+            staff_email.send()
+            customer_email.send()
+
+            messages.success(request, 'Booking request success!')
             return render(request, 'diving/booking_success.html')
-        else:
-            messages.warning(request, 'Form is not valid, please try again')
-            return render(request, 'diving/course_booking_request.html', context={'form': form})
-
-
-class UploadItemPrices(View):
-    def get(self, request, *args, **kwargs):
-        form = UploadCSVForm()
-        context = {'form': form}
-        return render(request, "diving/upload_csv_form.html", context)
-
-    def post(self, request, *args, **kwargs):
-        form = UploadCSVForm(request.POST, request.FILES or None)
-        if form.is_valid():
-            file = request.FILES['csv_file']
-            # Check iif CSV file
-            if not file.name.endswith('.csv'):
-                messages.info(request, 'This s not a CSV file')
-                return redirect('admin:diving_itemprice_changelist')
-            # Upload csv file function in shop/utisl.py
-            upload_items = UploadItemPrice()
-            if upload_items.upload(file):
-                messages.info(request, 'File successfully uploaded')
-                return redirect('admin:diving_itemprice_changelist')
-            else:
-                # TODO: Improve upload_shop_data error checking in shop/views.py
-                messages.warning(request, 'File upload unsucessful')
-                return redirect('admin:diving_itemprice_changelist')
-        else:
-            messages.info(request, 'Invalid file format')
-            return redirect('admin:diving_itemprice_changelist')
-
-
-class UploadCourses(View):
-    def get(self, request, *args, **kwargs):
-        form = UploadCSVForm()
-        context = {'form': form}
-        return render(request, "diving/upload_csv_form.html", context)
-
-    def post(self, request, *args, **kwargs):
-        form = UploadCSVForm(request.POST, request.FILES or None)
-        if form.is_valid():
-            file = request.FILES['csv_file']
-            # Check iif CSV file
-            if not file.name.endswith('.csv'):
-                messages.info(request, 'This s not a CSV file')
-                return redirect('admin:diving_course_changelist')
-            # Upload csv file function in shop/utisl.py
-            upload_courses = UploadCoursesCSV()
-            if upload_courses.upload(file):
-                messages.info(request, 'File successfully uploaded')
-                return redirect('admin:diving_course_changelist')
-            else:
-                # TODO: Improve upload_shop_data error checking in shop/views.py
-                messages.warning(request, 'File upload unsucessful')
-                return redirect('admin:diving_course_changelist')
-        else:
-            messages.info(request, 'Invalid file format')
-            return redirect('admin:diving_course_changelist')
-
-
-class UploadDiveSites(View):
-    def get(self, request, *args, **kwargs):
-        form = UploadCSVForm()
-        context = {'form': form}
-        return render(request, "diving/upload_csv_form.html", context)
-
-    def post(self, request, *args, **kwargs):
-        form = UploadCSVForm(request.POST, request.FILES or None)
-        if form.is_valid():
-            file = request.FILES['csv_file']
-            # Check iif CSV file
-            if not file.name.endswith('.csv'):
-                messages.info(request, 'This s not a CSV file')
-                return redirect('admin:diving_divesite_changelist')
-            # Upload csv file function in shop/utisl.py
-            upload_dive_sites = UploadDiveSitesCSV()
-            if upload_dive_sites.upload(file):
-                messages.info(request, 'File successfully uploaded')
-                return redirect('admin:diving_divesite_changelist')
-            else:
-                # TODO: Improve upload_shop_data error checking in shop/views.py
-                messages.warning(request, 'File upload unsucessful')
-                return redirect('admin:diving_divesite_changelist')
-        else:
-            messages.info(request, 'Invalid file format')
-            return redirect('admin:diving_divesite_changelist')
-
-
-def dive_booking_email(request):
-    # Get email details
-    subject = 'Dive Booking Confirmation'
-    to_email = 'subaqautic.pierre@gmail.com'
-    from_email = 'subaqautic.pierre@gmail.com'
-    staff_email = 'subaqautic.pierre@gmail.com'
-    diver_name = 'Eric Poper'
-    extra_divers = ['Garry Benson', 'Henri mcitosh']
-    context = {'diver_name': diver_name,
-               'extra_divers': extra_divers}
-    msg_html = render_to_string(
-        'diving/dive_booking_confirmation.html', context)
-    msg_plain = render_to_string(
-        'diving/dive_booking_confirmation.txt', context)
-    # Send email
-    send_mail(subject, msg_plain, from_email, [
-              to_email, staff_email], html_message=msg_html)
-
-    return render(request, 'diving/dive_booking_confirmation.html', context=context)
 
 
 """
 TODO:
 
-- Design email templates for booking request
 - Add breadcrumbs to course detail and dive site detail page
-- design boat diving page
-- design shore diving page
 
 """
