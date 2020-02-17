@@ -5,15 +5,23 @@ from django.core.mail import send_mail
 class Email:
     def __init__(self, divers, booking_info):
         self.divers = divers
-        self.customer_email = booking_info['email']
+        self.customer_email = booking_info.get('email')
         self.company_email = 'info@divesandybeach.com'
-        self.subject = booking_info['subject']
-        self.diver_name = divers[0]['full_name']
-        self.dive_type = booking_info['dive_type']
-        self.time = booking_info.get('time', None)
-        self.date = booking_info['date']
-        self.message = booking_info['message']
-        self.course = booking_info.get('course', None)
+        self.dive_type = booking_info.get('dive_type')
+        self.time = booking_info.get('time')
+        self.date = booking_info.get('date')
+        self.message = booking_info.get('message')
+        self.course = booking_info.get('course')
+        self.contact = booking_info.get('contact')
+        try:
+            self.subject = booking_info['subject']
+        except KeyError:
+            self.subject = booking_info.get('contact_subject')
+        try:
+            self.diver_name = divers[0].get('full_name')
+        except IndexError:
+            self.diver_name = booking_info.get('full_name')
+            pass
 
     @property
     def context(self):
@@ -28,7 +36,9 @@ class Email:
             'date': self.date,
             'diver_email': self.customer_email,
             'message': self.message,
-            'course': self.course}
+            'course': self.course,
+            'contact': self.contact
+        }
 
     def send(self):
         msg_plain = self.build_plain_msg()
@@ -59,7 +69,7 @@ class CustomerEmail(Email):
 class StaffEmail(Email):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.from_email = self.customer_email
+        self.from_email = self.company_email
         self.subject = f'{self.dive_type} - {self.date} - {self.time}'
 
     def build_plain_msg(self):

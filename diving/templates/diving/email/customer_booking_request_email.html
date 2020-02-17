@@ -7,13 +7,23 @@
     <div class="card mb-4" style="border-top: 5px solid #0A9CBF;">
         <div class="card-body">
 
-            <h4 class="text-center">We have recieved your booking request!</h4>
+            <h4 class="text-center">We have recieved your request!</h4>
 
             <hr />
 
             <h4>Hi {{ diver_name }}</h4>
+
+            {% if contact == True %}
+
+            <p>Thank you for your request. Our team will contact you shortly. In the meantime, if you need any
+                assistance with anything please dont hesitate to give us a call.</p>
+
+            {% else %}
+
             <p>Thank you for your request to dive with us. Our team will contact you shortly to confirm your booking. In
                 the meantime if you need any assistance with anything please dont hesitate to give us a call.</p>
+
+            {% endif %}
             <!-- <h6>Extra Divers:</h6>
             <ul>
                 {% for diver in extra_divers %}

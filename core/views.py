@@ -5,6 +5,9 @@ from django.views import View
 from django.contrib import messages
 from .forms import ContactForm
 from django.contrib.messages.views import SuccessMessageMixin
+from django.template.loader import render_to_string
+from django.core.mail import send_mail
+from diving.email import CustomerEmail
 
 
 class Home(TemplateView):
@@ -31,12 +34,26 @@ class ContactPageView(View):
 
     def post(self, request, *args, **kwargs):
         info = ContactForm(request.POST)
-        if info.is_valid():
+
+        if not info.is_valid():
+            messages.info(
+                request, 'Sorry, your input was not valid, please try again')
+            return render(request, 'diving/course_booking_request.html', context={'form': info})
+        else:
+
             name = info.cleaned_data['full_name']
             email = info.cleaned_data['email']
             message = info.cleaned_data['message']
+            context = {
+                'full_name': name,
+                'email': email,
+                'message': message,
+                'contact': True,
+                'contact_subject': 'Contact Us'
+            }
 
-            # TODO: Send email to user and staff
-        form = ContactForm()
-        messages.success(request, 'Thank you for contacting us!')
-        return render(request, 'core/contact.html', context={'form': form})
+            customer_email = CustomerEmail([], context)
+            customer_email.send()
+
+            messages.info(request, 'Thank you for contacting us!')
+            return render(request, 'diving/booking_success.html')
