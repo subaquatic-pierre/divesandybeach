@@ -1,0 +1,21 @@
+{% extends 'diving/email/email_base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="card-body">
+
+        <h3 class="text-center">Contact Us Request!</h3>
+
+
+        <h4>Diver Name: {{ full_name }}</h4>
+        <h4>Diver Email: {{ email }}</h4>
+        <h4>Message</h4>
+
+        <p>{{ message }}</p>
+
+    </div>
+</div>
+
+
+{% endblock content %}

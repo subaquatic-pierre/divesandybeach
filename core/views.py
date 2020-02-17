@@ -55,5 +55,10 @@ class ContactPageView(View):
             customer_email = CustomerEmail([], context)
             customer_email.send()
 
+            msg = render_to_string(
+                'diving/email/contact_us_request.html', context=context)
+            send_mail('Contact Us', msg, 'info@divesandybeach.com',
+                      ['info@divesandybeach.com'], html_message=msg)
+
             messages.info(request, 'Thank you for contacting us!')
             return render(request, 'diving/booking_success.html')
