@@ -1,11 +1,9 @@
 const gulp = require('gulp');
-var UglifyJS = require("uglify-es");
-var pipeline = require('readable-stream').pipeline;
+const cleanCSS = require('gulp-clean-css');
 
-gulp.task('default', done => {
-    gulp.src('core/static/core/js/main.js')
-        .pipe(UglifyJS.minify())
-    gulp.dest('dist')
-    done()
+gulp.task('minify-css', () => {
+    return gulp.src('core/static/core/css/main.css')
+        .pipe(cleanCSS({ compatibility: 'ie8' }))
+        .pipe(gulp.dest('./core/static/core/css/main.min.css'));
 });
 
