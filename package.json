@@ -5,12 +5,21 @@
   "main": "index.js",
   "scripts": {
     "browser-sync": "browser-sync start --files \"core/static/core/css/*.css, core/static/core/*.js, core/templates/core/*.html, diving/**/*.py, core/**/*.py, divesandybeach/**/*.py, diving/templates/diving/*.html\" --proxy 127.0.0.1:8000 --reload-delay=300 --reload-debounce=500",
-    "start": "concurrently --kill-others \"python3 manage.py runserver\" \"npm run browser-sync\" "
+    "start": "concurrently --kill-others \"python3 manage.py runserver\" \"npm run browser-sync\" ",
+    "compress": "node ./uglify.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.7",
-    "concurrently": "^5.1.0"
+    "concurrently": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-uglify": "^3.0.2",
+    "uglifyjs-webpack-plugin": "^1.0.0-rc.0"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "readable-stream": "^3.6.0"
   }
 }

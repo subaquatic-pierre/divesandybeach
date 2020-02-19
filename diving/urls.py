@@ -6,9 +6,9 @@ app_name = 'diving'
 
 
 urlpatterns = [
-    path('fujairah-dive-site/',
+    path('fujairah-dive-sites/',
          views.DiveSiteListView.as_view(), name='dive-site-list'),
-    path('fujairah-dive-site/<slug>/',
+    path('fujairah-dive-sites/<slug>/',
          views.DiveSiteDetailView.as_view(), name='dive-site-detail'),
     path('padi-level/',
          views.PADICourseLevelListView.as_view(), name='course-level-list'),
@@ -18,9 +18,9 @@ urlpatterns = [
          views.PADICourseListView.as_view(), name='padi-course-list'),
     path('padi-courses/<slug>/',
          views.PADICourseDetailView.as_view(), name='padi-course-detail'),
-    path('fun-diving/<slug>/',
+    path('dive-with-us/<slug>/',
          views.DiveDetailView.as_view(), name='fun-diving'),
-    path('prices/',
+    path('diving-prices/',
          views.PricesDetailView.as_view(), name='prices'),
     path('course-booking-request/',
          views.CourseBookingRequestView.as_view(), name='course-booking-request'),

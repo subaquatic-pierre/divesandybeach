@@ -13,13 +13,15 @@
         <div class="container d-flex h-100 justify-content-center">
             <div class="row align-content-center">
                 <div class="col text-center title-text">
-                    <div class="animated fadeInUp delay-1s" data-delay="0.2s">
+                    <div class="animated fadeInUp">
                         <h1 class="title-text mb-5">Scuba Diving in Fujairah</h1> <!-- PHP WP FUNCTION PAGE TITLE -->
                     </div>
-                    <div class="animated fadeInUp delay-1s" data-delay="0.4s">
-                        <p class="mb-5">Sign up for your next dive trip</p> <!-- PHP WP FUNCTION ACF -->
+                    <div class="animated fadeInUp ">
+                        <p class="mb-5 w-50 mx-auto">Are you a certified diver? We would love to take you on your next
+                            dive in
+                            Fujairah. Click the button belwo to sign up for your next dive trip</p>
                     </div>
-                    <div class="animated fadeInUp delay-1s" data-delay="0.6s">
+                    <div class="animated fadeInUp">
                         <a class="btn btn-primary btn-lg" href="{% url 'diving:booking-request' %}">Request a
                             booking</a>
                     </div>
@@ -45,8 +47,8 @@
             </div>
             <div class="card-deck text-center">
 
-                <div class="card mb-5 wow fadeInLeft delay-1s">
-                    <a href="{% url 'diving:fun-diving' 'boat-dive' %}"><img class="card-img-top"
+                <div class="card mb-5 wow fadeInLeft">
+                    <a href="{% url 'diving:fun-diving' 'fujairah-boat-dive' %}"><img class="card-img-top"
                             src="{% static 'core/img/Pierre DSD Snoopy.jpg' %}" alt="Boat Diving"></a>
                     <div class="card-body">
                         <h2 class="card-title">Boat Diving</h2>
@@ -55,14 +57,15 @@
                     </div>
                     <div class="card-footer border-top-0 bg-white">
 
-                        <a class="btn btn-success btn-lg my-3 mr-3">Learn More <i class="fa fa-chevron-right"
+                        <a href="{% url 'diving:fun-diving' 'fujairah-boat-dive' %}"
+                            class="btn btn-success btn-lg my-3 mr-3">Learn More <i class="fa fa-chevron-right"
                                 aria-hidden="true"></i></a>
 
                     </div>
                 </div>
 
-                <div class="card mb-5 wow fadeInUp delay-1s">
-                    <a href="{% url 'diving:fun-diving' 'shore-dive' %}"><img class="card-img-top"
+                <div class="card mb-5 wow fadeInUp">
+                    <a href="{% url 'diving:fun-diving' 'dive-snoopy-island' %}"><img class="card-img-top"
                             src="{% static 'core/img/sqr- Co.jpg' %}" alt="Shore Diving"></a>
                     <div class="card-body">
                         <h2 class="card-title">Shore Diving</h2>
@@ -72,13 +75,14 @@
 
                     </div>
                     <div class="card-footer border-top-0 bg-white">
-                        <a class="btn btn-success btn-lg my-3 mr-3">Learn More <i class="fa fa-chevron-right"
+                        <a href="{% url 'diving:fun-diving' 'dive-snoopy-island' %}"
+                            class="btn btn-success btn-lg my-3 mr-3">Learn More <i class="fa fa-chevron-right"
                                 aria-hidden="true"></i></a>
 
                     </div>
                 </div>
 
-                <div class="card mb-5 wow fadeInRight delay-1s">
+                <div class="card mb-5 wow fadeInRight">
                     <a href="{% url 'diving:padi-course-list' %}"><img class="card-img-top"
                             src="{% static 'core/img/Lady in The Sand.jpg' %}" alt="PADI Courses"></a>
                     <div class="card-body">
@@ -88,8 +92,8 @@
                             for more information.</p>
                     </div>
                     <div class="card-footer border-top-0 bg-white">
-                        <a class="btn btn-success btn-lg my-3 mr-3">Learn More <i class="fa fa-chevron-right"
-                                aria-hidden="true"></i></a>
+                        <a href="{% url 'diving:padi-course-list' %}" class="btn btn-success btn-lg my-3 mr-3">Learn
+                            More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
 
@@ -131,18 +135,6 @@
 
             <div class="col-md-6 col-lg-4 text-center my-md-5 px-4">
                 <div class="wow fadeIn">
-                    <i class="fas fa-home fa-4x mb-4"></i>
-                    <h5>Located On The Beach</h5>
-                    <hr class="w-50 mx-auto">
-                    <p>Located directly inforront of snoopy sialnd awards us the best shore diving in the UAE. We
-                        are
-                        based in Sandy Beach hotel and resort on the east coast of the UAE, the fujairah coastline
-                        offers the best diving in the UAE with temperate to warm waters all year around. </p>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 text-center my-md-5 px-4">
-                <div class="wow fadeIn">
                     <i class="fas fa-fish fa-4x mb-4"></i>
                     <h4>Marine Life</h4>
                     <hr class="w-50 mx-auto">
@@ -156,10 +148,24 @@
 
             <div class="col-md-6 col-lg-4 text-center my-md-5 px-4">
                 <div class="wow fadeIn">
+                    <i class="fas fa-umbrella-beach fa-4x mb-4"></i>
+                    <h5>Located On The Beach</h5>
+                    <hr class="w-50 mx-auto">
+                    <p>Located directly inforront of snoopy sialnd awards us the best shore diving in the UAE. We
+                        are
+                        based in Sandy Beach hotel and resort on the east coast of the UAE, the fujairah coastline
+                        offers the best diving in the UAE with temperate to warm waters all year around. </p>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-6 col-lg-4 text-center my-md-5 px-4">
+                <div class="wow fadeIn">
                     <i class="fas fa-ship fa-4x mb-4"></i>
                     <h4>Boat Diving</h4>
                     <hr class="w-50 mx-auto">
-                    <p>We run two boat trips pper day, our boat is dedicated for diving with all safety equipment
+                    <p>We run two boat trips per day, our boat is dedicated for diving with all safety equipment
                         and
                         kit racks. Our boats caters for no more than 12 divers, each dive trip has a dedicated
                         divemaster on board who will guide you through our favourite dive sites.</p>
@@ -172,7 +178,7 @@
                     <i class="fas fa-users fa-4x mb-4"></i>
                     <h4>Family Environment</h4>
                     <hr class="w-50 mx-auto">
-                    <p>Being based in sandy beach hotel and resort provides our divers with the perfect family
+                    <p>Being based in Sandy Beach Hotel and Resort provides our divers with the perfect family
                         environment. Divers can head out for a day of diving on the boat or from shore and their
                         families can enjoy the swiming pool or beach facilities.</p>
                 </div>
@@ -221,35 +227,38 @@
 
             <div class="row">
                 <div class="col-6 col-md-3 col-lg-2 partner-logo d-flex align-items-center mb-5 justify-content-center">
-                    <a href="#"><img src="{% static 'core/img/logo/Partner-Logo_0005_PADI.png' %}" alt="PADI Logo"></a>
+                    <a target="blank" href="https://www.padi.com/"><img
+                            src="{% static 'core/img/logo/Partner-Logo_0005_PADI.png' %}" alt="PADI Logo"></a>
                 </div>
 
                 <div
                     class="col-6 col-md-3 col-lg-2 partner-logo  d-flex align-items-center mb-5 justify-content-center">
-                    <a href="#"><img src="{% static 'core/img/logo/Partner-Logo_0002_PADI-Tec-Rec.png' %}"
-                            alt="PADI Logo"></a>
+                    <a target="blank" href="https://www.padi.com/technical-courses"><img
+                            src="{% static 'core/img/logo/Partner-Logo_0002_PADI-Tec-Rec.png' %}" alt="PADI Logo"></a>
                 </div>
 
                 <div
                     class="col-6 col-md-3 col-lg-2 partner-logo  d-flex align-items-center mb-5 justify-content-center">
-                    <a href="#"><img src="{% static 'core/img/logo/Partner-Logo_0000_ScubaPro.png' %}"
-                            alt="PADI Logo"></a>
+                    <a target="blank" href="https://www.scubapro.com/"><img
+                            src="{% static 'core/img/logo/Partner-Logo_0000_ScubaPro.png' %}" alt="PADI Logo"></a>
                 </div>
 
                 <div
                     class="col-6 col-md-3 col-lg-2 partner-logo  d-flex align-items-center mb-5 justify-content-center">
-                    <a href="#"><img src="{% static 'core/img/logo/Partner-Logo_0004_Project-AWARE.png' %}"
-                            alt="PADI Logo"></a>
+                    <a target="blank" href="https://www.projectaware.org/"><img
+                            src="{% static 'core/img/logo/Partner-Logo_0004_Project-AWARE.png' %}" alt="PADI Logo"></a>
                 </div>
 
                 <div
                     class="col-6 col-md-3 col-lg-2 partner-logo  d-flex align-items-center mb-5 justify-content-center">
-                    <a href="#"><img src="{% static 'core/img/logo/Partner-Logo_0006_EDA.png' %}" alt="PADI Logo"></a>
+                    <a target="blank" href="https://www.emiratesdiving.com/"><img
+                            src="{% static 'core/img/logo/Partner-Logo_0006_EDA.png' %}" alt="PADI Logo"></a>
                 </div>
 
                 <div
                     class="col-6 col-md-3 col-lg-2 partner-logo  d-flex align-items-center mb-5 justify-content-center">
-                    <a href="#"><img src="{% static 'core/img/logo/Partner-Logo_0001_Mares.png' %}" alt="PADI Logo"></a>
+                    <a target="blank" href="https://www.mares.com/en-IC/home/"><img
+                            src="{% static 'core/img/logo/Partner-Logo_0001_Mares.png' %}" alt="PADI Logo"></a>
                 </div>
             </div>
         </div>

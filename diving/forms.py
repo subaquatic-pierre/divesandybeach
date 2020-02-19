@@ -21,8 +21,11 @@ class CourseBookingRequestForm(forms.Form):
     COURSES = Course.objects.all()
     email = forms.EmailField(
         widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter your email address'}))
-    course = forms.ChoiceField(choices=[(course.title, course.title) for course in list(COURSES)], widget=forms.Select(
-                               attrs={'class': 'form-control', 'placeholder': 'Enter your email address'}))
+    try:
+        course = forms.ChoiceField(choices=[(course.title, course.title) for course in list(COURSES)], widget=forms.Select(
+            attrs={'class': 'form-control', 'placeholder': 'Enter your email address'}))
+    except Exception as e:
+        print(e)
     date = forms.DateField(
         widget=DatePicker(
             options={

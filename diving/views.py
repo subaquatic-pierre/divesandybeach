@@ -216,6 +216,6 @@ class CourseBookingRequestView(View):
 """
 TODO:
 
-- Add breadcrumbs to course detail and dive site detail page
+- Change course info pictures, pool, boat, shore, classroom
 
 """

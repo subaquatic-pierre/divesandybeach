@@ -91,7 +91,7 @@
                                 <h4 class="card-title-text">Book Learning</h4>
                                 <div class="heading-underline"></div>
                             </div>
-                            <div class="card-body  py-5">
+                            <div class="card-body  pt-5">
                                 <h1><b>{{ course.book_learning_price }} </b><small class="text-muted">AED</small></h1>
                             </div>
                             <ul class="list-group list-group-flush bg-light">
@@ -172,21 +172,36 @@
         </div>
         <!-- End Course Info row -->
 
+        <!-- Course Info row -->
+        <div class="row course-info-row">
+            <div class="col-md-6 d-flex align-items-center order-md-2">
+                <div class="course-info-text wow fadeInLeft">
+                    <h3 class="text-center pb-4 ">Schedule</h3>
+                    <div class="heading-underline"></div>
+                    <p>{{ course.schedule | linebreaks }}</p>
+
+                </div>
+
+            </div>
+            <div class="col-md-6 text-center order-2">
+                <div class="course-info-img">
+                    <img src="{{ course.schedule_image.medium_image.url }}" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- End Course Info row -->
+
         <!-- E-Learning Info row -->
         {% if course.e_learning_info %}
         <div class="row course-info-row">
-            <div class="col-md-6 d-flex align-items-center">
-                <div class="course-info-text wow fadeIn">
+            <div class="col-md-6 d-flex align-items-center order-md-2">
+                <div class="course-info-text wow fadeIn ">
                     <h3 class="text-center pb-4 ">{{ course.e_learning_info.heading }}</h3>
                     <div class="heading-underline"></div>
                     <p>{{ course.e_learning_info.text | linebreaks }}</p>
                     <a href="{{ site.get_absolute_url }}" class="text-primary d-flex justify-content-end">
                         <h6>Sign up for PADI e-learning <i class="fas fa-angle-double-right"></i></h6>
                     </a>
-                    <!-- <div class="text-center mt-5"> -->
-                    <!-- <a target="blank" href="{{ course.e_learning_link }}" class="btn btn-sm btn-info">Sign up for your
-                        E-Learning</a> -->
-                    <!-- </div> -->
                 </div>
 
             </div>
@@ -202,7 +217,8 @@
         <!-- Book Learning Info row -->
         {% if course.book_learning_info %}
         <div class="row course-info-row">
-            <div class="col-md-6 d-flex align-items-center {% if course.e_learning_info %} order-md-2 {% endif %}">
+            <div
+                class="col-md-6 d-flex align-items-center {% if course.e_learning_info %}  {% else %} order-md-2 {% endif %}">
                 <div class="course-info-text wow fadeIn">
                     <h3 class="text-center pb-4 ">{{ course.book_learning_info.heading }}</h3>
                     <div class="heading-underline"></div>
@@ -221,7 +237,8 @@
         <!-- Pool Dives Info row -->
         {% if course.pool_info %}
         <div class="row course-info-row">
-            <div class="col-md-6 d-flex align-items-center {% if not course.e_learning_info %} order-md-2 {% endif %}">
+            <div
+                class="col-md-6 d-flex align-items-center {% if not course.e_learning_info %} {% else %} order-md-2 {% endif %}">
                 <div class="course-info-text wow fadeIn">
                     <h3 class="text-center pb-4 ">{{ course.pool_info.heading }}</h3>
                     <div class="heading-underline"></div>
@@ -241,7 +258,7 @@
         {% if course.ocean_info %}
         <div class="row course-info-row">
             <div
-                class="col-md-6 d-flex align-items-center {% if course.pool_info and not course.e_learning_info %}  {% elif course.pool_info %} order-md-2 {% endif %}">
+                class="col-md-6 d-flex align-items-center {% if course.e_learning_info and not course.pool_info %} order-md-2  {% elif course.e_learning_info and course.pool_info %}  {% endif %}">
                 <div class="course-info-text wow fadeIn">
                     <h3 class="text-center pb-4 ">{{ course.ocean_info.heading }}</h3>
                     <div class="heading-underline"></div>

@@ -7728,7 +7728,8 @@ table.table tbody td {
 .title-text p {
   color: white;
   text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0.125rem 0.25rem 0.5rem rgba(0, 0, 0, 0.075), 0.25rem 0.5rem 0.75rem rgba(0, 0, 0, 0.05);
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  text-transform: none; }
 
 .card-img-top {
   border-radius: 0 !important; }
@@ -7912,15 +7913,18 @@ a:hover {
 .list-group:last-child {
   padding-bottom: 1rem; }
 
-.course-info-row .course-info-text {
-  background: white;
-  border-radius: 5px;
-  padding: 1rem;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0.125rem 0.25rem 0.5rem rgba(0, 0, 0, 0.075), 0.25rem 0.5rem 0.75rem rgba(0, 0, 0, 0.05); }
-.course-info-row .course-info-img img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover; }
+.course-info-row {
+  padding: 1rem 0; }
+  .course-info-row .course-info-text {
+    background: white;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0.125rem 0.25rem 0.5rem rgba(0, 0, 0, 0.075), 0.25rem 0.5rem 0.75rem rgba(0, 0, 0, 0.05);
+    margin-bottom: 1rem; }
+  .course-info-row .course-info-img img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover; }
 
 @media (min-width: 800px) {
   .course-info-section:nth-child(odd) .course-info-row:nth-child(odd) .course-info-img {

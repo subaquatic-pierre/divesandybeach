@@ -9,11 +9,11 @@
         <div class="mobile-menu bg-primary">
             <ul class="text-light">
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'diving:fun-diving' 'shore-dive' %}"><i
+                    <a class="nav-link" href="{% url 'diving:fun-diving' 'dive-snoopy-island' %}"><i
                             class="fas text-info fa-swimmer mr-3"></i>Shore Diving</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'diving:fun-diving' 'boat-dive' %}"><i
+                    <a class="nav-link" href="{% url 'diving:fun-diving' 'fujairah-boat-dive' %}"><i
                             class="fas text-info fa-ship mr-3"></i>Boat
                         Diving</a>
                 </li>
@@ -54,9 +54,11 @@
                             With
                             Us</a>
                         <div class="dropdown-menu bg-primary" aria-labelledby="target-dropdown">
-                            <a class="nav-link dropdown-item" href="{% url 'diving:fun-diving' 'boat-dive' %}">Boat
+                            <a class="nav-link dropdown-item"
+                                href="{% url 'diving:fun-diving' 'fujairah-boat-dive' %}">Boat
                                 Diving</a>
-                            <a class="nav-link dropdown-item" href="{% url 'diving:fun-diving' 'shore-dive' %}">Shore
+                            <a class="nav-link dropdown-item"
+                                href="{% url 'diving:fun-diving' 'dive-snoopy-island' %}">Shore
                                 Diving</a>
                         </div>
                     </li>

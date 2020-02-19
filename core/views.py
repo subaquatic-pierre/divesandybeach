@@ -62,3 +62,10 @@ class ContactPageView(View):
 
             messages.info(request, 'Thank you for contacting us!')
             return render(request, 'diving/booking_success.html')
+
+
+""" TODO
+- Change delay on front page animation
+- add padding between dive pages
+- Pool, Ocean, Book learning, E-Learning info content
+ """

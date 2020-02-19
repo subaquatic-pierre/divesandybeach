@@ -19,7 +19,7 @@
             <div class="heading-underline"></div>
         </div>
         <div class="col-md-10 form-card bg-dark text-light mb-5 p-md-5">
-            <form action="" method="POST" novalidate>
+            <form action="" method="POST">
                 {% csrf_token %}
                 {{ diver_form.management_form }}
                 {{ booking_form.shore }}

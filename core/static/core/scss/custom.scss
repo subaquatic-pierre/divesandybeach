@@ -88,6 +88,8 @@ table.table tbody td {
   color: white;
   text-shadow: $text-shadow-sm;
   font-size: 1.2rem;
+  text-transform: none;
+
 }
 
 
@@ -355,8 +357,12 @@ a:hover {
     border-radius: 5px;
     padding: 1rem;
     box-shadow: $box-shadow-lg; 
+    margin-bottom: 1rem;
+
 
   }
+
+  padding: 1rem 0;
 
   .course-info-img {
     img {

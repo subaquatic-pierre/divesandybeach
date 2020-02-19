@@ -65,13 +65,13 @@
                                         {% if course.e_learning_price %}
 
                                         <a href="{{ course.get_absolute_url }}" <div class="card-price">
-                                            <h6 class="card-price-text">500 {{ course.e_learning_price }} <small>
+                                            <h6 class="card-price-text">{{ course.e_learning_price }} <small>
                                                     AED</small></h6>
                                         </a>
                                         {% else %}
 
                                         <a href="{{ course.get_absolute_url }}" <div class="card-price">
-                                            <h6 class="card-price-text">500 {{ course.book_learning_price }} <small>
+                                            <h6 class="card-price-text">{{ course.book_learning_price }} <small>
                                                     AED</small></h6>
                                         </a>
 
@@ -110,13 +110,13 @@
                                         {% if course.e_learning_price %}
 
                                         <a href="{{ course.get_absolute_url }}" <div class="card-price">
-                                            <h6 class="card-price-text">500 {{ course.e_learning_price }} <small>
+                                            <h6 class="card-price-text">{{ course.e_learning_price }} <small>
                                                     AED</small></h6>
                                         </a>
                                         {% else %}
 
-                                        <a href="{{ course.get_absolute_url }}" <div class="card-price">
-                                            <h6 class="card-price-text">500 {{ course.book_learning_price }} <small>
+                                        <a href=" {{ course.get_absolute_url }}" <div class="card-price">
+                                            <h6 class="card-price-text">{{ course.book_learning_price }} <small>
                                                     AED</small></h6>
                                         </a>
 
@@ -129,7 +129,7 @@
                         {% endfor %}
                     </div>
                 </div>
-                <div class="tab-pane fade" id="pills-specialties" role="tabpanel"
+                <div class=" tab-pane fade" id="pills-specialties" role="tabpanel"
                     aria-labelledby="pills-specialties-tab">
                     <div class="row">
                         {% for course in specialties %}
@@ -140,13 +140,16 @@
                                         class="card-img-top cd" alt="..."></a>
                                 <div class="card-body">
                                     <a href="{{ course.get_absolute_url }}">
-                                        <h4 class="card-title text-center">{{ course.title }}</h4>
+                                        <h4 class="card-title text-center">
+                                            {{ course.title }}</h4>
                                     </a>
                                     <div class="heading-underline"></div>
-                                    <p class="course-card-text">{{ course.description | truncatewords:15 }}</p>
+                                    <p class="course-card-text">
+                                        {{ course.description | truncatewords:15 }}</p>
                                     <a href="{{ course.get_absolute_url }}"
                                         class="d-flex mb-4 justify-content-end text-primary text-shadow">
-                                        <h5>Learn More <i class="fas fa-angle-double-right"></i></h5>
+                                        <h5>Learn More <i class="fas fa-angle-double-right"></i>
+                                        </h5>
                                     </a>
 
                                     <div class="card-footer bg-white border-top-0">
@@ -154,13 +157,15 @@
                                         {% if course.e_learning_price %}
 
                                         <a href="{{ course.get_absolute_url }}" <div class="card-price">
-                                            <h6 class="card-price-text">500 {{ course.e_learning_price }} <small>
+                                            <h6 class="card-price-text">
+                                                {{ course.e_learning_price }} <small>
                                                     AED</small></h6>
                                         </a>
                                         {% else %}
 
                                         <a href="{{ course.get_absolute_url }}" <div class="card-price">
-                                            <h6 class="card-price-text">500 {{ course.book_learning_price }} <small>
+                                            <h6 class="card-price-text">
+                                                {{ course.book_learning_price }} <small>
                                                     AED</small></h6>
                                         </a>
 
@@ -186,10 +191,12 @@
                                         <h4 class="card-title text-center">{{ course.title }}</h4>
                                     </a>
                                     <div class="heading-underline"></div>
-                                    <p class="course-card-text">{{ course.description | truncatewords:15 }}</p>
+                                    <p class="course-card-text">
+                                        {{ course.description | truncatewords:15 }}</p>
                                     <a href="{{ course.get_absolute_url }}"
                                         class="d-flex mb-4 justify-content-end text-primary text-shadow">
-                                        <h5>Learn More <i class="fas fa-angle-double-right"></i></h5>
+                                        <h5>Learn More <i class="fas fa-angle-double-right"></i>
+                                        </h5>
                                     </a>
 
                                     <div class="card-footer bg-white border-top-0">
@@ -197,13 +204,15 @@
                                         {% if course.e_learning_price %}
 
                                         <a href="{{ course.get_absolute_url }}" <div class="card-price">
-                                            <h6 class="card-price-text">500 {{ course.e_learning_price }} <small>
+                                            <h6 class="card-price-text">
+                                                {{ course.e_learning_price }} <small>
                                                     AED</small></h6>
                                         </a>
                                         {% else %}
 
                                         <a href="{{ course.get_absolute_url }}" <div class="card-price">
-                                            <h6 class="card-price-text">500 {{ course.book_learning_price }} <small>
+                                            <h6 class="card-price-text">
+                                                {{ course.book_learning_price }} <small>
                                                     AED</small></h6>
                                         </a>
 
@@ -230,10 +239,12 @@
                                         <h4 class="card-title text-center">{{ course.title }}</h4>
                                     </a>
                                     <div class="heading-underline"></div>
-                                    <p class="course-card-text">{{ course.description | truncatewords:15 }}</p>
+                                    <p class="course-card-text">
+                                        {{ course.description | truncatewords:15 }}</p>
                                     <a href="{{ course.get_absolute_url }}"
                                         class="d-flex mb-4 justify-content-end text-primary text-shadow">
-                                        <h5>Learn More <i class="fas fa-angle-double-right"></i></h5>
+                                        <h5>Learn More <i class="fas fa-angle-double-right"></i>
+                                        </h5>
                                     </a>
 
                                     <div class="card-footer bg-white border-top-0">
@@ -241,13 +252,15 @@
                                         {% if course.e_learning_price %}
 
                                         <a href="{{ course.get_absolute_url }}" <div class="card-price">
-                                            <h6 class="card-price-text">500 {{ course.e_learning_price }} <small>
+                                            <h6 class="card-price-text">
+                                                {{ course.e_learning_price }} <small>
                                                     AED</small></h6>
                                         </a>
                                         {% else %}
 
                                         <a href="{{ course.get_absolute_url }}" <div class="card-price">
-                                            <h6 class="card-price-text">500 {{ course.book_learning_price }} <small>
+                                            <h6 class="card-price-text">
+                                                {{ course.book_learning_price }} <small>
                                                     AED</small></h6>
                                         </a>
 

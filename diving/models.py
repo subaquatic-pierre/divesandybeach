@@ -116,9 +116,9 @@ class DiveTrip(models.Model):
     schedule = models.TextField(blank=True, null=True)
     slug = models.SlugField()
 
-    def save(self, *args, **kwargs):
-        self.slug = slugify(self.title, allow_unicode=True)
-        super().save(*args, **kwargs)
+    # def save(self, *args, **kwargs):
+    #     self.slug = slugify(self.title, allow_unicode=True)
+    #     super().save(*args, **kwargs)
 
     def __str__(self):
         return self.title
@@ -175,6 +175,8 @@ class Course(models.Model):
         'Images', blank=True, null=True, on_delete=models.SET_NULL, related_name='overview_image')
     info_image = models.ForeignKey(
         'Images', blank=True, null=True, on_delete=models.SET_NULL, related_name='info_image')
+    schedule_image = models.ForeignKey(
+        'Images', blank=True, null=True, on_delete=models.SET_NULL, related_name='course_schedule_image')
     description = models.TextField(blank=True, null=True)
     e_learning_link = models.CharField(max_length=255, null=True, blank=True)
     level = models.ForeignKey(
