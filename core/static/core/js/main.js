@@ -48,12 +48,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
-const myFunc = async () => {
-    await delay(5000);
-    console.log("Waited 5s");
-
-    await delay(5000);
-    console.log('All content loaded')
-};
-
 const delay = ms => new Promise(res => setTimeout(res, ms));
