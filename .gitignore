@@ -9,3 +9,4 @@ old_files
 .pyc
 sass-watch.sh
 .sass-cache
+media_root
