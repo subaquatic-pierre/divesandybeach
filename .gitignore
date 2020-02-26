@@ -8,5 +8,5 @@ old_files
 .vscode
 .pyc
 sass-watch.sh
-.scssc
+.sass-cache
 media_root
