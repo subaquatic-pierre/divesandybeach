@@ -280,6 +280,13 @@ a:hover {
     min-height: 150vh;
     background-position: top center;
     position: relative;
+    
+  }
+}
+
+@media (min-width:800px){
+  .title-text p {
+    max-width:50%;
   }
 }
 
@@ -504,8 +511,9 @@ a:hover {
 }
 
 .course-card-text {
-  height: 5rem;
+  min-height: 5rem;
 }
+
 
 
 

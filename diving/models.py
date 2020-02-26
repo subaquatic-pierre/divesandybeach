@@ -5,6 +5,7 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.utils.text import slugify
 from .model_utils import (create_thumbnail, image_path, thumbnail_path,
                           create_hero_image, hero_path, medium_path, create_medium_image, create_mobile_image, mobile_path)
+from django.utils.html import format_html
 
 # Learning type used for ItemPrice model
 LEARNING_TYPE_CHOICES = (
@@ -298,6 +299,10 @@ class Images(models.Model):
 
     def __str__(self):
         return self.title
+
+    def admin_thumbnail(self):
+        return format_html(f'<img src="{self.medium_image.url}" height="100px"/>')
+    admin_thumbnail.short_description = 'Thumbnail'
 
     class Meta:
         verbose_name_plural = 'Images'

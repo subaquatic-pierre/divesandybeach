@@ -52,7 +52,7 @@ class ItemPriceAdmin(admin.ModelAdmin, ExportItemPrices):
     list_display = [
         'title',
         'category',
-        'learning_type',
+        'course',
         'trip_type',
         'price'
 
@@ -67,6 +67,13 @@ class ItemPriceAdmin(admin.ModelAdmin, ExportItemPrices):
     ]
 
 
+class ImagesAdmin(admin.ModelAdmin):
+    list_display = [
+        'title',
+        'admin_thumbnail'
+    ]
+
+
 admin.site.register(DiveSite, DiveSiteAdmin)
 admin.site.register(MarineLife, MarineLifeAdmin)
 admin.site.register(DiveTrip)
@@ -75,5 +82,5 @@ admin.site.register(Course, CourseAdmin)
 admin.site.register(CourseInfo)
 admin.site.register(CourseFAQ)
 admin.site.register(ItemPrice, ItemPriceAdmin)
-admin.site.register(Images)
+admin.site.register(Images, ImagesAdmin)
 admin.site.register(Category)

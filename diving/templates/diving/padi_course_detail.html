@@ -258,7 +258,7 @@
         {% if course.ocean_info %}
         <div class="row course-info-row">
             <div
-                class="col-md-6 d-flex align-items-center {% if course.e_learning_info and not course.pool_info %} order-md-2  {% elif course.e_learning_info and course.pool_info %}  {% endif %}">
+                class="col-md-6 d-flex align-items-center {% if course.e_learning_info and not course.pool_info %} order-md-2  {% elif course.e_learning_info and course.pool_info %}  {% else %} order-md-1 {% endif %}">
                 <div class="course-info-text wow fadeIn">
                     <h3 class="text-center pb-4 ">{{ course.ocean_info.heading }}</h3>
                     <div class="heading-underline"></div>
