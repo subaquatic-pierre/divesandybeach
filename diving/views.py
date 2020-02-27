@@ -108,7 +108,7 @@ class BookingRequestView(View):
     def get(self, request, *args, **kwargs):
         referer = request.META.get('HTTP_REFERER')
         try:
-            if referer.endswith('shore-dive/'):
+            if referer.endswith('dive-snoopy-island/'):
                 booking_form = ShoreDiveBookingRequestForm()
             else:
                 booking_form = BoatDiveBookingRequestForm()
