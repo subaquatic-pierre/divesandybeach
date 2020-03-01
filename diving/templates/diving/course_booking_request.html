@@ -60,10 +60,17 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="{{  form.date.id_for_label }}">Select a preferred Date</label>
-                    {{ form.date }}
+                    <label for="{{  form.date.id_for_label }}">Select a preferred date</label>
+                    <div class="input-group date" id="date" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input" name="date" data-target="
+                            #date" />
+                        <div class="input-group-append" data-target="#date" data-toggle="datetimepicker">
+                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                        </div>
+                    </div>
                     {{ form.date.errors }}
                 </div>
+
 
                 <div class="form-group">
                     <label for="{{  form.message.id_for_label }}">Enter a message</label>
@@ -118,5 +125,14 @@
         $("[name='form-TOTAL_FORMS']").val(form_count)
 
     }
+
+    // Date Picker
+    $(function () {
+        $('#date').datetimepicker({
+            format: 'L',
+            useCurrent: false,
+        });
+    });
+
 </script>
 {% endblock extra_scripts %}

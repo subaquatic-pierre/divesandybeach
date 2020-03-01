@@ -1,7 +1,7 @@
 from django import forms
 from django.forms.widgets import Select
 from .models import CourseBookingRequest, DiveBookingRequest, Course, CERT_LEVEL_CHOICES, TRIP_TIME_CHOICES, EQUIPMENT_CHOICES
-from tempus_dominus.widgets import DatePicker
+from tempus_dominus.widgets import DatePicker, TimePicker
 from .widgets import KitSelectWidget, CertLevelSelectWidget
 
 BLANK_CHOICE = [
@@ -54,22 +54,9 @@ class CourseBookingDivers(forms.Form):
 class DiveBookingRequestForm(forms.Form):
     email = forms.EmailField(
         widget=forms.EmailInput(attrs={'class': 'form-control', 'required': True, 'placeholder': 'Enter your email address'}))
-    date = forms.DateField(
-        widget=DatePicker(
-            options={
-                # 'format': 'd m Y',
-                'icons': {
-                    'next': 'fas fa-chevron-right',
-                    'previous': 'fas fa-chevron-left',
-                },
-                'useCurrent': False,
-            }, attrs={
-                'input_toggle': True,
-                'input_group': False,
-                'autocomplete': 'off'
-            }
-        )
-    )
+
+    date = forms.DateField(required=True)
+
     message = forms.CharField(required=False, widget=forms.Textarea(
         attrs={'class': 'form-control', 'placeholder': 'Send us a message'}))
 
@@ -84,7 +71,7 @@ class DiveBookingRequestDiverForm(forms.Form):
 
 
 class BoatDiveBookingRequestForm(DiveBookingRequestForm):
-    time = forms.ChoiceField(required=True, choices=TRIP_TIME_CHOICES, widget=forms.RadioSelect(
+    boat_time = forms.ChoiceField(required=True, choices=TRIP_TIME_CHOICES, widget=forms.RadioSelect(
         attrs={'class': 'custom-control-input'}))
 
     @property
@@ -93,11 +80,10 @@ class BoatDiveBookingRequestForm(DiveBookingRequestForm):
 
 
 class ShoreDiveBookingRequestForm(DiveBookingRequestForm):
-    time = forms.ChoiceField(required=True, choices=(('10AM', '10AM'), ('0AM', '0AM'),), widget=forms.RadioSelect(
-        attrs={'class': 'custom-control-input'}))
+    shore_time = forms.CharField(required=True)
+
     shore = forms.CharField(
         required=False, widget=forms.HiddenInput(attrs={'value': 'shore'}))
-    # TODO: Add time picker to shore dives
 
     @property
     def __name__(self):

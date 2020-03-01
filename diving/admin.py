@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import (DiveSite, MarineLife, DiveTrip, DiveTripInfo, Course,
-                     CourseInfo, CourseFAQ, ItemPrice, Images, Category)
+                     CourseInfo, ItemPrice, Image, Category)
 from .export_csv import ExportCourses, ExportItemPrices, ExportDiveSites
 
 from django.http import HttpResponse
@@ -67,7 +67,11 @@ class ItemPriceAdmin(admin.ModelAdmin, ExportItemPrices):
     ]
 
 
-class ImagesAdmin(admin.ModelAdmin):
+class ImageAdmin(admin.ModelAdmin):
+    search_fields = [
+        'title',
+    ]
+
     list_display = [
         'title',
         'admin_thumbnail'
@@ -80,7 +84,6 @@ admin.site.register(DiveTrip)
 admin.site.register(DiveTripInfo)
 admin.site.register(Course, CourseAdmin)
 admin.site.register(CourseInfo)
-admin.site.register(CourseFAQ)
 admin.site.register(ItemPrice, ItemPriceAdmin)
-admin.site.register(Images, ImagesAdmin)
+admin.site.register(Image, ImageAdmin)
 admin.site.register(Category)

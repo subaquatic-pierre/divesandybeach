@@ -1,4 +1,4 @@
-from .models import Images
+from .models import Image
 from django.core.files import File
 import os
 from django.conf import settings
@@ -17,6 +17,6 @@ def get_images():
             settings.BASE_DIR, f'./website_images/{f}')
         with open(path, 'rb') as file:
             print(f'Creating {f}...')
-            course_image = Images(title=title)
+            course_image = Image(title=title)
             course_image.image = File(file)
             course_image.save()

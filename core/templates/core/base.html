@@ -7,8 +7,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keywords" content="HTML5 Template" />
-    <meta name="description" content="Porto - Responsive HTML5 Template">
+    <meta name="description" content="
+    {% if seo_description %}
+    {{ seo_description }}
+    {% else %}
+    Explore | Discover | Experience | PADI 5 Star IDC Resort |  Daily Diving Trips, PADI Courses And Diving Equipment, Join Us For The The Best Diving In Fujairah!
+    {% endif %}">
+    <meta name="keywords" content="
+    {% if seo_keywords %}
+    {{ seo_keywords }}
+    {% else %}
+    Fujairah scuba diving, dive fujairah, scuba dive
+    {% endif %}">
 
     <title>
         {% if title %}

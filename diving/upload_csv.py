@@ -1,4 +1,4 @@
-from .models import ItemPrice, Category, Course, Images, DiveSite
+from .models import ItemPrice, Category, Course, Image, DiveSite
 from django.core.exceptions import ObjectDoesNotExist
 import csv
 import io
@@ -70,7 +70,7 @@ class UploadCoursesCSV(UploadCSV):
                             num_ocean_dives=num_ocean_dives, minimum_certiication_level=minimum_certiication_level,
                             qualified_to=qualified_to, schedule=schedule, description=description)
             try:
-                image = Images.objects.filter(title=course.title).first()
+                image = Image.objects.filter(title=course.title).first()
                 course.image = image
             except ObjectDoesNotExist:
                 print('Couldnt find image with matching name', course.title)
@@ -97,7 +97,7 @@ class UploadDiveSitesCSV(UploadCSV):
             dive_site = DiveSite(title=title, min_diver_level=min_diver_level, site_type=site_type,
                                  dive_time=dive_time, distance=distance, depth=depth, info=info)
 
-            map_image = Images.objects.filter(title=title).first()
+            map_image = Image.objects.filter(title=title).first()
             dive_site.map_image = map_image
             print(f'Creating dive site {dive_site}...')
             dive_site.save()

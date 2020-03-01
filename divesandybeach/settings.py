@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.google',
     'allauth.socialaccount.providers.facebook',
     'django_extensions',
-    'tempus_dominus',
+    # 'tempus_dominus',
 ]
 
 AUTHENTICATION_BACKENDS = [
@@ -147,6 +147,6 @@ ACCOUNT_USERNAME_REQUIRED = False
 # Crispy Forms
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-# Tempus Dominus Settings DateTimePicker
-TEMPUS_DOMINUS_LOCALIZE = True
-TEMPUS_DOMINUS_INCLUDE_ASSETS = False
+# # Tempus Dominus Settings DateTimePicker
+# TEMPUS_DOMINUS_LOCALIZE = True
+# TEMPUS_DOMINUS_INCLUDE_ASSETS = False

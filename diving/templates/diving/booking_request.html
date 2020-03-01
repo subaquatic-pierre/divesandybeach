@@ -19,7 +19,7 @@
             <div class="heading-underline"></div>
         </div>
         <div class="col-md-10 form-card bg-dark text-light mb-5 p-md-5">
-            <form action="" method="POST">
+            <form action="" method="POST" novalidate>
                 {% csrf_token %}
                 {{ diver_form.management_form }}
                 {{ booking_form.shore }}
@@ -70,24 +70,41 @@
                         <div class="form-group">
                             <!-- <h5>Radio Buttons</h5> -->
                             <label>Select a preferred time</label>
-
+                            {% if heading == 'Boat Dive' %}
                             <div class="btn-group-toggle" data-toggle="buttons">
-                                {% for radio in booking_form.time %}
+                                {% for radio in booking_form.boat_time %}
                                 <label class="btn btn-primary mb-2">
-                                    <input type="radio" name="time" id="{{ radio.id_for_label }}" autocomplete="off"
-                                        value="{{ radio.choice_label }}" required>
+                                    <input type="radio" name="boat_time" id="{{ radio.id_for_label }}"
+                                        autocomplete="off" value="{{ radio.choice_label }}" required>
                                     {{ radio.choice_label }}
                                 </label>
                                 {% endfor %}
                             </div>
 
-                            {{ booking_form.time.errors }}
+                            {{ booking_form.boat_time.errors }}
+                            {% else %}
+                            <div class="input-group date" id="shore_time" data-target-input="nearest">
+                                <input type="text" name="shore_time" class="form-control datetimepicker-input"
+                                    data-target="#shore_time" />
+                                <div class="input-group-append" data-target="#shore_time" data-toggle="datetimepicker">
+                                    <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
+                                </div>
+                            </div>
+                            {{ booking_form.shore_time.errors }}
+                            {% endif %}
+
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="{{  form.date.id_for_label }}">Select a preferred date</label>
-                            {{ booking_form.date }}
+                            <label for="{{  booking_form.date.id_for_label }}">Select a preferred date</label>
+                            <div class="input-group date" id="date" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input" name="date" data-target="
+                                    #date" />
+                                <div class="input-group-append" data-target="#date" data-toggle="datetimepicker">
+                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                </div>
+                            </div>
                             {{ booking_form.date.errors }}
                         </div>
                     </div>
@@ -111,7 +128,11 @@
 
 {% endblock content %}
 
+
+
 {% block extra_scripts %}
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
 <script type="text/javascript">
     form_count = 1
     $('#add-a-diver').on('click', e => {
@@ -188,6 +209,21 @@
         $("[name='form-TOTAL_FORMS']").val(form_count)
 
     }
+    // Time picker
+    $(function () {
+        $('#shore_time').datetimepicker({
+            stepping: 30,
+            format: 'LT'
+        });
+    });
+
+    // Date Picker
+    $(function () {
+        $('#date').datetimepicker({
+            format: 'L',
+            useCurrent: false,
+        });
+    });
 
 </script>
 {% endblock extra_scripts %}

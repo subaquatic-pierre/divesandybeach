@@ -1,4 +1,4 @@
-from django.forms.widgets import Select
+from django.forms.widgets import Select, Widget, Input
 from django.template import loader
 from django.utils.safestring import mark_safe
 

@@ -72,6 +72,8 @@ class DiveSite(models.Model):
     marine_life = models.ManyToManyField('MarineLife', blank=True)
     map_image = models.ImageField(
         upload_to=image_path, default='map_default.jpg')
+    seo_description = models.TextField(blank=True, null=True)
+    seo_keywords = models.TextField(blank=True, null=True)
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.title, allow_unicode=True)
@@ -91,7 +93,7 @@ class MarineLife(models.Model):
     name = models.CharField(max_length=255)
     latin_name = models.CharField(max_length=255, blank=True, null=True)
     image = models.ForeignKey(
-        'Images', blank=True, null=True, on_delete=models.SET_NULL)
+        'Image', blank=True, null=True, to_field='title', on_delete=models.SET_NULL)
     abundance = models.CharField(max_length=255, blank=True, null=True)
     description = models.TextField(blank=True, null=True)
     link = models.CharField(max_length=255, blank=True, null=True)
@@ -104,18 +106,20 @@ class MarineLife(models.Model):
 
 
 class DiveTrip(models.Model):
-    title = models.CharField(max_length=255)
+    title = models.CharField(max_length=255, unique=True)
     description = models.TextField(blank=True, null=True)
     trip_type = models.CharField(
         max_length=255, choices=DIVE_TRIP_CHOICES, blank=True, null=True)
     image = models.ForeignKey(
-        'Images', blank=True, null=True, on_delete=models.SET_NULL)
+        'Image', blank=True, null=True, to_field='title', on_delete=models.SET_NULL)
     schedule_image = models.ForeignKey(
-        'Images', blank=True, null=True, related_name='schedule_image', on_delete=models.SET_NULL)
+        'Image', blank=True, null=True, related_name='schedule_image', to_field='title', on_delete=models.SET_NULL)
     description_image = models.ForeignKey(
-        'Images', blank=True, null=True, related_name='description_image', on_delete=models.SET_NULL)
+        'Image', blank=True, null=True, related_name='description_image', to_field='title', on_delete=models.SET_NULL)
     schedule = models.TextField(blank=True, null=True)
     slug = models.SlugField()
+    seo_description = models.TextField(blank=True, null=True)
+    seo_keywords = models.TextField(blank=True, null=True)
 
     # def save(self, *args, **kwargs):
     #     self.slug = slugify(self.title, allow_unicode=True)
@@ -132,7 +136,7 @@ class DiveTripInfo(models.Model):
     heading = models.CharField(max_length=600)
     text = models.TextField()
     image = models.ForeignKey(
-        'Images', blank=True, null=True, on_delete=models.SET_NULL)
+        'Image', blank=True, null=True, to_field='title', on_delete=models.SET_NULL)
     dive_trip = models.ForeignKey(
         'DiveTrip', on_delete=models.CASCADE, related_name='info')
 
@@ -144,10 +148,10 @@ class DiveTripInfo(models.Model):
 
 
 class Category(models.Model):
-    title = models.CharField(max_length=255)
+    title = models.CharField(max_length=255, unique=True)
     description = models.TextField(null=True, blank=True)
     image = models.ForeignKey(
-        'Images', blank=True, null=True, on_delete=models.SET_NULL)
+        'Image', blank=True, null=True, to_field='title', on_delete=models.SET_NULL)
     slug = models.SlugField(max_length=255, null=True,
                             blank=True, editable=False)
 
@@ -169,15 +173,15 @@ class Category(models.Model):
 
 
 class Course(models.Model):
-    title = models.CharField(max_length=255)
+    title = models.CharField(max_length=255, unique=True)
     image = models.ForeignKey(
-        'Images', blank=True, null=True, on_delete=models.SET_NULL)
+        'Image', blank=True, null=True, to_field='title', on_delete=models.SET_NULL)
     overview_image = models.ForeignKey(
-        'Images', blank=True, null=True, on_delete=models.SET_NULL, related_name='overview_image')
+        'Image', blank=True, null=True, to_field='title', on_delete=models.SET_NULL, related_name='overview_image')
     info_image = models.ForeignKey(
-        'Images', blank=True, null=True, on_delete=models.SET_NULL, related_name='info_image')
+        'Image', blank=True, null=True, to_field='title', on_delete=models.SET_NULL, related_name='info_image')
     schedule_image = models.ForeignKey(
-        'Images', blank=True, null=True, on_delete=models.SET_NULL, related_name='course_schedule_image')
+        'Image', blank=True, null=True, to_field='title', on_delete=models.SET_NULL, related_name='course_schedule_image')
     description = models.TextField(blank=True, null=True)
     e_learning_link = models.CharField(max_length=255, null=True, blank=True)
     level = models.ForeignKey(
@@ -194,6 +198,8 @@ class Course(models.Model):
         blank=True, null=True, choices=CERT_LEVEL_CHOICES, max_length=255)
     qualified_to = models.CharField(max_length=255, null=True, blank=True)
     schedule = models.TextField(null=True, blank=True)
+    seo_description = models.TextField(blank=True, null=True)
+    seo_keywords = models.TextField(blank=True, null=True)
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.title, allow_unicode=True)
@@ -237,7 +243,7 @@ class Course(models.Model):
 
     # @property
     # def hero_image(self):
-    #     return self.images.all()
+    #     return self.Image.all()
 
     def get_absolute_url(self):
         return self.slug
@@ -251,7 +257,7 @@ class CourseInfo(models.Model):
     heading = models.CharField(max_length=255, null=True, blank=True)
     text = models.TextField(null=True, blank=True)
     image = models.ForeignKey(
-        'Images', blank=True, null=True, on_delete=models.SET_NULL)
+        'Image', blank=True, null=True, to_field='title', on_delete=models.SET_NULL)
     info_type = models.CharField(
         max_length=255, null=True, blank=True, choices=COURSE_INFO_TYPE_CHOICES)
 
@@ -266,8 +272,8 @@ class CourseInfo(models.Model):
         verbose_name_plural = 'Course Info'
 
 
-class Images(models.Model):
-    title = models.CharField(max_length=255)
+class Image(models.Model):
+    title = models.CharField(max_length=255, unique=True)
     image = models.ImageField(upload_to=image_path)
     thumbnail = models.ImageField(
         editable=False, upload_to=thumbnail_path, null=True)
@@ -304,33 +310,8 @@ class Images(models.Model):
         return format_html(f'<img src="{self.medium_image.url}" height="100px"/>')
     admin_thumbnail.short_description = 'Thumbnail'
 
-    class Meta:
-        verbose_name_plural = 'Images'
-
-
-class CourseFAQ(models.Model):
-    question = models.CharField(max_length=600)
-    answer = models.TextField()
-    courses = models.ManyToManyField(
-        'Course', related_name='faq', blank=True)
-
-    def __str__(self):
-        return f'{self.question}'
-
-    class Meta:
-        verbose_name_plural = 'Course FAQ\'s'
-
-
-class ClientTestimonial(models.Model):
-    client_name = models.CharField(max_length=255)
-    images = models.ManyToManyField('Images', blank=True)
-    text = models.TextField()
-
-    def __str__(self):
-        return f'{self.question}'
-
-    class Meta:
-        verbose_name_plural = 'Course FAQ\'s'
+    # class Meta:
+    #     verbose_name_plural = 'Image'
 
 
 class ItemPrice(models.Model):
@@ -339,11 +320,9 @@ class ItemPrice(models.Model):
         max_length=255, null=True, blank=True, choices=LEARNING_TYPE_CHOICES)
     price = models.IntegerField(null=True, blank=True)
     category = models.ForeignKey(
-        'Category', null=True, blank=True, on_delete=models.SET_NULL, related_name='items')
+        'Category', null=True, blank=True, to_field='title', on_delete=models.SET_NULL, related_name='items')
     course = models.ForeignKey(
-        'Course', null=True, blank=True, on_delete=models.SET_NULL)
-    dive_trip = models.ForeignKey(
-        'DiveTrip', null=True, blank=True, on_delete=models.SET_NULL)
+        'Course', null=True, blank=True, to_field='title', on_delete=models.SET_NULL)
     dive_trip_equipment = models.CharField(
         max_length=255, null=True, blank=True, choices=EQUIPMENT_CHOICES)
     trip_type = models.CharField(

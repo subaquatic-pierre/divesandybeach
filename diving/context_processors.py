@@ -2,10 +2,11 @@ from .models import Category
 
 
 def nav_links(request):
-    course_levels = []
-    course_levels.append(Category.objects.get(title='Entry Level'))
-    course_levels.append(Category.objects.get(title='Advanced Level'))
-    course_levels.append(Category.objects.get(title='Specialty Courses'))
-    course_levels.append(Category.objects.get(title='Professional Level'))
-    course_levels.append(Category.objects.get(title='TecRec Level'))
-    return {'nav_course_levels': course_levels}
+    return []
+    # course_levels = []
+    # course_levels.append(Category.objects.get(title='Entry Level'))
+    # course_levels.append(Category.objects.get(title='Advanced Level'))
+    # course_levels.append(Category.objects.get(title='Specialty Courses'))
+    # course_levels.append(Category.objects.get(title='Professional Level'))
+    # course_levels.append(Category.objects.get(title='TecRec Level'))
+    # return {'nav_course_levels': course_levels}

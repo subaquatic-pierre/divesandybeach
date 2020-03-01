@@ -3,6 +3,7 @@ from django.urls import reverse
 from django.views.generic.base import TemplateView
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
+from django.utils.text import slugify
 from django.views.generic import FormView
 from django.views import View
 from django.forms import formset_factory
@@ -19,6 +20,13 @@ class DiveSiteListView(ListView):
     context_object_name = 'dive_sites'
     template_name = 'diving/dive_site_list.html'
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['title'] = 'Fujairah Dive Sites'
+        context['seo_description'] = 'Check out our dive sites along the Fujairah coastline. Each site offering abundant marine life, ranging from ship wrecks to beautiful coral reef.'
+        context['seo_keywords'] = 'Fujairah Dive Sites, Scuba Dive Fujairah'
+        return context
+
 
 class DiveSiteDetailView(DetailView):
     model = DiveSite
@@ -28,6 +36,8 @@ class DiveSiteDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = context['object'].title
+        context['seo_descirption'] = context['object'].seo_description
+        context['seo_keywords'] = context['object'].seo_keywords
         return context
 
 
@@ -62,7 +72,9 @@ class PADICourseListView(View):
                    'advanced_level': advanced_level,
                    'specialties': specialties,
                    'pro_level': pro_level,
-                   'tecrec_level': tecrec_level}
+                   'tecrec_level': tecrec_level,
+                   'seo_description': 'Full Range Of PADI Courses | PADI 5 Star IDC Resort |  From Entry Level Courses to PADI Profesional Programs, Sign Up With A PADI Instructor Today!'
+                   }
 
         return render(request, 'diving/all_padi_courses.html', context=context)
 
@@ -75,6 +87,8 @@ class PADICourseDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = context['object'].title
+        context['seo_description'] = context['object'].seo_description
+        context['seo_keywords'] = context['object'].seo_keywords
         return context
 
 
@@ -86,8 +100,11 @@ class DiveDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = context['object'].title
+        context['seo_descirption'] = context['object'].seo_description
+        context['seo_keywords'] = context['object'].seo_keywords
+        price_filter = slugify(context['title'])
         context['prices'] = ItemPrice.objects.filter(
-            dive_trip=context['object'].id)
+            trip_type=price_filter)
 
         return context
 
@@ -100,6 +117,7 @@ class PricesDetailView(TemplateView):
         context['object'] = ItemPrice.objects.all()
         context['title'] = 'Prices'
         context['categories'] = Category.objects.all()
+        context['seo_descrition'] = 'Prices | Discover | Experience | PADI 5 Star IDC Resort | Daily Diving Trips, PADI Courses And Diving Equipment, Join Us For The The Best Diving In Fujairah!',
         context['title'] = 'Price List'
         return context
 
@@ -112,7 +130,7 @@ class BookingRequestView(View):
                 booking_form = ShoreDiveBookingRequestForm()
             else:
                 booking_form = BoatDiveBookingRequestForm()
-        except AttributeError:
+        except Exception:
             # Referer is none type, default to boat diving form
             booking_form = BoatDiveBookingRequestForm()
 
@@ -139,7 +157,8 @@ class BookingRequestView(View):
 
         context = {'booking_form': booking_form,
                    'diver_form': divers_formset,
-                   'title': 'Dive Booking Request'}
+                   'title': 'Dive Booking Request',
+                   'heading': booking_form.__name__}
 
         if not divers_formset.is_valid() or not booking_form.is_valid():
             messages.info(
