@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mobile Menu settings
     mobileMenu = document.querySelector('.mobile-menu')
     document.querySelector('#mobile-menu-btn').addEventListener('click', () => {
-        document.querySelector('.mobile-next-to').classList.toggle('show');
+        document.querySelector('.mobile-next-to').classList.toggle('nav-show');
         mobileMenu.classList.toggle('menu-toggle');
         // Maybe no scroll body ?
         document.querySelector('body').classList.toggle('no-scroll');
@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.navbar').classList.remove('fixed-top');
         document.querySelector('body').classList.remove('no-scroll');
     })
+
 
     // Booking form settings
 
