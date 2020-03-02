@@ -2,23 +2,11 @@
 
 {% load crispy_forms_tags %}
 
+
+
 {% block content %}
 
-<section id="google-map">
-
-    <div style="height: 65vh">
-        <div class="title-text d-flex h-100 justify-content-center align-items-center">
-            <h1>Google Map</h1>
-        </div>
-    </div>
-
-</section>
-
-<!-- End of Map -->
-
-<!-- Start of Location cards -->
-
-<section id="location-cards">
+<section id="location-cards" style="min-height: 50vh;">
 
     <div class="row justify-content-center">
         <div class="col-11">
@@ -26,29 +14,36 @@
 
                 <div class="col-sm-12 col-lg-6 col-xl-3 ">
                     <div class="wow fadeInUp">
-                        <div class="bg-light call shadow mx-4 py-5">
-                            <i class="fas fa-phone fa-4x mt-4"></i>
+                        <div class="call shadow mx-4 py-5">
+                            <a href="tel:+9712062040"><i class="fas fa-phone fa-4x mt-4"></i></a>
                             <hr class="w-50 mx-auto">
-                            <p>+971 50 206 2040</p>
-                            <p>+971 244 5050</p>
+                            <a href="tel:+9712062040">
+                                <p>+971 50 206 2040</p>
+                            </a>
+                            <a href="tel:+9712445050">
+                                <p>+971 244 5050</p>
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm-12 col-lg-6 col-xl-3 ">
                     <div class="wow fadeInUp">
-                        <div class="bg-light email shadow mx-4 py-5">
-                            <i class="fas fa-envelope fa-4x mt-4"></i>
+                        <div class=" email shadow mx-4 py-5">
+                            <a href="mailto:info@divesandybeach.com"><i class="fas fa-envelope fa-4x mt-4"></i></a>
                             <hr class="w-50 mx-auto">
-                            <p>info@divesandybeach.com</p>
+                            <a href="mailto:info@divesandybeach.com">
+                                <p>info@divesandybeach.com</p>
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm-12 col-lg-6 col-xl-3 ">
                     <div class="wow fadeInUp">
-                        <div class="bg-light location shadow mx-4 py-5">
-                            <i class="fas fa-street-view fa-4x mt-4"></i>
+                        <div class="location shadow mx-4 py-5">
+                            <a href="https://goo.gl/maps/eenG9KYawYU2EDWX9" target="blank"><i
+                                    class="fas color-primary fa-street-view fa-4x mt-4"></i></a>
                             <hr class="w-50 mx-auto">
                             <p>Sandy Beach Hotel and Resort,<br>Al Aqah, Fujairah,<br>United Arab Emirates</p>
                         </div>
@@ -60,6 +55,24 @@
     </div>
 
 </section>
+
+<section>
+
+    <div style="height: 65vh">
+        <div id="" class="title-text d-flex h-100 justify-content-center align-items-center">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.4062879695725!2d56.359354615555084!3d25.491493183760074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef4378755158d51%3A0x77907c18ed08f1a8!2sSandy%20Beach%20Dive%20Centre!5e0!3m2!1sen!2sae!4v1583149254591!5m2!1sen!2sae"
+                width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+    </div>
+
+</section>
+
+<!-- End of Map -->
+
+<!-- Start of Location cards -->
+
+
 
 <!-- End of Location Cards -->
 

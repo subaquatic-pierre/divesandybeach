@@ -65,6 +65,11 @@ class ContactPageView(View):
             return render(request, 'diving/booking_success.html')
 
 
+class SiteMapView(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'core/sitemap.xml', content_type="application/xhtml+xml")
+
+
 """ TODO
 - Change delay on front page animation
 - add padding between dive pages

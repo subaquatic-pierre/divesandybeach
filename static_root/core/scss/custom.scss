@@ -414,6 +414,11 @@ a:hover {
   }
 }
 
+.course-info-row .course-info-text {
+  min-width: 100%;
+}
+
+
 
 
 #course-detail-heading {
@@ -660,11 +665,22 @@ footer img {
     padding-right: 0.7rem;
   }
 
-  .call, .email, .location {
-    margin-top: -5rem;
+  
+
+}
+
+#location-cards {
+  padding: 5rem 0;
+  .call i, .email i, .location i{
+    color: $primary;
   }
 }
 
+// @media (min-height:800px){
+//   #location-cards {
+//     padding: 5rem 0;
+//   }
+// }
 .text-shadow {
   text-shadow: $text-shadow-sm;
 }
