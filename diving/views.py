@@ -73,6 +73,7 @@ class PADICourseListView(View):
                    'specialties': specialties,
                    'pro_level': pro_level,
                    'tecrec_level': tecrec_level,
+                   'title': 'PADI Courses',
                    'seo_description': 'Full Range Of PADI Courses | PADI 5 Star IDC Resort |  From Entry Level Courses to PADI Profesional Programs, Sign Up With A PADI Instructor Today!'
                    }
 
