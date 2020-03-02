@@ -3,7 +3,6 @@ from diving.models import Course
 from django.core.files import File
 import os
 from django.conf import settings
-from PIL import Image
 import re
 import sys
 
@@ -14,14 +13,29 @@ for course in courses:
     # print('Editing course', course)
 
     for i in range(1, 5):
-        image_fn = os.path.join('final_website_pic_2',
-                                f'PADI {course.title} {i}.jpg')
-
+        image_fn = f'PADI {course.title} {i}'
+        image_path = os.path.join('final_website_pic_2',
+                                  image_fn + '.jpg')
         try:
-            with open(image_fn, 'rb') as f:
+            with open(image_path, 'rb') as f:
                 pass
-                # print('Opening image', f)
-                # print(f)
+                print('Opening image ...', image_fn)
+                image = Image(title=image_fn)
+                image.image = File(f)
+                image.save()
+                print('Saved image ...', image)
+                if i == 1:
+                    course.image = image
+                elif i == 2:
+                    course.overview_image = image
+                elif i == 3:
+                    course.info_image = image
+                elif i == 4:
+                    course.schedule_image = image
+
+                course.save()
+                print('Course saved ...', course)
+
                 # print('Almost saving image')
         except FileNotFoundError:
             print('File not found:\n', image_fn)
