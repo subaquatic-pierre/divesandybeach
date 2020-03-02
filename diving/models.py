@@ -225,9 +225,8 @@ class Course(models.Model):
 
     @property
     def book_learning_info(self):
-        if self.book_learning_price:
-            info = CourseInfo.objects.get(info_type='book-learning-info')
-            return info
+        info = CourseInfo.objects.get(info_type='book-learning-info')
+        return info
 
     @property
     def pool_info(self):

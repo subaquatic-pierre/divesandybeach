@@ -199,7 +199,8 @@
                     <h3 class="text-center pb-4 ">{{ course.e_learning_info.heading }}</h3>
                     <div class="heading-underline"></div>
                     <p>{{ course.e_learning_info.text | linebreaks }}</p>
-                    <a href="{{ site.get_absolute_url }}" class="text-primary d-flex justify-content-end">
+                    <a href="{{ course.e_learning_link }}" target="blank"
+                        class="text-primary d-flex justify-content-end">
                         <h6>Sign up for PADI e-learning <i class="fas fa-angle-double-right"></i></h6>
                     </a>
                 </div>
@@ -215,7 +216,6 @@
         <!-- End E-Learning Info row -->
 
         <!-- Book Learning Info row -->
-        {% if course.book_learning_info %}
         <div class="row course-info-row">
             <div
                 class="col-md-6 d-flex align-items-center {% if course.e_learning_info %}  {% else %} order-md-2 {% endif %}">
@@ -231,7 +231,6 @@
                 </div>
             </div>
         </div>
-        {% endif %}
         <!-- End Book Learning Info row -->
 
         <!-- Pool Dives Info row -->
@@ -258,7 +257,7 @@
         {% if course.ocean_info %}
         <div class="row course-info-row">
             <div
-                class="col-md-6 d-flex align-items-center {% if course.e_learning_info and not course.pool_info %} order-md-2  {% elif course.e_learning_info and course.pool_info %}  {% else %} order-md-1 {% endif %}">
+                class="col-md-6 d-flex align-items-center {% if course.e_learning_info and course.pool_info %} order-md-0 {% elif course.e_learning_info and not course.pool_info %} order-md-2 {% endif %}">
                 <div class="course-info-text wow fadeIn">
                     <h3 class="text-center pb-4 ">{{ course.ocean_info.heading }}</h3>
                     <div class="heading-underline"></div>
