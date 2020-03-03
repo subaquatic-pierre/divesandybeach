@@ -1,4 +1,5 @@
 from .models import Category
+from django.template import RequestContext, Context
 
 
 def nav_links(request):

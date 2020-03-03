@@ -1,5 +1,8 @@
 {% load static %}
 
+{% load social_media %}
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,6 +32,15 @@
     Fujairah scuba diving, dive fujairah, scuba dive
     {% endif %}">
 
+
+
+    <!-- Social media tags -->
+
+    <!-- <meta property="og:title" , content="">
+    <meta property="og:description, content=""> -->
+    <meta property="og:image" , content="{% og_image %}">
+
+    <!-- end social media tags -->
     <title>
         {% if title %}
         {{ title }} - Sandy Beach Dive Centre
@@ -47,7 +59,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
