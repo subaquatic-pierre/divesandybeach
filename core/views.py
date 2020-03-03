@@ -20,7 +20,7 @@ class AboutUs(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = 'About Us'
-        context['seo_description'] = 'About Us | PADI 5 Star IDC Resort | Daily Diving Trips, PADI Courses And Diving Equipment, Join Us For The The Best Diving In Fujairah!'
+        context['seo_description'] = 'About Us | PADI 5 Star IDC Resort | Daily diving trips, PADI courses and diving equipment, join us for the best diving in Fujairah!',
         return context
 
 
