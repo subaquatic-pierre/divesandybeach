@@ -1,138 +1,222 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <url>
-    <loc>https://scubadivedubai.com/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/booking-request/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/amazing-scuba-diving-contact-us/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/fujairah-dive-sites/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/fujairah-dive-centre-about-us/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/diving-prices/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/dive-with-us/dive-snoopy-island/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/padi-courses/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/dive-with-us/fujairah-boat-dive/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/padi-courses/tec-45/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/padi-courses/tec-50/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/padi-courses/fish-identification/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/padi-courses/enriched-air-nitrox/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/padi-courses/underwater-navigator/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/padi-courses/peak-performance-buoyancy/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/padi-courses/divemaster/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/padi-courses/wreck-diver/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/padi-courses/night-diver/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/padi-courses/tec-40/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/padi-courses/rescue-diver/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/padi-courses/efr-first-aid/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/padi-courses/digital-underwater-photography/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/padi-courses/reactivate/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/padi-courses/advanced-open-water/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/padi-courses/search-and-recovery/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/padi-courses/discover-scuba-diving/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/padi-courses/scuba-diver/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/padi-courses/deep-diver/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/fujairah-dive-sites/hole-in-the-wall/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/fujairah-dive-sites/inchape-2/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/padi-courses/adventure-diver/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/fujairah-dive-sites/car-cemetary/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/fujairah-dive-sites/coral-gardens/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/padi-courses/open-water-diver/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/fujairah-dive-sites/cauliflower-reef/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/fujairah-dive-sites/snoopy-deep-reef/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/fujairah-dive-sites/martini-rock/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/fujairah-dive-sites/three-rocks/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/fujairah-dive-sites/artificial-reef/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/fujairah-dive-sites/shark-island/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/fujairah-dive-sites/inchcape-1/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/fujairah-dive-sites/snoopy-island/</loc>
-  </url>
-  <url>
-    <loc>https://scubadivedubai.com/fujairah-dive-sites/dibba-rock/</loc>
-  </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://divesandybeach.com/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/dive-with-us/dive-snoopy-island/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/dive-with-us/fujairah-boat-dive/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/padi-courses/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/fujairah-dive-sites/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/diving-prices/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/fujairah-dive-centre-about-us/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/amazing-scuba-diving-contact-us/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/booking-request/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/padi-courses/discover-scuba-diving/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/padi-courses/scuba-diver/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/padi-courses/open-water-diver/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/padi-courses/reactivate/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/padi-courses/adventure-diver/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/padi-courses/advanced-open-water/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/padi-courses/rescue-diver/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/padi-courses/efr-first-aid/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/padi-courses/deep-diver/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/padi-courses/wreck-diver/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/padi-courses/night-diver/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/padi-courses/search-and-recovery/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/padi-courses/digital-underwater-photography/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/padi-courses/underwater-navigator/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/padi-courses/peak-performance-buoyancy/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/padi-courses/fish-identification/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/padi-courses/enriched-air-nitrox/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/padi-courses/tec-40/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/padi-courses/tec-45/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/padi-courses/tec-50/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/padi-courses/divemaster/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/fujairah-dive-sites/inchcape-1/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/fujairah-dive-sites/three-rocks/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/fujairah-dive-sites/artificial-reef/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/fujairah-dive-sites/dibba-rock/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/fujairah-dive-sites/cauliflower-reef/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/fujairah-dive-sites/snoopy-island/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/fujairah-dive-sites/snoopy-deep-reef/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/fujairah-dive-sites/coral-gardens/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/fujairah-dive-sites/shark-island/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/fujairah-dive-sites/hole-in-the-wall/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/fujairah-dive-sites/inchape-2/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://divesandybeach.com/fujairah-dive-sites/martini-rock/</loc>
+  <lastmod>2020-03-09T14:03:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
-<!--<guid value="7bef2373-2b07-4bef-9e64-f920f076517d" />-->
-<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
