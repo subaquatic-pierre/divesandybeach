@@ -8,7 +8,10 @@ class Email:
         self.customer_email = booking_info.get('email')
         self.company_email = 'info@divesandybeach.com'
         self.dive_type = booking_info.get('dive_type')
-        self.time = booking_info.get('time')
+        if booking_info['dive_type'] == 'Shore Dive':
+            self.time = booking_info.get('shore_time')
+        else:
+            self.time = booking_info.get('boat_time')
         self.date = booking_info.get('date')
         self.message = booking_info.get('message')
         self.course = booking_info.get('course')
@@ -86,6 +89,5 @@ class StaffEmail(Email):
 class CourseStaffEmail(StaffEmail):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        print(args)
         self.course = args[1]['course']
         self.subject = f'Course Booking - {self.course}'

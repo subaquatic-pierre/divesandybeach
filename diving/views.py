@@ -173,7 +173,6 @@ class BookingRequestView(View):
             booking_info = booking_form.cleaned_data
             booking_info['subject'] = 'Dive booking request'
             booking_info['dive_type'] = booking_form.__name__
-
             staff_email = StaffEmail(divers, booking_info)
             customer_email = CustomerEmail(divers, booking_info)
 
@@ -237,5 +236,6 @@ class CourseBookingRequestView(View):
 TODO:
 
 - Change course info pictures, pool, boat, shore, classroom
+- create booking entry when someone submits a booking
 
 """
