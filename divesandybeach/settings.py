@@ -153,7 +153,6 @@ RECAPTCHA_PRIVATE_KEY = '6Lc5G-IUAAAAAK_6D-iflOo6nu8AFJR1ED4gaPlc'
 RECAPTCHA_DEFAULT_ACTION = 'generic'
 RECAPTCHA_SCORE_THRESHOLD = 0.5
 
-# SILENCED_SYSTEM_CHECKS = ['captcha.recaptcha_test_key_error']
 
 # # Tempus Dominus Settings DateTimePicker
 # TEMPUS_DOMINUS_LOCALIZE = True

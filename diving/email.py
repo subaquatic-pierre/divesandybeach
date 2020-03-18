@@ -5,13 +5,17 @@ from django.core.mail import send_mail
 class Email:
     def __init__(self, divers, booking_info):
         self.divers = divers
-        self.customer_email = booking_info.get('email')
+        self.customer_email = booking_info.get('email', None)
         self.company_email = 'info@divesandybeach.com'
         self.dive_type = booking_info.get('dive_type')
-        if booking_info['dive_type'] == 'Shore Dive':
+
+        if booking_info.get('dive_type') == 'Shore Dive':
             self.time = booking_info.get('shore_time')
-        else:
+        elif booking_info.get('dive_type') == 'Boat Dive':
             self.time = booking_info.get('boat_time')
+        else:
+            self.time = None
+
         self.date = booking_info.get('date')
         self.message = booking_info.get('message')
         self.course = booking_info.get('course')
