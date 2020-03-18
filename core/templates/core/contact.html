@@ -1,8 +1,14 @@
 {% extends 'core/base.html' %}
 
 {% load crispy_forms_tags %}
+{% load recaptcha3 %}
 
+{% block extra_head %}
 
+{% recaptcha_init %}
+{% recaptcha_ready action_name='homepage' %}
+
+{% endblock extra_head %}
 
 {% block content %}
 

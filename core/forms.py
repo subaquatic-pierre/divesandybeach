@@ -1,8 +1,7 @@
 from django import forms
 from django.forms import ModelForm, Form
 from .models import ContactUsRequest
-from captcha.fields import ReCaptchaField
-
+from snowpenguin.django.recaptcha3.fields import ReCaptchaField
 
 class ContactForm(Form):
     full_name = forms.CharField(

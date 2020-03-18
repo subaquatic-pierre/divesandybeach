@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.google',
     'allauth.socialaccount.providers.facebook',
     'django_extensions',
-    'captcha'
+    'snowpenguin.django.recaptcha3'
     # 'tempus_dominus',
 ]
 
@@ -148,8 +148,10 @@ ACCOUNT_USERNAME_REQUIRED = False
 # Crispy Forms
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-RECAPTCHA_PUBLIC_KEY = '6LdkGuIUAAAAAEdAj3VXntEWzi4VZjSs171f2D5J'
-RECAPTCHA_PRIVATE_KEY = '6LdkGuIUAAAAAHLMVzJa9LWH5Gkf0vZfVAYRXY2N'
+RECAPTCHA_PUBLIC_KEY = '6Lc5G-IUAAAAACCkdMagpVE1LtTdDZ-9EbUtieXL'
+RECAPTCHA_PRIVATE_KEY = '6Lc5G-IUAAAAAK_6D-iflOo6nu8AFJR1ED4gaPlc'
+RECAPTCHA_DEFAULT_ACTION = 'generic'
+RECAPTCHA_SCORE_THRESHOLD = 0.5
 
 # SILENCED_SYSTEM_CHECKS = ['captcha.recaptcha_test_key_error']
 
