@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.google',
     'allauth.socialaccount.providers.facebook',
     'django_extensions',
+    'captcha'
     # 'tempus_dominus',
 ]
 
@@ -101,7 +102,8 @@ if DEBUG == True:
     STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 # Production Environment
 else:
-    ALLOWED_HOSTS = ['3.15.1.157','divesandybeach.com','www.divesandybeach.com']
+    ALLOWED_HOSTS = ['3.15.1.157',
+                     'divesandybeach.com', 'www.divesandybeach.com']
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_HOST = config.EMAIL_HOST
     EMAIL_HOST_USER = config.EMAIL_HOST_USER
@@ -145,6 +147,11 @@ ACCOUNT_USERNAME_REQUIRED = False
 
 # Crispy Forms
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+RECAPTCHA_PUBLIC_KEY = '6LdkGuIUAAAAAEdAj3VXntEWzi4VZjSs171f2D5J'
+RECAPTCHA_PRIVATE_KEY = '6LdkGuIUAAAAAHLMVzJa9LWH5Gkf0vZfVAYRXY2N'
+
+# SILENCED_SYSTEM_CHECKS = ['captcha.recaptcha_test_key_error']
 
 # # Tempus Dominus Settings DateTimePicker
 # TEMPUS_DOMINUS_LOCALIZE = True
