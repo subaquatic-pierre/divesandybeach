@@ -1,13 +1,18 @@
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
-    letter-spacing: 0.1rem;
-    color: inherit;
-    line-height: inherit;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: inherit;
+  line-height: inherit;
 }
 
 table.table thead th {
   font-weight: 500;
-  font-size: 1.4rem!important;
+  font-size: 1.4rem !important;
 }
 
 table.table thead {
@@ -44,15 +49,13 @@ table.table tbody td {
   border-radius: 3px;
   color: white;
   text-shadow: none;
-  ;
 }
 
 .btn {
   text-transform: uppercase;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-  text-shadow:none;
-
+  text-shadow: none;
 }
 
 .card {
@@ -60,13 +63,13 @@ table.table tbody td {
 }
 
 .btn:hover {
-  color:white;
+  color: white;
 }
 
 .heading-underline {
   width: 5rem;
   height: 0.2rem;
-  background-color: #0A9CBF;
+  background-color: #0a9cbf;
   margin: 0 auto 2rem;
 }
 
@@ -79,7 +82,8 @@ table.table tbody td {
 
 .title-text {
   color: white;
-  text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.8), 1px 5px 5px rgba(2,0,36,0.8), 8px 8px 10px rgba(2,0,36,0.3);
+  text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.8),
+    1px 5px 5px rgba(2, 0, 36, 0.8), 8px 8px 10px rgba(2, 0, 36, 0.3);
   font-size: 2.8rem;
   text-transform: capitalize;
 }
@@ -89,9 +93,7 @@ table.table tbody td {
   text-shadow: $text-shadow-sm;
   font-size: 1.2rem;
   text-transform: none;
-
 }
-
 
 .card-img-top {
   border-radius: 0 !important;
@@ -103,7 +105,7 @@ table.table tbody td {
 }
 
 a {
-  color: inherit;  
+  color: inherit;
 }
 
 a:hover {
@@ -117,18 +119,14 @@ a:hover {
   background-image: none;
 }
 
-
-
-
-
 /*====================== FULL HEIGHT LANDING HEADER =============== */
 
 .landing-fh-image {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("/static/core/img/_0002_SBDC1.jpg");
-
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/static/core/img/padi-divemaster-3-320x640.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 5;
@@ -139,17 +137,35 @@ a:hover {
   align-items: center;
 }
 
+@media (min-width: 400px) {
+  .landing-fh-image {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/static/core/img/back-snoopy-1000x1000.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 5;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .btn {
-    font-size: 1rem;
-    font-weight: 600;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .btn.btn-outline.btn-light:hover {
-    color: black;
-    text-shadow: none;
+  color: black;
+  text-shadow: none;
 }
 .btn.btn-outline.btn-light {
-    color: white;
+  color: white;
 }
 
 /*====================== DIVE SITE CTA SECTION =============== */
@@ -159,23 +175,27 @@ a:hover {
   padding-top: 100px;
   padding-bottom: 100px;
   min-height: 500px;
-  color:white;
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 35%, rgba(0, 0, 0, 0.171) 100%), 
-  url("/static/core/img/Untitled-2_0006_IMG_5579-2.jpg");
+  color: white;
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 35%,
+      rgba(0, 0, 0, 0.171) 100%
+    ),
+    url("/static/core/img/Untitled-2_0006_IMG_5579-2.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 
   h2 {
     font-size: 2.5rem;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
   }
 
   p {
     line-height: 1.5;
   }
 }
-
 
 // #divesitecta .full-width-image {
 //   background-image: url("../img/Untitled-2_0006_IMG_5579-2.jpg");
@@ -185,9 +205,8 @@ a:hover {
 //   background-attachment: fixed;
 // }
 
-
 .dive-site-card {
-    box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
 }
 
 /*====================== PARTNERS SECTION =============== */
@@ -195,7 +214,7 @@ a:hover {
 .partner-divider {
   width: 50rem;
   height: 0.2rem;
-  background-color: #0A9CBF;
+  background-color: #0a9cbf;
 }
 
 .partner-logo img {
@@ -240,7 +259,9 @@ a:hover {
   background: #6f6c6c;
 }
 
-.call, .email, .location {
+.call,
+.email,
+.location {
   border-radius: 0.5rem;
   padding: 1rem 0;
   min-height: 15rem;
@@ -250,9 +271,9 @@ a:hover {
   font-weight: 500;
 }
 
-@media (max-width:800px){
-  .email{
-      font-size: 1rem; 
+@media (max-width: 800px) {
+  .email {
+    font-size: 1rem;
   }
 }
 
@@ -264,9 +285,8 @@ a:hover {
 }
 
 #add-a-diver {
-    font-size:20px;
+  font-size: 20px;
 }
-
 
 /*====================== ABOUT US PAGE =============== */
 
@@ -281,17 +301,16 @@ a:hover {
     min-height: 150vh;
     background-position: top center;
     position: relative;
-    
   }
 }
 
-@media (min-width:800px){
+@media (min-width: 800px) {
   .title-text p {
-    max-width:50%;
+    max-width: 50%;
   }
 }
 
-@media (max-width:800px) {
+@media (max-width: 800px) {
   .about-dark-overlay {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
@@ -299,11 +318,10 @@ a:hover {
     top: 0px;
     bottom: 0px;
     padding: 100px 20px;
-}
+  }
 }
 
-
-@media (min-width:800px) {
+@media (min-width: 800px) {
   .about-dark-overlay {
     border-radius: 2rem;
     padding: 5rem 10rem;
@@ -312,9 +330,7 @@ a:hover {
   }
 }
 
-
 #team {
-  
   .card-img-top {
     padding-top: 10px;
     width: 70%;
@@ -333,7 +349,7 @@ a:hover {
 }
 
 #testimonials .fa-quote-left {
-  color: #0A9CBF;
+  color: #0a9cbf;
 }
 
 /* ========================== DIVE SITE DETAIL PAGE ========================== */
@@ -342,9 +358,14 @@ a:hover {
   display: flex;
   padding-top: 170px;
   min-height: 500px;
-  color:white;
-  background-image: linear-gradient(90deg, rgba(2,0,36,0.5) 0%, rgba(9,9,121,.5) 35%, rgba(0,212,255,.5) 100%), 
-  url('/static/hero_bg.jpg') ;
+  color: white;
+  background-image: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 0.5) 0%,
+      rgba(9, 9, 121, 0.5) 35%,
+      rgba(0, 212, 255, 0.5) 100%
+    ),
+    url("/static/hero_bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -364,10 +385,8 @@ a:hover {
     background: white;
     border-radius: 5px;
     padding: 1rem;
-    box-shadow: $box-shadow-lg; 
+    box-shadow: $box-shadow-lg;
     margin-bottom: 1rem;
-
-
   }
 
   padding: 1rem 0;
@@ -378,23 +397,22 @@ a:hover {
       height: 500px;
       object-fit: cover;
     }
-  }    
+  }
 }
 
-@media (min-width:800px){
+@media (min-width: 800px) {
   .course-info-section:nth-child(odd) {
     .course-info-row:nth-child(odd) {
       .course-info-img {
         transform: translatex(-70px);
       }
-    }    
-  
+    }
   }
-  
+
   .course-info-row {
     position: relative;
     padding: 5rem 0rem;
-  
+
     .course-info-text {
       position: absolute;
       z-index: 10;
@@ -404,14 +422,14 @@ a:hover {
       padding: 2rem;
       min-width: 600px;
     }
-  
+
     .course-info-img {
       img {
         width: 700px;
         height: 600px;
         object-fit: cover;
       }
-    }    
+    }
   }
 }
 
@@ -419,11 +437,8 @@ a:hover {
   min-width: 100%;
 }
 
-
-
-
 #course-detail-heading {
-  min-height: 100%; 
+  min-height: 100%;
   position: relative;
   width: 100%;
 }
@@ -452,25 +467,25 @@ a:hover {
   justify-content: center;
 
   &__heading {
-  justify-self: center;
-
+    justify-self: center;
   }
 }
-@media (min-width:8000px){
+@media (min-width: 8000px) {
   .arrow-down {
     top: 250px;
   }
 }
 .arrow-down {
-  color:white;
+  color: white;
   position: relative;
   align-self: center;
   top: 7rem;
 }
 
 .card-title-text {
-  color: white; 
-  text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.6), 1px 3px 3px rgba(2,0,36,0.3);
+  color: white;
+  text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.6),
+    1px 3px 3px rgba(2, 0, 36, 0.3);
   text-transform: uppercase;
 }
 
@@ -495,8 +510,9 @@ a:hover {
   padding: 3px 50px;
   text-transform: uppercase;
   font-weight: 600;
-  transform:rotate(45deg);
-  box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.6), 1px 3px 3px rgba(2,0,36,0.3);
+  transform: rotate(45deg);
+  box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.6),
+    1px 3px 3px rgba(2, 0, 36, 0.3);
 }
 
 .card-price {
@@ -509,19 +525,16 @@ a:hover {
     color: white;
     font-size: 1.2rem;
     font-weight: 600;
-    padding: .8rem 0;
+    padding: 0.8rem 0;
     width: 80%;
     border-radius: 3px;
     box-shadow: $box-shadow;
-  }  
+  }
 }
 
 .course-card-text {
   min-height: 5rem;
 }
-
-
-
 
 // @media (max-width:800px) {
 //   .course-info-section {
@@ -540,19 +553,15 @@ a:hover {
 //       width: 100%;
 //     }
 
-
 //     .course-info-img {
 //       img {
 //         width: 700px;
 //         height: 600px;
 //         object-fit: cover;
 //       }
-//     }   
+//     }
 //   }
 // }
-
-
-
 
 .message-container {
   position: relative;
@@ -567,7 +576,7 @@ a:hover {
   width: 60%;
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
   .message {
     width: 90%;
   }
@@ -588,14 +597,14 @@ a:hover {
   }
 }
 
-
 /*====================== FOOTER SECTION =============== */
 
 footer .footer-row {
-  background-color: #0A9CBF;
+  background-color: #0a9cbf;
 }
 
-footer p, footer .connect {
+footer p,
+footer .connect {
   font-weight: 500;
 }
 
@@ -624,16 +633,18 @@ footer img {
   margin-right: 1rem;
 }
 
-.svg-inline--fa.fa-youtube.fa-w-18, .svg-inline--fa.fa-instagram.fa-w-14, .svg-inline--fa.fa-facebook-square.fa-w-14 {
+.svg-inline--fa.fa-youtube.fa-w-18,
+.svg-inline--fa.fa-instagram.fa-w-14,
+.svg-inline--fa.fa-facebook-square.fa-w-14 {
   font-size: 3rem;
 }
 
 /*==================== PRICES =====================*/
 
-.table td, .table th {
-    border-top: none;
+.table td,
+.table th {
+  border-top: none;
 }
-
 
 /*=================== MEDIA QUERIES ========================*/
 
@@ -665,14 +676,13 @@ footer img {
   .navbar li {
     padding-right: 0.7rem;
   }
-
-  
-
 }
 
 #location-cards {
   padding: 5rem 0;
-  .call i, .email i, .location i{
+  .call i,
+  .email i,
+  .location i {
     color: $primary;
   }
 }
@@ -691,6 +701,5 @@ footer img {
 }
 
 div.bootstrap-datetimepicker-widget.dropdown-menu.usetwentyfour.top {
-  min-width: auto!important;
+  min-width: auto !important;
 }
-  
