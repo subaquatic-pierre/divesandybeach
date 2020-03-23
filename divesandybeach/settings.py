@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.google',
     'allauth.socialaccount.providers.facebook',
     'django_extensions',
-    # 'snowpenguin.django.recaptcha3'
+    'snowpenguin.django.recaptcha3'
     # 'tempus_dominus',
 ]
 
