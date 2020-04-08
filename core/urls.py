@@ -11,4 +11,6 @@ urlpatterns = [
          views.ContactPageView.as_view(), name='contact-us'),
     path('sitemap.xml',
          views.SiteMapView.as_view(), name='sitemap'),
+    path('update-contact-us-request/<int:pk>/',
+         views.update_contact_us, name='update-contact-us')
 ]

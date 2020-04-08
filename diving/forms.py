@@ -45,10 +45,21 @@ class CourseBookingRequestForm(forms.Form):
     message = forms.CharField(required=False, widget=forms.Textarea(
         attrs={'class': 'form-control', 'placeholder': 'Send us a message'}))
 
+    @property
+    def __name__(self):
+        return 'CourseBookingForm'
+
 
 class CourseBookingDivers(forms.Form):
     full_name = forms.CharField(
         widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter divers full name'}))
+
+    @property
+    def __name__(self):
+        return 'CourseBookingDivers'
+
+    def __repr__(self):
+        return 'CourseBookingDivers'
 
 
 class DiveBookingRequestForm(forms.Form):
@@ -62,8 +73,8 @@ class DiveBookingRequestForm(forms.Form):
 
 
 class DiveBookingRequestDiverForm(forms.Form):
-    full_name = forms.CharField(
-        widget=forms.TextInput(attrs={'class': 'form-control', 'required': True, 'placeholder': 'Enter diver full name'}))
+    full_name = forms.CharField(required=True,
+                                widget=forms.TextInput(attrs={'class': 'form-control', 'required': True, 'placeholder': 'Enter diver full name'}))
     cert_level = forms.TypedChoiceField(required=True, choices=CERT_LEVEL_CHOICES, widget=CertLevelSelectWidget(
         attrs={'class': 'form-control', 'required': True}))
     kit_required = forms.TypedChoiceField(required=True, choices=EQUIPMENT_CHOICES, widget=KitSelectWidget(
@@ -81,7 +92,6 @@ class BoatDiveBookingRequestForm(DiveBookingRequestForm):
 
 class ShoreDiveBookingRequestForm(DiveBookingRequestForm):
     shore_time = forms.CharField(required=True)
-
     shore = forms.CharField(
         required=False, widget=forms.HiddenInput(attrs={'value': 'shore'}))
 

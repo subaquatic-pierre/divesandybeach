@@ -335,22 +335,47 @@ class CourseBookingRequest(models.Model):
     full_name = models.CharField(max_length=255)
     email = models.EmailField()
     course = models.CharField(max_length=255, blank=True, null=True)
-    extra_divers = models.TextField(blank=True, null=True)
     date = models.DateField()
     message = models.TextField(null=True, blank=True)
     date_submitted = models.DateField(auto_now_add=True)
     closed = models.BooleanField(default=False)
 
+    class Meta:
+        verbose_name_plural = 'Course Bookings'
+
+    def __str__(self):
+        return f'{self.trip_type} - Booking - {self.full_name}'
+
+
+class CourseBookingExtraDivers(models.Model):
+    full_name = models.CharField(max_length=255)
+    course_booking = models.ForeignKey(
+        'CourseBookingRequest', on_delete=models.CASCADE, related_name='extra_divers')
+
+    class Meta:
+        verbose_name_plural = 'Extra Divers Course Bookings'
+
+    def __str__(self):
+        return f'{self.trip_type} - Booking - {self.full_name}'
+
 
 class DiveBookingRequest(models.Model):
     full_name = models.CharField(max_length=255, blank=True, null=True)
     email = models.EmailField()
+    trip_type = models.CharField(
+        max_length=255, choices=DIVE_TRIP_CHOICES, blank=True, null=True)
     time = models.CharField(
-        max_length=255, choices=TRIP_TIME_CHOICES, blank=True, null=True)
+        max_length=255, blank=True, null=True)
     date = models.DateField()
     message = models.TextField(null=True, blank=True)
     date_submitted = models.DateTimeField(auto_now_add=True)
     closed = models.BooleanField(default=False)
+
+    class Meta:
+        verbose_name_plural = 'Dive Bookings'
+
+    def __str__(self):
+        return f'{self.trip_type} - Booking - {self.full_name}'
 
 
 class DiveBookingRequestDiver(models.Model):
@@ -361,3 +386,9 @@ class DiveBookingRequestDiver(models.Model):
         max_length=255, choices=EQUIPMENT_CHOICES, blank=True, null=True)
     dive_booking_query = models.ForeignKey(
         'DiveBookingRequest', on_delete=models.CASCADE, blank=True, null=True, related_name='divers')
+
+    class Meta:
+        verbose_name_plural = 'Divers Dive Booking'
+
+    def __str__(self):
+        return self.full_name

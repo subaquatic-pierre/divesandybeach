@@ -20,3 +20,10 @@ class ContactUsRequest(models.Model):
     email = models.EmailField()
     message = models.TextField(null=True, blank=True)
     date = models.DateTimeField(auto_now_add=True)
+    responded = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.email + ' - ' + self.date.strftime('%y%m%D')
+
+    class Meta:
+        verbose_name_plural = 'Contact Queries'

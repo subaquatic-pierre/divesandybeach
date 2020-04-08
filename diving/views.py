@@ -7,8 +7,26 @@ from django.utils.text import slugify
 from django.views.generic import FormView
 from django.views import View
 from django.forms import formset_factory
-from .models import DiveSite, Category, Course, DiveTrip, ItemPrice
-from .forms import CourseBookingDivers, UploadCSVForm, CourseBookingRequestForm, DiveBookingRequestForm, DiveBookingRequestDiverForm, BoatDiveBookingRequestForm, ShoreDiveBookingRequestForm
+from .models import (
+    DiveSite,
+    Category,
+    Course,
+    DiveTrip,
+    ItemPrice,
+    DiveBookingRequest,
+    DiveBookingRequestDiver,
+    CourseBookingRequest,
+    CourseBookingExtraDivers
+)
+from .forms import (
+    CourseBookingDivers,
+    UploadCSVForm,
+    CourseBookingRequestForm,
+    DiveBookingRequestForm,
+    DiveBookingRequestDiverForm,
+    BoatDiveBookingRequestForm,
+    ShoreDiveBookingRequestForm
+)
 from django.contrib import messages
 from django.template.loader import render_to_string
 from django.template import Context
@@ -36,7 +54,7 @@ class DiveSiteDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = context['object'].title
-        context['seo_descirption'] = context['object'].seo_description
+        context['seo_description'] = context['object'].seo_description
         context['seo_keywords'] = context['object'].seo_keywords
         return context
 
@@ -101,7 +119,7 @@ class DiveDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = context['object'].title
-        context['seo_descirption'] = context['object'].seo_description
+        context['seo_description'] = context['object'].seo_description
         context['seo_keywords'] = context['object'].seo_keywords
         price_filter = slugify(context['title'])
         context['prices'] = ItemPrice.objects.filter(
@@ -136,7 +154,7 @@ class BookingRequestView(View):
             booking_form = BoatDiveBookingRequestForm()
 
         diver_form = formset_factory(
-            DiveBookingRequestDiverForm)
+            DiveBookingRequestDiverForm, validate_min=True)
 
         context = {'booking_form': booking_form,
                    'diver_form': diver_form,
@@ -160,6 +178,8 @@ class BookingRequestView(View):
                    'diver_form': divers_formset,
                    'title': 'Dive Booking Request',
                    'heading': booking_form.__name__}
+        # print(booking_form)
+        # print(divers_formset)
 
         if not divers_formset.is_valid() or not booking_form.is_valid():
             messages.info(
@@ -168,7 +188,7 @@ class BookingRequestView(View):
 
         else:
 
-            # Both forms are valid, construct and send email
+            # Both forms are valid, construct email, only send email after successfull model creations
             divers = divers_formset.cleaned_data
             booking_info = booking_form.cleaned_data
             booking_info['subject'] = 'Dive booking request'
@@ -176,6 +196,34 @@ class BookingRequestView(View):
             staff_email = StaffEmail(divers, booking_info)
             customer_email = CustomerEmail(divers, booking_info)
 
+            # Set dive time based on dive trip type
+            if booking_info['dive_type'] == 'Boat Dive':
+                time = booking_info['boat_time']
+            else:
+                time = booking_info['shore_time']
+
+            # Create booking request
+            booking_request = DiveBookingRequest(
+                full_name=divers[0]['full_name'],
+                email=booking_info['email'],
+                trip_type=slugify(booking_info['dive_type']),
+                time=time,
+                date=booking_info['date'],
+                message=booking_info['message']
+            )
+            booking_request.save()
+
+            # Create diver and add them to booking request
+            for diver in divers:
+                new_diver = DiveBookingRequestDiver(
+                    full_name=diver['full_name'],
+                    cert_level=diver['cert_level'],
+                    kit_required=diver['kit_required'],
+                    dive_booking_query=booking_request
+                )
+                new_diver.save()
+
+            # New data saved to database, send emails
             staff_email.send()
             customer_email.send()
 
@@ -204,8 +252,10 @@ class CourseBookingRequestView(View):
         DiverFormSet = formset_factory(
             CourseBookingDivers, validate_min=True, min_num=1)
         divers_formset = DiverFormSet(request.POST)
+        # print(form)
+        # print(divers_formset)
 
-        context = {'booking_form': form,
+        context = {'form': form,
                    'diver_form': divers_formset,
                    'title': 'PADI Course Booking Request'}
 
@@ -224,6 +274,24 @@ class CourseBookingRequestView(View):
 
             staff_email = CourseStaffEmail(divers, booking_info)
             customer_email = CustomerEmail(divers, booking_info)
+
+            # Create course booking object
+            diver_name = divers[0].get('full_name')
+            date = booking_info.get('date')
+            message = booking_info.get('message')
+            email = booking_info.get('email')
+            course = booking_info.get('course')
+            course_booking = CourseBookingRequest(full_name=diver_name,
+                                                  email=email,
+                                                  course=course,
+                                                  date=date,
+                                                  message=message)
+            course_booking.save()
+            for diver in divers:
+                new_diver = CourseBookingExtraDivers(
+                    full_name=diver.get('full_name'))
+                new_diver.course_booking = course_booking
+                new_diver.save()
 
             staff_email.send()
             customer_email.send()

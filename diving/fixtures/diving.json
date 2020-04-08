@@ -1,0 +1,3784 @@
+[
+  {
+    "model": "diving.divesite",
+    "pk": 1,
+    "fields": {
+      "title": "Inchcape 1",
+      "min_diver_level": "Advanced Open Water",
+      "site_type": "Ship Wreck",
+      "dive_time": 17,
+      "distance": 5,
+      "depth": 30,
+      "info": "Typical NDL time is 18 minutes (i.e., total time on the wreck is about 12-15 mins). Divers are required to have their Advanced OW certification. As this is a deep dive, remember to check your air and NDL more often.\r\n\r\nDescend following the line through a shoal of feeding Mackerel to the bow of this purpose sunk wreck.  The wreck was donated by Inchcape Shipping Services in 2001 and is approximately 20m long and 6m wide. It rests upright sitting perfectly on its keel.  \r\n\r\nMarine life is everywhere.  Beautiful yellow soft coral greets you as you reach the wreck and small colorful fish dart in and out as you swim over. Off to the side are large shoals of Snapper and along the deck are Lionfish, Scorpionfish, Kingfish, Grouper, Angelfish, Arabian Boxfish, Butterflyfish, several Giant Pufferfish, Moray Eel and several types of Nudibranch.  If you are really lucky, you may find Seahorse and Frogfish.  Along the sides, you will find Nudibranch and other small interesting creatures. A dive light is very helpful for this!\r\n\r\nBut the main attraction at this site is the two resident Honeycomb Moray Eels!  They are usually found on the deck at the edge near the soft coral, in one of the tires attached to the side, or in the portholes.\r\n\r\nIf you have your Wreck Specialty certification and excellent buoyancy control, you can choose to enter the wreck at the start of the dive. You must have a dive light for this. Communicate and plan this with your buddy before the dive! Penetrating the wreck takes you 1-2m deeper than the deck and will reduce your overall NDL time.\r\n\r\nBe back on the ascent line with 3-5 minutes NDL or 70 Bar, whichever comes first, complete your safety stop, and you\u2019re back in the boat for a nice long surface interval as you travel to our next dive site!\r\n\r\nNote: Using regular air you will typically have between 16-18 minutes of NDL on the deck of the wreck.  Those with average air consumption rates will find that they will be at about 70-100 bar with 5 minutes NDL. Using Nitrox can extend your NDL time on this dive if you are good with air consumption or are on Sidemount! If you are Enriched Air specialty certified, you may request Nitrox when you pre-book.  \r\n\r\nAsk us about getting Nitrox certified!  The course takes a half-day including classroom sessions and two dives.  Or, complete the classroom portion online at PADI eLearning, bring us your completion certificate and do the practical hands-on session with us in 30 minutes.  Pre-book with us and order your Nitrox tanks for your dives that day!",
+      "slug": "inchcape-1",
+      "map_image": "divesite/inchcape-1.jpg",
+      "seo_description": "Inchcape One | Explore Fujairah Dive Sites | Discover This Beautiful Ship Wreck, Abundant Marine Life And Beautiful Corals, Sign Up For Your Next Dive Today!",
+      "seo_keywords": "Inchcape One, Fujairah Dive Sites",
+      "marine_life": []
+    }
+  },
+  {
+    "model": "diving.divesite",
+    "pk": 2,
+    "fields": {
+      "title": "Three Rocks",
+      "min_diver_level": "Junior Scuba Diver",
+      "site_type": "Coral Reef",
+      "dive_time": 50,
+      "distance": 3,
+      "depth": 12,
+      "info": "Three rocks is also known by the name of Sharm Rock as the small fishing village located near it is called Al Sharm.\r\n\r\nThis site is about 100m x 50m and is comprised of a large submerged pinnacle rock cluster with the tips of three protruding from the surface of the water during high tide (you can actually see four tips at low tide and has many valleys and crevices to explore.\r\n\r\nDescend following the anchor line on the northeast buoy to about 8m and keep the rocks on your right.  You are met by Grouper, Mackerel, Snapper, and Trumpetfish as you make your way around the back and deepest section.  Along the way you will see beautiful red soft Bear Claw Coral blooming on the rocks\u2026typically, a Moray Eel is resting somewhere in this soft coral!  As you make your way around the back of the deepest part of the site, remember to look up towards the shallower rocks and you will likely spot one of several resident Giant Pufferfish, huge schools of Snapper and Mackerel and if they are there, schools of Barracuda are around as well!   Throughout this section of the site, you can also see Trumpetfish, Bannerfish, Arabian Boxfish, Parrotfish, Butterflyfish, Arabian Boxfish, Red Fanged Triggerfish, Broomtail Wrasse, Angelfish, and the well-camouflaged Cuttlefish.\r\n\r\nAs you make your way back to the shallower section on the south side you can see Turtle, Surgeonfish, Picasso Triggerfish, Bannerfish, and Batfish.  \r\n\r\nIn the shallow (northwest) portion of the site is beautiful Table Coral.  You should have about 15 minutes remaining to explore the valleys between the rocks.  Here you can see small schools of Batfish, the lone Barracuda, Turtle, Broomtail Wrasse, Porcupine, and Banded Pufferfish, Bannerfish, Arabian Angelfish and the occasional Torpedo / Electric Ray.\r\n\r\nYou have the option of making your way back to the ascent line for your safety stop, or just send up your Safety Marker Buoy where you are, complete your safety stop and the boat will come to pick you up!\r\n\r\nIf this is the second dive of your trip, after entering the boat just keep your gear on because of its only 3 minutes back to the dive shop where you will disembark with your gear and make that short walk to the dive shop to disassemble, rinse and hang up your equipment to dry!",
+      "slug": "three-rocks",
+      "map_image": "divesite/three-rocks.jpg",
+      "seo_description": "Three Rocks | Explore Fujairah Dive Sites | Discover This Beautiful Dive Site, Also Known As Sharm Rock, Sign Up For Your Next Dive Today!",
+      "seo_keywords": "Three Rocks, Sharm Rock, Fujairah Dive Sites",
+      "marine_life": []
+    }
+  },
+  {
+    "model": "diving.divesite",
+    "pk": 3,
+    "fields": {
+      "title": "Artificial Reef",
+      "min_diver_level": "Open Water",
+      "site_type": "Artificial / Reef",
+      "dive_time": 50,
+      "distance": 20,
+      "depth": 15,
+      "info": "After descending down the anchor line to the sandy bottom you will see sets of tires and concrete domes teaming with Spotted Snapper. Locate and follow the larger rope on the seafloor for about 25m and you are taken to a small fishing boat with resident Batfish, Grouper and if you look closely, you may be lucky enough to see Nudibranch.\r\n\r\nContinue on the line past the boat another 10m and you\u2019ll see a large group of concrete hollow pyramids (tetrahedron) stacked on top of the other. At the top are shoals of Mackerel and Snapper. Look closely, because the Giant Pufferfish love to use these groups as cover!\r\n\r\nAs you fin over the top and look down you\u2019ll see Trumpetfish, Grouper, Arabian Angelfish, Batfish, Parrotfish, Lionfish, Anemonefish (Clownfish), Sergeant Major, Cardinalfish, and Bannerfish swimming in and out of the structures. Work your way around the bottom edge and look for Nudibranchs, Moray Eel and Stingray!\r\n\r\nReturn to the line, complete your safety stop and back in the boat to prepare for your next dive!",
+      "slug": "artificial-reef",
+      "map_image": "divesite/artificial-reef.jpg",
+      "seo_description": "Artificial Reef | Explore Fujairah Dive Sites | Discover This Beautiful Dive Site, Abundant Marine Life And Beautiful Corals, Sign Up For Your Next Dive Today!",
+      "seo_keywords": "Artificial Reef, Fujairah Dive Sites",
+      "marine_life": []
+    }
+  },
+  {
+    "model": "diving.divesite",
+    "pk": 4,
+    "fields": {
+      "title": "Dibba Rock",
+      "min_diver_level": "Open Water",
+      "site_type": "Coral Reef",
+      "dive_time": 50,
+      "distance": 18,
+      "depth": 16,
+      "info": "Small rock island approximately 100m x 100m. The captain will drop you in at 4-6m with the current at your back and you will fin keeping the rocks on your left or right depending on whether you enter from the north or south of the island. The shore-side (west) and south side of the island range in depth from 1-4m, while the deepest part is on the east side. Even in the deeper areas, there is a gentle slope of rock that allows you to stay at a shallower depth and still see an abundance of marine life!\r\n\r\nIn the shallow depths, you can see Parrotfish, Giant Pufferfish, Trumpetfish, Batfish, Broomtail Wrasse, Lionfish, Scorpionfish, Picasso and Red Fanged Triggerfish, Turtle, Sergeant Major, Cardinalfish and Moray Eel. As you fin into the deeper section on the north and east sides you can see these plus you may also find Squid, Cuttlefish and Blacktip Reef Shark, Cowtail Stingray, Eagle Ray and if you are really lucky, the occasional Whaleshark!\r\n\r\nSend up your surface marker buoy, complete your surface interval, surface and the boat will come to pick you up!",
+      "slug": "dibba-rock",
+      "map_image": "divesite/dibba-rock.jpg",
+      "seo_description": "Dibba Rock | Explore Fujairah Dive Sites | Discover This Beautiful Dive Site, Abundant Marine Life And Beautiful Corals, Sign Up For Your Next Dive Today!",
+      "seo_keywords": "Dibba Rock, Fujairah Dive Sites",
+      "marine_life": []
+    }
+  },
+  {
+    "model": "diving.divesite",
+    "pk": 5,
+    "fields": {
+      "title": "Cauliflower  Reef",
+      "min_diver_level": "Deep Specialty",
+      "site_type": "Coral Reef",
+      "dive_time": 10,
+      "distance": 21,
+      "depth": 40,
+      "info": "You are required to have your Deep Diver Specialty certification for this site. It is on the depths limit for recreational scuba diving. This site is often done during our technical and deep diver training.\r\n\r\nCauliflower reef is located about 500m directly east of Dibba Rock. The captain will use a GPS to locate the site. Once located we will drop down a shot line to use as a reference during our descent.\r\n\r\nAs you descend to 40m you will be met with a sandy bottom and scattered large teddy bear Cauliflower corals. After about an 8min bottom time for recreational divers or an extended bottom time for technical divers, you will start your ascent. At about 15m you will send up your SMB to mark your position. The captain will then pick you up by boat.",
+      "slug": "cauliflower-reef",
+      "map_image": "divesite/cauliflower-reef.jpg",
+      "seo_description": "Cauliflower Reef | Explore Fujairah Dive Sites | Discover This Beautiful Dive Site, Abundant Marine Life And Beautiful Corals, Sign Up For Your Next Dive Today!",
+      "seo_keywords": "Cauliflower Reef, Fujairah Dive Sites",
+      "marine_life": []
+    }
+  },
+  {
+    "model": "diving.divesite",
+    "pk": 6,
+    "fields": {
+      "title": "Snoopy Island",
+      "min_diver_level": "Junior Scuba Diver",
+      "site_type": "Coral Reef",
+      "dive_time": 60,
+      "distance": 1,
+      "depth": 6,
+      "info": "Find a buddy, put on your gear, walk 40m and you are diving! Snoopy Island is a great shore dive.  It is perfect for day and night dives!\r\n\r\nA small rock island about 120m x 80m, Snoopy Island is named for the three sections of rock rising up to create a profile of feet, belly, and nose similar to the iconic image of Snoopy\u00a9\ufe0f sleeping on top of his doghouse!\r\n\r\nEnter from the shore, surface swim about 200m to the last buoy and drop down to 4-5m at the southwest corner.  Look for the resident Torpedo / Electric Ray buried in the sand near the buoy line anchor.  Keep the rocks on your left as you glide over Grouper resting on the rocks and coral clusters \u2026 along the rocks and coral, you can see Moray Eel, Trumpetfish, Arabian Boxfish, Parrotfish, Butterflyfish, Arabian Boxfish, Sergeant Major, Cardinalfish, Snapper, Picasso and Red Fanged Triggerfish, Broomtail Wrasse, Surgeonfish, Angelfish, Turtle, Nudibranch, and Cuttlefish. \r\n\r\nDuring a night dive, look for red Reef Octopus along this section!\r\n\r\nJust before you make your left turn to reach the backside of the island you are met by a large shoal of Mackerel \u2026 sometimes so thick it nearly blocks out the sun!  Gently glide through and they will encircle you.  Buddies stay close to each other because you can lose sight of each other. You may also see Barracuda or Queenfish looking for lunch \u2026 and the Mackerel are on the menu!\r\n\r\nAlong the back and deepest part (east side) of the island, you may find Ray, Squid, Giant Pufferfish, Turtle and Blacktip Reef Shark. \r\n\r\nOn the northeast side, the depth is 3-4m and this is the location of the larger Boulder and Brain Coral clusters.  In the late afternoon, it is common to find a resting Turtle or two at the base of these clusters.  \r\n\r\nYou\u2019ve already completed your safety stop, so just surface and then surface swim back to shore.  If you are REALLY good on air consumption and have the time, you could reverse the dive with the rocks now on your right, return to the location where you started, ascend and then surface swim to shore!  That\u2019s about a 70-minute dive!",
+      "slug": "snoopy-island",
+      "map_image": "divesite/snoopy-island.jpg",
+      "seo_description": "Snoopy Island | Explore Fujairah Dive Sites | Discover This Beautiful Dive Site, Abundant Marine Life And Beautiful Corals, Sign Up For Your Next Dive!",
+      "seo_keywords": "Snoopy Island, Dive Snoopy Island, Fujairah Dive Sites",
+      "marine_life": []
+    }
+  },
+  {
+    "model": "diving.divesite",
+    "pk": 7,
+    "fields": {
+      "title": "Snoopy Deep Reef",
+      "min_diver_level": "Advanced Open Water",
+      "site_type": "Artificial / Reef",
+      "dive_time": 27,
+      "distance": 4,
+      "depth": 24,
+      "info": "This site requires an Advanced certification level. It is located about 500m directly east of Snoopy Island. The site has a bottom topography of flatbed rock and sandy patches. To attract fish, tires and rope have been laid on the seafloor.\r\n\r\nAn accident with a small diving boat left the boat unusable. The boat was towed out to the site, the boat and trailer were purposefully sunk to attract fish to the site. There is no mooring line on the site. To protect the delicate soft coral below we do not throw anchor or a shot line.\r\n\r\nYou will kit up on the boat and backward roll into the water. Your dive guide will lead you on a descent without a reference line. Once you reach the bottom at about 24m you will notice an abundance of large tree corals. You will explore the small dive boat and trailer. You can expect to spot the usual reef creatures on this site such as Box Fish, Angel Fish, Snapper and Broomtail Wrasse. Moray eels like to hide in the rocky crevices and Sea Horses perch on the ropes attached to the tires.\r\n\r\nAfter about a 27-minute bottom time or if you reach 60 bar your dive guide will lead you on your ascent and send an SMB to mark your location to the boat captain. You will then hop back on the boat and prepare for your second dive or come into shore.",
+      "slug": "snoopy-deep-reef",
+      "map_image": "divesite/snoopy-deep-reef.jpg",
+      "seo_description": "Snoopy Deep Reef | Explore Fujairah Dive Sites | Discover This Beautiful Dive Site, Abundant Marine Life And Beautiful Corals, Sign Up For Your Next Dive!",
+      "seo_keywords": "Snoopy Deep Reef, Fujairah Dive Sites",
+      "marine_life": []
+    }
+  },
+  {
+    "model": "diving.divesite",
+    "pk": 9,
+    "fields": {
+      "title": "Coral Gardens",
+      "min_diver_level": "Open Water",
+      "site_type": null,
+      "dive_time": null,
+      "distance": null,
+      "depth": null,
+      "info": "This site is a beautiful reef just outside of the Khor Fakkhan port. The island nearby is called Shark Island. \r\n\r\nThere is an abundance of hard corals, the island has a gradual slope towards a sandy bottom. After entering the water you will head down to about 14m which will be at the contour of sand and rocky slope. \r\n\r\nHeading towards the port you will notice abundant marine life in between all the corals. Once you have reached low on air or time of about 40min, the dive guide will head to the shallow water in a protected bay.\r\n\r\nThis bay is about 3m -5m deep. It is protected from any incoming bad weather. This has allowed corals to form over many years, the tables corals on this site are the largest in the region. It is a nursery for juvenile reef fish.\r\n\r\nOnce the dive is over you will be able to snorkel back to the boat or the boat captain will collect you once all the divers are ready!",
+      "slug": "coral-gardens",
+      "map_image": "divesite/coral-gardens.jpg",
+      "seo_description": "Coral Gardens | Explore Fujairah Dive Sites | Discover This Beautiful Dive Site, Abundant Marine Life And Beautiful Corals, Sign Up For Your Next Dive Today!",
+      "seo_keywords": "Coral Gardens, Fujairah Dive Sites",
+      "marine_life": []
+    }
+  },
+  {
+    "model": "diving.divesite",
+    "pk": 10,
+    "fields": {
+      "title": "Shark Island",
+      "min_diver_level": "Open Water",
+      "site_type": "Coral Reef",
+      "dive_time": 45,
+      "distance": 22,
+      "depth": 18,
+      "info": "This site is on the eastern end of Shark Island. It offers a good chance of seeing sharks. The wall slopes off quite quickly and ends on the sandy bottom around 22m deep.\r\n\r\nThe site is in close proximity to Anemone Gardens which may be another option if you would like to do that dive site. \r\n\r\nShark Island has abundant marine life and is a wonderful site to dive with your buddies",
+      "slug": "shark-island",
+      "map_image": "divesite/shark-island.jpg",
+      "seo_description": "Shark Island | Explore Fujairah Dive Sites | Discover This Beautiful Dive Site, Abundant Marine Life And Beautiful Corals, Sign Up For Your Next Dive Today!",
+      "seo_keywords": "Shark Island, Fujairah Dive Sites",
+      "marine_life": []
+    }
+  },
+  {
+    "model": "diving.divesite",
+    "pk": 11,
+    "fields": {
+      "title": "Hole in The Wall",
+      "min_diver_level": "Open Water",
+      "site_type": "Coral Reef",
+      "dive_time": 55,
+      "distance": 23,
+      "depth": 16,
+      "info": "The site is a submerged outcrop of the mountain running just along the shoreline.  The two largest formations breach the water surface and gently slope away from the pinnacle as you get deeper. Similar to Three Rocks, the underwater rock formations have many small valleys and crevices to explore.  Along the edges at the bottom in the sand are many large boulders where you may find the resting Cowtail Ray, Blackspotted / Marbled Ray, Whiptail Ray, and Turtle.  A bit further out in the sand you may be lucky enough to find a curious and shy Jawfish with his eyes just above the edge of his hole in the seafloor and his mouth full of eggs!  Throughout the site, you may see Trumpetfish, Bannerfish, Arabian Boxfish, Parrotfish, Butterflyfish, Arabian Boxfish, Red Fanged Triggerfish, Broomtail Wrasse, Angelfish, Blenny, Goby, Cleaner Wrasse, Moray Eel and the well-camouflaged Cuttlefish.\r\n\r\nThe dive is named for a 15m long swim-through.  This natural tunnel is located nearer the shoreline and has an average width of 2m and 1m height.  The northwest entrance is approximately 3m deep and the southeast entrance is 7m.  It has a sandy bottom, so frog/flutter kick should be used to avoid stirring up the silt and allow the next person to enjoy the same view as you. There is usually a small school of Silver Sweeper hanging out in the widest part (3m) near the east side. If you have a dive light (or if the sun is bright and visibility good) look slightly upwards and you may see several Lobsters hiding in crevices!\r\n\r\nDepending on visibility and time of day (sunlight), it can be challenging to find if you are unfamiliar with the site.  So, stay with your guide at least until he or she takes you through and then you can explore the site on your own if you want (let your dive guide know pre-dive that this is your plan).\r\n\r\nFor those that opt to explore on their own, the captain will get you close to the main pinnacle on the southwest section of the site. Descend down 6-7m keeping the rocks on your right and fin towards the deeper portion of the site (east) then continue until a depth of about 5-6m and come to a shallow wall directly in front of you.  Slight turn left keeping the rocks on your right, and you will soon see a sand pathway between the two shallow walls \u2026 continue past this and the very next sand pathway on your right will take you to the east entrance of Hole in the Wall.  The sand path is about 15m long and depending on visibility and time of day, the hole may not be visible until you are within a few meters \u2026 it will just look like a wall.  But as soon as you are close enough you will see the entrance and the light shining in through the other side! When you exit you are immersed in sunlight and surrounded by Brain Coral, Staghorn Coral, and Table Coral as well as the accompanying reef fish!  Explore this area for the remaining 10 minutes, make your way back to the anchor line or surface and its a one minute surface swim back to the boat!",
+      "slug": "hole-in-the-wall",
+      "map_image": "divesite/hole-in-the-wall.jpg",
+      "seo_description": "Hole In The Wall | Explore Fujairah Dive Sites | Discover This Beautiful Dive Site, Abundant Marine Life And Beautiful Corals, Sign Up For Your Next Dive Today!",
+      "seo_keywords": "Hole In The Wall, Fujairah Dive Sites",
+      "marine_life": []
+    }
+  },
+  {
+    "model": "diving.divesite",
+    "pk": 12,
+    "fields": {
+      "title": "Inchape 2",
+      "min_diver_level": "Open Water",
+      "site_type": "Ship Wreck",
+      "dive_time": 35,
+      "distance": 23,
+      "depth": 18,
+      "info": "Typical NDL time is 36 minutes (i.e., total time on the wreck is about 28-33 mins) or 70 Bar back on the ascent line, whichever comes first.\r\n\r\nDescend following the line through a shoal of feeding Mackerel to the bow of this purpose sunk wreck.  The wreck was donated by Inchcape Shipping Services in 2002. The wreck is nearly identical to Inchcape 1, but slightly longer (25m) and also rests upright sitting perfectly on his keel.\r\n\r\nOff to the side are large shoals of Snapper and along the deck are three huge resident  Lionfish.  Also on the deck are Scorpionfish, Grouper, Angelfish, Arabian Boxfish, Moray Eel, Butterflyfish, several Giant Pufferfish and several types of Nudibranch.  Along the sides and the deck of the vessel, you will find Nudibranch and other small interesting creatures. A dive light is very helpful for this!  Around the edges in the sand, you might find a large resting Stingray\r\n\r\nIf you have your Wreck Specialty certification and excellent buoyancy control, you can choose to enter the wreck at the start of the dive. You must have a dive light for this. Communicate and plan this with your buddy before the dive! Penetrating the wreck will reduce your remaining NDL time\u2026 so there is a trade-off.\r\n\r\nBe back on the ascent line with 3-5 minutes NDL or 70 Bar, whichever comes first, complete your safety stop and you\u2019re back in the boat for your surface interval as you travel to the next dive site!",
+      "slug": "inchape-2",
+      "map_image": "divesite/inchape-2.jpg",
+      "seo_description": "Inchcape Two | Explore Fujairah Dive Sites | Discover This Beautiful Ship Wreck, Abundant Marine Life And Beautiful Corals, Sign Up For Your Next Dive Today!",
+      "seo_keywords": "Inchcape Two, Ship Wreck, Fujairah Dive Sites",
+      "marine_life": []
+    }
+  },
+  {
+    "model": "diving.divesite",
+    "pk": 13,
+    "fields": {
+      "title": "Martini Rock",
+      "min_diver_level": "Open Water",
+      "site_type": "Coral Reef",
+      "dive_time": 60,
+      "distance": 24,
+      "depth": 18,
+      "info": "Named after its shape, this rock is a haven for marine life. The pinnacle starts at 5m and slopes off all the way down to 20m\r\n\r\nThere is an abundance of soft corals on this site. It is one of our furthest dive sites.\r\n\r\nOnce entering the water you will follow the buoy line down to the sandy bottom at around 12m. Then head in a westerly direction towards deeper water. Once at the bottom of the rock, start your ascent around the other side off the rock.\r\n\r\nMany Rays and chances of Whale-Sharks exist at this site. You and your buddy will be able to follow the rock all the way up to your safety stop. You can do your safety stop at the top of the rock allowing you to see all the marine life.\r\n\r\nOnce completed the dive boat will collect you.",
+      "slug": "martini-rock",
+      "map_image": "divesite/martini-rock.jpg",
+      "seo_description": "Martini Rock | Explore Fujairah Dive Sites | Discover This Beautiful Dive Site, Abundant Marine Life And Beautiful Corals, Sign Up For Your Next Dive Today!",
+      "seo_keywords": "Martini Rock, Fujairah Dive Sites",
+      "marine_life": []
+    }
+  },
+  {
+    "model": "diving.divetrip",
+    "pk": 3,
+    "fields": {
+      "title": "Boat Dive",
+      "description": "Boat diving in Fujairah offers the best diving in the UAE, from amazing shipwrecks to beautiful coral reefs. We know the best sites to dive in Fujairah, there is an abundance of marine life in the area, Dolphins, Whalesharks, various species of turtle and many Indo-Pacific reef fish. The area offers dive sites for all certification and comfort levels. \r\n\r\nAll of our dive sites are no more than a short boat trip away, we run two trips per day, please check out our dive sites page for a full list of dive sites. Shark Island in Fujairah, is one of the many beautiful sites we have. If you would like to visit the famous Snoopy Island you can kit up at the centre and head out from the shore. Visit our shore diving page for more info about shore diving around Snoopy Island. \r\n\r\nOur dive centre has a full range of diving equipment which can be hired, we also offer equipment for sale in our showroom.",
+      "trip_type": "boat-dive",
+      "image": "Boat Dive 1",
+      "schedule_image": "Boat Dive 2",
+      "description_image": "Boat Dive 3",
+      "schedule": "We run two dive trips from the boat per day, our boat is fully kitted for diving with spare equipment if needed, emergency equipment and tank racks. \r\n\r\nOur boats accommodate a maximum of 13 divers per trip. The trips include two dives at two different dive sites. Checkout our diving schedule below.",
+      "slug": "fujairah-boat-dive",
+      "seo_description": "Fujairah Boat Diving | Discover | PADI 5 Star IDC Resort | Daily Boat Diving Trips To Any Of Our Awesome Dive Sites, Sign Up For Your Next Dive Today!",
+      "seo_keywords": "Boat Diving, Dive Trip, Boat Dive, Dive Fujairah, Fujairah Boat Dive Trip"
+    }
+  },
+  {
+    "model": "diving.divetrip",
+    "pk": 4,
+    "fields": {
+      "title": "Shore Dive",
+      "description": "Diving Snoopy Island is a fun and easy dive. The site is located within a marine national park which means no fishing is allowed around the island, because of this the marine life is flourishing. A diver can spot Blacktip reef sharks, resident Green turtles and an abundance of reef fish. There are beautiful corals that rise up to 2m beneath the surface of the water.\r\n\r\nBring your own equipment or rent equipment from us, we will give you a short dive briefing of the site, we will explain where the best areas are and what our dive procedures are, you and your buddy can then head out and explore the beauty of Snoopy Island.\r\n\r\nOnce you have completed your dive we have rinse tanks and showers at our facility. You can then sit back and relax with a cup of tea or coffee while you take in the beautiful scenery.",
+      "trip_type": "shore-dive",
+      "image": "Shore Dive 1",
+      "schedule_image": "Shore Dive 2",
+      "description_image": "Shore Dive 3",
+      "schedule": "Shore diving can be done at any time during the day. We also offer night dives around Snoopy Island. Please check out the price list for prices on night diving. Our shore dives expect that you will have your own buddy to dive around Snoopy Island. \r\n\r\nLet us know if you would like a dive guide to dive around Snoopy Island with you. There are so many beautiful animals around Snoopy Island. Prices include access to the hotel as well as full-service dive facilities, showers, equipment rinse areas, and a classroom.",
+      "slug": "dive-snoopy-island",
+      "seo_description": "Dive Snoopy Island | Explore | Discover | Experience | PADI 5 Star IDC Resort | Daily Shore Diving Around Snoopy Island Sign Up For Your Next Dive Today!",
+      "seo_keywords": "Snoopy Island, Shore Diving, Dive Snoopy Island"
+    }
+  },
+  {
+    "model": "diving.category",
+    "pk": 1,
+    "fields": {
+      "title": "Entry Level",
+      "description": null,
+      "image": null,
+      "slug": "entry-level"
+    }
+  },
+  {
+    "model": "diving.category",
+    "pk": 2,
+    "fields": {
+      "title": "Advanced Level",
+      "description": null,
+      "image": null,
+      "slug": "advanced-level"
+    }
+  },
+  {
+    "model": "diving.category",
+    "pk": 3,
+    "fields": {
+      "title": "Specialty Courses",
+      "description": null,
+      "image": null,
+      "slug": "specialty-courses"
+    }
+  },
+  {
+    "model": "diving.category",
+    "pk": 4,
+    "fields": {
+      "title": "TecRec Level",
+      "description": null,
+      "image": null,
+      "slug": "tecrec-level"
+    }
+  },
+  {
+    "model": "diving.category",
+    "pk": 5,
+    "fields": {
+      "title": "Professional Level",
+      "description": null,
+      "image": null,
+      "slug": "professional-level"
+    }
+  },
+  {
+    "model": "diving.category",
+    "pk": 6,
+    "fields": {
+      "title": "Fun Diving",
+      "description": null,
+      "image": null,
+      "slug": "fun-diving"
+    }
+  },
+  {
+    "model": "diving.category",
+    "pk": 7,
+    "fields": {
+      "title": "Equipment Rental",
+      "description": null,
+      "image": null,
+      "slug": "equipment-rental"
+    }
+  },
+  {
+    "model": "diving.category",
+    "pk": 8,
+    "fields": {
+      "title": "AWARE Courses",
+      "description": null,
+      "image": null,
+      "slug": "aware-courses"
+    }
+  },
+  {
+    "model": "diving.category",
+    "pk": 9,
+    "fields": {
+      "title": "Junior Level",
+      "description": null,
+      "image": null,
+      "slug": "junior-level"
+    }
+  },
+  {
+    "model": "diving.course",
+    "pk": 1,
+    "fields": {
+      "title": "Discover Scuba Diving",
+      "image": "PADI Discover Scuba Diving 1",
+      "overview_image": "PADI Discover Scuba Diving 2",
+      "info_image": "PADI Discover Scuba Diving 3",
+      "schedule_image": "PADI Discover Scuba Diving 4",
+      "description": "The PADI Discover Scuba Diving (DSD) course is an experience program for non-certified divers. This course is designed with fun and safety in mind. You will be introduced to basic scuba diving knowledge and skills and then be led on an underwater tour around the world-famous Snoopy Island.",
+      "e_learning_link": null,
+      "level": 1,
+      "min_age": "10",
+      "duration": "3 Hours",
+      "slug": "discover-scuba-diving",
+      "pool_dives": true,
+      "ocean_dives": true,
+      "num_pool_dives": 1,
+      "num_ocean_dives": 1,
+      "minimum_certiication_level": null,
+      "qualified_to": "No qualification after the course",
+      "schedule": "10:00 \u2013 13:00 OR 14:00 \u2013 17:00\r\nPaperwork / Classroom / Pool / Shore Dive Snoopy Island",
+      "seo_description": "PADI Discover Scuba Diving | An Experience Program For Non-Certified Divers, You Need Basic Swimming Skills and Excitement For Discovery",
+      "seo_keywords": "PADI Discover Scuba Diving, Beginner Level, Experience Program"
+    }
+  },
+  {
+    "model": "diving.course",
+    "pk": 2,
+    "fields": {
+      "title": "Scuba Diver",
+      "image": "PADI Scuba Diver 1",
+      "overview_image": "PADI Scuba Diver 2",
+      "info_image": "PADI Scuba Diver 3",
+      "schedule_image": "PADI Scuba Diver 4",
+      "description": "This is the entry-level diver certification, PADI Scuba Diver and is a sub-course of the PADI Open Water course. This is a fun course where you will be introduced to basic scuba diving knowledge and skills. You will be led by one of our experienced instructors.",
+      "e_learning_link": "https://shop.padi.com/product/open-water-diver?lang=en&irra=26602",
+      "level": 1,
+      "min_age": "10",
+      "duration": "2 Days",
+      "slug": "scuba-diver",
+      "pool_dives": true,
+      "ocean_dives": true,
+      "num_pool_dives": 3,
+      "num_ocean_dives": 2,
+      "minimum_certiication_level": null,
+      "qualified_to": "12m with a PADI profesional",
+      "schedule": "Day 1: \r\n09:00 - 15:00 \r\nPaperwork / Swims / Confined Water 1, 2, 3\r\nLunch 12:30 - 13:30 \r\n\r\nDay 2:\r\n09:00 - 12:30 OR 13:30 - 17:30 \r\nOpen Water 1 & 2 (Snoopy Island Shore Dives)",
+      "seo_description": "PADI Scuba Diver | Half of the PADI Open Water Diver Course,, Complete The PADI Scuba Diver Course In Just 2 Days! Sign Up For Your E-Learning Today!",
+      "seo_keywords": "PADI Scuba Diver"
+    }
+  },
+  {
+    "model": "diving.course",
+    "pk": 3,
+    "fields": {
+      "title": "Open Water Diver",
+      "image": "PADI Open Water Diver 1",
+      "overview_image": "PADI Open Water Diver 2",
+      "info_image": "PADI Open Water Diver 3",
+      "schedule_image": "PADI Open Water Diver 4",
+      "description": "This is an entry-level diver certification, the PADI Open Water course. This is a fun course where you will be introduced to scuba diving knowledge and skills. You will be led by one of our experienced instructors.",
+      "e_learning_link": "https://shop.padi.com/product/open-water-diver?lang=en&irra=26602",
+      "level": 1,
+      "min_age": "10",
+      "duration": "4 Days",
+      "slug": "open-water-diver",
+      "pool_dives": true,
+      "ocean_dives": true,
+      "num_pool_dives": 5,
+      "num_ocean_dives": 4,
+      "minimum_certiication_level": null,
+      "qualified_to": "18m with a buddy",
+      "schedule": "Day 1: \r\n09:00 - 15:00 \r\nPaperwork / Swims / Confined Water 1, 2\r\nLunch 12:30 - 13:30 \r\n\r\nDay 2:\r\n09:00 - 15:00 \r\nConfined Water 3, 4, 5 \r\nLunch 12:30 - 13:30 \r\n\r\nDay 3:\r\n09:00 - 12:30 OR 13:30 - 17:30 \r\nOpen Water 1 & 2 (Snoopy Island Shore Dives) \r\n\r\nDay 4:\r\n09:00 \u2013 12:30 OR 13:30 \u2013 17:30 \r\nOpen Water 3 & 4 (Boat Dives \u2013 meeting time is 1 hour before)",
+      "seo_description": "PADI Open Water Diver Course | Get Your PADI License, Sign Up For Your E-Learning or Complete Learning In The Classroom, Join Us To Start The Amazing Underwater Journey!",
+      "seo_keywords": "PADI Open Water Course, Entry Level, Beginner Level, Online Learning"
+    }
+  },
+  {
+    "model": "diving.course",
+    "pk": 4,
+    "fields": {
+      "title": "ReActivate",
+      "image": "PADI ReActivate 1",
+      "overview_image": "PADI ReActivate 2",
+      "info_image": "PADI ReActivate 3",
+      "schedule_image": "PADI ReActivate 4",
+      "description": "If you have been out of the water for more than a year you will need to complete the PADI ReActivate course before you can dive again. This course will refresh your knowledge and skills and leave you feeling confident in your diving abilities again. Upon completion of this short course you will receive a new PADI card.",
+      "e_learning_link": "http://apps.padi.com/scuba-diving/shopping-cart/product/productAffiliation?ProductId=B4956EA2-9985-4356-A9DA-42BEF212D8D8&StoreNumber=26602",
+      "level": 2,
+      "min_age": "10",
+      "duration": "3 Hours",
+      "slug": "reactivate",
+      "pool_dives": true,
+      "ocean_dives": true,
+      "num_pool_dives": 1,
+      "num_ocean_dives": 1,
+      "minimum_certiication_level": "Open Water",
+      "qualified_to": "Reactivate old diving license",
+      "schedule": "Day 1: \r\n09:00 - 11:00 \u2013 Pool\r\nPool skills refresher \u2013 5 basic skills\r\nOR\r\n9:00 - 12:30 OR 13:30 - 17:00 (meeting time is 1 hour before)\r\nDouble tank boat dive \u2013 refresh your skills in shallow water with an instructor before the dive",
+      "seo_description": "PADI ReActivate | Refresh Your PADI License, Sign Up For Your E-Learning or Complete Learning In The Classroom, lets go you in the water again!",
+      "seo_keywords": "PADI ReActivate, Scuba Diving"
+    }
+  },
+  {
+    "model": "diving.course",
+    "pk": 5,
+    "fields": {
+      "title": "Adventure Diver",
+      "image": "PADI Adventure Diver 1",
+      "overview_image": "PADI Adventure Diver 2",
+      "info_image": "PADI Adventure Diver 3",
+      "schedule_image": "PADI Adventure Diver 4",
+      "description": "The PADI Adventure Diver course will expand your scuba skills and awareness. This is a sub-course of the PADI Advanced course. During your three dives, you will learn deep diving techniques and navigation techniques, amongst others.",
+      "e_learning_link": "https://www.padi.com/elearning-scuba-registration/default.aspx?irra=26602&courseid=49",
+      "level": 2,
+      "min_age": "12",
+      "duration": "1 Day",
+      "slug": "adventure-diver",
+      "pool_dives": false,
+      "ocean_dives": true,
+      "num_pool_dives": 0,
+      "num_ocean_dives": 3,
+      "minimum_certiication_level": "Open Water",
+      "qualified_to": "30m with a buddy if deep diving adventure dive is done",
+      "schedule": "Day 1: \r\n09:00 - 12:30 OR 13:30 - 17:30 Boat Dives (meeting time is 1 hour before)\r\n14:30 Shore Dive OR 19:00 Night Dive",
+      "seo_description": "PADI Adventure Diver Course | This Course Is Half Of the PADI Advanced Open Water Course! Complete It In Just 1 Day! Sign Up For Your E-Learning!",
+      "seo_keywords": "PADI Adventure Diver, PADI Course"
+    }
+  },
+  {
+    "model": "diving.course",
+    "pk": 6,
+    "fields": {
+      "title": "Advanced Open Water",
+      "image": "PADI Advanced Open Water 1",
+      "overview_image": "PADI Advanced Open Water 2",
+      "info_image": "PADI Advanced Open Water 3",
+      "schedule_image": "PADI Advanced Open Water 4",
+      "description": "The PADI Advanced Open Water course will expand your scuba skills and awareness. During your 5 dives you will learn deep diving and navigation techniques, amongst others.",
+      "e_learning_link": "https://www.padi.com/elearning-scuba-registration/default.aspx?irra=26602&courseid=49",
+      "level": 2,
+      "min_age": "12",
+      "duration": "2 Days",
+      "slug": "advanced-open-water",
+      "pool_dives": false,
+      "ocean_dives": true,
+      "num_pool_dives": 0,
+      "num_ocean_dives": 5,
+      "minimum_certiication_level": "Open Water",
+      "qualified_to": "30m with a buddy",
+      "schedule": "Day 1: \r\n09:00 - 12:30 OR 13:30 -17:30 \u2013 Boat Dives (meeting time is 1 hour before)\r\n14:30 OR 19:00 \u2013 Shore Dive OR Night Dive\r\n\r\nDay 2:\r\n09:00 - 12:30 OR 13:30 - 17:30 \u2013 Boat Dives (meeting time is 1 hour before)",
+      "seo_description": "The PADI Advanced Open Water Course Will Teach You The Best Way To Dive And Make You A Better Diver, Sign Up For Your E-Learning Today!",
+      "seo_keywords": "PADI Advanced Open Water, Advanced Diver"
+    }
+  },
+  {
+    "model": "diving.course",
+    "pk": 7,
+    "fields": {
+      "title": "Rescue Diver",
+      "image": "PADI Rescue Diver 1",
+      "overview_image": "PADI Rescue Diver 2",
+      "info_image": "PADI Rescue Diver 3",
+      "schedule_image": "PADI Rescue Diver 4",
+      "description": "To become a PADI Rescue Diver you must complete the Emergency First Response Course (CPR & First Aid) or have a valid EFR certification from another organization. The Rescue Diver course will teach you excellent self-rescue and distressed diver rescue skills, the course greatly improves your ability as a diver.",
+      "e_learning_link": "https://www.padi.com/elearning-scuba-registration/default.aspx?irra=26602&courseid=56",
+      "level": 2,
+      "min_age": "12",
+      "duration": "3 Days",
+      "slug": "rescue-diver",
+      "pool_dives": false,
+      "ocean_dives": true,
+      "num_pool_dives": 1,
+      "num_ocean_dives": 3,
+      "minimum_certiication_level": "Advanced Open Water",
+      "qualified_to": "Rescue skills",
+      "schedule": "Day 1: \r\n09:00 - 16:00 \r\nPaperwork / EFR / Confined Water \u2013 Skills Practice\r\n\r\nDay 2:\r\n09:00 - 16:00 \r\nConfined Water / Open Water\r\n\r\nDay 3:\r\n09:00 - 12:30 OR 13:30 - 17:00\r\nOpen Water Scenario (Boat Dives \u2013 meeting time is 1 hour before)",
+      "seo_description": "PADI Rescue Diver | Save Your Life Or Your Buddies Life | Significantly Improve Your Skills As A Diver, Sign Up For Your E-Learning Today!",
+      "seo_keywords": "PADI Rescue Diver, Save a Life"
+    }
+  },
+  {
+    "model": "diving.course",
+    "pk": 8,
+    "fields": {
+      "title": "EFR First Aid",
+      "image": "PADI EFR First Aid 1",
+      "overview_image": "PADI EFR First Aid 2",
+      "info_image": "PADI EFR First Aid 3",
+      "schedule_image": "PADI EFR First Aid 4",
+      "description": "This is a basic Emergency First Responder course. During this course, you will learn the basic knowledge to provide Primary and Secondary Care to a person who requires immediate medical attention. You will learn basic life support skills such as CPR, as well as basic care for non-life-threatening situations such as bandaging and splinting. Your instructor will lead you through this course, with the help of a video and textbook to guide you through your knowledge development in the classroom.",
+      "e_learning_link": null,
+      "level": 2,
+      "min_age": "12",
+      "duration": "1 Day",
+      "slug": "efr-first-aid",
+      "pool_dives": false,
+      "ocean_dives": false,
+      "num_pool_dives": 0,
+      "num_ocean_dives": 0,
+      "minimum_certiication_level": null,
+      "qualified_to": "First aid life saving skills",
+      "schedule": "Day 1: \r\n09:00 \u2013 15:00",
+      "seo_description": "PADI EFR First Aid and CPR | Learn The Basic Skills Needed To Save A Life, CPR, Serious Bleeding Or Choking, Build Your Confidence!",
+      "seo_keywords": "First Aid, CPR, PADI EFR"
+    }
+  },
+  {
+    "model": "diving.course",
+    "pk": 9,
+    "fields": {
+      "title": "Deep Diver",
+      "image": "PADI Deep Diver 1",
+      "overview_image": "PADI Deep Diver 2",
+      "info_image": "PADI Deep Diver 3",
+      "schedule_image": "PADI Deep Diver 4",
+      "description": "The PADI Deep Diver course will extend your depth range to 40m. There are many reasons divers choose to dive deep: a wreck you want to explore or the lure of a deep wall dive. This course will give you the confidence to slowly and responsibly extend your depth range with the use of deep diving equipment, procedures and techniques. During the course you will learn to think like a Deep Diver, plan your gas supply and manage gas narcosis.",
+      "e_learning_link": null,
+      "level": 3,
+      "min_age": "15",
+      "duration": "2 Days",
+      "slug": "deep-diver",
+      "pool_dives": false,
+      "ocean_dives": true,
+      "num_pool_dives": 0,
+      "num_ocean_dives": 4,
+      "minimum_certiication_level": "Advanced Open Water",
+      "qualified_to": "40m with a buddy",
+      "schedule": "Day 1: \r\n09:00 \u2013 12:30 OR 13:30 \u2013 17:30 Boat Dives (meeting time is 1 hour before)\r\nDepth: 18m \u2013 30m\r\n\r\nDay 2:\r\n09:00 \u2013 12:30 OR 13:30 \u2013 17:30 Boat Dives (meeting time is 1 hour before)\r\nDepth: 18m \u2013 40m",
+      "seo_description": "PADI Deep Diver Specialty | The Best Techniques and Skills For Deep Diving, Extend Your Depths With Confidence With A PADI Instructor, Sign Up Today!",
+      "seo_keywords": "PADI Deep Diver"
+    }
+  },
+  {
+    "model": "diving.course",
+    "pk": 10,
+    "fields": {
+      "title": "Wreck Diver",
+      "image": "PADI Wreck Diver 1",
+      "overview_image": "PADI Wreck Diver 2",
+      "info_image": "PADI Wreck Diver 3",
+      "schedule_image": "PADI Wreck Diver 4",
+      "description": "Welcome to the PADI Wreck Diver specialty course. Who is she and how did she get there? Shipwrecks can be very intriguing and can have significant historical relevance. During this course, you will learn how to navigate shipwrecks, prevent siltation and navigate your way safely into and out of wrecks.",
+      "e_learning_link": null,
+      "level": 3,
+      "min_age": "15",
+      "duration": "2 Days",
+      "slug": "wreck-diver",
+      "pool_dives": false,
+      "ocean_dives": true,
+      "num_pool_dives": 0,
+      "num_ocean_dives": 4,
+      "minimum_certiication_level": "Advanced Open Water",
+      "qualified_to": "Wreck penetration dives within light zone",
+      "schedule": "Day 1: \r\n09:00 - 12:30 OR 13:30 - 17:30 \u2013 Boat Dives (meeting time is 1 hour before)\r\n\r\nDay 2:\r\n09:00 - 12:30 OR 13:30 - 17:30 \u2013 Boat Dives (meeting time is 1 hour before)",
+      "seo_description": "PADI Wreck Diver Specialty Course | The Best Techniques and Skills For Wreck Diving, Penetrate And Explore, Sign Up With A PADI Instructor Today!",
+      "seo_keywords": "PADI Wreck Diver, PADI Specialty Wreck Diver"
+    }
+  },
+  {
+    "model": "diving.course",
+    "pk": 11,
+    "fields": {
+      "title": "Night Diver",
+      "image": "PADI Night Diver 1",
+      "overview_image": "PADI Night Diver 2",
+      "info_image": "PADI Night Diver 3",
+      "schedule_image": "PADI Night Diver 4",
+      "description": "Welcome to the PADI Night Diver Specialty course. Night diving can feel like a stressful and daunting experience. It is the exact opposite once you get in the water. Night diving is more relaxing than day diving. You are exposed to a whole new array of underwater creatures. Crabs, Lobsters and Moray Eels all come out to play at night. All the coral polyps will open during the night to feed on passing nutrients in the water. During the night diver course, you will learn how to use an underwater light and how to navigate at night.",
+      "e_learning_link": null,
+      "level": 3,
+      "min_age": "15",
+      "duration": "2 Days",
+      "slug": "night-diver",
+      "pool_dives": false,
+      "ocean_dives": true,
+      "num_pool_dives": 0,
+      "num_ocean_dives": 3,
+      "minimum_certiication_level": "Open Water",
+      "qualified_to": "Niight diving with a buddy",
+      "schedule": "Day 1:\r\n17:00 \u2013 Knowledge Development\r\n18:00 \u2013 Shore Dive \u2013 Snoopy Island\r\n\r\nDay 2:\r\n17:00 \u2013 Knowledge Development\r\n18:00 \u2013 Shore Dive \u2013 Snoopy Island\r\n\r\nDay 3:\r\n17:00 \u2013 Knowledge Development\r\n18:00 \u2013 Shore Dive \u2013 Snoopy Island",
+      "seo_description": "PADI Night Diver Specialty Course | The Best Techniques and Skills For Night Diving, Explore The Unknown, Sign Up With A PADI Instructor Today!",
+      "seo_keywords": "PADI Night Diver, Night Diver Specialty"
+    }
+  },
+  {
+    "model": "diving.course",
+    "pk": 12,
+    "fields": {
+      "title": "Search and Recovery",
+      "image": "PADI Search and Recovery 1",
+      "overview_image": "PADI Search and Recovery 2",
+      "info_image": "PADI Search and Recovery 3",
+      "schedule_image": "PADI Search and Recovery 4",
+      "description": "Welcome to the PADI Search and Recovery specialty course. Have you ever lost a weight belt or your sunglasses off the side of the boat? This is an excellent course to teach you many different search patterns and object lifting techniques. During the course, you will practice search patterns using a compass and mark off search areas using buoys. You will also learn to use a lift bag to bring objects to the surface.",
+      "e_learning_link": null,
+      "level": 3,
+      "min_age": "15",
+      "duration": "2 Days",
+      "slug": "search-and-recovery",
+      "pool_dives": false,
+      "ocean_dives": true,
+      "num_pool_dives": 0,
+      "num_ocean_dives": 4,
+      "minimum_certiication_level": "Open Water",
+      "qualified_to": "Search and recovery skills to recover objects",
+      "schedule": "Day 1: \r\n09:00 - 11:00 \u2013 Shore Dive (Snoopy Island)\r\n13:00 - 15:00 \u2013 Shore Dive (Snoopy Island)\r\n\r\nDay 2: \r\n09:00 - 11:00 \u2013 Shore Dive (Snoopy Island)\r\n13:00 - 15:00 \u2013 Shore Dive (Snoopy Island)",
+      "seo_description": "PADI Search And Recovery Specialty | The Best Techniques and Skills For Search And Recovery Diving, Sign Up With A PADI Instructor Today!",
+      "seo_keywords": "PADI Search and Recovery, PADI Specialty"
+    }
+  },
+  {
+    "model": "diving.course",
+    "pk": 13,
+    "fields": {
+      "title": "Digital Underwater Photography",
+      "image": "PADI Digital Underwater Photography 1",
+      "overview_image": "PADI Digital Underwater Photography 2",
+      "info_image": "PADI Digital Underwater Photography 3",
+      "schedule_image": "PADI Digital Underwater Photography 4",
+      "description": "Welcome to the PADI Digital Underwater Photography specialty course. Do you have a GoPro or a Digital Underwater Camera? This course will teach you the best settings and scenery to make your pictures look great. Our experienced instructors will explain the best way to configure your camera to set for optimum exposure and lighting. During the course you will learn the use of extra lighting and flashes. You will cover portrait, landscape and macro photography.",
+      "e_learning_link": null,
+      "level": 3,
+      "min_age": "12",
+      "duration": "1 Day",
+      "slug": "digital-underwater-photography",
+      "pool_dives": false,
+      "ocean_dives": true,
+      "num_pool_dives": 0,
+      "num_ocean_dives": 2,
+      "minimum_certiication_level": "Open Water",
+      "qualified_to": "Underwater digital photography skills",
+      "schedule": "Day 1: \r\n09:00 \u2013 Knowledge Development\r\n09:00 \u2013 12:30 OR 13:30 \u2013 17:30 Boat Dives (meeting time is 1 hour before)",
+      "seo_description": "PADI Digital Underwater Photography Course | The Best Techniques and Skills For Taking Pictures or Video Underwater, Sign Up With A PADI Instructor Today!",
+      "seo_keywords": "PADI Digital Underwater Photgraphy, Underwater Photography"
+    }
+  },
+  {
+    "model": "diving.course",
+    "pk": 14,
+    "fields": {
+      "title": "Underwater Navigator",
+      "image": "PADI Underwater Navigator 1",
+      "overview_image": "PADI Underwater Navigator 2",
+      "info_image": "PADI Underwater Navigator 3",
+      "schedule_image": "PADI Underwater Navigator 4",
+      "description": "Welcome to the PADI Underwater Navigator specialty course. Tired of getting lost during your dives? The PADI Underwater Navigator course will teach you advanced navigation techniques. You will learn how to navigate using both compass and natural navigation techniques.",
+      "e_learning_link": null,
+      "level": 3,
+      "min_age": "12",
+      "duration": "2 Days",
+      "slug": "underwater-navigator",
+      "pool_dives": false,
+      "ocean_dives": true,
+      "num_pool_dives": 0,
+      "num_ocean_dives": 3,
+      "minimum_certiication_level": "Open Water",
+      "qualified_to": "Navigations skills to better navigate underwater",
+      "schedule": "Day 1: \r\n09:00 \u2013 Knowledge Development\r\n10:00 \u2013 Shore Dive\r\n13:30 - 17:30 \u2013 Boat Dives (meeting time is 1 hour before)",
+      "seo_description": "PADI Underwater Navigator Course | The Best Techniques and Skills, Learn To Navigate Underwater, Sign Up With A PADI Instructor Today!",
+      "seo_keywords": "PADI Underwater Navigator, Underwater Navigation"
+    }
+  },
+  {
+    "model": "diving.course",
+    "pk": 15,
+    "fields": {
+      "title": "Peak Performance Buoyancy",
+      "image": "PADI Peak Performance Buoyancy 1",
+      "overview_image": "PADI Peak Performance Buoyancy 2",
+      "info_image": "PADI Peak Performance Buoyancy 3",
+      "schedule_image": "PADI Peak Performance Buoyancy 4",
+      "description": "Welcome to the PADI Peak Performance Buoyancy specialty course. Buoyancy is the skill most used during your dives and having excellent buoyancy is often overlooked and undervalued. In today\u2019s diving world, it is essential not only to improve your diving experience but also to protect the environment. During the course, you will learn different weighting methods and distribution and you will practice hovering and different kicking techniques. By the end of the course, you will be in the perfect horizontal diving position with the optimum amount of weight.",
+      "e_learning_link": null,
+      "level": 3,
+      "min_age": "12",
+      "duration": "1 Day",
+      "slug": "peak-performance-buoyancy",
+      "pool_dives": false,
+      "ocean_dives": true,
+      "num_pool_dives": 0,
+      "num_ocean_dives": 2,
+      "minimum_certiication_level": "Open Water",
+      "qualified_to": "Better buoyancy skills",
+      "schedule": "Day 1: \r\n09:00 \u2013 Knowledge Development\r\n13:30 - 17:30 \u2013 Boat Dives (meeting time is 1 hour before)",
+      "seo_description": "PADI Peak Performance Buoyancy, PADI PPB",
+      "seo_keywords": "PADI Peak Performace Buoyancy Course | The Best Techniques and Skills, Learn To Be Perfectly Balanced In The Water, Sign Up With A PADI Instructor Today!"
+    }
+  },
+  {
+    "model": "diving.course",
+    "pk": 16,
+    "fields": {
+      "title": "Fish Identification",
+      "image": "PADI Fish Identification 1",
+      "overview_image": "PADI Fish Identification 2",
+      "info_image": "PADI Fish Identification 3",
+      "schedule_image": "PADI Fish Identification 4",
+      "description": "Welcome to the PADI Fish Identification Specialty course. What was that fish with the big tail and orange stripes? During this course, you will learn not only how to identify single fish species but also start learning about fish families, which will make identifying them that much easier. This is a fun course where you will learn all about fish species in the region and around the world. It is very informative and will add a new dimension to your diving experiences.",
+      "e_learning_link": null,
+      "level": 3,
+      "min_age": "12",
+      "duration": "1 Day",
+      "slug": "fish-identification",
+      "pool_dives": false,
+      "ocean_dives": true,
+      "num_pool_dives": 0,
+      "num_ocean_dives": 1,
+      "minimum_certiication_level": "Open Water",
+      "qualified_to": "Learn how to identify of fish species underwater",
+      "schedule": "Day 1: \r\n09:00 \u2013 Knowledge Development\r\n09:00 - 12:30 OR 13:30 - 17:30 \u2013 Boat Dives (meeting time is 1 hour before)",
+      "seo_description": "PADI Fish Identification Specialty Course | Learn To Identify The Awesome Fish Species In The Area, Sign Up With A PADI Instructor Today!",
+      "seo_keywords": "PADI Fish Identification, Fish ID"
+    }
+  },
+  {
+    "model": "diving.course",
+    "pk": 17,
+    "fields": {
+      "title": "Enriched Air Nitrox",
+      "image": "PADI Enriched Air Nitrox 1",
+      "overview_image": "PADI Enriched Air Nitrox 2",
+      "info_image": "PADI Enriched Air Nitrox 3",
+      "schedule_image": "PADI Enriched Air Nitrox 4",
+      "description": "Welcome to the PADI Enriched Air Nitrox specialty course, do you want to extend your bottom time and learn how to analyze your gas? This is a non-diving course. It involves a short practical application after you have completed your knowledge reviews either online or with book learning. Using nitrox is extremely popular on live-aboard dive trips and it is very beneficial if you are planning on doing multiple dives per day.",
+      "e_learning_link": "https://www.padi.com/elearning-scuba-registration/default.aspx?irra=26602&courseid=50",
+      "level": 3,
+      "min_age": "15",
+      "duration": "3 Hours",
+      "slug": "enriched-air-nitrox",
+      "pool_dives": false,
+      "ocean_dives": false,
+      "num_pool_dives": 0,
+      "num_ocean_dives": 0,
+      "minimum_certiication_level": "Open Water",
+      "qualified_to": "Use enriched air nitrox up to 40% oxygen",
+      "schedule": "Day 1: \r\n10:00 \u2013 Practical Application",
+      "seo_description": "PADI Enriched Air Diver | Learn How to use Nitrox to extend your bottom time. Sign Up With A PADI Instructor Today!",
+      "seo_keywords": "PADI Enriched Air Nitrox, Nitrox, PADI Enriched Air"
+    }
+  },
+  {
+    "model": "diving.course",
+    "pk": 18,
+    "fields": {
+      "title": "Tec 40",
+      "image": "PADI Tec 40 1",
+      "overview_image": "PADI Tec 40 2",
+      "info_image": "PADI Tec 40 3",
+      "schedule_image": "PADI Tec 40 4",
+      "description": "Tec 40 is the first of the PADI TecRec course.It will test your ability as a diver, you will be entering the world of decompression diving. Excellent dive skills, techniques, and procedures are required for technical level courses. During the Tec 40 course, you will be introduced to basic decompression procedures and techniques. You will be introduced to a back-mounted twin set diving configuration. If you are already a Tec Sidemount diver we can do the course in either back mount or sidemount.\u00a0 The PADI TecRec program is challenging but very rewarding! If you are ready to take the next step, let's get into what the course involves.",
+      "e_learning_link": null,
+      "level": 4,
+      "min_age": "18",
+      "duration": "4 Days",
+      "slug": "tec-40",
+      "pool_dives": false,
+      "ocean_dives": true,
+      "num_pool_dives": 1,
+      "num_ocean_dives": 4,
+      "minimum_certiication_level": "Deep Specialty",
+      "qualified_to": "Dive to 40 m using up to 50% oxygen and 10 minutes deco",
+      "schedule": "Day 1:\r\nEquipment Configuration Workshop\r\nDecompression Dive Planning\r\nTraining Dive 1 \u2013\u00a0 Confined Water \u2013 Decompression Diving Skills Introduction\r\nGases: Air and EANX up to 50%\r\n\r\nDay 2:\r\n9:00 \u2013 13:00 (Boat diving \u2013 meeting time is 1 hour before)\r\nTraining Dive 2 \u2013 Open Water\r\nDepth: 10m \u2013 18m\r\nGases: Air and EANX 50%\r\nDecompression: No Decompression dive\r\nDive Planning and Equipment Setup\r\n\r\nDay 3:\r\n9:00 \u2013 13:00 (Boat diving \u2013 meeting time is 1 hour before)\r\nTraining Dive 3 \u2013 Open Water\r\nDepth: 15m \u2013 27m\r\nGases: Air and EANX 50%\r\nDecompression: No Decompression dive\r\nDive Planning and Equipment Setup\r\n\r\nDay 4:\r\n9:00 \u2013 13:00 (Boat diving \u2013 meeting time is 1 hour before)\r\nTraining Dive 4 \u2013 Open Water\r\nDepth: 26m \u2013 40m\r\nGases: Air and EANX 50%\r\nDecompression: 10 min total \u2013 No Accelerated Deco",
+      "seo_description": "PADI Tec 40 | The First Step In The PADI TecRec Program, Learn The Amazing Skills Of Technical Diving, Go Deeper For Longer, Go PADI TecRec Today!",
+      "seo_keywords": "PADI Tec 40, PADI TecRec, Technical Diving"
+    }
+  },
+  {
+    "model": "diving.course",
+    "pk": 19,
+    "fields": {
+      "title": "Tec 45",
+      "image": "PADI Tec 45 1",
+      "overview_image": "PADI Tec 45 2",
+      "info_image": "PADI Tec 45 3",
+      "schedule_image": "PADI Tec 45 4",
+      "description": "During the Tec 45 course you will learn accelerated decompression procedures using a single gas switch with the use of up to 100% oxygen. You will learn to start to think like a technical diver. If you are already a Tec Sidemount diver we can do the course in either back mount or sidemount.\u00a0 The PADI TecRec program is challenging but very rewarding! If you are ready to take the next step, let\u2019s get into what the course involves.",
+      "e_learning_link": null,
+      "level": 4,
+      "min_age": "18",
+      "duration": "4 Days",
+      "slug": "tec-45",
+      "pool_dives": false,
+      "ocean_dives": true,
+      "num_pool_dives": 1,
+      "num_ocean_dives": 4,
+      "minimum_certiication_level": "Deep Specialty",
+      "qualified_to": "Dive to 45m using 100% 02",
+      "schedule": "Day 1:\r\nPractical Application 1 \u2013 3\r\nDecompression Dive Planning\r\nTraining Dive 1 - Confined Water - Decompression Diving Skills\r\nGases: Air and EANX up to 100%\r\n\r\nDay 2:\r\n9:00 - 13:00 (Boat diving - meeting time is 1 hour before)\r\nTraining Dive 2 \u2013 Open Water\r\nDepth: 12m - 18m\r\nGases: Air and EANX 80%\r\nDecompression: No Decompression dive\r\nDive Planning and Equipment Setup\r\n\r\nDay 3:\r\n9:00 \u2013 13:00 (Boat diving \u2013 meeting time is 1 hour before)\r\nTraining Dive 3 \u2013 Open Water\r\nDepth: 18m - 30m\r\nGases: Air and EANX 80%\r\nDecompression: No Decompression dive\r\nDive Planning and Equipment Setup\r\n\r\nDay 4:\r\n9:00 \u2013 13:00 (Boat diving \u2013 meeting time is 1 hour before)\r\nTraining Dive 4 \u2013 Open Water\r\nDepth: 27m - 45m\r\nGases: Air and EANX 80%\r\nDecompression: Accelerated Deco with single gas switch",
+      "seo_description": "PADI Tec 45 | The Next Step In The PADI TecRec Program, Learn The Amazing Skills Of Technical Diving, Go Deeper For Longer, Go PADI TecRec Today!",
+      "seo_keywords": "PADI Tec 45, PADI TecRec"
+    }
+  },
+  {
+    "model": "diving.course",
+    "pk": 20,
+    "fields": {
+      "title": "Tec 50",
+      "image": "PADI Tec 50 1",
+      "overview_image": "PADI Tec 50 2",
+      "info_image": "PADI Tec 50 3",
+      "schedule_image": "PADI Tec 50 4",
+      "description": "During the Tec 50 course, you will learn accelerated decompression procedures with the use of multiple gas switches up to 100% oxygen. At this point, your diving knowledge, skills, and attitude should be on the cutting edge of diving practices. If you are already a Tec Sidemount diver we can do the course in either back mount or sidemount. If you are interested in progressing towards Tec Trimix your instructor may give you a Trimix blend for your final training dive.\u00a0 The PADI TecRec program is challenging but very rewarding! If you are ready to take the next step, let's get into what the course involves.",
+      "e_learning_link": null,
+      "level": 4,
+      "min_age": "18",
+      "duration": "4 Days",
+      "slug": "tec-50",
+      "pool_dives": false,
+      "ocean_dives": true,
+      "num_pool_dives": 1,
+      "num_ocean_dives": 3,
+      "minimum_certiication_level": "Deep Specialty",
+      "qualified_to": "Dive to 50m using multple gasses",
+      "schedule": "Day 1:\r\nPractical Application 1 \u2013 3\r\nDecompression Dive Planning\r\nTraining Dive 1 - Confined Water - Decompression Diving Skills\r\nGases: Air, EANX 40% and 80%\r\n\r\nDay 2:\r\n9:00 \u2013 13:00 (Boat diving \u2013 meeting time is 1 hour before)\r\nTraining Dive 2 \u2013 Open Water\r\nDepth: 12m - 24m\r\nGases: Air, EANX 40% and 80%\r\nDecompression: No Decompression dive, 30 min simulated Deco\r\nDive Planning and Equipment Setup\r\n\r\nDay 3:\r\n9:00 \u2013 13:00 (Boat diving \u2013 meeting time is 1 hour before)\r\nTraining Dive 3 \u2013 Open Water\r\nDepth: 30m - 50m\r\nGases: Air, EANX 40% and 80%\r\nDecompression: Accelerated Deco with multi-gas switch\r\nDive Planning and Equipment Setup\r\n\r\nDay 4:\r\n9:00 \u2013 13:00 (Boat diving \u2013 meeting time is 1 hour before)\r\nTraining Dive 4 \u2013 Open Water\r\nDepth: 40m - 50m\r\nGases: Air, EANX 40% and 80% (possible Trimix)\r\nDecompression: Accelerated Deco with multi-gas switch",
+      "seo_description": "PADI Tec 50 | The Next Step In The PADI TecRec Program, Learn The Amazing Skills Of Technical Diving, Go Deeper For Longer, Go PADI TecRec Today!",
+      "seo_keywords": "PADI Tec 50 Course - Sandy Beach Dive Centre (2020)"
+    }
+  },
+  {
+    "model": "diving.course",
+    "pk": 21,
+    "fields": {
+      "title": "Divemaster",
+      "image": "PADI Divemaster 1",
+      "overview_image": "PADI Divemaster 2",
+      "info_image": "PADI Divemaster 3",
+      "schedule_image": "PADI Divemaster 4",
+      "description": "Welcome and congratulations on deciding to start your PADI Divemaster course! We look forward to teaching and guiding you on your way to your first professional PADI qualification. The program we have designed takes ten days, but it is not set in stone so we can work around your schedule. If you have any questions or queries throughout the course please do not hesitate to ask any member of our team.",
+      "e_learning_link": "https://www.padi.com/elearning-scuba-registration/default.aspx?irra=26602&courseid=57",
+      "level": 5,
+      "min_age": "18",
+      "duration": "12 Days",
+      "slug": "divemaster",
+      "pool_dives": true,
+      "ocean_dives": true,
+      "num_pool_dives": 5,
+      "num_ocean_dives": 7,
+      "minimum_certiication_level": "Rescue Diver",
+      "qualified_to": "\"Lead certified divers on dives",
+      "schedule": "Day 1 - 5:\r\nClassroom: Present a print out of your eLearning / logbook / medical form\r\nConfined Water: Water Skills Exercise 1 & 2\r\nConfined Water: Water Skills Exercise 3 & 4\r\nDive Skills Workshop: 24 skills (training)\r\nDive Skills Workshop: 24 skills (evaluation)\r\n\r\nDAY 6  - 10:\r\nOpen Water: Skill 5 \u2013 Deep Dive Scenario\r\nConfined Water: Practical Session 1 \u2013 OW students in confined water\r\nOpen Water: Practical Session 3 \u2013 Continued Education students in open water\r\nOpen Water: Practical Session 4 \u2013 Certified divers in open water",
+      "seo_description": "PADI Divemaster Program | The First Step Of The PADI Pro, Start The Incredible Journey Of Your Scuba Diving Career, Sign Up For Your E-Learning Today!",
+      "seo_keywords": "PADI Divemaster, PADI Pro"
+    }
+  },
+  {
+    "model": "diving.courseinfo",
+    "pk": 1,
+    "fields": {
+      "title": "Pool Info",
+      "heading": "Pool Dives",
+      "text": "We have an onsite swimming pool based in Sandy Beach Hotel and Resort. All pool training dives are done in our own swimming pool. The pool is crystal clear throughout the year and has a maximum depth of 2.2m.",
+      "image": "Pool Info",
+      "info_type": "pool-info"
+    }
+  },
+  {
+    "model": "diving.courseinfo",
+    "pk": 2,
+    "fields": {
+      "title": "Ocean Dives",
+      "heading": "Ocean Dives",
+      "text": "Our ocean training dives are split between two different dive types, boat diving, and shore diving. This gives us a unique opportunity, it affords us a varied training experience, building students' confidence with different entry styles and diving techniques.\r\n\r\nOur boat dives visit the many dive sites along the coast, all varying in-depth and marine life. The shore dives are done around Snoopy Island which is bursting with corals and marine life. We regularly spot turtles and black-tip reef sharks on Snoopy Island",
+      "image": "Boat Info",
+      "info_type": "ocean-info"
+    }
+  },
+  {
+    "model": "diving.courseinfo",
+    "pk": 3,
+    "fields": {
+      "title": "Book Learning",
+      "heading": "Book Learning",
+      "text": "Our classroom is fitted with a TV as well as a whiteboard with all the training materials necessary for effective learning. In the classroom is where most of our theory takes place.\r\n\r\nWhen doing book-based learning, it should be noted that that depending on student progress, an extra day may be added to the duration of the course.",
+      "image": "Book Info",
+      "info_type": "book-learning-info"
+    }
+  },
+  {
+    "model": "diving.courseinfo",
+    "pk": 4,
+    "fields": {
+      "title": "E-Learning",
+      "heading": "PADI E-Learning",
+      "text": "PADI e-learning is an effective and time-efficient way to complete your theory. All learning can be done online at your own pace before coming into the dive center to complete your open water training dives.\r\n\r\nFollow the link below to sign up for your online learning. If you have any questions or issues during the online learning please don't hesitate to contact us, we will be able to assist.",
+      "image": "E Learning Info",
+      "info_type": "e-learning-info"
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 1,
+    "fields": {
+      "title": "Shore Dive 3",
+      "image": "image/shore-dive-3.jpg",
+      "thumbnail": "image/shore-dive-3-300x300.jpg",
+      "hero_image": "image/shore-dive-3-1600x780.jpg",
+      "medium_image": "image/shore-dive-3-1000x1000.jpg",
+      "mobile_image": "image/shore-dive-3-320x640.jpg",
+      "slug": "shore-dive-3",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 2,
+    "fields": {
+      "title": "Boat Info",
+      "image": "image/boat-info.jpg",
+      "thumbnail": "image/boat-info-300x300.jpg",
+      "hero_image": "image/boat-info-1600x780.jpg",
+      "medium_image": "image/boat-info-1000x1000.jpg",
+      "mobile_image": "image/boat-info-320x640.jpg",
+      "slug": "boat-info",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 3,
+    "fields": {
+      "title": "Boat Dive 1",
+      "image": "image/boat-dive-1.jpg",
+      "thumbnail": "image/boat-dive-1-300x300.jpg",
+      "hero_image": "image/boat-dive-1-1600x780.jpg",
+      "medium_image": "image/boat-dive-1-1000x1000.jpg",
+      "mobile_image": "image/boat-dive-1-320x640.jpg",
+      "slug": "boat-dive-1",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 4,
+    "fields": {
+      "title": "Book Info",
+      "image": "image/book-info.jpg",
+      "thumbnail": "image/book-info-300x300.jpg",
+      "hero_image": "image/book-info-1600x780.jpg",
+      "medium_image": "image/book-info-1000x1000.jpg",
+      "mobile_image": "image/book-info-320x640.jpg",
+      "slug": "book-info",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 5,
+    "fields": {
+      "title": "Shore Dive 2",
+      "image": "image/shore-dive-2.jpg",
+      "thumbnail": "image/shore-dive-2-300x300.jpg",
+      "hero_image": "image/shore-dive-2-1600x780.jpg",
+      "medium_image": "image/shore-dive-2-1000x1000.jpg",
+      "mobile_image": "image/shore-dive-2-320x640.jpg",
+      "slug": "shore-dive-2",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 6,
+    "fields": {
+      "title": "E Learning Info",
+      "image": "image/e-learning-info.jpg",
+      "thumbnail": "image/e-learning-info-300x300.jpg",
+      "hero_image": "image/e-learning-info-1600x780.jpg",
+      "medium_image": "image/e-learning-info-1000x1000.jpg",
+      "mobile_image": "image/e-learning-info-320x640.jpg",
+      "slug": "e-learning-info",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 7,
+    "fields": {
+      "title": "Boat Dive 2",
+      "image": "image/boat-dive-2.jpg",
+      "thumbnail": "image/boat-dive-2-300x300.jpg",
+      "hero_image": "image/boat-dive-2-1600x780.jpg",
+      "medium_image": "image/boat-dive-2-1000x1000.jpg",
+      "mobile_image": "image/boat-dive-2-320x640.jpg",
+      "slug": "boat-dive-2",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 8,
+    "fields": {
+      "title": "Boat Dive 3",
+      "image": "image/boat-dive-3.jpg",
+      "thumbnail": "image/boat-dive-3-300x300.jpg",
+      "hero_image": "image/boat-dive-3-1600x780.jpg",
+      "medium_image": "image/boat-dive-3-1000x1000.jpg",
+      "mobile_image": "image/boat-dive-3-320x640.jpg",
+      "slug": "boat-dive-3",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 9,
+    "fields": {
+      "title": "Shore Dive 1",
+      "image": "image/shore-dive-1.jpg",
+      "thumbnail": "image/shore-dive-1-300x300.jpg",
+      "hero_image": "image/shore-dive-1-1600x780.jpg",
+      "medium_image": "image/shore-dive-1-1000x1000.jpg",
+      "mobile_image": "image/shore-dive-1-320x640.jpg",
+      "slug": "shore-dive-1",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 10,
+    "fields": {
+      "title": "Pool Info",
+      "image": "image/pool-info.jpg",
+      "thumbnail": "image/pool-info-300x300.jpg",
+      "hero_image": "image/pool-info-1600x780.jpg",
+      "medium_image": "image/pool-info-1000x1000.jpg",
+      "mobile_image": "image/pool-info-320x640.jpg",
+      "slug": "pool-info",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 11,
+    "fields": {
+      "title": "PADI Discover Scuba Diving 1",
+      "image": "image/padi-discover-scuba-diving-1.jpg",
+      "thumbnail": "image/padi-discover-scuba-diving-1-300x300.jpg",
+      "hero_image": "image/padi-discover-scuba-diving-1-1600x780.jpg",
+      "medium_image": "image/padi-discover-scuba-diving-1-1000x1000.jpg",
+      "mobile_image": "image/padi-discover-scuba-diving-1-320x640.jpg",
+      "slug": "padi-discover-scuba-diving-1",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 12,
+    "fields": {
+      "title": "PADI Discover Scuba Diving 2",
+      "image": "image/padi-discover-scuba-diving-2.jpg",
+      "thumbnail": "image/padi-discover-scuba-diving-2-300x300.jpg",
+      "hero_image": "image/padi-discover-scuba-diving-2-1600x780.jpg",
+      "medium_image": "image/padi-discover-scuba-diving-2-1000x1000.jpg",
+      "mobile_image": "image/padi-discover-scuba-diving-2-320x640.jpg",
+      "slug": "padi-discover-scuba-diving-2",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 13,
+    "fields": {
+      "title": "PADI Discover Scuba Diving 3",
+      "image": "image/padi-discover-scuba-diving-3.jpg",
+      "thumbnail": "image/padi-discover-scuba-diving-3-300x300.jpg",
+      "hero_image": "image/padi-discover-scuba-diving-3-1600x780.jpg",
+      "medium_image": "image/padi-discover-scuba-diving-3-1000x1000.jpg",
+      "mobile_image": "image/padi-discover-scuba-diving-3-320x640.jpg",
+      "slug": "padi-discover-scuba-diving-3",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 14,
+    "fields": {
+      "title": "PADI Discover Scuba Diving 4",
+      "image": "image/padi-discover-scuba-diving-4.jpg",
+      "thumbnail": "image/padi-discover-scuba-diving-4-300x300.jpg",
+      "hero_image": "image/padi-discover-scuba-diving-4-1600x780.jpg",
+      "medium_image": "image/padi-discover-scuba-diving-4-1000x1000.jpg",
+      "mobile_image": "image/padi-discover-scuba-diving-4-320x640.jpg",
+      "slug": "padi-discover-scuba-diving-4",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 15,
+    "fields": {
+      "title": "PADI Scuba Diver 1",
+      "image": "image/padi-scuba-diver-1.jpg",
+      "thumbnail": "image/padi-scuba-diver-1-300x300.jpg",
+      "hero_image": "image/padi-scuba-diver-1-1600x780.jpg",
+      "medium_image": "image/padi-scuba-diver-1-1000x1000.jpg",
+      "mobile_image": "image/padi-scuba-diver-1-320x640.jpg",
+      "slug": "padi-scuba-diver-1",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 16,
+    "fields": {
+      "title": "PADI Scuba Diver 2",
+      "image": "image/padi-scuba-diver-2.jpg",
+      "thumbnail": "image/padi-scuba-diver-2-300x300.jpg",
+      "hero_image": "image/padi-scuba-diver-2-1600x780.jpg",
+      "medium_image": "image/padi-scuba-diver-2-1000x1000.jpg",
+      "mobile_image": "image/padi-scuba-diver-2-320x640.jpg",
+      "slug": "padi-scuba-diver-2",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 17,
+    "fields": {
+      "title": "PADI Scuba Diver 3",
+      "image": "image/padi-scuba-diver-3.jpg",
+      "thumbnail": "image/padi-scuba-diver-3-300x300.jpg",
+      "hero_image": "image/padi-scuba-diver-3-1600x780.jpg",
+      "medium_image": "image/padi-scuba-diver-3-1000x1000.jpg",
+      "mobile_image": "image/padi-scuba-diver-3-320x640.jpg",
+      "slug": "padi-scuba-diver-3",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 18,
+    "fields": {
+      "title": "PADI Scuba Diver 4",
+      "image": "image/padi-scuba-diver-4.jpg",
+      "thumbnail": "image/padi-scuba-diver-4-300x300.jpg",
+      "hero_image": "image/padi-scuba-diver-4-1600x780.jpg",
+      "medium_image": "image/padi-scuba-diver-4-1000x1000.jpg",
+      "mobile_image": "image/padi-scuba-diver-4-320x640.jpg",
+      "slug": "padi-scuba-diver-4",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 19,
+    "fields": {
+      "title": "PADI Open Water Diver 1",
+      "image": "image/padi-open-water-diver-1.jpg",
+      "thumbnail": "image/padi-open-water-diver-1-300x300.jpg",
+      "hero_image": "image/padi-open-water-diver-1-1600x780.jpg",
+      "medium_image": "image/padi-open-water-diver-1-1000x1000.jpg",
+      "mobile_image": "image/padi-open-water-diver-1-320x640.jpg",
+      "slug": "padi-open-water-diver-1",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 20,
+    "fields": {
+      "title": "PADI Open Water Diver 2",
+      "image": "image/padi-open-water-diver-2.jpg",
+      "thumbnail": "image/padi-open-water-diver-2-300x300.jpg",
+      "hero_image": "image/padi-open-water-diver-2-1600x780.jpg",
+      "medium_image": "image/padi-open-water-diver-2-1000x1000.jpg",
+      "mobile_image": "image/padi-open-water-diver-2-320x640.jpg",
+      "slug": "padi-open-water-diver-2",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 21,
+    "fields": {
+      "title": "PADI Open Water Diver 3",
+      "image": "image/padi-open-water-diver-3.jpg",
+      "thumbnail": "image/padi-open-water-diver-3-300x300.jpg",
+      "hero_image": "image/padi-open-water-diver-3-1600x780.jpg",
+      "medium_image": "image/padi-open-water-diver-3-1000x1000.jpg",
+      "mobile_image": "image/padi-open-water-diver-3-320x640.jpg",
+      "slug": "padi-open-water-diver-3",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 22,
+    "fields": {
+      "title": "PADI Open Water Diver 4",
+      "image": "image/padi-open-water-diver-4.jpg",
+      "thumbnail": "image/padi-open-water-diver-4-300x300.jpg",
+      "hero_image": "image/padi-open-water-diver-4-1600x780.jpg",
+      "medium_image": "image/padi-open-water-diver-4-1000x1000.jpg",
+      "mobile_image": "image/padi-open-water-diver-4-320x640.jpg",
+      "slug": "padi-open-water-diver-4",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 23,
+    "fields": {
+      "title": "PADI ReActivate 1",
+      "image": "image/padi-reactivate-1.jpg",
+      "thumbnail": "image/padi-reactivate-1-300x300.jpg",
+      "hero_image": "image/padi-reactivate-1-1600x780.jpg",
+      "medium_image": "image/padi-reactivate-1-1000x1000.jpg",
+      "mobile_image": "image/padi-reactivate-1-320x640.jpg",
+      "slug": "padi-reactivate-1",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 24,
+    "fields": {
+      "title": "PADI ReActivate 2",
+      "image": "image/padi-reactivate-2.jpg",
+      "thumbnail": "image/padi-reactivate-2-300x300.jpg",
+      "hero_image": "image/padi-reactivate-2-1600x780.jpg",
+      "medium_image": "image/padi-reactivate-2-1000x1000.jpg",
+      "mobile_image": "image/padi-reactivate-2-320x640.jpg",
+      "slug": "padi-reactivate-2",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 25,
+    "fields": {
+      "title": "PADI ReActivate 3",
+      "image": "image/padi-reactivate-3.jpg",
+      "thumbnail": "image/padi-reactivate-3-300x300.jpg",
+      "hero_image": "image/padi-reactivate-3-1600x780.jpg",
+      "medium_image": "image/padi-reactivate-3-1000x1000.jpg",
+      "mobile_image": "image/padi-reactivate-3-320x640.jpg",
+      "slug": "padi-reactivate-3",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 26,
+    "fields": {
+      "title": "PADI ReActivate 4",
+      "image": "image/padi-reactivate-4.jpg",
+      "thumbnail": "image/padi-reactivate-4-300x300.jpg",
+      "hero_image": "image/padi-reactivate-4-1600x780.jpg",
+      "medium_image": "image/padi-reactivate-4-1000x1000.jpg",
+      "mobile_image": "image/padi-reactivate-4-320x640.jpg",
+      "slug": "padi-reactivate-4",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 27,
+    "fields": {
+      "title": "PADI Adventure Diver 1",
+      "image": "image/padi-adventure-diver-1.jpg",
+      "thumbnail": "image/padi-adventure-diver-1-300x300.jpg",
+      "hero_image": "image/padi-adventure-diver-1-1600x780.jpg",
+      "medium_image": "image/padi-adventure-diver-1-1000x1000.jpg",
+      "mobile_image": "image/padi-adventure-diver-1-320x640.jpg",
+      "slug": "padi-adventure-diver-1",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 28,
+    "fields": {
+      "title": "PADI Adventure Diver 2",
+      "image": "image/padi-adventure-diver-2.jpg",
+      "thumbnail": "image/padi-adventure-diver-2-300x300.jpg",
+      "hero_image": "image/padi-adventure-diver-2-1600x780.jpg",
+      "medium_image": "image/padi-adventure-diver-2-1000x1000.jpg",
+      "mobile_image": "image/padi-adventure-diver-2-320x640.jpg",
+      "slug": "padi-adventure-diver-2",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 29,
+    "fields": {
+      "title": "PADI Adventure Diver 3",
+      "image": "image/padi-adventure-diver-3.jpg",
+      "thumbnail": "image/padi-adventure-diver-3-300x300.jpg",
+      "hero_image": "image/padi-adventure-diver-3-1600x780.jpg",
+      "medium_image": "image/padi-adventure-diver-3-1000x1000.jpg",
+      "mobile_image": "image/padi-adventure-diver-3-320x640.jpg",
+      "slug": "padi-adventure-diver-3",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 30,
+    "fields": {
+      "title": "PADI Adventure Diver 4",
+      "image": "image/padi-adventure-diver-4.jpg",
+      "thumbnail": "image/padi-adventure-diver-4-300x300.jpg",
+      "hero_image": "image/padi-adventure-diver-4-1600x780.jpg",
+      "medium_image": "image/padi-adventure-diver-4-1000x1000.jpg",
+      "mobile_image": "image/padi-adventure-diver-4-320x640.jpg",
+      "slug": "padi-adventure-diver-4",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 31,
+    "fields": {
+      "title": "PADI Advanced Open Water 1",
+      "image": "image/padi-advanced-open-water-1.jpg",
+      "thumbnail": "image/padi-advanced-open-water-1-300x300.jpg",
+      "hero_image": "image/padi-advanced-open-water-1-1600x780.jpg",
+      "medium_image": "image/padi-advanced-open-water-1-1000x1000.jpg",
+      "mobile_image": "image/padi-advanced-open-water-1-320x640.jpg",
+      "slug": "padi-advanced-open-water-1",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 32,
+    "fields": {
+      "title": "PADI Advanced Open Water 2",
+      "image": "image/padi-advanced-open-water-2.jpg",
+      "thumbnail": "image/padi-advanced-open-water-2-300x300.jpg",
+      "hero_image": "image/padi-advanced-open-water-2-1600x780.jpg",
+      "medium_image": "image/padi-advanced-open-water-2-1000x1000.jpg",
+      "mobile_image": "image/padi-advanced-open-water-2-320x640.jpg",
+      "slug": "padi-advanced-open-water-2",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 33,
+    "fields": {
+      "title": "PADI Advanced Open Water 3",
+      "image": "image/padi-advanced-open-water-3.jpg",
+      "thumbnail": "image/padi-advanced-open-water-3-300x300.jpg",
+      "hero_image": "image/padi-advanced-open-water-3-1600x780.jpg",
+      "medium_image": "image/padi-advanced-open-water-3-1000x1000.jpg",
+      "mobile_image": "image/padi-advanced-open-water-3-320x640.jpg",
+      "slug": "padi-advanced-open-water-3",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 34,
+    "fields": {
+      "title": "PADI Advanced Open Water 4",
+      "image": "image/padi-advanced-open-water-4.jpg",
+      "thumbnail": "image/padi-advanced-open-water-4-300x300.jpg",
+      "hero_image": "image/padi-advanced-open-water-4-1600x780.jpg",
+      "medium_image": "image/padi-advanced-open-water-4-1000x1000.jpg",
+      "mobile_image": "image/padi-advanced-open-water-4-320x640.jpg",
+      "slug": "padi-advanced-open-water-4",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 35,
+    "fields": {
+      "title": "PADI Rescue Diver 1",
+      "image": "image/padi-rescue-diver-1.jpg",
+      "thumbnail": "image/padi-rescue-diver-1-300x300.jpg",
+      "hero_image": "image/padi-rescue-diver-1-1600x780.jpg",
+      "medium_image": "image/padi-rescue-diver-1-1000x1000.jpg",
+      "mobile_image": "image/padi-rescue-diver-1-320x640.jpg",
+      "slug": "padi-rescue-diver-1",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 36,
+    "fields": {
+      "title": "PADI Rescue Diver 2",
+      "image": "image/padi-rescue-diver-2.jpg",
+      "thumbnail": "image/padi-rescue-diver-2-300x300.jpg",
+      "hero_image": "image/padi-rescue-diver-2-1600x780.jpg",
+      "medium_image": "image/padi-rescue-diver-2-1000x1000.jpg",
+      "mobile_image": "image/padi-rescue-diver-2-320x640.jpg",
+      "slug": "padi-rescue-diver-2",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 37,
+    "fields": {
+      "title": "PADI Rescue Diver 3",
+      "image": "image/padi-rescue-diver-3.jpg",
+      "thumbnail": "image/padi-rescue-diver-3-300x300.jpg",
+      "hero_image": "image/padi-rescue-diver-3-1600x780.jpg",
+      "medium_image": "image/padi-rescue-diver-3-1000x1000.jpg",
+      "mobile_image": "image/padi-rescue-diver-3-320x640.jpg",
+      "slug": "padi-rescue-diver-3",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 38,
+    "fields": {
+      "title": "PADI Rescue Diver 4",
+      "image": "image/padi-rescue-diver-4.jpg",
+      "thumbnail": "image/padi-rescue-diver-4-300x300.jpg",
+      "hero_image": "image/padi-rescue-diver-4-1600x780.jpg",
+      "medium_image": "image/padi-rescue-diver-4-1000x1000.jpg",
+      "mobile_image": "image/padi-rescue-diver-4-320x640.jpg",
+      "slug": "padi-rescue-diver-4",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 39,
+    "fields": {
+      "title": "PADI EFR First Aid 1",
+      "image": "image/padi-efr-first-aid-1.jpg",
+      "thumbnail": "image/padi-efr-first-aid-1-300x300.jpg",
+      "hero_image": "image/padi-efr-first-aid-1-1600x780.jpg",
+      "medium_image": "image/padi-efr-first-aid-1-1000x1000.jpg",
+      "mobile_image": "image/padi-efr-first-aid-1-320x640.jpg",
+      "slug": "padi-efr-first-aid-1",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 40,
+    "fields": {
+      "title": "PADI EFR First Aid 2",
+      "image": "image/padi-efr-first-aid-2.jpg",
+      "thumbnail": "image/padi-efr-first-aid-2-300x300.jpg",
+      "hero_image": "image/padi-efr-first-aid-2-1600x780.jpg",
+      "medium_image": "image/padi-efr-first-aid-2-1000x1000.jpg",
+      "mobile_image": "image/padi-efr-first-aid-2-320x640.jpg",
+      "slug": "padi-efr-first-aid-2",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 41,
+    "fields": {
+      "title": "PADI EFR First Aid 3",
+      "image": "image/padi-efr-first-aid-3.jpg",
+      "thumbnail": "image/padi-efr-first-aid-3-300x300.jpg",
+      "hero_image": "image/padi-efr-first-aid-3-1600x780.jpg",
+      "medium_image": "image/padi-efr-first-aid-3-1000x1000.jpg",
+      "mobile_image": "image/padi-efr-first-aid-3-320x640.jpg",
+      "slug": "padi-efr-first-aid-3",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 42,
+    "fields": {
+      "title": "PADI EFR First Aid 4",
+      "image": "image/padi-efr-first-aid-4.jpg",
+      "thumbnail": "image/padi-efr-first-aid-4-300x300.jpg",
+      "hero_image": "image/padi-efr-first-aid-4-1600x780.jpg",
+      "medium_image": "image/padi-efr-first-aid-4-1000x1000.jpg",
+      "mobile_image": "image/padi-efr-first-aid-4-320x640.jpg",
+      "slug": "padi-efr-first-aid-4",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 43,
+    "fields": {
+      "title": "PADI Deep Diver 1",
+      "image": "image/padi-deep-diver-1.jpg",
+      "thumbnail": "image/padi-deep-diver-1-300x300.jpg",
+      "hero_image": "image/padi-deep-diver-1-1600x780.jpg",
+      "medium_image": "image/padi-deep-diver-1-1000x1000.jpg",
+      "mobile_image": "image/padi-deep-diver-1-320x640.jpg",
+      "slug": "padi-deep-diver-1",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 44,
+    "fields": {
+      "title": "PADI Deep Diver 2",
+      "image": "image/padi-deep-diver-2.jpg",
+      "thumbnail": "image/padi-deep-diver-2-300x300.jpg",
+      "hero_image": "image/padi-deep-diver-2-1600x780.jpg",
+      "medium_image": "image/padi-deep-diver-2-1000x1000.jpg",
+      "mobile_image": "image/padi-deep-diver-2-320x640.jpg",
+      "slug": "padi-deep-diver-2",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 45,
+    "fields": {
+      "title": "PADI Deep Diver 3",
+      "image": "image/padi-deep-diver-3.jpg",
+      "thumbnail": "image/padi-deep-diver-3-300x300.jpg",
+      "hero_image": "image/padi-deep-diver-3-1600x780.jpg",
+      "medium_image": "image/padi-deep-diver-3-1000x1000.jpg",
+      "mobile_image": "image/padi-deep-diver-3-320x640.jpg",
+      "slug": "padi-deep-diver-3",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 46,
+    "fields": {
+      "title": "PADI Deep Diver 4",
+      "image": "image/padi-deep-diver-4.jpg",
+      "thumbnail": "image/padi-deep-diver-4-300x300.jpg",
+      "hero_image": "image/padi-deep-diver-4-1600x780.jpg",
+      "medium_image": "image/padi-deep-diver-4-1000x1000.jpg",
+      "mobile_image": "image/padi-deep-diver-4-320x640.jpg",
+      "slug": "padi-deep-diver-4",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 47,
+    "fields": {
+      "title": "PADI Wreck Diver 1",
+      "image": "image/padi-wreck-diver-1.jpg",
+      "thumbnail": "image/padi-wreck-diver-1-300x300.jpg",
+      "hero_image": "image/padi-wreck-diver-1-1600x780.jpg",
+      "medium_image": "image/padi-wreck-diver-1-1000x1000.jpg",
+      "mobile_image": "image/padi-wreck-diver-1-320x640.jpg",
+      "slug": "padi-wreck-diver-1",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 48,
+    "fields": {
+      "title": "PADI Wreck Diver 2",
+      "image": "image/padi-wreck-diver-2.jpg",
+      "thumbnail": "image/padi-wreck-diver-2-300x300.jpg",
+      "hero_image": "image/padi-wreck-diver-2-1600x780.jpg",
+      "medium_image": "image/padi-wreck-diver-2-1000x1000.jpg",
+      "mobile_image": "image/padi-wreck-diver-2-320x640.jpg",
+      "slug": "padi-wreck-diver-2",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 49,
+    "fields": {
+      "title": "PADI Wreck Diver 3",
+      "image": "image/padi-wreck-diver-3.jpg",
+      "thumbnail": "image/padi-wreck-diver-3-300x300.jpg",
+      "hero_image": "image/padi-wreck-diver-3-1600x780.jpg",
+      "medium_image": "image/padi-wreck-diver-3-1000x1000.jpg",
+      "mobile_image": "image/padi-wreck-diver-3-320x640.jpg",
+      "slug": "padi-wreck-diver-3",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 50,
+    "fields": {
+      "title": "PADI Wreck Diver 4",
+      "image": "image/padi-wreck-diver-4.jpg",
+      "thumbnail": "image/padi-wreck-diver-4-300x300.jpg",
+      "hero_image": "image/padi-wreck-diver-4-1600x780.jpg",
+      "medium_image": "image/padi-wreck-diver-4-1000x1000.jpg",
+      "mobile_image": "image/padi-wreck-diver-4-320x640.jpg",
+      "slug": "padi-wreck-diver-4",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 51,
+    "fields": {
+      "title": "PADI Night Diver 1",
+      "image": "image/padi-night-diver-1.jpg",
+      "thumbnail": "image/padi-night-diver-1-300x300.jpg",
+      "hero_image": "image/padi-night-diver-1-1600x780.jpg",
+      "medium_image": "image/padi-night-diver-1-1000x1000.jpg",
+      "mobile_image": "image/padi-night-diver-1-320x640.jpg",
+      "slug": "padi-night-diver-1",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 52,
+    "fields": {
+      "title": "PADI Night Diver 2",
+      "image": "image/padi-night-diver-2.jpg",
+      "thumbnail": "image/padi-night-diver-2-300x300.jpg",
+      "hero_image": "image/padi-night-diver-2-1600x780.jpg",
+      "medium_image": "image/padi-night-diver-2-1000x1000.jpg",
+      "mobile_image": "image/padi-night-diver-2-320x640.jpg",
+      "slug": "padi-night-diver-2",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 53,
+    "fields": {
+      "title": "PADI Night Diver 3",
+      "image": "image/padi-night-diver-3.jpg",
+      "thumbnail": "image/padi-night-diver-3-300x300.jpg",
+      "hero_image": "image/padi-night-diver-3-1600x780.jpg",
+      "medium_image": "image/padi-night-diver-3-1000x1000.jpg",
+      "mobile_image": "image/padi-night-diver-3-320x640.jpg",
+      "slug": "padi-night-diver-3",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 54,
+    "fields": {
+      "title": "PADI Night Diver 4",
+      "image": "image/padi-night-diver-4.jpg",
+      "thumbnail": "image/padi-night-diver-4-300x300.jpg",
+      "hero_image": "image/padi-night-diver-4-1600x780.jpg",
+      "medium_image": "image/padi-night-diver-4-1000x1000.jpg",
+      "mobile_image": "image/padi-night-diver-4-320x640.jpg",
+      "slug": "padi-night-diver-4",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 55,
+    "fields": {
+      "title": "PADI Search and Recovery 1",
+      "image": "image/padi-search-and-recovery-1.jpg",
+      "thumbnail": "image/padi-search-and-recovery-1-300x300.jpg",
+      "hero_image": "image/padi-search-and-recovery-1-1600x780.jpg",
+      "medium_image": "image/padi-search-and-recovery-1-1000x1000.jpg",
+      "mobile_image": "image/padi-search-and-recovery-1-320x640.jpg",
+      "slug": "padi-search-and-recovery-1",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 56,
+    "fields": {
+      "title": "PADI Search and Recovery 2",
+      "image": "image/padi-search-and-recovery-2.jpg",
+      "thumbnail": "image/padi-search-and-recovery-2-300x300.jpg",
+      "hero_image": "image/padi-search-and-recovery-2-1600x780.jpg",
+      "medium_image": "image/padi-search-and-recovery-2-1000x1000.jpg",
+      "mobile_image": "image/padi-search-and-recovery-2-320x640.jpg",
+      "slug": "padi-search-and-recovery-2",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 57,
+    "fields": {
+      "title": "PADI Search and Recovery 3",
+      "image": "image/padi-search-and-recovery-3.jpg",
+      "thumbnail": "image/padi-search-and-recovery-3-300x300.jpg",
+      "hero_image": "image/padi-search-and-recovery-3-1600x780.jpg",
+      "medium_image": "image/padi-search-and-recovery-3-1000x1000.jpg",
+      "mobile_image": "image/padi-search-and-recovery-3-320x640.jpg",
+      "slug": "padi-search-and-recovery-3",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 58,
+    "fields": {
+      "title": "PADI Search and Recovery 4",
+      "image": "image/padi-search-and-recovery-4.jpg",
+      "thumbnail": "image/padi-search-and-recovery-4-300x300.jpg",
+      "hero_image": "image/padi-search-and-recovery-4-1600x780.jpg",
+      "medium_image": "image/padi-search-and-recovery-4-1000x1000.jpg",
+      "mobile_image": "image/padi-search-and-recovery-4-320x640.jpg",
+      "slug": "padi-search-and-recovery-4",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 59,
+    "fields": {
+      "title": "PADI Digital Underwater Photography 1",
+      "image": "image/padi-digital-underwater-photography-1.jpg",
+      "thumbnail": "image/padi-digital-underwater-photography-1-300x300.jpg",
+      "hero_image": "image/padi-digital-underwater-photography-1-1600x780.jpg",
+      "medium_image": "image/padi-digital-underwater-photography-1-1000x1000.jpg",
+      "mobile_image": "image/padi-digital-underwater-photography-1-320x640.jpg",
+      "slug": "padi-digital-underwater-photography-1",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 60,
+    "fields": {
+      "title": "PADI Digital Underwater Photography 2",
+      "image": "image/padi-digital-underwater-photography-2.jpg",
+      "thumbnail": "image/padi-digital-underwater-photography-2-300x300.jpg",
+      "hero_image": "image/padi-digital-underwater-photography-2-1600x780.jpg",
+      "medium_image": "image/padi-digital-underwater-photography-2-1000x1000.jpg",
+      "mobile_image": "image/padi-digital-underwater-photography-2-320x640.jpg",
+      "slug": "padi-digital-underwater-photography-2",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 61,
+    "fields": {
+      "title": "PADI Digital Underwater Photography 3",
+      "image": "image/padi-digital-underwater-photography-3.jpg",
+      "thumbnail": "image/padi-digital-underwater-photography-3-300x300.jpg",
+      "hero_image": "image/padi-digital-underwater-photography-3-1600x780.jpg",
+      "medium_image": "image/padi-digital-underwater-photography-3-1000x1000.jpg",
+      "mobile_image": "image/padi-digital-underwater-photography-3-320x640.jpg",
+      "slug": "padi-digital-underwater-photography-3",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 62,
+    "fields": {
+      "title": "PADI Digital Underwater Photography 4",
+      "image": "image/padi-digital-underwater-photography-4.jpg",
+      "thumbnail": "image/padi-digital-underwater-photography-4-300x300.jpg",
+      "hero_image": "image/padi-digital-underwater-photography-4-1600x780.jpg",
+      "medium_image": "image/padi-digital-underwater-photography-4-1000x1000.jpg",
+      "mobile_image": "image/padi-digital-underwater-photography-4-320x640.jpg",
+      "slug": "padi-digital-underwater-photography-4",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 63,
+    "fields": {
+      "title": "PADI Underwater Navigator 1",
+      "image": "image/padi-underwater-navigator-1.jpg",
+      "thumbnail": "image/padi-underwater-navigator-1-300x300.jpg",
+      "hero_image": "image/padi-underwater-navigator-1-1600x780.jpg",
+      "medium_image": "image/padi-underwater-navigator-1-1000x1000.jpg",
+      "mobile_image": "image/padi-underwater-navigator-1-320x640.jpg",
+      "slug": "padi-underwater-navigator-1",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 64,
+    "fields": {
+      "title": "PADI Underwater Navigator 2",
+      "image": "image/padi-underwater-navigator-2.jpg",
+      "thumbnail": "image/padi-underwater-navigator-2-300x300.jpg",
+      "hero_image": "image/padi-underwater-navigator-2-1600x780.jpg",
+      "medium_image": "image/padi-underwater-navigator-2-1000x1000.jpg",
+      "mobile_image": "image/padi-underwater-navigator-2-320x640.jpg",
+      "slug": "padi-underwater-navigator-2",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 65,
+    "fields": {
+      "title": "PADI Underwater Navigator 3",
+      "image": "image/padi-underwater-navigator-3.jpg",
+      "thumbnail": "image/padi-underwater-navigator-3-300x300.jpg",
+      "hero_image": "image/padi-underwater-navigator-3-1600x780.jpg",
+      "medium_image": "image/padi-underwater-navigator-3-1000x1000.jpg",
+      "mobile_image": "image/padi-underwater-navigator-3-320x640.jpg",
+      "slug": "padi-underwater-navigator-3",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 66,
+    "fields": {
+      "title": "PADI Underwater Navigator 4",
+      "image": "image/padi-underwater-navigator-4.jpg",
+      "thumbnail": "image/padi-underwater-navigator-4-300x300.jpg",
+      "hero_image": "image/padi-underwater-navigator-4-1600x780.jpg",
+      "medium_image": "image/padi-underwater-navigator-4-1000x1000.jpg",
+      "mobile_image": "image/padi-underwater-navigator-4-320x640.jpg",
+      "slug": "padi-underwater-navigator-4",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 67,
+    "fields": {
+      "title": "PADI Peak Performance Buoyancy 1",
+      "image": "image/padi-peak-performance-buoyancy-1.jpg",
+      "thumbnail": "image/padi-peak-performance-buoyancy-1-300x300.jpg",
+      "hero_image": "image/padi-peak-performance-buoyancy-1-1600x780.jpg",
+      "medium_image": "image/padi-peak-performance-buoyancy-1-1000x1000.jpg",
+      "mobile_image": "image/padi-peak-performance-buoyancy-1-320x640.jpg",
+      "slug": "padi-peak-performance-buoyancy-1",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 68,
+    "fields": {
+      "title": "PADI Peak Performance Buoyancy 2",
+      "image": "image/padi-peak-performance-buoyancy-2.jpg",
+      "thumbnail": "image/padi-peak-performance-buoyancy-2-300x300.jpg",
+      "hero_image": "image/padi-peak-performance-buoyancy-2-1600x780.jpg",
+      "medium_image": "image/padi-peak-performance-buoyancy-2-1000x1000.jpg",
+      "mobile_image": "image/padi-peak-performance-buoyancy-2-320x640.jpg",
+      "slug": "padi-peak-performance-buoyancy-2",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 69,
+    "fields": {
+      "title": "PADI Peak Performance Buoyancy 3",
+      "image": "image/padi-peak-performance-buoyancy-3.jpg",
+      "thumbnail": "image/padi-peak-performance-buoyancy-3-300x300.jpg",
+      "hero_image": "image/padi-peak-performance-buoyancy-3-1600x780.jpg",
+      "medium_image": "image/padi-peak-performance-buoyancy-3-1000x1000.jpg",
+      "mobile_image": "image/padi-peak-performance-buoyancy-3-320x640.jpg",
+      "slug": "padi-peak-performance-buoyancy-3",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 70,
+    "fields": {
+      "title": "PADI Peak Performance Buoyancy 4",
+      "image": "image/padi-peak-performance-buoyancy-4.jpg",
+      "thumbnail": "image/padi-peak-performance-buoyancy-4-300x300.jpg",
+      "hero_image": "image/padi-peak-performance-buoyancy-4-1600x780.jpg",
+      "medium_image": "image/padi-peak-performance-buoyancy-4-1000x1000.jpg",
+      "mobile_image": "image/padi-peak-performance-buoyancy-4-320x640.jpg",
+      "slug": "padi-peak-performance-buoyancy-4",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 71,
+    "fields": {
+      "title": "PADI Fish Identification 1",
+      "image": "image/padi-fish-identification-1.jpg",
+      "thumbnail": "image/padi-fish-identification-1-300x300.jpg",
+      "hero_image": "image/padi-fish-identification-1-1600x780.jpg",
+      "medium_image": "image/padi-fish-identification-1-1000x1000.jpg",
+      "mobile_image": "image/padi-fish-identification-1-320x640.jpg",
+      "slug": "padi-fish-identification-1",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 72,
+    "fields": {
+      "title": "PADI Fish Identification 2",
+      "image": "image/padi-fish-identification-2.jpg",
+      "thumbnail": "image/padi-fish-identification-2-300x300.jpg",
+      "hero_image": "image/padi-fish-identification-2-1600x780.jpg",
+      "medium_image": "image/padi-fish-identification-2-1000x1000.jpg",
+      "mobile_image": "image/padi-fish-identification-2-320x640.jpg",
+      "slug": "padi-fish-identification-2",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 73,
+    "fields": {
+      "title": "PADI Fish Identification 3",
+      "image": "image/padi-fish-identification-3.jpg",
+      "thumbnail": "image/padi-fish-identification-3-300x300.jpg",
+      "hero_image": "image/padi-fish-identification-3-1600x780.jpg",
+      "medium_image": "image/padi-fish-identification-3-1000x1000.jpg",
+      "mobile_image": "image/padi-fish-identification-3-320x640.jpg",
+      "slug": "padi-fish-identification-3",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 74,
+    "fields": {
+      "title": "PADI Fish Identification 4",
+      "image": "image/padi-fish-identification-4.jpg",
+      "thumbnail": "image/padi-fish-identification-4-300x300.jpg",
+      "hero_image": "image/padi-fish-identification-4-1600x780.jpg",
+      "medium_image": "image/padi-fish-identification-4-1000x1000.jpg",
+      "mobile_image": "image/padi-fish-identification-4-320x640.jpg",
+      "slug": "padi-fish-identification-4",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 75,
+    "fields": {
+      "title": "PADI Enriched Air Nitrox 1",
+      "image": "image/padi-enriched-air-nitrox-1.jpg",
+      "thumbnail": "image/padi-enriched-air-nitrox-1-300x300.jpg",
+      "hero_image": "image/padi-enriched-air-nitrox-1-1600x780.jpg",
+      "medium_image": "image/padi-enriched-air-nitrox-1-1000x1000.jpg",
+      "mobile_image": "image/padi-enriched-air-nitrox-1-320x640.jpg",
+      "slug": "padi-enriched-air-nitrox-1",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 76,
+    "fields": {
+      "title": "PADI Enriched Air Nitrox 2",
+      "image": "image/padi-enriched-air-nitrox-2.jpg",
+      "thumbnail": "image/padi-enriched-air-nitrox-2-300x300.jpg",
+      "hero_image": "image/padi-enriched-air-nitrox-2-1600x780.jpg",
+      "medium_image": "image/padi-enriched-air-nitrox-2-1000x1000.jpg",
+      "mobile_image": "image/padi-enriched-air-nitrox-2-320x640.jpg",
+      "slug": "padi-enriched-air-nitrox-2",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 77,
+    "fields": {
+      "title": "PADI Enriched Air Nitrox 3",
+      "image": "image/padi-enriched-air-nitrox-3.jpg",
+      "thumbnail": "image/padi-enriched-air-nitrox-3-300x300.jpg",
+      "hero_image": "image/padi-enriched-air-nitrox-3-1600x780.jpg",
+      "medium_image": "image/padi-enriched-air-nitrox-3-1000x1000.jpg",
+      "mobile_image": "image/padi-enriched-air-nitrox-3-320x640.jpg",
+      "slug": "padi-enriched-air-nitrox-3",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 78,
+    "fields": {
+      "title": "PADI Enriched Air Nitrox 4",
+      "image": "image/padi-enriched-air-nitrox-4.jpg",
+      "thumbnail": "image/padi-enriched-air-nitrox-4-300x300.jpg",
+      "hero_image": "image/padi-enriched-air-nitrox-4-1600x780.jpg",
+      "medium_image": "image/padi-enriched-air-nitrox-4-1000x1000.jpg",
+      "mobile_image": "image/padi-enriched-air-nitrox-4-320x640.jpg",
+      "slug": "padi-enriched-air-nitrox-4",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 79,
+    "fields": {
+      "title": "PADI Tec 40 1",
+      "image": "image/padi-tec-40-1.jpg",
+      "thumbnail": "image/padi-tec-40-1-300x300.jpg",
+      "hero_image": "image/padi-tec-40-1-1600x780.jpg",
+      "medium_image": "image/padi-tec-40-1-1000x1000.jpg",
+      "mobile_image": "image/padi-tec-40-1-320x640.jpg",
+      "slug": "padi-tec-40-1",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 80,
+    "fields": {
+      "title": "PADI Tec 40 2",
+      "image": "image/padi-tec-40-2.jpg",
+      "thumbnail": "image/padi-tec-40-2-300x300.jpg",
+      "hero_image": "image/padi-tec-40-2-1600x780.jpg",
+      "medium_image": "image/padi-tec-40-2-1000x1000.jpg",
+      "mobile_image": "image/padi-tec-40-2-320x640.jpg",
+      "slug": "padi-tec-40-2",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 81,
+    "fields": {
+      "title": "PADI Tec 40 3",
+      "image": "image/padi-tec-40-3.jpg",
+      "thumbnail": "image/padi-tec-40-3-300x300.jpg",
+      "hero_image": "image/padi-tec-40-3-1600x780.jpg",
+      "medium_image": "image/padi-tec-40-3-1000x1000.jpg",
+      "mobile_image": "image/padi-tec-40-3-320x640.jpg",
+      "slug": "padi-tec-40-3",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 82,
+    "fields": {
+      "title": "PADI Tec 40 4",
+      "image": "image/padi-tec-40-4.jpg",
+      "thumbnail": "image/padi-tec-40-4-300x300.jpg",
+      "hero_image": "image/padi-tec-40-4-1600x780.jpg",
+      "medium_image": "image/padi-tec-40-4-1000x1000.jpg",
+      "mobile_image": "image/padi-tec-40-4-320x640.jpg",
+      "slug": "padi-tec-40-4",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 83,
+    "fields": {
+      "title": "PADI Tec 45 1",
+      "image": "image/padi-tec-45-1.jpg",
+      "thumbnail": "image/padi-tec-45-1-300x300.jpg",
+      "hero_image": "image/padi-tec-45-1-1600x780.jpg",
+      "medium_image": "image/padi-tec-45-1-1000x1000.jpg",
+      "mobile_image": "image/padi-tec-45-1-320x640.jpg",
+      "slug": "padi-tec-45-1",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 84,
+    "fields": {
+      "title": "PADI Tec 45 2",
+      "image": "image/padi-tec-45-2.jpg",
+      "thumbnail": "image/padi-tec-45-2-300x300.jpg",
+      "hero_image": "image/padi-tec-45-2-1600x780.jpg",
+      "medium_image": "image/padi-tec-45-2-1000x1000.jpg",
+      "mobile_image": "image/padi-tec-45-2-320x640.jpg",
+      "slug": "padi-tec-45-2",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 85,
+    "fields": {
+      "title": "PADI Tec 45 3",
+      "image": "image/padi-tec-45-3.jpg",
+      "thumbnail": "image/padi-tec-45-3-300x300.jpg",
+      "hero_image": "image/padi-tec-45-3-1600x780.jpg",
+      "medium_image": "image/padi-tec-45-3-1000x1000.jpg",
+      "mobile_image": "image/padi-tec-45-3-320x640.jpg",
+      "slug": "padi-tec-45-3",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 86,
+    "fields": {
+      "title": "PADI Tec 45 4",
+      "image": "image/padi-tec-45-4.jpg",
+      "thumbnail": "image/padi-tec-45-4-300x300.jpg",
+      "hero_image": "image/padi-tec-45-4-1600x780.jpg",
+      "medium_image": "image/padi-tec-45-4-1000x1000.jpg",
+      "mobile_image": "image/padi-tec-45-4-320x640.jpg",
+      "slug": "padi-tec-45-4",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 87,
+    "fields": {
+      "title": "PADI Tec 50 1",
+      "image": "image/padi-tec-50-1.jpg",
+      "thumbnail": "image/padi-tec-50-1-300x300.jpg",
+      "hero_image": "image/padi-tec-50-1-1600x780.jpg",
+      "medium_image": "image/padi-tec-50-1-1000x1000.jpg",
+      "mobile_image": "image/padi-tec-50-1-320x640.jpg",
+      "slug": "padi-tec-50-1",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 88,
+    "fields": {
+      "title": "PADI Tec 50 2",
+      "image": "image/padi-tec-50-2.jpg",
+      "thumbnail": "image/padi-tec-50-2-300x300.jpg",
+      "hero_image": "image/padi-tec-50-2-1600x780.jpg",
+      "medium_image": "image/padi-tec-50-2-1000x1000.jpg",
+      "mobile_image": "image/padi-tec-50-2-320x640.jpg",
+      "slug": "padi-tec-50-2",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 89,
+    "fields": {
+      "title": "PADI Tec 50 3",
+      "image": "image/padi-tec-50-3.jpg",
+      "thumbnail": "image/padi-tec-50-3-300x300.jpg",
+      "hero_image": "image/padi-tec-50-3-1600x780.jpg",
+      "medium_image": "image/padi-tec-50-3-1000x1000.jpg",
+      "mobile_image": "image/padi-tec-50-3-320x640.jpg",
+      "slug": "padi-tec-50-3",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 90,
+    "fields": {
+      "title": "PADI Tec 50 4",
+      "image": "image/padi-tec-50-4.jpg",
+      "thumbnail": "image/padi-tec-50-4-300x300.jpg",
+      "hero_image": "image/padi-tec-50-4-1600x780.jpg",
+      "medium_image": "image/padi-tec-50-4-1000x1000.jpg",
+      "mobile_image": "image/padi-tec-50-4-320x640.jpg",
+      "slug": "padi-tec-50-4",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 91,
+    "fields": {
+      "title": "PADI Divemaster 1",
+      "image": "image/padi-divemaster-1.jpg",
+      "thumbnail": "image/padi-divemaster-1-300x300.jpg",
+      "hero_image": "image/padi-divemaster-1-1600x780.jpg",
+      "medium_image": "image/padi-divemaster-1-1000x1000.jpg",
+      "mobile_image": "image/padi-divemaster-1-320x640.jpg",
+      "slug": "padi-divemaster-1",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 92,
+    "fields": {
+      "title": "PADI Divemaster 2",
+      "image": "image/padi-divemaster-2.jpg",
+      "thumbnail": "image/padi-divemaster-2-300x300.jpg",
+      "hero_image": "image/padi-divemaster-2-1600x780.jpg",
+      "medium_image": "image/padi-divemaster-2-1000x1000.jpg",
+      "mobile_image": "image/padi-divemaster-2-320x640.jpg",
+      "slug": "padi-divemaster-2",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 93,
+    "fields": {
+      "title": "PADI Divemaster 3",
+      "image": "image/padi-divemaster-3.jpg",
+      "thumbnail": "image/padi-divemaster-3-300x300.jpg",
+      "hero_image": "image/padi-divemaster-3-1600x780.jpg",
+      "medium_image": "image/padi-divemaster-3-1000x1000.jpg",
+      "mobile_image": "image/padi-divemaster-3-320x640.jpg",
+      "slug": "padi-divemaster-3",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 94,
+    "fields": {
+      "title": "PADI Divemaster 4",
+      "image": "image/padi-divemaster-4.jpg",
+      "thumbnail": "image/padi-divemaster-4-300x300.jpg",
+      "hero_image": "image/padi-divemaster-4-1600x780.jpg",
+      "medium_image": "image/padi-divemaster-4-1000x1000.jpg",
+      "mobile_image": "image/padi-divemaster-4-320x640.jpg",
+      "slug": "padi-divemaster-4",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": false
+    }
+  },
+  {
+    "model": "diving.image",
+    "pk": 95,
+    "fields": {
+      "title": "back snoopy",
+      "image": "image/back-snoopy.jpg",
+      "thumbnail": "image/back-snoopy-300x300.jpg",
+      "hero_image": "image/back-snoopy-1600x780.jpg",
+      "medium_image": "image/back-snoopy-1000x1000.jpg",
+      "mobile_image": "image/back-snoopy-320x640.jpg",
+      "slug": "back-snoopy",
+      "course_pic": false,
+      "dive_site_pic": false,
+      "dive_trip_pic": false,
+      "marine_life_pic": false,
+      "client_pic": true
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 1,
+    "fields": {
+      "title": "Double Tank Dive \u2013 FK",
+      "learning_type": null,
+      "price": 415,
+      "category": "Fun Diving",
+      "course": null,
+      "dive_trip_equipment": "Full Kit",
+      "trip_type": "boat-dive"
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 2,
+    "fields": {
+      "title": "Double Tank Dive \u2013 TW",
+      "learning_type": null,
+      "price": 350,
+      "category": "Fun Diving",
+      "course": null,
+      "dive_trip_equipment": "Tanks and Weights",
+      "trip_type": "boat-dive"
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 3,
+    "fields": {
+      "title": "Double Tank Dive \u2013 EXCL",
+      "learning_type": null,
+      "price": 300,
+      "category": "Fun Diving",
+      "course": null,
+      "dive_trip_equipment": "Excluding Equipment",
+      "trip_type": "boat-dive"
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 4,
+    "fields": {
+      "title": "Single Tank Dive \u2013 FK",
+      "learning_type": null,
+      "price": 315,
+      "category": "Fun Diving",
+      "course": null,
+      "dive_trip_equipment": "Full Kit",
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 5,
+    "fields": {
+      "title": "Single Tank Dive \u2013 TW",
+      "learning_type": null,
+      "price": 250,
+      "category": "Fun Diving",
+      "course": null,
+      "dive_trip_equipment": "Tanks and Weights",
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 6,
+    "fields": {
+      "title": "Single Tank Dive \u2013 EXCL",
+      "learning_type": null,
+      "price": 200,
+      "category": "Fun Diving",
+      "course": null,
+      "dive_trip_equipment": "Excluding Equipment",
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 7,
+    "fields": {
+      "title": "Additional Dive",
+      "learning_type": null,
+      "price": 100,
+      "category": "Fun Diving",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 8,
+    "fields": {
+      "title": "Boat Snorkel \u2013 FK",
+      "learning_type": null,
+      "price": 200,
+      "category": "Fun Diving",
+      "course": null,
+      "dive_trip_equipment": "Full Kit",
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 9,
+    "fields": {
+      "title": "Boat Snorkel \u2013 EXCL",
+      "learning_type": null,
+      "price": 100,
+      "category": "Fun Diving",
+      "course": null,
+      "dive_trip_equipment": "Excluding Equipment",
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 10,
+    "fields": {
+      "title": "10 Dive Package \u2013 FK",
+      "learning_type": null,
+      "price": 1775,
+      "category": "Fun Diving",
+      "course": null,
+      "dive_trip_equipment": "Full Kit",
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 11,
+    "fields": {
+      "title": "10 Dive Package \u2013 TW",
+      "learning_type": null,
+      "price": 1450,
+      "category": "Fun Diving",
+      "course": null,
+      "dive_trip_equipment": "Tanks and Weights",
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 12,
+    "fields": {
+      "title": "10 Dive Package \u2013 EXCL",
+      "learning_type": null,
+      "price": 1350,
+      "category": "Fun Diving",
+      "course": null,
+      "dive_trip_equipment": "Excluding Equipment",
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 13,
+    "fields": {
+      "title": "Shore Dive \u2013 FK",
+      "learning_type": null,
+      "price": 215,
+      "category": "Fun Diving",
+      "course": null,
+      "dive_trip_equipment": "Full Kit",
+      "trip_type": "shore-dive"
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 14,
+    "fields": {
+      "title": "Shore Dive \u2013 TW",
+      "learning_type": null,
+      "price": 165,
+      "category": "Fun Diving",
+      "course": null,
+      "dive_trip_equipment": "Tanks and Weights",
+      "trip_type": "shore-dive"
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 15,
+    "fields": {
+      "title": "Shore Dive \u2013 EXCL",
+      "learning_type": null,
+      "price": 125,
+      "category": "Fun Diving",
+      "course": null,
+      "dive_trip_equipment": "Excluding Equipment",
+      "trip_type": "shore-dive"
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 16,
+    "fields": {
+      "title": "Shore Dive Guide",
+      "learning_type": null,
+      "price": 50,
+      "category": "Fun Diving",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 17,
+    "fields": {
+      "title": "Boat Night Dive \u2013 FK",
+      "learning_type": null,
+      "price": 315,
+      "category": "Fun Diving",
+      "course": null,
+      "dive_trip_equipment": "Full Kit",
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 18,
+    "fields": {
+      "title": "Boat Night Dive \u2013 TW",
+      "learning_type": null,
+      "price": 250,
+      "category": "Fun Diving",
+      "course": null,
+      "dive_trip_equipment": "Tanks and Weights",
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 19,
+    "fields": {
+      "title": "Shore Night Dive \u2013 FK",
+      "learning_type": null,
+      "price": 265,
+      "category": "Fun Diving",
+      "course": null,
+      "dive_trip_equipment": "Full Kit",
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 20,
+    "fields": {
+      "title": "Shore Night Dive \u2013 TW",
+      "learning_type": null,
+      "price": 215,
+      "category": "Fun Diving",
+      "course": null,
+      "dive_trip_equipment": "Tanks and Weights",
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 21,
+    "fields": {
+      "title": "Shore Night Dive \u2013 EXCL",
+      "learning_type": null,
+      "price": 190,
+      "category": "Fun Diving",
+      "course": null,
+      "dive_trip_equipment": "Excluding Equipment",
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 22,
+    "fields": {
+      "title": "Wetsuit",
+      "learning_type": null,
+      "price": 50,
+      "category": "Equipment Rental",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 23,
+    "fields": {
+      "title": "Regulator",
+      "learning_type": null,
+      "price": 40,
+      "category": "Equipment Rental",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 24,
+    "fields": {
+      "title": "BCD",
+      "learning_type": null,
+      "price": 40,
+      "category": "Equipment Rental",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 25,
+    "fields": {
+      "title": "Fins",
+      "learning_type": null,
+      "price": 50,
+      "category": "Equipment Rental",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 26,
+    "fields": {
+      "title": "Dive Light",
+      "learning_type": null,
+      "price": 50,
+      "category": "Equipment Rental",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 27,
+    "fields": {
+      "title": "Mask",
+      "learning_type": null,
+      "price": 50,
+      "category": "Equipment Rental",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 28,
+    "fields": {
+      "title": "Boots",
+      "learning_type": null,
+      "price": 20,
+      "category": "Equipment Rental",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 29,
+    "fields": {
+      "title": "Weights",
+      "learning_type": null,
+      "price": 20,
+      "category": "Equipment Rental",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 30,
+    "fields": {
+      "title": "Computer",
+      "learning_type": null,
+      "price": 50,
+      "category": "Equipment Rental",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 31,
+    "fields": {
+      "title": "Nitrox Tank",
+      "learning_type": null,
+      "price": 40,
+      "category": "Equipment Rental",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 32,
+    "fields": {
+      "title": "Discover Scuba Diving",
+      "learning_type": "Book-Learning",
+      "price": 500,
+      "category": "Entry Level",
+      "course": "Discover Scuba Diving",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 33,
+    "fields": {
+      "title": "DSD Additional Dive",
+      "learning_type": "Book-Learning",
+      "price": 250,
+      "category": "Entry Level",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 34,
+    "fields": {
+      "title": "DSD Pool Only",
+      "learning_type": "Book-Learning",
+      "price": 300,
+      "category": "Entry Level",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 35,
+    "fields": {
+      "title": "Scuba Diver \u2013 Book Learning",
+      "learning_type": "Book-Learning",
+      "price": 2050,
+      "category": "Entry Level",
+      "course": "Scuba Diver",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 36,
+    "fields": {
+      "title": "Scuba Diver \u2013 E-Learning",
+      "learning_type": "E-Learning",
+      "price": 1400,
+      "category": "Entry Level",
+      "course": "Scuba Diver",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 37,
+    "fields": {
+      "title": "Upgrade to Open Water",
+      "learning_type": "Book-Learning",
+      "price": 1345,
+      "category": "Entry Level",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 38,
+    "fields": {
+      "title": "Open Water Diver \u2013 Referral",
+      "learning_type": "Book-Learning",
+      "price": 1150,
+      "category": "Entry Level",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 39,
+    "fields": {
+      "title": "Open Water Diver \u2013 Book Learning",
+      "learning_type": "Book-Learning",
+      "price": 2550,
+      "category": "Entry Level",
+      "course": "Open Water Diver",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 40,
+    "fields": {
+      "title": "Open Water Diver \u2013 E-Learning",
+      "learning_type": "E-Learning",
+      "price": 1950,
+      "category": "Entry Level",
+      "course": "Open Water Diver",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 41,
+    "fields": {
+      "title": "Re-Activate Double Tank Boat Dive",
+      "learning_type": "E-Learning",
+      "price": 565,
+      "category": "Advanced Level",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 42,
+    "fields": {
+      "title": "Re-Activate Pool",
+      "learning_type": "E-Learning",
+      "price": 175,
+      "category": "Advanced Level",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 43,
+    "fields": {
+      "title": "Re-Activate Pool & Shore Dive",
+      "learning_type": "E-Learning",
+      "price": 335,
+      "category": "Advanced Level",
+      "course": "ReActivate",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 44,
+    "fields": {
+      "title": "Adventure Diver \u2013 Book Learning",
+      "learning_type": "Book-Learning",
+      "price": 1520,
+      "category": "Advanced Level",
+      "course": "Adventure Diver",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 45,
+    "fields": {
+      "title": "Adventure Diver \u2013 E-Learning",
+      "learning_type": "E-Learning",
+      "price": 1150,
+      "category": "Advanced Level",
+      "course": "Adventure Diver",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 46,
+    "fields": {
+      "title": "Upgrade to Advanced Open Water",
+      "learning_type": "Book-Learning",
+      "price": 1050,
+      "category": "Advanced Level",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 47,
+    "fields": {
+      "title": "Advanced Open Water \u2013 Book Learning",
+      "learning_type": "Book-Learning",
+      "price": 2050,
+      "category": "Advanced Level",
+      "course": "Advanced Open Water",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 48,
+    "fields": {
+      "title": "Advanced Open Water \u2013 E-Learning",
+      "learning_type": "E-Learning",
+      "price": 1600,
+      "category": "Advanced Level",
+      "course": "Advanced Open Water",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 49,
+    "fields": {
+      "title": "Rescue Diver \u2013 Book Learning",
+      "learning_type": "Book-Learning",
+      "price": 2550,
+      "category": "Advanced Level",
+      "course": "Rescue Diver",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 50,
+    "fields": {
+      "title": "Rescue Diver \u2013 E-Learning",
+      "learning_type": "E-Learning",
+      "price": 1750,
+      "category": "Advanced Level",
+      "course": "Rescue Diver",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 51,
+    "fields": {
+      "title": "EFR First Aid",
+      "learning_type": "Book-Learning",
+      "price": 925,
+      "category": "Advanced Level",
+      "course": "EFR First Aid",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 52,
+    "fields": {
+      "title": "Recreational Sidemount",
+      "learning_type": "Book-Learning",
+      "price": 2125,
+      "category": "Specialty Courses",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 53,
+    "fields": {
+      "title": "Deep Diving",
+      "learning_type": "Book-Learning",
+      "price": 1725,
+      "category": "Specialty Courses",
+      "course": "Deep Diver",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 54,
+    "fields": {
+      "title": "Wreck Diving",
+      "learning_type": "Book-Learning",
+      "price": 1725,
+      "category": "Specialty Courses",
+      "course": "Wreck Diver",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 55,
+    "fields": {
+      "title": "Night Diver",
+      "learning_type": "Book-Learning",
+      "price": 1450,
+      "category": "Specialty Courses",
+      "course": "Night Diver",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 56,
+    "fields": {
+      "title": "Drysuit",
+      "learning_type": "Book-Learning",
+      "price": 1450,
+      "category": "Specialty Courses",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 57,
+    "fields": {
+      "title": "Search & Recovery",
+      "learning_type": "Book-Learning",
+      "price": 1400,
+      "category": "Specialty Courses",
+      "course": "Search and Recovery",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 58,
+    "fields": {
+      "title": "Digital Underwater Photography",
+      "learning_type": "Book-Learning",
+      "price": 1350,
+      "category": "Specialty Courses",
+      "course": "Digital Underwater Photography",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 59,
+    "fields": {
+      "title": "Underwater Navigator",
+      "learning_type": "Book-Learning",
+      "price": 1275,
+      "category": "Specialty Courses",
+      "course": "Underwater Navigator",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 60,
+    "fields": {
+      "title": "Boat Diving",
+      "learning_type": "Book-Learning",
+      "price": 1100,
+      "category": "Specialty Courses",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 61,
+    "fields": {
+      "title": "Peak Performance Buoyancy",
+      "learning_type": "Book-Learning",
+      "price": 1025,
+      "category": "Specialty Courses",
+      "course": "Peak Performance Buoyancy",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 62,
+    "fields": {
+      "title": "Fish Identification",
+      "learning_type": "Book-Learning",
+      "price": 995,
+      "category": "Specialty Courses",
+      "course": "Fish Identification",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 63,
+    "fields": {
+      "title": "Underwater Naturalist",
+      "learning_type": "Book-Learning",
+      "price": 995,
+      "category": "Specialty Courses",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 64,
+    "fields": {
+      "title": "Surface Marker Buoy",
+      "learning_type": "Book-Learning",
+      "price": 995,
+      "category": "Specialty Courses",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 65,
+    "fields": {
+      "title": "Equipment - Practical",
+      "learning_type": "Book-Learning",
+      "price": 925,
+      "category": "Specialty Courses",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 66,
+    "fields": {
+      "title": "Emergency Oxygen Provider",
+      "learning_type": "Book-Learning",
+      "price": 925,
+      "category": "Specialty Courses",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 67,
+    "fields": {
+      "title": "Enriched Air Nitrox \u2013 Book Learning",
+      "learning_type": "Book-Learning",
+      "price": 925,
+      "category": "Specialty Courses",
+      "course": "Enriched Air Nitrox",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 68,
+    "fields": {
+      "title": "Enriched Air Nitrox \u2013 E-Learning",
+      "learning_type": "E-Learning",
+      "price": 300,
+      "category": "Specialty Courses",
+      "course": "Enriched Air Nitrox",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 69,
+    "fields": {
+      "title": "AWARE Shark/Turtle/Coral Conservation",
+      "learning_type": "Book-Learning",
+      "price": 1290,
+      "category": "AWARE Courses",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 70,
+    "fields": {
+      "title": "AWARE Dive Against Debris",
+      "learning_type": "Book-Learning",
+      "price": 1090,
+      "category": "AWARE Courses",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 71,
+    "fields": {
+      "title": "Project AWARE Specialist",
+      "learning_type": "Book-Learning",
+      "price": 925,
+      "category": "AWARE Courses",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 72,
+    "fields": {
+      "title": "Tec 40",
+      "learning_type": "Book-Learning",
+      "price": 2300,
+      "category": "TecRec Level",
+      "course": "Tec 40",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 73,
+    "fields": {
+      "title": "Tec 45",
+      "learning_type": "Book-Learning",
+      "price": 2300,
+      "category": "TecRec Level",
+      "course": "Tec 45",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 74,
+    "fields": {
+      "title": "Tec 50",
+      "learning_type": "Book-Learning",
+      "price": 2500,
+      "category": "TecRec Level",
+      "course": "Tec 50",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 75,
+    "fields": {
+      "title": "Tec  Combo \u2013 (40 to 50)",
+      "learning_type": "Book-Learning",
+      "price": 6495,
+      "category": "TecRec Level",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 76,
+    "fields": {
+      "title": "Tec Sidemount",
+      "learning_type": "Book-Learning",
+      "price": 2235,
+      "category": "TecRec Level",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 77,
+    "fields": {
+      "title": "Divemaster - E-learning (incl Pack)",
+      "learning_type": "E-Learning",
+      "price": 3800,
+      "category": "Professional Level",
+      "course": "Divemaster",
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 78,
+    "fields": {
+      "title": "Assistant Instructor (incl Pack)",
+      "learning_type": null,
+      "price": 5600,
+      "category": "Professional Level",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 79,
+    "fields": {
+      "title": "OWSI",
+      "learning_type": null,
+      "price": 4200,
+      "category": "Professional Level",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 80,
+    "fields": {
+      "title": "OWSI Crew pack",
+      "learning_type": null,
+      "price": 2500,
+      "category": "Professional Level",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 81,
+    "fields": {
+      "title": "Full IDC",
+      "learning_type": null,
+      "price": 7000,
+      "category": "Professional Level",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 82,
+    "fields": {
+      "title": "Single Specialty",
+      "learning_type": null,
+      "price": 600,
+      "category": "Professional Level",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 83,
+    "fields": {
+      "title": "Double tank Specialty",
+      "learning_type": null,
+      "price": 800,
+      "category": "Professional Level",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 84,
+    "fields": {
+      "title": "MSDT Training",
+      "learning_type": null,
+      "price": 1900,
+      "category": "Professional Level",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 85,
+    "fields": {
+      "title": "EFR Instructor",
+      "learning_type": null,
+      "price": 2850,
+      "category": "Professional Level",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 86,
+    "fields": {
+      "title": "Bubble Maker",
+      "learning_type": null,
+      "price": 410,
+      "category": "Junior Level",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 87,
+    "fields": {
+      "title": "Seal Team",
+      "learning_type": null,
+      "price": 1320,
+      "category": "Junior Level",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  },
+  {
+    "model": "diving.itemprice",
+    "pk": 88,
+    "fields": {
+      "title": "Master Seal Team",
+      "learning_type": null,
+      "price": 1740,
+      "category": "Junior Level",
+      "course": null,
+      "dive_trip_equipment": null,
+      "trip_type": null
+    }
+  }
+]
