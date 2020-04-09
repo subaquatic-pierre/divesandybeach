@@ -24,8 +24,6 @@ AUTH_USER_MODEL = 'core.User'
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root')
-STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -84,14 +82,10 @@ TEMPLATES = [
 if DEBUG == True:
     ALLOWED_HOSTS = []
 
-    # TODO: Need to change to console once secure, remove host and user
-    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-    EMAIL_HOST = config.EMAIL_HOST
-    EMAIL_HOST_USER = config.EMAIL_HOST_USER
-    EMAIL_HOST_PASSWORD = config.EMAIL_HOST_PASSWORD
-    EMAIL_USE_TLS = True
-    EMAIL_PORT = 587
+    RECAPTCHA_DISABLE = True
 
+    # TODO: Need to change to console once secure, remove host and user
+    EMAIL_BACKEND = 'django.core.mail.backends.locmem.EmailBackend'
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
@@ -100,6 +94,11 @@ if DEBUG == True:
     }
 
     STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+    # Static files (CSS, JavaScript, Images)
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root')
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
+
 # Production Environment
 else:
     ALLOWED_HOSTS = ['3.15.1.157',
@@ -128,7 +127,21 @@ else:
         {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator', },
     ]
 
+    # Static files (CSS, JavaScript, Images)
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root')
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
+
+
 # All other settings
+
+# Django storages
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+AWS_ACCESS_KEY_ID = config.AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY = config.AWS_SECRET_ACCESS_KEY
+AWS_STORAGE_BUCKET_NAME = config.AWS_STORAGE_BUCKET_NAME
+AWS_DEFAULT_ACL = None
+AWS_QUERYSTRING_AUTH = False
 
 # Timezone settings
 DATE_FORMAT = 'd m Y'
@@ -148,8 +161,8 @@ ACCOUNT_USERNAME_REQUIRED = False
 # Crispy Forms
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-RECAPTCHA_PUBLIC_KEY = '6Lc5G-IUAAAAACCkdMagpVE1LtTdDZ-9EbUtieXL'
-RECAPTCHA_PRIVATE_KEY = '6Lc5G-IUAAAAAK_6D-iflOo6nu8AFJR1ED4gaPlc'
+RECAPTCHA_PUBLIC_KEY = config.RECAPTCHA_PUBLIC_KEY
+RECAPTCHA_PRIVATE_KEY = config.RECAPTCHA_PRIVATE_KEY
 RECAPTCHA_DEFAULT_ACTION = 'generic'
 RECAPTCHA_SCORE_THRESHOLD = 0.5
 
