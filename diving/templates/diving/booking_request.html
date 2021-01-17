@@ -33,32 +33,20 @@
                     {{ form.full_name.errors }}
                 </div>
                 <div class="form-row">
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="form-group">
                             <label for="{{ form.cert_level.id_for_label }}">Certification level</label>
                             {{ form.cert_level }}
                             {{ form.cert_level.errors }}
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="form-group">
                             <label for="{{ form.kit_required.id_for_label }}">Required kit</label>
                             {{ form.kit_required }}
                             {{ form.kit_required.errors }}
                         </div>
                     </div>
-                    <!-- <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="{{ form.last_dive_date.id_for_label }}">Date of last dive</label>
-                            <div class="input-group date" id="last_dive_date" data-target-input="nearest">
-                                <input type="text" class="form-control datetimepicker-input" name="last_dive_date" data-target="
-                                    #last_dive_date" />
-                                <div class="input-group-append" data-target="#last_dive_date" data-toggle="datetimepicker">
-                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
 
                 {% endfor %}
@@ -170,7 +158,7 @@
                 </div>
                 <div class="col-12">
                     <div class="form-row">
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="id_form-${form_count}-cert_level">Certification Level</label>
                                 <select name="form-${form_count}-cert_level" class="form-control" required placeholder="Enter your email address" id="id_form-${form_count}-cert_level">
@@ -183,7 +171,7 @@
                                 </select>                            
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="id_form-${form_count}-kit_required">Required Kit</label>
                                 <select name="form-${form_count}-kit_required" class="form-control" required placeholder="Enter your email address" id="id_form-${form_count}-kit_required">
@@ -202,7 +190,6 @@
                     </div>
                 </div>
             </div>
-                
         `
         form_count++
         button = extraDiverDiv.children[0].children[2].children[0].children[0]
@@ -235,14 +222,7 @@
             format: 'DD-MM-YYYY',
             useCurrent: false,
         });
-    });
-
-    // $(function () {
-    //     $('#last_dive_date').datetimepicker({
-    //         format: 'DD/MM/YYYY',
-    //         useCurrent: false,
-    //     });
-    // });
+    })6
 
 </script>
 {% endblock extra_scripts %}

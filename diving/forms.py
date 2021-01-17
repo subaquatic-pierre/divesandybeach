@@ -54,7 +54,6 @@ class CourseBookingRequestForm(forms.Form):
             attrs={"input_toggle": True, "input_group": False, "autocomplete": "off"},
         ),
     )
-    # date = forms.DateField(required=True)
 
     message = forms.CharField(
         required=False,
@@ -125,7 +124,6 @@ class DiveBookingRequestDiverForm(forms.Form):
         choices=EQUIPMENT_CHOICES,
         widget=KitSelectWidget(attrs={"class": "form-control", "required": True}),
     )
-    # last_dive_data = forms.DateField(input_formats="%dd/%mm/%Y", required=True)
 
 
 class BoatDiveBookingRequestForm(DiveBookingRequestForm):
