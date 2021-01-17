@@ -1,4 +1,4 @@
 #! /bin/bash
 
-ssh-add ~/.ssh/ubuntu_ssh_key.pem
-ssh ubuntu@3.15.1.157 ./update-site.sh
+ssh-add ~/.ssh/aws-ecs-ohio.pem
+ssh ubuntu@18.223.170.156 ./update-site.sh
