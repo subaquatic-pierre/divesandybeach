@@ -101,7 +101,12 @@ if DEBUG == True:
 
 # Production Environment
 else:
-    ALLOWED_HOSTS = ["3.15.1.157", "divesandybeach.com", "www.divesandybeach.com", "*"]
+    ALLOWED_HOSTS = [
+        "divesandybeach.zeroisone.io",
+        "www.divesandybeach.com",
+        "divesandybeach.com",
+        "*",
+    ]
     EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
     EMAIL_HOST = config.EMAIL_HOST
     EMAIL_HOST_USER = config.EMAIL_HOST_USER
