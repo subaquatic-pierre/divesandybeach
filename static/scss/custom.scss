@@ -1,0 +1,705 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: inherit;
+  line-height: inherit;
+}
+
+table.table thead th {
+  font-weight: 500;
+  font-size: 1.4rem !important;
+}
+
+table.table thead {
+  border-bottom: 5px white solid;
+}
+
+table.table tbody td {
+  font-weight: 500;
+}
+
+.header {
+  font-size: 2.5rem;
+}
+
+.errorlist {
+  margin-top: 5px;
+  color: $danger;
+}
+
+.bg-transparent > li {
+  background-color: transparent;
+}
+
+.card {
+  border: none;
+}
+
+.text-muted {
+  font-size: 1rem;
+}
+
+.cstm-btn-light {
+  border: 3px white solid;
+  border-radius: 3px;
+  color: white;
+  text-shadow: none;
+}
+
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: none;
+}
+
+.card {
+  background-color: $light;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.heading-underline {
+  width: 5rem;
+  height: 0.2rem;
+  background-color: #0a9cbf;
+  margin: 0 auto 2rem;
+}
+
+.dark-overlay {
+  padding-top: 30vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 400;
+  height: 100%;
+}
+
+.title-text {
+  color: white;
+  text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.8),
+    1px 5px 5px rgba(2, 0, 36, 0.8), 8px 8px 10px rgba(2, 0, 36, 0.3);
+  font-size: 2.8rem;
+  text-transform: capitalize;
+}
+
+.title-text p {
+  color: white;
+  text-shadow: $text-shadow-sm;
+  font-size: 1.2rem;
+  text-transform: none;
+}
+
+.card-img-top {
+  border-radius: 0 !important;
+}
+
+.cd {
+  height: 300px;
+  object-fit: cover;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.carousel-control-prev {
+  background-image: none;
+}
+.carousel-control-next {
+  background-image: none;
+}
+
+/*====================== FULL HEIGHT LANDING HEADER =============== */
+
+.landing-fh-image {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/static/core/img/padi-divemaster-3-320x640.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 5;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 500px) {
+  .landing-fh-image {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/static/core/img/back-snoopy-1000x1000.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 5;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.btn {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.btn.btn-outline.btn-light:hover {
+  color: black;
+  text-shadow: none;
+}
+.btn.btn-outline.btn-light {
+  color: white;
+}
+
+/*====================== DIVE SITE CTA SECTION =============== */
+
+.dive-site-cta-hero-bg {
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  min-height: 500px;
+  color: white;
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 35%,
+      rgba(0, 0, 0, 0.171) 100%
+    ),
+    url("/static/core/img/Untitled-2_0006_IMG_5579-2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  h2 {
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+}
+
+// #divesitecta .full-width-image {
+//   background-image: url("../img/Untitled-2_0006_IMG_5579-2.jpg");
+//   background-size: cover;
+//   background-position: center center;
+//   height: 30rem;
+//   background-attachment: fixed;
+// }
+
+.dive-site-card {
+  box-shadow: $box-shadow;
+}
+
+/*====================== PARTNERS SECTION =============== */
+
+.partner-divider {
+  width: 50rem;
+  height: 0.2rem;
+  background-color: #0a9cbf;
+}
+
+.partner-logo img {
+  width: 80%;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+.partner-logo img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/*====================== FRONT PAGE BLOG SECTION =============== */
+
+.fixed-background-blog {
+  background-image: url("/static/img/Blue Lined Snapper.jpg");
+  background-attachment: fixed;
+  z-index: 400;
+}
+
+.white-overlay {
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 500;
+}
+
+.blog-header h1 {
+  color: white;
+  text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.8);
+  font-size: 3.5rem;
+  text-transform: capitalize;
+}
+
+#fp-blog .card {
+  overflow: hidden;
+}
+
+/*====================== CONTACT PAGE =============== */
+
+#google-map {
+  background: #6f6c6c;
+}
+
+.call,
+.email,
+.location {
+  border-radius: 0.5rem;
+  padding: 1rem 0;
+  min-height: 15rem;
+  margin: 1rem 0;
+  background-color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 800px) {
+  .email {
+    font-size: 1rem;
+  }
+}
+
+.contact-heading h1 {
+  color: white;
+  text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.8);
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+#add-a-diver {
+  font-size: 20px;
+}
+
+/*====================== ABOUT US PAGE =============== */
+
+#about-us {
+  p {
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  .landing-fh-image {
+    background-image: url("/static/core/img/Untitled-2_0011_SandyBeachStaff.jpg");
+    min-height: 150vh;
+    background-position: top center;
+    position: relative;
+  }
+}
+
+@media (min-width: 800px) {
+  .title-text p {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-dark-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 400;
+    top: 0px;
+    bottom: 0px;
+    padding: 100px 20px;
+  }
+}
+
+@media (min-width: 800px) {
+  .about-dark-overlay {
+    border-radius: 2rem;
+    padding: 5rem 10rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 400;
+  }
+}
+
+#team {
+  .card-img-top {
+    padding-top: 10px;
+    width: 70%;
+    align-self: center;
+  }
+  .lead {
+    font-size: 0.95rem;
+  }
+}
+
+#testimonials .card img {
+  border-radius: 50% !important;
+  height: 10rem;
+  width: 10rem;
+  padding: 20px;
+}
+
+#testimonials .fa-quote-left {
+  color: #0a9cbf;
+}
+
+/* ========================== DIVE SITE DETAIL PAGE ========================== */
+
+.hero-bg {
+  display: flex;
+  padding-top: 170px;
+  min-height: 500px;
+  color: white;
+  background-image: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 0.5) 0%,
+      rgba(9, 9, 121, 0.5) 35%,
+      rgba(0, 212, 255, 0.5) 100%
+    ),
+    url("/static/hero_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.divesite-map-image__img {
+  width: 100%;
+}
+
+/* ========================== COURSE DETAIL PAGE ========================== */
+
+.list-group:last-child {
+  padding-bottom: 1rem;
+}
+
+.course-info-row {
+  .course-info-text {
+    background: white;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: $box-shadow-lg;
+    margin-bottom: 1rem;
+  }
+
+  padding: 1rem 0;
+
+  .course-info-img {
+    img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .course-info-section:nth-child(odd) {
+    .course-info-row:nth-child(odd) {
+      .course-info-img {
+        transform: translatex(-70px);
+      }
+    }
+  }
+
+  .course-info-row {
+    position: relative;
+    padding: 5rem 0rem;
+
+    .course-info-text {
+      position: absolute;
+      z-index: 10;
+      background: white;
+      border-radius: 5px;
+      box-shadow: $box-shadow-lg;
+      padding: 2rem;
+      min-width: 600px;
+    }
+
+    .course-info-img {
+      img {
+        width: 700px;
+        height: 600px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.course-info-row .course-info-text {
+  min-width: 100%;
+}
+
+#course-detail-heading {
+  min-height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.course-hero-image {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  z-index: 5;
+}
+
+.course-hero-image img {
+  display: none;
+}
+
+.course-hero-overlay {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.089);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__heading {
+    justify-self: center;
+  }
+}
+@media (min-width: 8000px) {
+  .arrow-down {
+    top: 250px;
+  }
+}
+.arrow-down {
+  color: white;
+  position: relative;
+  align-self: center;
+  top: 7rem;
+}
+
+.card-title-text {
+  color: white;
+  text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.6),
+    1px 3px 3px rgba(2, 0, 36, 0.3);
+  text-transform: uppercase;
+}
+
+.price-card {
+  // position: relative;
+  overflow: hidden;
+}
+
+.dive-trip-price-card-section {
+  h4 {
+    text-transform: none;
+  }
+}
+
+.popular-ribbon {
+  font-size: 14px;
+  top: 35px;
+  right: -40px;
+  position: absolute;
+  color: white;
+  background-color: rgb(223, 56, 56);
+  padding: 3px 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transform: rotate(45deg);
+  box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.6),
+    1px 3px 3px rgba(2, 0, 36, 0.3);
+}
+
+.card-price {
+  display: flex;
+  justify-content: center;
+
+  .card-price-text {
+    background-color: $info;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.8rem 0;
+    width: 80%;
+    border-radius: 3px;
+    box-shadow: $box-shadow;
+  }
+}
+
+.course-card-text {
+  min-height: 5rem;
+}
+
+// @media (max-width:800px) {
+//   .course-info-section {
+//     max-width: 300px;
+//   }
+
+//   .course-info-row {
+//     padding: 2rem 0rem;
+//     width: 100%;
+
+//     .course-info-text {
+//       position: reset;
+//       background: white;
+//       border-radius: 5px;
+//       box-shadow: $box-shadow-lg;
+//       width: 100%;
+//     }
+
+//     .course-info-img {
+//       img {
+//         width: 700px;
+//         height: 600px;
+//         object-fit: cover;
+//       }
+//     }
+//   }
+// }
+
+.message-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.message {
+  position: absolute;
+  top: 100px;
+  width: 60%;
+}
+
+@media (max-width: 800px) {
+  .message {
+    width: 90%;
+  }
+}
+
+/*===================== COURSE CATALOG ====================*/
+
+.course-catalog {
+  li {
+    a {
+      color: $dark;
+      text-shadow: none;
+
+      &:hover {
+        color: $gray-600;
+      }
+    }
+  }
+}
+
+/*====================== FOOTER SECTION =============== */
+
+footer .footer-row {
+  background-color: #0a9cbf;
+}
+
+footer p,
+footer .connect {
+  font-weight: 500;
+}
+
+footer .list-group-item {
+  border: none;
+  background-color: transparent;
+}
+
+footer .list-group-item a {
+  color: #2e2e2e;
+}
+
+footer i {
+  padding-right: 1rem;
+}
+
+footer img {
+  height: 15rem;
+}
+
+.connect li {
+  font-size: 1.1rem;
+}
+
+.connect .svg-inline--fa {
+  margin-right: 1rem;
+}
+
+.svg-inline--fa.fa-youtube.fa-w-18,
+.svg-inline--fa.fa-instagram.fa-w-14,
+.svg-inline--fa.fa-facebook-square.fa-w-14 {
+  font-size: 3rem;
+}
+
+/*==================== PRICES =====================*/
+
+.table td,
+.table th {
+  border-top: none;
+}
+
+/*=================== MEDIA QUERIES ========================*/
+
+@media (min-width: 968px) {
+  .title-text h1 {
+    font-size: 3.5rem;
+  }
+
+  .header {
+    font-size: 2.7rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-brand img {
+    height: 7rem;
+    margin-bottom: -3rem;
+    padding-top: 0;
+    margin-top: -1rem;
+  }
+
+  .navbar a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+
+  .navbar li {
+    padding-right: 0.7rem;
+  }
+}
+
+#location-cards {
+  padding: 5rem 0;
+  .call i,
+  .email i,
+  .location i {
+    color: $primary;
+  }
+}
+
+// @media (min-height:800px){
+//   #location-cards {
+//     padding: 5rem 0;
+//   }
+// }
+.text-shadow {
+  text-shadow: $text-shadow-sm;
+}
+
+.card {
+  background-color: $white;
+}
+
+div.bootstrap-datetimepicker-widget.dropdown-menu.usetwentyfour.top {
+  min-width: auto !important;
+}

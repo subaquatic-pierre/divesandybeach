@@ -3,9 +3,10 @@ Django settings for divesandybeach project.
 
 """
 import os
-from .config import Config
+from .config import load_config
 
-config = Config()
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+config = load_config(BASE_DIR)
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 # Quick-start development settings - unsuitable for production
@@ -13,7 +14,6 @@ config = Config()
 
 # Base Application definition settings
 DEBUG = config.DEBUG
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config.SECRET_KEY
 
 SITE_ID = 1
@@ -24,6 +24,9 @@ AUTH_USER_MODEL = "core.User"
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = "/static/"
 MEDIA_URL = "/media/"
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+# STATICFILES_DIRS = [os.path.join(STATIC_ROOT, "core/")]
+
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -80,7 +83,7 @@ TEMPLATES = [
 
 # If debug is true then in development enviornment otherwise in production environment
 if DEBUG == True:
-    ALLOWED_HOSTS = []
+    ALLOWED_HOSTS = ["*"]
 
     RECAPTCHA_DISABLE = True
 
@@ -93,15 +96,12 @@ if DEBUG == True:
         }
     }
 
-    STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
-
     # Static files (CSS, JavaScript, Images)
-    MEDIA_ROOT = os.path.join(BASE_DIR, "media_root")
-    STATIC_ROOT = os.path.join(BASE_DIR, "static_root")
+    # MEDIA_ROOT = os.path.join(BASE_DIR, "media_root")
 
 # Production Environment
 else:
-    ALLOWED_HOSTS = ["3.15.1.157", "divesandybeach.com", "www.divesandybeach.com"]
+    ALLOWED_HOSTS = ["3.15.1.157", "divesandybeach.com", "www.divesandybeach.com", "*"]
     EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
     EMAIL_HOST = config.EMAIL_HOST
     EMAIL_HOST_USER = config.EMAIL_HOST_USER
@@ -135,9 +135,21 @@ else:
     ]
 
     # Static files (CSS, JavaScript, Images)
-    MEDIA_ROOT = os.path.join(BASE_DIR, "media_root")
-    STATIC_ROOT = os.path.join(BASE_DIR, "static_root")
+    # MEDIA_ROOT = os.path.join(BASE_DIR, "media_root")
 
+# Django storages
+STORAGES = {
+    "default": {"BACKEND": "divesandybeach.storage.MediaStorage"},
+    "staticfiles": {
+        "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",
+    },
+}
+# STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+AWS_ACCESS_KEY_ID = config.AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY = config.AWS_SECRET_ACCESS_KEY
+AWS_STORAGE_BUCKET_NAME = config.AWS_STORAGE_BUCKET_NAME
+AWS_DEFAULT_ACL = None
+AWS_QUERYSTRING_AUTH = False
 
 # All other settings
 

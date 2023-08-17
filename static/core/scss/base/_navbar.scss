@@ -1,0 +1,153 @@
+/*====================== NAVBAR =============== */
+.my-navbar {
+  width: 100%;
+  z-index: 9999;
+  position: absolute;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(255,0,0,0) 95%);
+}
+
+.navbar {
+  position: absolute!important;
+} 
+
+.navbar-expand-xl .navbar-nav .nav-link{
+  padding:1rem;
+}
+
+#mobile-menu-btn {
+    z-index: 400;
+  }
+  
+  .mobile-div {
+    display: none;
+  }
+  
+  .top-scroll {
+    display: none;
+  }
+
+ 
+  @media (max-width:1200px) {
+  
+    .mobile-div {    
+      display: block;
+      height: 0px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 100;
+    }
+  
+    .nav-show {
+      min-height: 100vh;
+    }
+  
+    .top-scroll {
+      display: block;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      color: rgba(0, 0, 0, 0.3);
+    }
+  
+    .top-scroll {
+      display: block;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      color: rgba(0, 0, 0, 0.3);    
+    }
+  
+    .fixed-top {
+      position: fixed!important;
+  
+    }
+  
+    .mobile-menu {
+      width: 30%;
+      padding: 5rem 0.5rem;
+      height: 100vh;
+      position: absolute;    
+      top:0px;
+      right:0px;
+      transition: all 0.5s linear 0.2s;
+      transform: translate(100%);
+      overflow-y: scroll;
+    }  
+  
+    .mobile-menu li {
+      margin: .7rem 0;
+    }
+  
+    .mobile-menu i {
+      text-shadow: none!important;
+      width: 30px;
+    }
+  
+    .no-scroll {
+      overflow-y: hidden;
+    }
+  
+    .menu-toggle {     
+      transform: translate(0);    
+    }
+  
+    .trans {
+      background-color: rgba(2,0,36,0.3);
+    }
+  
+    .mobile-next-to {
+      width: 70%;
+      height: 100%;
+    }
+  }
+
+  @media (max-width:840px) {
+  
+    .mobile-menu {
+      width: 80%;
+    }
+      .mobile-next-to {
+        width: 20%;
+        height: 100%;
+      }
+  }
+  
+  .navbar-brand img {
+    height: 3rem;
+  }
+  
+  .navbar {
+
+  }
+  
+  .nav-link {
+    color:white;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.6);
+  }
+  
+  .navbar .dropdown-menu a {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.6);
+    color: white;
+  }
+  
+  .nav-link:hover {
+    color:rgb(217, 228, 230);  
+  }
+
+  .dropdown-item.nav-link:hover {
+    text-shadow: none;
+    color: $primary
+  }
